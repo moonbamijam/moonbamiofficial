@@ -9,14 +9,14 @@ import GitHub_Logo from '@public/assets/images/github-mark-white.png';
 
 const Header = () => {
   const [ header, setHeader ] = useState("header");
-  const listenScrollEvent = () => {
+  const scrollEvent = () => {
     if(window.scrollY < 15) return setHeader("header");
     else if(window.scrollY > 15) return setHeader("header-changed");
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', listenScrollEvent);
-    return () => window.removeEventListener('scroll', listenScrollEvent);
+    window.addEventListener('scroll', scrollEvent);
+    return () => window.removeEventListener('scroll', scrollEvent);
   }, []);
 
   const handleProfileScroll = () => {
