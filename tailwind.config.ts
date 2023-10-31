@@ -12,7 +12,11 @@ const config: Config = {
         'rich-black': '#03001C',
         'deep-koamaru': '#301E67',
         'electric-pink': '#FB2576'
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif']
       }
+
     },
   },
   plugins: [],
