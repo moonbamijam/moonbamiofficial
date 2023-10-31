@@ -8,7 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+      colors: {
+        'rich-black': '#03001C',
+        'deep-koamaru': '#301E67',
+        'electric-pink': '#FB2576'
+      }
     },
   },
   plugins: [],
