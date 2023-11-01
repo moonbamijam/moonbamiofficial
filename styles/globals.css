@@ -6,7 +6,7 @@
 *,
 ::before,
 ::after {
-  @apply box-border p-o m-0 font-poppins;
+  @apply box-border p-0 m-0 font-poppins;
 }
 
 /* header styles */
@@ -17,7 +17,7 @@ header {
   @apply bg-transparent;
 }
 .header-changed {
-  @apply bg-opaque-rb
+  @apply bg-opaque-rb;
 }
 
 .nav-link {
@@ -25,3 +25,11 @@ header {
 }
 /* header styles */
 
+/* landing styles */
+.landing-strong {
+  @apply text-electric-pink;
+}
+.square-holder {
+  @apply before:content-none before:absolute before:top-[-30px] before:right-[130px] before:w-[15.625rem] before:h-[15.625rem] before:rounded-lg before:border-[3px] before:border-solid before:border-white z-[-1] 
+  after:content-none after:absolute after:top-[30px] after:right-[-30px] after:w-[21.875rem] after:h-[21.875rem] after:rounded-lg after:border-[3px] after:border-solid after:border-white z-[-1]
+}
