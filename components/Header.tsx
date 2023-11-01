@@ -34,11 +34,11 @@ const Header = () => {
         <Image className="flex items-center py-0 pr-[80] pl-0 w-[50px] h-auto" src={ Moonbami_Logo } alt="Moonbami Logo"/>
       </Link>
       <nav className="pt-[47px] px-0 pb-0 flex justify-evenly w-[31.875rem]">
-        <Link className="nav-link" href="/home" onClick={ handleProfileScroll }>Home</Link>
-        <Link className="nav-link" href="/about" onClick={ handleAboutScroll }>About</Link>
-        <Link className="nav-link" href="/stacks">Stacks</Link>
-        <Link className="nav-link" href="/projects">Projects</Link>
-        <Link className="nav-link" href="/contact">Contact</Link>
+        <Link className="nav-link" href="">Home</Link>
+        <Link className="nav-link" href="">About</Link>
+        <Link className="nav-link" href="">Stacks</Link>
+        <Link className="nav-link" href="">Projects</Link>
+        <Link className="nav-link" href="">Contact</Link>
       </nav>
       <Link className="github flex items-center pl-[800px]" href="https://github.com/MoonbamiOfficial/MoonbamiOfficial" target="_blank">
         <Image className="w-[50px] h-auto" src={ GitHub_Logo } alt="GitHub Logo" />
