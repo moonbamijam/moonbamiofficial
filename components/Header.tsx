@@ -40,7 +40,7 @@ const Header = () => {
         <Link className="nav-link" href="">Projects</Link>
         <Link className="nav-link" href="">Contact</Link>
       </nav>
-      <Link className="github flex items-center pl-[800px]" href="https://github.com/MoonbamiOfficial/MoonbamiOfficial" target="_blank">
+      <Link className="github flex items-center pl-[800px]" href="https://github.com/MoonbamiOfficial" target="_blank">
         <Image className="w-[50px] h-auto" src={ GitHub_Logo } alt="GitHub Logo" />
       </Link>
     </header>
