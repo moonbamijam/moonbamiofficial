@@ -19,7 +19,7 @@ const Header = () => {
     return () => window.removeEventListener('scroll', scrollEvent);
   }, []);
 
-  const handleProfileScroll = () => {
+  const handleHomeScroll = () => {
     const profileSection = document.querySelector('#profile');
     if(profileSection) profileSection.scrollIntoView({ behavior: 'smooth' })
   }
@@ -34,7 +34,7 @@ const Header = () => {
           <Image className="flex items-center w-[50px]" src={ Moonbami_Logo } alt="Moonbami Logo"/>
         </Link>
         <nav className="flex justify-evenly">
-          <li className="nav-list">Home</li>
+          <li className="nav-list" onClick={ handleHomeScroll }>Home</li>
           <li className="nav-list">About</li>
           <li className="nav-list">Stacks</li>
           <li className="nav-list">Projects</li>
