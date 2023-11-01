@@ -23,13 +23,14 @@ header {
 .nav-link {
   @apply text-white no-underline text-base font-normal leading-5 tracking-[0.8px] w-[4.375rem] h-[1.375rem] transition-all hover:text-electric-pink;
 }
-/* header styles */
 
 /* landing styles */
 .landing-strong {
   @apply text-electric-pink;
 }
-.square-holder {
-  @apply before:content-none before:absolute before:top-[-30px] before:right-[130px] before:w-[15.625rem] before:h-[15.625rem] before:rounded-lg before:border-[3px] before:border-solid before:border-white z-[-1] 
-  after:content-none after:absolute after:top-[30px] after:right-[-30px] after:w-[21.875rem] after:h-[21.875rem] after:rounded-lg after:border-[3px] after:border-solid after:border-white z-[-1]
+.square-holder-before {
+  @apply before:content-none absolute top-[-30px] right-[130px] w-[15.625rem] h-[15.625rem] rounded-lg border-[3px] border-solid border-white z-[-1];
+}
+.square-holder-after {
+  @apply after:content-none absolute top-[30px] right-[-30px] w-[21.875rem] h-[21.875rem] rounded-lg border-[3px] border-solid border-white z-[-1];
 }

@@ -12,8 +12,9 @@ const Landing = () => {
         <p className="w-[37.5rem] text-xl font-normal leading-7 ">My name is <strong className="landing-strong">Moonbami</strong>, and I am currently pursuing a career for being a <strong className="landing-strong">full-stack web developer</strong>. I am still a novice, but I am making <strong className="landing-strong">progress and learning</strong> on a daily basis.</p>
       </div>
       <div className="display-profile relative">
-        <div className="square-holder"></div>
+        <div className="square-holder-before"></div>
         <Image className="w-[21.875rem] h-[21.875rem] border-[3px] border-solid border-white rounded-lg" src={ Moonbami } alt="Jam Moonbami" />
+        <div className="square-holder-after"></div>
       </div>
     </section>
   )
