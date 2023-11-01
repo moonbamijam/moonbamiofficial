@@ -33,7 +33,7 @@ const Header = () => {
       <Link href="/" className="logo text-white flex items-center text-4xl tracking-[-0.4px] py-0 pl-[80px] pr-0 transition-all hover:text-electric-pink">
         <Image className="flex items-center py-0 pr-[80] pl-0 w-[50px] h-auto" src={ Moonbami_Logo } alt="Moonbami Logo"/>
       </Link>
-      <nav className="pt-[47px] px-0 pb-0 flex justify-evenly w-[31.875rem]">
+      <nav className="flex justify-evenly items-center w-[31.875rem]">
         <Link className="nav-link" href="">Home</Link>
         <Link className="nav-link" href="">About</Link>
         <Link className="nav-link" href="">Stacks</Link>

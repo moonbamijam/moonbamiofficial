@@ -21,7 +21,7 @@ header {
 }
 
 .nav-link {
-  @apply text-white no-underline text-base font-normal leading-5 tracking-[0.8px] w-[4.375rem] h-[1.375rem] transition-all hover:text-electric-pink;
+  @apply text-white text-center no-underline text-base font-normal leading-5 tracking-[0.8px] w-[4.375rem] h-[1.375rem] transition-all hover:text-electric-pink;
 }
 
 /* landing styles */
