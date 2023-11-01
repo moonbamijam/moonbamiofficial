@@ -29,20 +29,20 @@ const Header = () => {
   };
 
   return (
-    <header className={ header } >
-      <Link href="/" className="logo text-white flex items-center text-4xl tracking-[-0.4px] py-0 pl-[80px] pr-0 transition-all hover:text-electric-pink">
-        <Image className="flex items-center py-0 pr-[80] pl-0 w-[50px] h-auto" src={ Moonbami_Logo } alt="Moonbami Logo"/>
-      </Link>
-      <nav className="flex justify-evenly items-center w-[31.875rem]">
-        <Link className="nav-link" href="">Home</Link>
-        <Link className="nav-link" href="">About</Link>
-        <Link className="nav-link" href="">Stacks</Link>
-        <Link className="nav-link" href="">Projects</Link>
-        <Link className="nav-link" href="">Contact</Link>
-      </nav>
-      <Link className="github flex items-center pl-[800px]" href="https://github.com/MoonbamiOfficial" target="_blank">
-        <Image className="w-[50px] h-auto" src={ GitHub_Logo } alt="GitHub Logo" />
-      </Link>
+    <header id={ header } className="" >
+        <Link href="/" className="logo text-white text-4xl tracking-[-0.4px] transition-all">
+          <Image className="flex items-center w-[50px]" src={ Moonbami_Logo } alt="Moonbami Logo"/>
+        </Link>
+        <nav className="flex justify-evenly">
+          <li className="nav-list">Home</li>
+          <li className="nav-list">About</li>
+          <li className="nav-list">Stacks</li>
+          <li className="nav-list">Projects</li>
+          <li className="nav-list">Contact</li>
+        </nav>
+        <Link className="github" href="https://github.com/MoonbamiOfficial" target="_blank">
+          <Image className="w-[50px] h-[50px]" src={ GitHub_Logo } alt="GitHub Logo" />
+        </Link>
     </header>
   )
 }

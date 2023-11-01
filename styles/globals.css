@@ -25,8 +25,8 @@ header {
 #header-changed {
   @apply bg-opaque-rb;
 }
-.nav-link {
-  @apply text-white text-center tracking-[0.8px] w-[4.375rem] m-8 transition-all hover:text-electric-pink;
+.nav-list {
+  @apply text-white text-center tracking-[0.8px] w-[4.375rem] m-8 list-none cursor-pointer hover:text-electric-pink transition-all;
 }
 
 /* landing styles */
