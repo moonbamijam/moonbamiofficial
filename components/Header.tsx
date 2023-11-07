@@ -4,7 +4,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Moonbami_Logo from '@public/assets/images/logo-sample.png';
+import Moonbami_Logo from '@public/assets/images/tsukiwa-logo.png';
 import GitHub_Logo from '@public/assets/images/github-mark-white.png';
 
 const Header = () => {
