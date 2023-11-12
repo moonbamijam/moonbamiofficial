@@ -1,6 +1,6 @@
 
 import Image from 'next/image';
-import Moonbami from '@public/assets/images/moonbami.jpeg';
+import Moonbami from '@public/assets/images/moonbami.jpg';
 
 const Landing = () => {
   return (
