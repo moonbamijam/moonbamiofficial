@@ -29,8 +29,8 @@ const Header = () => {
   };
 
   return (
-    <header id={ header } className="" >
-        <Link href="/" className="logo text-white text-4xl tracking-[-0.4px] transition-all">
+    <header id={ header } className="justify-center" >
+        <Link href="/" className="logo text-white text-4xl tracking-[-0.4px] mr-[68px] transition-all">
           <Image className="flex items-center w-[50px]" src={ Moonbami_Logo } alt="Moonbami Logo"/>
         </Link>
         <nav className="flex justify-evenly">
@@ -40,7 +40,7 @@ const Header = () => {
           <li className="nav-list">Projects</li>
           <li className="nav-list">Contact</li>
         </nav>
-        <Link className="github" href="https://github.com/MoonbamiOfficial" target="_blank">
+        <Link className="github ml-[700px]" href="https://github.com/MoonbamiOfficial" target="_blank">
           <Image className="w-[50px] h-[50px]" src={ GitHub_Logo } alt="GitHub Logo" />
         </Link>
     </header>
