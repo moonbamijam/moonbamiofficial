@@ -11,7 +11,7 @@
 
 /* utility class */
 .container {
-  @apply max-w-[1820px] ml-auto mr-auto 
+  @apply max-w-[1920px] ml-auto mr-auto
   /* border-white border-solid border-[1px] */
 }
 
