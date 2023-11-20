@@ -1,9 +1,13 @@
-
 'use client'
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+
+// Styles
+import '@styles/components/header.css'
+
+// Assets
 import Moonbami_Logo from '@public/assets/images/tsukiwa-logo.png';
 import GitHub_Logo from '@public/assets/images/github-mark-white.png';
 
