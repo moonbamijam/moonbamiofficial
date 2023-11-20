@@ -5,10 +5,10 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <section className="home">
+    <main >
       <Header />
       <Landing />
-    </section>
+    </main>
   )
 }
 
