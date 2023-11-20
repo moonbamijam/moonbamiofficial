@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import '@styles/globals.css';
 
 export const metadata: Metadata = {
-  title: 'Moonbami Official',
+  title: 'Moonbami',
   description: 'An aspiring full-stack web developer',
 }
 
