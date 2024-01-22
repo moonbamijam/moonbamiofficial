@@ -5,22 +5,28 @@
 *,
 ::before,
 ::after {
-  @apply box-border p-0 m-0 font-poppins;
+  @apply box-border p-0 m-0 font-default text-white 
 }
 
 /* utility class */
 .container {
-  @apply max-w-[1920px] ml-auto mr-auto
-  /* border-white border-solid border-[1px] */
+  /* @apply border-white border-solid border-[1px] */
+}
+.highlight {
+  @apply text-electric-pink
+}
+/* HOMEPAGE STYLES */
+.hide-back-to-top {
+  @apply opacity-0 invisible
+}
+.show-back-to-top {
+  @apply opacity-100 visible
 }
 
-/* landing styles */
-.landing-strong {
-  @apply text-electric-pink;
+/* HEADER STYLES */
+.unscrolled-header {
+  @apply bg-transparent transition-colors
 }
-.square-holder-before {
-  @apply before:content-none absolute top-[-30px] right-[130px] w-[15.625rem] h-[15.625rem] rounded-lg border-[3px] border-solid border-white z-[-1];
-}
-.square-holder-after {
-  @apply after:content-none absolute top-[30px] right-[-30px] w-[21.875rem] h-[21.875rem] rounded-lg border-[3px] border-solid border-white z-[-1];
+.scrolled-header {
+  @apply bg-rich-black transition-colors
 }
