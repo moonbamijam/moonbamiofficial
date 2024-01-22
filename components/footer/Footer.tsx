@@ -15,11 +15,11 @@ const Footer = () => {
       <div className="main flex flex-col lg:flex-row gap-[30px] items-center">
         <div className="brand flex flex-col gap-2 items-center">
           <img src={`${process.env.API_AVATAR}`} alt="" className="w-[100px] sm:w-[125px] md:w-[150px] xl:w-[175px] premium:w-[200px]  rounded-lg" />
-          <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl ">Moonbami</h1>
+          <h1 className="switch-text-color font-bold text-3xl md:text-4xl lg:text-5xl ">Moonbami</h1>
         </div>
         <div className="content w-full flex justify-around">
           <div className="navigate">
-            <h1 className="font-bold text-2xl ">Navigate</h1>
+            <h1 className="switch-text-color font-bold text-2xl ">Navigate</h1>
             <div className="links flex flex-col">
               <Anchor href={"/"} text={"home"} />
               <Anchor href={"/anime"} text={"anime"} />
@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="contact">
-            <h1 className="font-bold text-2xl ">Contact</h1>
+            <h1 className="switch-text-color font-bold text-2xl ">Contact</h1>
             <div className="links flex flex-col">
               <Anchor href={"https://www.facebook.com/MoonbamiOffcl"} text={"facebook"} />
               <Anchor href={"https://www.instagram.com/moonbamidesu/"} text={"instagra"} />
@@ -40,14 +40,14 @@ const Footer = () => {
         </div>
       </div>
       <hr className="w-full mt-[50px]"/>
-      <p className="mt-2 text-center">&#169; { year.getFullYear() } Moonbami</p>
+      <p className="switch-text-color mt-2 text-center">&#169; { year.getFullYear() } Moonbami</p>
     </section>
   )
 }
 
 const Anchor = (props: Props) => {
   return (
-    <Link href={ props.href } target="_blank" className="capitalize">
+    <Link href={ props.href } target="_blank" className="switch-text-color capitalize">
       <span>{ props.icon }</span>
       { props.text }
     </Link>

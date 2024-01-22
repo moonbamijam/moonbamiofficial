@@ -4,20 +4,21 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-
 // Assets
 import Moonbami_Logo from '@public/tsukiwa-logo.png'
-import GitHub_Logo from '@public/github-mark-white.png'
 import Button from "./Button";
 import SubButton from "./SubButton";
+
+// Components
+import Anchor from "./Anchor";
+import SubAnchor from "./SubAnchor";
+import ThemeSwitchBtn from "@components/ThemeSwitchBtn";
 
 // Fontawesome
 import { FaBars } from "react-icons/fa";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { FaCaretRight } from "react-icons/fa"
 import { FaCaretDown } from "react-icons/fa";
-import Anchor from "./Anchor";
-import SubAnchor from "./SubAnchor";
 
 const Header = () => {
   const [ isMenuActive, setIsMenuActive ] = useState(false)
@@ -26,11 +27,16 @@ const Header = () => {
   const [ isGamesDropdownActive, setIsGamesDropdownActive ] = useState(false)
   const [ isHobbiesDropdownActive, setIsHobbiesDropdownActive ] = useState(false)
   const [ isMusicDropdownActive, seetIsMusicDropdowenActive ] = useState(false)
-  const [ scrollHeaderBg, setScrollHeaderBg ] = useState("unscrolled-header")
+  const [ scrollHeaderBg, setScrollHeaderBg ] = useState("unscrolled-header-bg")
+  const [ scrollHeader, setScrollHeader ] = useState("unscrolled-header")
 
+  const handleScrollHeader = () => {
+    if(window.scrollY < 100) return setScrollHeader("unscrolled-header")
+    else if(window.scrollY > 100) return setScrollHeader("scrolled-header")
+  }
   const handleScrollHeaderBg = () => {
-    if(window.scrollY < 100) return setScrollHeaderBg("unscrolled-header")
-    else if(window.scrollY > 100) return setScrollHeaderBg("scrolled-header")
+    if(window.scrollY < 100) return setScrollHeaderBg("unscrolled-header-bg")
+    else if(window.scrollY > 100) return setScrollHeaderBg("scrolled-header-bg")
   }
 
   const handleScrollIntoView = (scrollInto: string) => {
@@ -90,9 +96,11 @@ const Header = () => {
       }
     }
     document.addEventListener('mousedown', handleDropdowns)
+    document.addEventListener('scroll', handleScrollHeader)
     document.addEventListener('scroll', handleScrollHeaderBg)
     return () => {
       document.removeEventListener('mousedown', handleDropdowns)
+      document.removeEventListener('scroll', handleScrollHeader)
       document.removeEventListener('scroll', handleScrollHeaderBg)
     }
   }, []);
@@ -100,14 +108,19 @@ const Header = () => {
   return (
     <>
       <div className={`header-bg w-full h-[60px] z-[100] fixed top-0 ${ scrollHeaderBg } `}></div>
-      <header ref={ dropdown } className="container h-[60px] w-full z-[100] fixed top-0 left-[50%] translate-x-[-50%] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] flex justify-between items-center transition-all">
-        <Link href="/" id="brand" className="flex items-center gap-4 [&>img]:hover:animate-pulse transition-all">
-          <Image src={ Moonbami_Logo } alt="" className="w-[40px] " />
+      <header ref={ dropdown } className={`${ scrollHeader } container h-[60px] w-full z-[100] fixed top-0 left-[50%] translate-x-[-50%] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] flex justify-between items-center `}>
+        <Link href="/" id="brand" className="flex items-center gap-4 [&>img]:hover:animate-pulse ">
+          <Image src={ Moonbami_Logo } alt="" className="rounded-full p-1 bg-black dark:bg-transparent w-[40px] " />
           <h1 className="hidden md:block font-bold text-sm">Moonbami</h1>
         </Link>
-        <button onClick={ toggleMenu } id="menu" className={` w-[40px] h-[40px] flex lg:hidden justify-center items-center text-xl rounded-full hover:bg-electric-pink ${ isMenuActive? 'bg-electric-pink' : 'bg-transparent' } transition-all `}>
-          {isMenuActive? <FaBarsStaggered /> : <FaBars /> }
-        </button>
+        <div className="user-options flex items-center gap-2">
+          <button onClick={ toggleMenu } id="menu" className={` w-[40px] h-[40px] flex lg:hidden justify-center items-center text-xl rounded-full hover:bg-electric-pink ${ isMenuActive? 'bg-electric-pink' : 'bg-transparent' }  `}>
+            {isMenuActive? <FaBarsStaggered /> : <FaBars /> }
+          </button>
+          <div className="lg:hidden">
+            <ThemeSwitchBtn />
+          </div>
+        </div>
         <nav className="hidden lg:flex items-center h-full ">
           <Anchor state={ isHomeDropdownActive } onClick={ toggleHomeDropdown } href={"/"} name={"home"} >
           {isHomeDropdownActive && (
@@ -147,12 +160,13 @@ const Header = () => {
               <SubAnchor onClick={ () => handleScrollIntoView('#favorites') } name={"favorites"} />
             </>)}
           </Anchor>
+          <ThemeSwitchBtn />
         </nav>
       </header>
       {isMenuActive && (
         <>
-        <div className="screen-dim w-screen h-screen fixed z-[99] bg-black opacity-70 backdrop-blur-sm transition-all "></div>
-        <nav ref={ dropdown } id="main" className={` fixed top-[60px] w-full z-[100] flex lg:hidden flex-col  px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] pt-[20px] pb-[40px] gap-2 ${ scrollHeaderBg } `}>
+        <div className="screen-dim w-screen h-screen fixed z-[99] bg-black opacity-70 backdrop-blur-sm  "></div>
+        <nav ref={ dropdown } id="main" className={` fixed bg-rich-black top-[60px] w-full z-[100] flex lg:hidden flex-col  px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] pt-[20px] pb-[40px] gap-2 ${ scrollHeaderBg } `}>
           <Button href={"/"} state={ isHomeDropdownActive } onClick={ toggleHomeDropdown } icon={ isHomeDropdownActive? <FaCaretDown /> : <FaCaretRight /> } name={"home"} />
           {isHomeDropdownActive && (
             <>

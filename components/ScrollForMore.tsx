@@ -1,9 +1,11 @@
 'use client'
 
+import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
-import { FaCaretDown } from 'react-icons/fa'
+import { FaCaretDown } from "react-icons/fa6";
 
 const ScrollForMore = () => {
+  const { setTheme, resolvedTheme } = useTheme()
   const [ scrollSign, setScrollSign ] = useState("opacity-100")
   
   const handleScrollSign = () => {
@@ -17,8 +19,10 @@ const ScrollForMore = () => {
   }, [])
   return (
     <div id="scroll-sign" className={`${ scrollSign } flex flex-col items-center gap-1 mb-[30px] animate-bounce transition-opacity`} >
-      <p>Scroll down for more!</p>
-      <FaCaretDown />
+      <p className="switch-text-color">Scroll down for more!</p>
+      <div className="rounded-full bg-black p-1 dark:bg-transparent">
+        <FaCaretDown />
+      </div>
     </div>
   )
 }

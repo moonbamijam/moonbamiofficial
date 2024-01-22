@@ -5,15 +5,15 @@
 *,
 ::before,
 ::after {
-  @apply box-border p-0 m-0 font-default text-white 
+  @apply box-border p-0 m-0 font-default text-white transition-all
 }
 
 /* utility class */
-.container {
-  /* @apply border-white border-solid border-[1px] */
-}
 .highlight {
   @apply text-electric-pink
+}
+.switch-text-color {
+  @apply text-black dark:text-white
 }
 /* HOMEPAGE STYLES */
 .hide-back-to-top {
@@ -25,8 +25,14 @@
 
 /* HEADER STYLES */
 .unscrolled-header {
-  @apply bg-transparent transition-colors
+  @apply  [&>a>h1]:text-black [&>nav>div>a]:text-black [&>a>h1]:dark:text-white [&>nav>div>a]:dark:text-white 
 }
-.scrolled-header {
-  @apply bg-rich-black transition-colors
+.unscrolled-header-bg {
+  @apply bg-transparent 
+}
+/* .scrolled-header {
+  @apply 
+} */
+.scrolled-header-bg {
+  @apply bg-rich-black
 }

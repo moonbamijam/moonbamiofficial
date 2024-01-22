@@ -10,10 +10,10 @@ const Detail = (props: Props) => {
     <>
       <div key={ props._id }  className="details flex">
         <div className="label flex">
-          <span className="capitalize w-[115px] ">{ props.label }</span>
+          <span className="switch-text-color capitalize w-[115px] ">{ props.label }</span>
           <span>: &#160;</span>
         </div>
-        <span className="capitalize flex flex-wrap w-[200px] lg:w-[300px] xl:w-[400px]">{ props.detail }</span>
+        <span className="switch-text-color capitalize flex flex-wrap w-[200px] lg:w-[300px] xl:w-[400px]">{ props.detail }</span>
       </div>
     </>
   )

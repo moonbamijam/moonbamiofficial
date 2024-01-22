@@ -39,21 +39,21 @@ const Home = async () => {
   const { project: projects } = await useFetch(`${process.env.API_PROJECTS}`)
   return (
     <>
-      <Image src={ AkaneDream } alt="" id="home-bg" style={{ width: '100%', height: '930px' }} className=" object-cover absolute z-[-100] mix-blend-lighten opacity-[0.3] " />
+      <Image src={ AkaneDream } alt="" id="home-bg" style={{ width: '100%', height: '930px' }} className=" object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
       <BackToTop id={"#home"} />
       <div className="container relative">
-        <section id="home" className="relative h-[930px] flex flex-col justify-between items-center">
+        <section id="home" className="relative  h-[930px] flex flex-col justify-between items-center">
           <div className=" w-full px-[30px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] mt-[200px] lg:mt-[250px] flex flex-col lg:flex-row justify-between items-center gap-y-[50px]  ">
-            <div className="description">
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-8">Heya~!</h1>
-              <p className="w-[400px] lg:w-[450px] xl:w-[600px] text-sm lg:text-base xl:text-xl ">My name is <strong className="highlight">Moonbami</strong>, and I am currently pursuing a career for being a <strong className="highlight">full-stack web developer</strong>. I am still a novice, but I am making <strong className="highlight">progress and learning</strong> on a daily basis.</p>
+            <div className="description ">
+              <h1 className="switch-text-color text-6xl md:text-7xl lg:text-8xl font-bold mb-8">Heya~!</h1>
+              <p className="switch-text-color w-[400px] lg:w-[450px] xl:w-[600px] text-sm lg:text-base xl:text-xl ">My name is <strong className="highlight">Moonbami</strong>, and I am currently pursuing a career for being a <strong className="highlight">full-stack web developer</strong>. I am still a novice, but I am making <strong className="highlight">progress and learning</strong> on a daily basis.</p>
             </div>
-            <img className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] border-[3px] border-solid border-white rounded-lg" src={`${process.env.API_AVATAR}`} alt="Jam Moonbami" />
+            <img className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] border-[3px] border-solid border-black dark:border-white rounded-lg" src={`${process.env.API_AVATAR}`} alt="Jam Moonbami" />
           </div>
           <ScrollForMore />
         </section>
         
-        <section id="about" className="px-[30px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] py-[100px] flex flex-col justify-between items-center bg-rich-black  ">
+        <section id="about" className="px-[30px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] py-[100px] flex flex-col justify-between items-center ">
           <div className="content w-full flex flex-col gap-[100px]">
             <div className="about-me flex flex-col lg:flex-row justify-between items-center lg:items-start 2xl:justify-evenly ">
               <Image src={ Me } alt="me" className="w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] premium:w-[500px] premium:h-[500px] mb-4 object-cover rounded-lg" />
@@ -61,8 +61,8 @@ const Home = async () => {
                   {details.length > 0 ? details.map((detail: AboutType) => 
                   (<>
                     <div className="description">
-                      <h1 className="capitalize text-6xl font-bold mb-2">{ detail.title }</h1>
-                      <p className="w-[400px] lg:w-[450px] xl:w-[600px]">{ detail.desc }</p>
+                      <h1 className="switch-text-color capitalize text-6xl font-bold mb-2">{ detail.title }</h1>
+                      <p className="switch-text-color w-[400px] lg:w-[450px] xl:w-[600px]">{ detail.desc }</p>
                     </div>
                     <div className="details flex">
                       <div className="labels flex flex-col gap-2">
@@ -84,11 +84,11 @@ const Home = async () => {
           </div>
         </section>
 
-        <section id="stack" className="bg-black relative px-[30px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] py-[100px] flex flex-col justify-between items-center">
+        <section id="stack" className="bg-gray-300 dark:bg-black relative px-[30px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] py-[100px] flex flex-col justify-between items-center">
           <div className="content w-full flex flex-col items-center gap-[100px]">
-            <div className="title flex flex-col items-center ">
-              <h1 className=" text-6xl font-bold mb-[15px] " >Stacks</h1>
-              <p className="text-center w-[400px]" >All of my current technology stack that I really enjoy using. Looking forward to learn more.</p>
+            <div className="title  flex flex-col items-center ">
+              <h1 className="switch-text-color text-6xl font-bold mb-[15px] " >Stacks</h1>
+              <p className="switch-text-color text-center w-[400px]" >All of my current technology stack that I really enjoy using. Looking forward to learn more.</p>
             </div>
             <div className="stacks grid grid-cols-5 sm:grid-cols-6 lg:grid-cols-7 gap-2">
               <StackIcon href={"https://www.javascript.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"} alt={"javascript logo"} />
@@ -109,18 +109,18 @@ const Home = async () => {
           </div>
         </section>
 
-        <section id="project" className="relative bg-deep-koamaru px-[30px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] py-[100px] flex flex-col justify-between items-center">
+        <section id="project" className="relative px-[30px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] py-[100px] flex flex-col justify-between items-center">
           <div className="content w-full flex flex-col items-center gap-[150px]">
             <div className="title flex flex-col items-center ">
-              <h1 className=" text-6xl font-bold mb-[15px] " >Projects</h1>
-              <p className="text-center w-[400px]" >These are the projects I made all throughout my coding career. I am happy to present it to you.</p>
+              <h1 className="switch-text-color text-6xl font-bold mb-[15px] " >Projects</h1>
+              <p className="switch-text-color text-center w-[400px]" >These are the projects I made all throughout my coding career. I am happy to present it to you.</p>
             </div>
             <div className="projects flex flex-col gap-[100px]">
               <div className="flex flex-col premium:flex-row-reverse gap-[15px] ">
                 <img src={ `${process.env.API_TSUKIWA}` } className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
                 <div className="description">
-                  <li className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >tsukiwa</li>
-                  <p className="w-[400px] md:w-[600px]">
+                  <li className="switch-text-color text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >tsukiwa</li>
+                  <p className="switch-text-color w-[400px] md:w-[600px]">
                     A place where your “Waifus” matter. This is a website that you can rank, rate, organize and flex your waifus all over the world. This is still currently in designing phase because of my schedule being strict to my academics and gaming. But, I swear that this will be in production once I get free time.
                     <br /><br />
                     You can visit the GitHub repository <Link href="https://github.com/MoonbamiOfficial/tsukiwa-web.git" target='_blank' className="text-blue-400">here</Link>.
@@ -130,8 +130,8 @@ const Home = async () => {
               <div className="flex flex-col premium:flex-row-reverse gap-[15px] ">
                 <video src={ `${process.env.API_REALPOP}` } muted autoPlay className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
                 <div className="description">
-                  <li className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >Realpop</li>
-                  <p className="w-[400px] md:w-[600px]">
+                  <li className="switch-text-color text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >Realpop</li>
+                  <p className="switch-text-color w-[400px] md:w-[600px]">
                     An online store of K-Pop photocards. This is an e-commerce website that are dedicated for photocards. This is a school project from my subject called DCIT 26. This is soon going to be in production so if you have any questions, please wait for its release.
                     <br /><br />
                     You can visit the GitHub repository <Link href="https://github.com/MoonbamiOfficial/realpop-web.git" target='_blank' className="text-blue-400">here</Link>.
@@ -141,8 +141,8 @@ const Home = async () => {
               <div className="flex flex-col premium:flex-row-reverse gap-[15px] ">
                 <img src={ `${process.env.API_SPA}` } className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
                 <div className="description">
-                  <li className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >Student Portal App</li>
-                  <p className="w-[400px] md:w-[600px]">
+                  <li className="switch-text-color text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >Student Portal App</li>
+                  <p className="switch-text-color w-[400px] md:w-[600px]">
                     This is another school project from my subject called ITEC 80. It’s a software for students to monitor their academics. This is a team project so I didn’t do all of these by myself, special thanks to my members!
                     <br /><br />
                     You can visit the GitHub repository <Link href="https://github.com/MoonbamiOfficial/student-portal-app.git" target='_blank' className="text-blue-400">here</Link>.
@@ -161,8 +161,8 @@ const Home = async () => {
           <Image src={ lost } alt="" style={{ width: '100%', height: '500px' }} className=" object-cover absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] -z-50 opacity-[0.3] " />
           <div className="content flex flex-col items-center gap-[30px]">
             <div className="title flex flex-col items-center">
-              <h1 className=" text-6xl font-bold mb-[15px] " >Contact Me</h1>
-              <p className="text-center w-[400px]" >If you have any concerns, questions or if you just want to be friends with me. Please, contact me to any of these that you prefer.</p>
+              <h1 className="switch-text-color text-6xl font-bold mb-[15px] " >Contact Me</h1>
+              <p className="switch-text-color text-center w-[400px]" >If you have any concerns, questions or if you just want to be friends with me. Please, contact me to any of these that you prefer.</p>
             </div>
             <hr className="w-full" />
             <div className=" socmeds grid grid-cols-2 gap-[30px]">
@@ -172,7 +172,7 @@ const Home = async () => {
               <SocMed href={"https://github.com/MoonbamiOfficial"} src={ GitHubLogo } text={"GitHub"} />
             </div>
             <hr className="w-full" />
-            <p className="last-phrase text-center w-[400px] ">I do have more social media accounts but these are my commonly used ones.</p>
+            <p className="switch-text-color last-phrase text-center w-[400px] ">I do have more social media accounts but these are my commonly used ones.</p>
           </div>
         </section>
       </div>
@@ -184,7 +184,7 @@ const SocMed = (props: Props) => {
   return (
     <Link href={ props.href } className="flex items-center gap-2">
       <Image src={ props.src } alt="" className="w-[50px]" />
-      <p className="font-bold text-xl capitalize">{ props.text } </p>
+      <p className="switch-text-color font-bold text-xl capitalize">{ props.text } </p>
     </Link>
   )
 }
