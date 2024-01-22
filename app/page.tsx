@@ -35,8 +35,8 @@ type Props = {
 }
 
 const Home = async () => {
-  const { about: details } = await useFetch(`${process.env.REACT_APP_ABOUT}`)
-  const { project: projects } = await useFetch(`${process.env.REACT_APP_PROJECTS}`)
+  const { about: details } = await useFetch(`${process.env.API_ABOUT}`)
+  const { project: projects } = await useFetch(`${process.env.API_PROJECTS}`)
   return (
     <>
       <Image src={ AkaneDream } alt="" id="home-bg" style={{ width: '100%', height: '930px' }} className=" object-cover absolute z-[-100] mix-blend-lighten opacity-[0.3] " />
@@ -48,7 +48,7 @@ const Home = async () => {
               <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-8">Heya~!</h1>
               <p className="w-[400px] lg:w-[450px] xl:w-[600px] text-sm lg:text-base xl:text-xl ">My name is <strong className="highlight">Moonbami</strong>, and I am currently pursuing a career for being a <strong className="highlight">full-stack web developer</strong>. I am still a novice, but I am making <strong className="highlight">progress and learning</strong> on a daily basis.</p>
             </div>
-            <img className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] border-[3px] border-solid border-white rounded-lg" src={`${process.env.REACT_APP_AVATAR}`} alt="Jam Moonbami" />
+            <img className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] border-[3px] border-solid border-white rounded-lg" src={`${process.env.API_AVATAR}`} alt="Jam Moonbami" />
           </div>
           <ScrollForMore />
         </section>
@@ -117,7 +117,7 @@ const Home = async () => {
             </div>
             <div className="projects flex flex-col gap-[100px]">
               <div className="flex flex-col premium:flex-row-reverse gap-[15px] ">
-                <img src={ `${process.env.REACT_APP_TSUKIWA}` } className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
+                <img src={ `${process.env.API_TSUKIWA}` } className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
                 <div className="description">
                   <li className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >tsukiwa</li>
                   <p className="w-[400px] md:w-[600px]">
@@ -128,7 +128,7 @@ const Home = async () => {
                 </div>
               </div>
               <div className="flex flex-col premium:flex-row-reverse gap-[15px] ">
-                <video src={ `${process.env.REACT_APP_REALPOP}` } muted autoPlay className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
+                <video src={ `${process.env.API_REALPOP}` } muted autoPlay className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
                 <div className="description">
                   <li className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >Realpop</li>
                   <p className="w-[400px] md:w-[600px]">
@@ -139,7 +139,7 @@ const Home = async () => {
                 </div>
               </div>
               <div className="flex flex-col premium:flex-row-reverse gap-[15px] ">
-                <img src={ `${process.env.REACT_APP_SPA}` } className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
+                <img src={ `${process.env.API_SPA}` } className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
                 <div className="description">
                   <li className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >Student Portal App</li>
                   <p className="w-[400px] md:w-[600px]">
