@@ -5,24 +5,27 @@ import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 
 // Asssets
 import AkaneDream from '@assets/img/akane-dream.png'
-import Detail from '@components/Detail'
 import Me from '@public/me.jpg'
 import lost from '@assets/img/sky-bg.jpg'
-
 import FacebookLogo from '@public/facebook-logo.png'
 import GitHubLogo from '@public/github-mark-white.png'
 import InstagramLogo from '@public/instagram-logo.png'
 import TwitterXLogo from '@public/twitter-x-logo.png'
 
+// Components
 import StackIcon from '@components/StackIcon'
+import Detail from '@components/Detail'
 import Project from '@components/Project'
-
 import ScrollForMore from '@components/ScrollForMore'
-import { AboutType } from '@customs/about'
-import { ProjectType } from '@customs/project'
 import SpinningLoading from '@components/SpinningLoading'
 import Topic from '@components/about/Topic'
 import BackToTop from '@components/BackToTop'
+
+// Custom Types
+import { AboutType } from '@customs/about'
+import { ProjectType } from '@customs/project'
+
+// Hooks
 import { useFetch } from '@hooks/useFetch'
 
 type Props = {
