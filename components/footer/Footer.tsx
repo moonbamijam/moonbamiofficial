@@ -1,7 +1,4 @@
-'use client'
-
 import Link from "next/link";
-
 import { ReactNode } from "react";
 import { Url } from "next/dist/shared/lib/router/router";
 
