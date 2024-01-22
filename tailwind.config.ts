@@ -15,9 +15,18 @@ const config: Config = {
         'opaque-rb': 'rgba(3, 0, 28, 0.8)'
       },
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif']
-      }
-
+        default: ['Poppins', 'sans-serif']
+      },
+      container: {
+        center: true,
+      },
+      screens: {
+        'xs': '475px',
+        'premium': '1920px',
+      },
+      boxShadow: {
+        'gradient': '0px 0px 100px 100px rgba(3, 0, 28, 0.3)',
+      },
     },
   },
   plugins: [],
