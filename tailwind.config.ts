@@ -16,7 +16,7 @@ const config: Config = {
         'opaque-rb': 'rgba(3, 0, 28, 0.8)'
       },
       fontFamily: {
-        default: ['Poppins', 'sans-serif']
+        default: ['Poppins', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif']
       },
       container: {
         center: true,
