@@ -16,11 +16,10 @@ const ThemeSwitchBtn = () => {
 
   useEffect(() => setMounted(true), [])
 
-  if(!mounted) 
-    return (
-      <Button icon={ <GiStripedSun /> } />
-    )
-
+  // if(!mounted) 
+  //   return (
+  //     <Button icon={ <GiStripedSun /> } />
+  //   )
   if(resolvedTheme === 'dark') {
     return (
       <Button onClick={() => setTheme('light')} icon={ <BsSun /> } />
