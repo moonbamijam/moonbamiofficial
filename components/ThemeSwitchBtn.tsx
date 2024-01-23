@@ -16,30 +16,29 @@ const ThemeSwitchBtn = () => {
 
   useEffect(() => setMounted(true), [])
 
-//   if(!mounted) 
-//     return (
-//       <Button icon={ <GiStripedSun /> } />
-//     )
+  if(!mounted) 
+    return (
+      <Button icon={ <GiStripedSun /> } />
+    )
 
-//   if(resolvedTheme === 'dark') {
-//     return (
-//       <Button onClick={() => setTheme('light')} icon={ <BsSun /> } />
-//     )
-//   }
+  if(resolvedTheme === 'dark') {
+    return (
+      <Button onClick={() => setTheme('light')} icon={ <BsSun /> } />
+    )
+  } 
+  else if(resolvedTheme === 'light') {
+    return (
+      <Button onClick={() => setTheme('dark')} icon={ <BsMoonStars /> } />
+    )
+  }
+}
 
-//   if(resolvedTheme === 'light') {
-//     return (
-//       <Button onClick={() => setTheme('dark')} icon={ <BsMoonStars /> } />
-//     )
-//   }
-// }
-
-// const Button = (props: Props) => {
-//   return (
-//     <button onClick={ props.onClick } className=" rounded-full bg-rich-black hover:bg-electric-pink p-2 text-xl " >
-//       { props.icon }
-//     </button>
-//   )
+const Button = (props: Props) => {
+  return (
+    <button onClick={ props.onClick } className=" rounded-full bg-rich-black hover:bg-electric-pink p-2 text-xl " >
+      { props.icon }
+    </button>
+  )
 }
 
 
