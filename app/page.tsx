@@ -42,7 +42,7 @@ const Home = () => {
           <ScrollForMore />
         </section>
         
-        {/* <section id="about" className="px-[30px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] py-[100px] flex flex-col justify-between items-center ">
+        <section id="about" className="px-[30px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] py-[100px] flex flex-col justify-between items-center ">
           <div className="content w-full flex flex-col gap-[100px]">
             <div className="about-me flex flex-col lg:flex-row justify-between items-center lg:items-start 2xl:justify-evenly ">
               <Image src={ Me } alt="me" width={'3000'} height={'3000'} className="w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] premium:w-[500px] premium:h-[500px] mb-4 object-cover rounded-lg" />
@@ -153,7 +153,7 @@ const Home = () => {
             <hr className="w-full" />
             <p className="switch-text-color last-phrase text-center w-[400px] ">I do have more social media accounts but these are my commonly used ones.</p>
           </div>
-        </section> */}
+        </section>
       </div>
     </>
   )
