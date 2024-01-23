@@ -18,12 +18,7 @@ import Detail from '@components/Detail'
 import ScrollForMore from '@components/ScrollForMore'
 import Topic from '@components/about/Topic'
 import BackToTop from '@components/BackToTop'
-
-type Props = {
-  href: Url
-  src: StaticImport
-  text?: string
-}
+import SocMed from '@components/SocMed'
 
 const Home = () => {
   return (
@@ -156,15 +151,6 @@ const Home = () => {
         </section>
       </div>
     </>
-  )
-}
-
-const SocMed = (props: Props) => {
-  return (
-    <Link href={ props.href } className="flex items-center gap-2">
-      <Image src={ props.src } alt="" className="w-[50px]" />
-      <p className="switch-text-color font-bold text-xl capitalize">{ props.text } </p>
-    </Link>
   )
 }
 
