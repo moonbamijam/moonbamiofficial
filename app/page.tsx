@@ -25,7 +25,7 @@ type Props = {
   text?: string
 }
 
-const Home = async () => {
+const Home = () => {
   return (
     <>
       <Image priority src={ AkaneDream } alt="" id="home-bg" style={{ width: '100%', height: '930px' }} className=" object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
