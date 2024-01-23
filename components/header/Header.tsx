@@ -164,7 +164,7 @@ const Header = () => {
           <ThemeSwitchBtn />
         </nav>
       </header>
-      {isMenuActive && (
+      {/* {isMenuActive && (
         <>
         <div className="screen-dim w-screen h-screen fixed z-[99] bg-black opacity-70 backdrop-blur-sm  "></div>
         <nav ref={ dropdown } id="main" className={` fixed bg-rich-black top-[60px] w-full z-[100] flex lg:hidden flex-col  px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] pt-[20px] pb-[40px] gap-2 ${ scrollHeaderBg } `}>
@@ -203,7 +203,7 @@ const Header = () => {
             </>)}
         </nav>
         </>
-      )}
+      )} */}
     </>
   )
 }
