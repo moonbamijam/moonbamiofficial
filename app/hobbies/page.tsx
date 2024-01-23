@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 }
 const Hobbies = () => {
   return (
-    <div>hi</div>
+    <StayTuned src={`${process.env.API_HOBBIES_AVATAR}`} />
   )
 }
 
