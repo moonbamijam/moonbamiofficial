@@ -62,6 +62,12 @@ const nextConfig = {
       {
         'hostname': 'www.mongodb.com'
       },
+      {
+        'hostname': '64.media.tumblr.com'
+      },
+      {
+        'hostname': 'media1.tenor.com'
+      },
   ],
   }
 }
