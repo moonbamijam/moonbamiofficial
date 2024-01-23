@@ -16,12 +16,8 @@ import TwitterXLogo from '@public/twitter-x-logo.png'
 import StackIcon from '@components/StackIcon'
 import Detail from '@components/Detail'
 import ScrollForMore from '@components/ScrollForMore'
-import SpinningLoading from '@components/SpinningLoading'
 import Topic from '@components/about/Topic'
 import BackToTop from '@components/BackToTop'
-
-// Custom Types
-import { AboutType } from '@customs/about'
 
 type Props = {
   href: Url
@@ -59,7 +55,7 @@ const Home = async () => {
                   <div className="labels flex flex-col gap-2">
                     <Detail label={"Name"} detail={ "Jamiraquai Mikhail Alvarez" } />
                     <Detail label={"Nickname"} detail={ "Jam, Jamir, Moon" } />
-                    <Detail label={"Age"} detail={ "" }/>
+                    <Detail label={"Age"} detail={ "21" }/>
                     <Detail label={"Birthday"} detail={ "August 15, 2002" }/>
                     <Detail label={"Sex"} detail={ "male" }/>
                     <Detail label={"Nationality"} detail={ "filipino" }/>
@@ -165,7 +161,7 @@ const Home = async () => {
   )
 }
 
-function SocMed(props: Props) {
+const SocMed = (props: Props) => {
   return (
     <Link href={ props.href } className="flex items-center gap-2">
       <Image src={ props.src } alt="" className="w-[50px]" />
