@@ -51,17 +51,15 @@ const Home = async () => {
                   <h1 className="switch-text-color capitalize text-6xl font-bold mb-2">{ "about me" }</h1>
                   <p className="switch-text-color w-[400px] lg:w-[450px] xl:w-[600px]">{ "I face the world with the name of Moonbami. Yes, it is not my real name and I consider it as my IGN (In Game Name). It is the combination of the name of my very first “Waifu” and me being a “Selenophile”.  How about let's dive deeper of who am I behind the social media?" }</p>
                 </div>
-                <div className="details flex">
-                  <div className="labels flex flex-col gap-2">
-                    <Detail label={"Name"} detail={ "Jamiraquai Mikhail Alvarez" } />
-                    <Detail label={"Nickname"} detail={ "Jam, Jamir, Moon" } />
-                    <Detail label={"Age"} detail={ "21" }/>
-                    <Detail label={"Birthday"} detail={ "August 15, 2002" }/>
-                    <Detail label={"Sex"} detail={ "male" }/>
-                    <Detail label={"Nationality"} detail={ "filipino" }/>
-                    <Detail label={"Status"} detail={ "single" }/>
-                    <Detail label={"Languages"} detail={ "Tagalog, English, Japanese(currently learning)" }/>
-                  </div>
+                <div className="labels flex flex-col gap-2">
+                  <Detail label={"Name"} detail={ "Jamiraquai Mikhail Alvarez" } />
+                  <Detail label={"Nickname"} detail={ "Jam, Jamir, Moon" } />
+                  <Detail label={"Age"} detail={ "21" }/>
+                  <Detail label={"Birthday"} detail={ "August 15, 2002" }/>
+                  <Detail label={"Sex"} detail={ "male" }/>
+                  <Detail label={"Nationality"} detail={ "filipino" }/>
+                  <Detail label={"Status"} detail={ "single" }/>
+                  <Detail label={"Languages"} detail={ "Tagalog, English, Japanese(currently learning)" }/>
                 </div>
               </div>
             </div>
