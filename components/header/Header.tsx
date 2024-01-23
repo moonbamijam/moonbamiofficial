@@ -40,9 +40,10 @@ const Header = () => {
   }
 
   const handleScrollIntoView = (scrollInto: string) => {
-    const profileSection = document.querySelector(scrollInto)
-    if(profileSection) profileSection.scrollIntoView({ behavior: 'smooth' })
+    const section = document.querySelector(scrollInto)
+    if(section) section.scrollIntoView({ behavior: 'smooth' })
   }
+
   const toggleMenu = () => {
     setIsMenuActive(!isMenuActive)
   }
@@ -110,7 +111,7 @@ const Header = () => {
       <div className={`header-bg w-full h-[60px] z-[100] fixed top-0 ${ scrollHeaderBg } `}></div>
       <header ref={ dropdown } className={`${ scrollHeader } container h-[60px] w-full z-[100] fixed top-0 left-[50%] translate-x-[-50%] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] flex justify-between items-center `}>
         <Link href="/" id="brand" className="flex items-center gap-4 [&>img]:hover:animate-pulse ">
-          <Image src={ Moonbami_Logo } alt="" className="rounded-full p-1 bg-black dark:bg-transparent w-[40px] " />
+          <Image priority src={ Moonbami_Logo } alt="" className="rounded-full p-1 bg-black dark:bg-transparent w-[40px] " />
           <h1 className="hidden md:block font-bold text-sm">Moonbami</h1>
         </Link>
         <div className="user-options flex items-center gap-2">

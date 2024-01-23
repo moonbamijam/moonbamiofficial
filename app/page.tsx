@@ -28,7 +28,7 @@ type Props = {
 const Home = async () => {
   return (
     <>
-      <Image src={ AkaneDream } alt="" id="home-bg" style={{ width: '100%', height: '930px' }} className=" object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
+      <Image priority src={ AkaneDream } alt="" id="home-bg" style={{ width: '100%', height: '930px' }} className=" object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
       <BackToTop id={"#home"} />
       <div className="container relative">
         <section id="home" className="relative  h-[930px] flex flex-col justify-between items-center">

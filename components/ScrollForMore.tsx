@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react'
 import { FaCaretDown } from "react-icons/fa6";
 
 const ScrollForMore = () => {
-  const { setTheme, resolvedTheme } = useTheme()
   const [ scrollSign, setScrollSign ] = useState("opacity-100")
   
   const handleScrollSign = () => {
