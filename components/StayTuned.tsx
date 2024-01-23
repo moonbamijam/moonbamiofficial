@@ -4,7 +4,7 @@ type Props = {
   src: string | undefined
 }
 
-const StayTuned = async (props: Props) => {
+const StayTuned = (props: Props) => {
   return (
     <div id="" className=" container relative">
       <section className="content pb-[300px] mt-[200px] lg:mt-[250px] flex flex-col gap-10 items-center justify-center">
