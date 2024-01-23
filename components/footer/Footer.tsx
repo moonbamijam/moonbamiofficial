@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ReactNode } from "react";
 import { Url } from "next/dist/shared/lib/router/router";
+import Image from "next/image";
 
 type Props = {
   href: Url
@@ -14,7 +15,7 @@ const Footer = () => {
     <section id="footer" className="relative bottom-0 border-t-[8px] border-electric-pink pt-[150px] pb-[50px] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] transition-all">
       <div className="main flex flex-col lg:flex-row gap-[30px] items-center">
         <div className="brand flex flex-col gap-2 items-center">
-          <img src={`${process.env.API_AVATAR}`} alt="" className="w-[100px] sm:w-[125px] md:w-[150px] xl:w-[175px] premium:w-[200px]  rounded-lg" />
+          <Image src={`${process.env.API_AVATAR}`} alt="" width={"100"} height={"100"} className="w-[100px] sm:w-[125px] md:w-[150px] xl:w-[175px] premium:w-[200px]  rounded-lg" />
           <h1 className="switch-text-color font-bold text-3xl md:text-4xl lg:text-5xl ">Moonbami</h1>
         </div>
         <div className="content w-full flex justify-around">

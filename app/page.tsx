@@ -15,7 +15,6 @@ import TwitterXLogo from '@public/twitter-x-logo.png'
 // Components
 import StackIcon from '@components/StackIcon'
 import Detail from '@components/Detail'
-import Project from '@components/Project'
 import ScrollForMore from '@components/ScrollForMore'
 import SpinningLoading from '@components/SpinningLoading'
 import Topic from '@components/about/Topic'
@@ -23,7 +22,6 @@ import BackToTop from '@components/BackToTop'
 
 // Custom Types
 import { AboutType } from '@customs/about'
-import { ProjectType } from '@customs/project'
 
 // Hooks
 import { useFetch } from '@hooks/useFetch'
@@ -35,8 +33,7 @@ type Props = {
 }
 
 const Home = async () => {
-  const { about: details } = await useFetch(`${process.env.API_ABOUT}/api/about`)
-  // const { project: projects } = await useFetch(`${process.env.API_PROJECTS}/api/projects`)
+  const { about } = await useFetch(`${process.env.API_ABOUT}/api/about`);
   return (
     <>
       <Image src={ AkaneDream } alt="" id="home-bg" style={{ width: '100%', height: '930px' }} className=" object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
@@ -48,7 +45,7 @@ const Home = async () => {
               <h1 className="switch-text-color text-6xl md:text-7xl lg:text-8xl font-bold mb-8">Heya~!</h1>
               <p className="switch-text-color w-[400px] lg:w-[450px] xl:w-[600px] text-sm lg:text-base xl:text-xl ">My name is <strong className="highlight">Moonbami</strong>, and I am currently pursuing a career for being a <strong className="highlight">full-stack web developer</strong>. I am still a novice, but I am making <strong className="highlight">progress and learning</strong> on a daily basis.</p>
             </div>
-            <img className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] border-[3px] border-solid border-black dark:border-white rounded-lg" src={`${process.env.API_AVATAR}`} alt="Jam Moonbami" />
+            <Image className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] border-[3px] border-solid border-black dark:border-white rounded-lg" src={`${process.env.API_AVATAR}`} width={'3000'} height={'3000'} alt="Jam Moonbami" />
           </div>
           <ScrollForMore />
         </section>
@@ -56,9 +53,9 @@ const Home = async () => {
         <section id="about" className="px-[30px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] py-[100px] flex flex-col justify-between items-center ">
           <div className="content w-full flex flex-col gap-[100px]">
             <div className="about-me flex flex-col lg:flex-row justify-between items-center lg:items-start 2xl:justify-evenly ">
-              <Image src={ Me } alt="me" className="w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] premium:w-[500px] premium:h-[500px] mb-4 object-cover rounded-lg" />
+              <Image src={ Me } alt="me" width={'3000'} height={'3000'} className="w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] premium:w-[500px] premium:h-[500px] mb-4 object-cover rounded-lg" />
               <div className="about-me flex flex-col gap-[30px] ">
-                  {details.length > 0 ? details.map((detail: AboutType) => 
+                  {about.length > 0 ? about.map((detail: AboutType, i: any) => 
                   (<>
                     <div className="description">
                       <h1 className="switch-text-color capitalize text-6xl font-bold mb-2">{ detail.title }</h1>
@@ -66,14 +63,14 @@ const Home = async () => {
                     </div>
                     <div className="details flex">
                       <div className="labels flex flex-col gap-2">
-                        <Detail key={ detail._id } label={"Name"} detail={ detail.name } />
-                        <Detail key={ detail._id } label={"Nickname"} detail={ detail.nickname} />
-                        <Detail key={ detail._id } label={"Age"} detail={ detail.age }/>
-                        <Detail key={ detail._id } label={"Birthday"} detail={ detail.birthday }/>
-                        <Detail key={ detail._id } label={"Sex"} detail={ detail.sex }/>
-                        <Detail key={ detail._id } label={"Nationality"} detail={ detail.nationality }/>
-                        <Detail key={ detail._id } label={"Status"} detail={ detail.status }/>
-                        <Detail key={ detail._id } label={"Languages"} detail={ detail.languages }/>
+                        <Detail key={ i } label={"Name"} detail={ detail.name } />
+                        <Detail key={ i } label={"Nickname"} detail={ detail.nickname} />
+                        <Detail key={ i } label={"Age"} detail={ detail.age }/>
+                        <Detail key={ i } label={"Birthday"} detail={ detail.birthday }/>
+                        <Detail key={ i } label={"Sex"} detail={ detail.sex }/>
+                        <Detail key={ i } label={"Nationality"} detail={ detail.nationality }/>
+                        <Detail key={ i } label={"Status"} detail={ detail.status }/>
+                        <Detail key={ i } label={"Languages"} detail={ detail.languages }/>
                       </div>
                     </div>
                   </>)) : 
@@ -96,8 +93,8 @@ const Home = async () => {
               <StackIcon href={"https://www.python.org/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"} alt={"python logo"} />
               <StackIcon href={"https://react.dev/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"} alt={"react logo"} />
               <StackIcon href={"https://nextjs.org/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"} alt={"nextjs logo"} className={"bg-white rounded-full"} />
-              <StackIcon href={""} src={"https://cdn.simpleicons.org/tailwindcss/06B6D4"} alt={"tailwindcss logo"} />
-              <StackIcon href={"https://tailwindcss.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"} alt={"django logo"} />
+              <StackIcon href={"https://tailwindcss.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"} alt={"tailwindcss logo"} />
+              <StackIcon href={"https://www.djangoproject.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"} alt={"django logo"} />
               <StackIcon href={"https://sass-lang.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"} alt={"sass logo"} />
               <StackIcon href={"https://web.dev/learn/css"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"} alt={"css3 logo"} />
               <StackIcon href={"https://html.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"} alt={"html5 logo"} />
@@ -117,7 +114,7 @@ const Home = async () => {
             </div>
             <div className="projects flex flex-col gap-[100px]">
               <div className="flex flex-col premium:flex-row-reverse gap-[15px] ">
-                <img src={ `${process.env.API_TSUKIWA}` } className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
+                <Image src={ `${process.env.API_TSUKIWA}` } alt='' width={'3000'} height={'3000'} className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
                 <div className="description">
                   <li className="switch-text-color text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >tsukiwa</li>
                   <p className="switch-text-color w-[400px] md:w-[600px]">
@@ -128,7 +125,7 @@ const Home = async () => {
                 </div>
               </div>
               <div className="flex flex-col premium:flex-row-reverse gap-[15px] ">
-                <video src={ `${process.env.API_REALPOP}` } muted autoPlay className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
+                <video src={ `${process.env.API_REALPOP}` } muted width={'3000'} height={'3000'} autoPlay className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
                 <div className="description">
                   <li className="switch-text-color text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >Realpop</li>
                   <p className="switch-text-color w-[400px] md:w-[600px]">
@@ -139,7 +136,7 @@ const Home = async () => {
                 </div>
               </div>
               <div className="flex flex-col premium:flex-row-reverse gap-[15px] ">
-                <img src={ `${process.env.API_SPA}` } className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
+                <Image src={ `${process.env.API_SPA}` } alt='' width={'3000'} height={'3000'} className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
                 <div className="description">
                   <li className="switch-text-color text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >Student Portal App</li>
                   <p className="switch-text-color w-[400px] md:w-[600px]">
