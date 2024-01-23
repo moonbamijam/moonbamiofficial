@@ -33,7 +33,7 @@ type Props = {
 }
 
 const Home = async () => {
-  const { about } = await useFetch(`${process.env.API_ABOUT}/api/about`);
+  // const { about: details } = await useFetch("http://localhost:3000/api/about")
   return (
     <>
       <Image src={ AkaneDream } alt="" id="home-bg" style={{ width: '100%', height: '930px' }} className=" object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
@@ -55,26 +55,25 @@ const Home = async () => {
             <div className="about-me flex flex-col lg:flex-row justify-between items-center lg:items-start 2xl:justify-evenly ">
               <Image src={ Me } alt="me" width={'3000'} height={'3000'} className="w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] premium:w-[500px] premium:h-[500px] mb-4 object-cover rounded-lg" />
               <div className="about-me flex flex-col gap-[30px] ">
-                  {about.length > 0 ? about.map((detail: AboutType, i: any) => 
+                <div className="description">
+                  <h1 className="switch-text-color capitalize text-6xl font-bold mb-2">{ "about me" }</h1>
+                  <p className="switch-text-color w-[400px] lg:w-[450px] xl:w-[600px]">{ "I face the world with the name of Moonbami. Yes, it is not my real name and I consider it as my IGN (In Game Name). It is the combination of the name of my very first “Waifu” and me being a “Selenophile”.  How about let's dive deeper of who am I behind the social media?" }</p>
+                </div>
+                <div className="details flex">
+                  <div className="labels flex flex-col gap-2">
+                    <Detail label={"Name"} detail={ "Jamiraquai Mikhail Alvarez" } />
+                    <Detail label={"Nickname"} detail={ "Jam, Jamir, Moon" } />
+                    <Detail label={"Age"} detail={ "" }/>
+                    <Detail label={"Birthday"} detail={ "August 15, 2002" }/>
+                    <Detail label={"Sex"} detail={ "male" }/>
+                    <Detail label={"Nationality"} detail={ "filipino" }/>
+                    <Detail label={"Status"} detail={ "single" }/>
+                    <Detail label={"Languages"} detail={ "Tagalog, English, Japanese(currently learning)" }/>
+                  </div>
+                </div>
+                  {/* {details.map((detail: AboutType) => 
                   (<>
-                    <div className="description">
-                      <h1 className="switch-text-color capitalize text-6xl font-bold mb-2">{ detail.title }</h1>
-                      <p className="switch-text-color w-[400px] lg:w-[450px] xl:w-[600px]">{ detail.desc }</p>
-                    </div>
-                    <div className="details flex">
-                      <div className="labels flex flex-col gap-2">
-                        <Detail key={ i } label={"Name"} detail={ detail.name } />
-                        <Detail key={ i } label={"Nickname"} detail={ detail.nickname} />
-                        <Detail key={ i } label={"Age"} detail={ detail.age }/>
-                        <Detail key={ i } label={"Birthday"} detail={ detail.birthday }/>
-                        <Detail key={ i } label={"Sex"} detail={ detail.sex }/>
-                        <Detail key={ i } label={"Nationality"} detail={ detail.nationality }/>
-                        <Detail key={ i } label={"Status"} detail={ detail.status }/>
-                        <Detail key={ i } label={"Languages"} detail={ detail.languages }/>
-                      </div>
-                    </div>
-                  </>)) : 
-                  (<SpinningLoading />)}
+                  </>))} */}
               </div>
             </div>
             <Topic className={"lg:flex-row-reverse"} title={"universe"} desc={"I really, really, really love topics about this! Ever since I was young, I was wondering if are we; us humans are the only living things here in our universe. This is just one of the many questions I have. I wish before I leave planet earth, I want to see the future of it. Like what it would be like if we have floating vehicles, advance tech and many more! I hope Earth will live more than the scientists predictions and the YouTube speculations haha. Every night, I always think if we ever get a chance to colonize a planet. I always wonder what it would look and feels like. Looking to the cosmos at that newly colonized planet is a chef’s kiss for me. Seeing our own Milky Way Galaxy in front of our eyes is truly going to be once in a lifetime experience. Although, we can see it here in Earth but. Due to the light pollution, this prevents us from seeing it. That’s why I am wishing at least once in my life that I’ll be able to see the stars and our galaxy in a much clearer view."} />
@@ -146,10 +145,6 @@ const Home = async () => {
                   </p>
                 </div>
               </div>
-              {/* {projects.length > 0 ? projects.map((project: ProjectType) => 
-              (<Project key={ project._id } src={ "https://scontent.fmnl35-1.fna.fbcdn.net/v/t1.15752-9/416081995_706947851233762_1175204904595957143_n.png?_nc_cat=108&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHsJm7Oguc4rahgKLYq2FKsmw2YEqjn2PqbDZgSqOfY-helj5ZDsEojcy6h5pH6HQKwr79GBkEAjICZObC4EUUW&_nc_ohc=A-m30KesRI0AX9DSw3Z&_nc_ht=scontent.fmnl35-1.fna&oh=03_AdT5LShicjY7Bkri-JMz9hyzVBRkWrAlNDBHZEJYjOIocg&oe=65D587B1" } projectTitle={ project.title } projectDescription={ project.desc} 
-                href={ project.href }/>)) :
-              (<SpinningLoading />)} */}
             </div>
           </div>
         </section>
@@ -177,7 +172,7 @@ const Home = async () => {
   )
 }
 
-const SocMed = (props: Props) => {
+function SocMed(props: Props) {
   return (
     <Link href={ props.href } className="flex items-center gap-2">
       <Image src={ props.src } alt="" className="w-[50px]" />
