@@ -23,9 +23,6 @@ import BackToTop from '@components/BackToTop'
 // Custom Types
 import { AboutType } from '@customs/about'
 
-// Hooks
-import { useFetch } from '@hooks/useFetch'
-
 type Props = {
   href: Url
   src: StaticImport
@@ -33,7 +30,6 @@ type Props = {
 }
 
 const Home = async () => {
-  // const { about: details } = await useFetch("http://localhost:3000/api/about")
   return (
     <>
       <Image src={ AkaneDream } alt="" id="home-bg" style={{ width: '100%', height: '930px' }} className=" object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
@@ -71,9 +67,6 @@ const Home = async () => {
                     <Detail label={"Languages"} detail={ "Tagalog, English, Japanese(currently learning)" }/>
                   </div>
                 </div>
-                  {/* {details.map((detail: AboutType) => 
-                  (<>
-                  </>))} */}
               </div>
             </div>
             <Topic className={"lg:flex-row-reverse"} title={"universe"} desc={"I really, really, really love topics about this! Ever since I was young, I was wondering if are we; us humans are the only living things here in our universe. This is just one of the many questions I have. I wish before I leave planet earth, I want to see the future of it. Like what it would be like if we have floating vehicles, advance tech and many more! I hope Earth will live more than the scientists predictions and the YouTube speculations haha. Every night, I always think if we ever get a chance to colonize a planet. I always wonder what it would look and feels like. Looking to the cosmos at that newly colonized planet is a chef’s kiss for me. Seeing our own Milky Way Galaxy in front of our eyes is truly going to be once in a lifetime experience. Although, we can see it here in Earth but. Due to the light pollution, this prevents us from seeing it. That’s why I am wishing at least once in my life that I’ll be able to see the stars and our galaxy in a much clearer view."} />
