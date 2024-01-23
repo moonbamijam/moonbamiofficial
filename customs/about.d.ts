@@ -1,5 +1,5 @@
 export type AboutType = {
-  _id: key
+  _id: string
   image: {
     data: Buffer,
     contentType: string

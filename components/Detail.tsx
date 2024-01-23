@@ -1,13 +1,12 @@
 import React from 'react'
 
 type Props = {
-  _id?: string
   label?: string
   detail?: string
 }
 const Detail = (props: Props) => {
   return (
-    <div key={ props._id }  className="details flex">
+    <div className="details flex">
       <div className="label flex">
         <span className="switch-text-color capitalize w-[115px] ">{ props.label }</span>
         <span>: &#160;</span>
