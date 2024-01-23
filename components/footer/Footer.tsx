@@ -24,10 +24,10 @@ const Footer = () => {
           <div className="contact">
             <h1 className="switch-text-color font-bold text-2xl ">Contact</h1>
             <div className="links flex flex-col">
-              <Anchor href={"https://www.facebook.com/MoonbamiOffcl"} text={"facebook"} />
-              <Anchor href={"https://www.instagram.com/moonbamidesu/"} text={"instagra"} />
-              <Anchor href={"https://twitter.com/Moonbami_"} text={"twitter x"} />
-              <Anchor href={"https://github.com/MoonbamiOfficial"} text={"GitHub"} />
+              <Anchor href={"https://www.facebook.com/MoonbamiOffcl"} text={"facebook"} target="_blank"/>
+              <Anchor href={"https://www.instagram.com/moonbamidesu/"} text={"instagra"} target="_blank"/>
+              <Anchor href={"https://twitter.com/Moonbami_"} text={"twitter x"} target="_blank"/>
+              <Anchor href={"https://github.com/MoonbamiOfficial"} text={"GitHub"} target="_blank"/>
             </div>
           </div>
         </div>
