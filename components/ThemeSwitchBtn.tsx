@@ -21,16 +21,16 @@ const ThemeSwitchBtn = () => {
       <Button icon={ <GiStripedSun /> } />
     )
 
-  // if(resolvedTheme === 'dark') {
-  //   return (
-  //     <Button onClick={() => setTheme('light')} icon={ <BsSun /> } />
-  //   )
-  // } 
-  // else if(resolvedTheme === 'light') {
-  //   return (
-  //     <Button onClick={() => setTheme('dark')} icon={ <BsMoonStars /> } />
-  //   )
-  // }
+  if(resolvedTheme === 'dark') {
+    return (
+      <Button onClick={() => setTheme('light')} icon={ <BsSun /> } />
+    )
+  } 
+  else if(resolvedTheme === 'light') {
+    return (
+      <Button onClick={() => setTheme('dark')} icon={ <BsMoonStars /> } />
+    )
+  }
 }
 
 const Button = (props: Props) => {
