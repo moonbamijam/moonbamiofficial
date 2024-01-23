@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 }
 const Games = () => {
   return (
-    <StayTuned src={`${process.env.API_GAMES_AVATAR}`} />
+    <div>hi</div>
   )
 }
 

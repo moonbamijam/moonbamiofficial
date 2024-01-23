@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 const Music = () => {
   return (
-    <StayTuned src={`${process.env.API_MUSIC_AVATAR}`} />
+    <div>hi</div>
   )
 }
 

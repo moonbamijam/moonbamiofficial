@@ -5,9 +5,9 @@ export const metadata: Metadata = {
   title: "Anime"
 }
 
-const AnimePage = async () => {
+const AnimePage = () => {
   return (
-    <StayTuned src={`${process.env.API_ANIME_AVATAR}`} />
+    <div>hi</div>
   )
 }
 
