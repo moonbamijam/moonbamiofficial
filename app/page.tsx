@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Url } from 'next/dist/shared/lib/router/router'
-import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 
 // Asssets
 import AkaneDream from '@assets/img/akane-dream.png'

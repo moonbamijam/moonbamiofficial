@@ -2,10 +2,7 @@
 
 import Link from 'next/link'
 import { Url } from "next/dist/shared/lib/router/router";
-import React, { MouseEventHandler, ReactNode } from 'react';
-
-// Fontawesome
-import { IconType } from 'react-icons';
+import { MouseEventHandler, ReactNode } from 'react';
 
 type Props = {
   onClick?: MouseEventHandler

@@ -30,9 +30,6 @@
 .unscrolled-header-bg {
   @apply bg-transparent 
 }
-/* .scrolled-header {
-  @apply 
-} */
 .scrolled-header-bg {
   @apply bg-rich-black
 }

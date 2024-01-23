@@ -1,9 +1,9 @@
 'use client'
 
 import Link from 'next/link'
-import React, { MouseEventHandler, ReactNode, useState } from 'react'
+import { MouseEventHandler, ReactNode, useState } from 'react'
 import { Url } from 'next/dist/shared/lib/router/router'
-import { FaAngleDown, FaAngleLeft } from 'react-icons/fa'
+import { FaAngleLeft } from 'react-icons/fa'
 
 type Props = {
   onClick?: MouseEventHandler

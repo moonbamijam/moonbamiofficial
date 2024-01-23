@@ -1,13 +1,5 @@
-import Link from "next/link";
-import { ReactNode } from "react";
-import { Url } from "next/dist/shared/lib/router/router";
 import Image from "next/image";
-
-type Props = {
-  href: Url
-  text: string
-  icon?: ReactNode
-}
+import Anchor from "./Anchor";
 
 const Footer = () => {
   const year = new Date()
@@ -37,21 +29,12 @@ const Footer = () => {
               <Anchor href={"https://twitter.com/Moonbami_"} text={"twitter x"} />
               <Anchor href={"https://github.com/MoonbamiOfficial"} text={"GitHub"} />
             </div>
-        </div>
+          </div>
         </div>
       </div>
       <hr className="w-full mt-[50px]"/>
       <p className="switch-text-color mt-2 text-center">&#169; { year.getFullYear() } Moonbami</p>
     </section>
-  )
-}
-
-const Anchor = (props: Props) => {
-  return (
-    <Link href={ props.href } target="_blank" className="switch-text-color capitalize">
-      <span>{ props.icon }</span>
-      { props.text }
-    </Link>
   )
 }
 
