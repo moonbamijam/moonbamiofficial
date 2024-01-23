@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Providers from '../providers/providers';
 import '@styles/globals.css';
 
-import Header from '@components/header/Header';
+// import Header from '@components/header/Header';
 import Footer from '@components/footer/Footer';
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className=" dark:bg-rich-black">
         <Providers >
-          <Header />
+          {/* <Header /> */}
           <main>
             {children}
           </main>
