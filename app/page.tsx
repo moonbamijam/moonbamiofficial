@@ -93,7 +93,7 @@ const Home = () => {
             </div>
             <div className="projects flex flex-col gap-[100px]">
               <div className="flex flex-col premium:flex-row-reverse gap-[15px] ">
-                <Image src={ `${process.env.API_TSUKIWA}` } alt='' width={'3000'} height={'3000'} className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
+                <Image src={ `${process.env.API_TSUKIWA}` } alt='tsukiwa' width={'3000'} height={'3000'} className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
                 <div className="description">
                   <li className="switch-text-color text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >tsukiwa</li>
                   <p className="switch-text-color w-[400px] md:w-[600px]">
@@ -104,7 +104,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="flex flex-col premium:flex-row-reverse gap-[15px] ">
-                <video src={ `${process.env.API_REALPOP}` } muted width={'3000'} height={'3000'} autoPlay className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
+                <Image src={ `${process.env.API_REALPOP}` } alt='Realpop' width={'3000'} height={'3000'} className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
                 <div className="description">
                   <li className="switch-text-color text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >Realpop</li>
                   <p className="switch-text-color w-[400px] md:w-[600px]">
@@ -115,7 +115,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="flex flex-col premium:flex-row-reverse gap-[15px] ">
-                <Image src={ `${process.env.API_SPA}` } alt='' width={'3000'} height={'3000'} className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
+                <Image src={ `${process.env.API_SPA}` } alt='Student Portal App' width={'3000'} height={'3000'} className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
                 <div className="description">
                   <li className="switch-text-color text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >Student Portal App</li>
                   <p className="switch-text-color w-[400px] md:w-[600px]">
