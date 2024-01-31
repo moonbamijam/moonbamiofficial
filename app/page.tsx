@@ -24,8 +24,8 @@ const Home = () => {
       <Image priority src={ AkaneDream } alt="" id="home-bg" style={{ width: '100%', height: '930px' }} className=" object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
       <BackToTop id={"#home"} />
       <div className="container relative">
-        <section id="home" className="relative  h-[930px] flex flex-col justify-between items-center">
-          <div className=" w-full px-[30px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] mt-[200px] lg:mt-[250px] flex flex-col lg:flex-row justify-between items-center gap-y-[50px]  ">
+        <section id="home" className="relative h-[930px] flex flex-col justify-between items-center">
+          <div className=" w-full px-[30px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] pt-[200px] lg:pt-[250px] flex flex-col lg:flex-row justify-between items-center gap-y-[50px]  ">
             <div className="description ">
               <h1 className="switch-text-color text-6xl md:text-7xl lg:text-8xl font-bold mb-8">Heya~!</h1>
               <p className="switch-text-color w-[400px] lg:w-[450px] xl:w-[600px] text-sm lg:text-base xl:text-xl ">My name is <strong className="highlight">Moonbami</strong>, and I am currently pursuing a career for being a <strong className="highlight">full-stack web developer</strong>. I am still a novice, but I am making <strong className="highlight">progress and learning</strong> on a daily basis.</p>

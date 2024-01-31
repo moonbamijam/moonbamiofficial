@@ -19,11 +19,11 @@ const Button = (props: Props) => {
     <div className="flex flex-col w-[100px] capitalize">
       <Link onClick={ props.onClick } href={ props.href }>
         <div className={`${ props.state? 'text-electric-pink' : 'text-white' } flex gap-1 items-center hover:text-electric-pink transition-all`}>
-          { props.icon }
+          <div className="rounded-full bg-rich-black p-1">{ props.icon }</div>
           { props.name }
         </div>
       </Link>
-      <div className="sub-link flex flex-col pl-10  ">
+      <div className="sub-link flex flex-col pl-10 ">
         { props.children }
       </div>
     </div>

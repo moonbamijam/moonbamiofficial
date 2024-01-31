@@ -35,7 +35,7 @@ const ThemeSwitchBtn = () => {
 
 const Button = (props: Props) => {
   return (
-    <button onClick={ props.onClick } className=" rounded-full bg-rich-black hover:bg-electric-pink p-2 text-xl " >
+    <button onClick={ props.onClick } className=" rounded-full bg-rich-black dark:bg-transparent hover:bg-electric-pink dark:hover:bg-electric-pink w-[40px] h-[40px] flex items-center justify-center text-xl " >
       { props.icon }
     </button>
   )

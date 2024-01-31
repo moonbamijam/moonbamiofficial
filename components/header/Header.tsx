@@ -115,7 +115,7 @@ const Header = () => {
           <h1 className="hidden md:block font-bold text-sm">Moonbami</h1>
         </Link>
         <div className="user-options flex items-center gap-2">
-          <button onClick={ toggleMenu } id="menu" className={` w-[40px] h-[40px] flex lg:hidden justify-center items-center text-xl rounded-full hover:bg-electric-pink ${ isMenuActive? 'bg-electric-pink' : 'bg-transparent' }  `}>
+          <button onClick={ toggleMenu } id="menu" className={` w-[40px] h-[40px] flex lg:hidden justify-center items-center text-xl rounded-full hover:bg-electric-pink dark:hover:bg-electric-pink ${ isMenuActive? 'bg-electric-pink' : 'dark:bg-transparent' } ${ isMenuActive? 'bg-electric-pink' : 'bg-rich-black' } `}>
             {isMenuActive? <FaBarsStaggered /> : <FaBars /> }
           </button>
           <div className="lg:hidden">
@@ -166,42 +166,42 @@ const Header = () => {
       </header>
       {isMenuActive && (
         <>
-        <div className="screen-dim w-screen h-screen fixed z-[99] bg-black opacity-70 backdrop-blur-sm  "></div>
-        <nav ref={ dropdown } id="main" className={` fixed bg-rich-black top-[60px] w-full z-[100] flex lg:hidden flex-col  px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] pt-[20px] pb-[40px] gap-2 ${ scrollHeaderBg } `}>
-          <Button href={"/"} state={ isHomeDropdownActive } onClick={ toggleHomeDropdown } icon={ isHomeDropdownActive? <FaCaretDown /> : <FaCaretRight /> } name={"home"} />
-          {isHomeDropdownActive && (
-            <>
-              <SubButton onClick={ () => handleScrollIntoView('#about') } name={"about"} />
-              <SubButton onClick={ () => handleScrollIntoView('#stack') } name={"stack"} />
-              <SubButton onClick={ () => handleScrollIntoView('#project') } name={"projects"} />
-              <SubButton onClick={ () => handleScrollIntoView('#contact') } name={"contact"} />
-            </>)}
-          <Button href={"anime"} state={ isAnimeDropdownActive } onClick={ toggleAnimeDropdown } icon={ isAnimeDropdownActive? <FaCaretDown /> : <FaCaretRight /> } name={"anime"} />
-          {isAnimeDropdownActive && (
-            <>
-              <SubButton onClick={ () => handleScrollIntoView('#favorites') } name={"favorites"} />
-              <SubButton onClick={ () => handleScrollIntoView('#watching') } name={"watching"} />
-              <SubButton onClick={ () => handleScrollIntoView('#waifus') } name={"waifus"} />
-            </>)}
-          <Button href={"games"} state={ isGamesDropdownActive } onClick={ toggleGamesDropdown } icon={ isGamesDropdownActive? <FaCaretDown /> : <FaCaretRight /> } name={"games"} />
-          {isGamesDropdownActive && (
-            <>
-              <SubButton onClick={ () => handleScrollIntoView('#profiles') } name={"profiles"} />
-              <SubButton onClick={ () => handleScrollIntoView('#playing') } name={"playing"} />
-              <SubButton onClick={ () => handleScrollIntoView('#favorites') } name={"favorites"} />
-            </>)}
-          <Button href={"hobbies"} state={ isHobbiesDropdownActive } onClick={ toggleHobbiesDropdown } icon={ isHobbiesDropdownActive? <FaCaretDown /> : <FaCaretRight /> } name={"hobbies"} />
-          {isHobbiesDropdownActive && (
-            <>
-              <SubButton onClick={ () => handleScrollIntoView('#current') } name={"current"} />
-            </>)}
-          <Button href={"music"} state={ isMusicDropdownActive } onClick={ toggleMusicDropdown } icon={ isMusicDropdownActive? <FaCaretDown /> : <FaCaretRight /> } name={"music"} />
-          {isMusicDropdownActive && (
-            <>
-              <SubButton onClick={ () => handleScrollIntoView('#spotify') } name={"current"} />
-              <SubButton onClick={ () => handleScrollIntoView('#favorites') } name={"current"} />
-            </>)}
-        </nav>
+          <nav ref={ dropdown } id="main" className={` fixed  top-[60px] w-full z-[100] flex lg:hidden flex-col  px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] pt-[20px] pb-[40px] gap-2 ${ scrollHeaderBg } `}>
+            <Button href={"/"} state={ isHomeDropdownActive } onClick={ toggleHomeDropdown } icon={ isHomeDropdownActive? <FaCaretDown /> : <FaCaretRight /> } name={"home"} />
+            {isHomeDropdownActive && (
+              <>
+                <SubButton onClick={ () => handleScrollIntoView('#about') } name={"about"} />
+                <SubButton onClick={ () => handleScrollIntoView('#stack') } name={"stack"} />
+                <SubButton onClick={ () => handleScrollIntoView('#project') } name={"projects"} />
+                <SubButton onClick={ () => handleScrollIntoView('#contact') } name={"contact"} />
+              </>)}
+            <Button href={"anime"} state={ isAnimeDropdownActive } onClick={ toggleAnimeDropdown } icon={ isAnimeDropdownActive? <FaCaretDown /> : <FaCaretRight /> } name={"anime"} />
+            {isAnimeDropdownActive && (
+              <>
+                <SubButton onClick={ () => handleScrollIntoView('#favorites') } name={"favorites"} />
+                <SubButton onClick={ () => handleScrollIntoView('#watching') } name={"watching"} />
+                <SubButton onClick={ () => handleScrollIntoView('#waifus') } name={"waifus"} />
+              </>)}
+            <Button href={"games"} state={ isGamesDropdownActive } onClick={ toggleGamesDropdown } icon={ isGamesDropdownActive? <FaCaretDown /> : <FaCaretRight /> } name={"games"} />
+            {isGamesDropdownActive && (
+              <>
+                <SubButton onClick={ () => handleScrollIntoView('#profiles') } name={"profiles"} />
+                <SubButton onClick={ () => handleScrollIntoView('#playing') } name={"playing"} />
+                <SubButton onClick={ () => handleScrollIntoView('#favorites') } name={"favorites"} />
+              </>)}
+            <Button href={"hobbies"} state={ isHobbiesDropdownActive } onClick={ toggleHobbiesDropdown } icon={ isHobbiesDropdownActive? <FaCaretDown /> : <FaCaretRight /> } name={"hobbies"} />
+            {isHobbiesDropdownActive && (
+              <>
+                <SubButton onClick={ () => handleScrollIntoView('#current') } name={"current"} />
+              </>)}
+            <Button href={"music"} state={ isMusicDropdownActive } onClick={ toggleMusicDropdown } icon={ isMusicDropdownActive? <FaCaretDown /> : <FaCaretRight /> } name={"music"} />
+            {isMusicDropdownActive && (
+              <>
+                <SubButton onClick={ () => handleScrollIntoView('#spotify') } name={"current"} />
+                <SubButton onClick={ () => handleScrollIntoView('#favorites') } name={"current"} />
+              </>)}
+          </nav>
+          <div className="screen-dim w-screen h-screen fixed z-[99] bg-black opacity-70 dark:opacity-50 backdrop-blur-sm  "></div>
         </>
       )}
     </>
