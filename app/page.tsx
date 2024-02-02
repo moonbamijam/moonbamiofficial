@@ -24,7 +24,7 @@ import { TopicType } from '@customs/topic';
 
 const handleTopics = async() => {
   try {
-    const response = await fetch(`${process.env.API_TOPIC}`, {
+    const response = await fetch("api/topics", {
       cache: 'no-store'
     });
 
