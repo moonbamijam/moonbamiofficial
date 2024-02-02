@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import Earth from '@assets/img/earth.jpg'
+import TopicImage from './TopicImage'
 
 type Props = {
   className: string
@@ -10,7 +10,7 @@ type Props = {
 const Topic = (props: Props) => {
   return (
     <div className={`topics switch-text-color flex flex-col ${ props.className } justify-between items-center lg:items-start 2xl:justify-evenly`}>
-      <Image src={ Earth } width={'3000'} height={'3000'} alt="image" className="w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] premium:w-[500px] premium:h-[500px] mb-4 object-cover rounded-lg" />
+      <TopicImage src={ Earth } />
       <div className="flex flex-col gap-[30px] ">
         <div className="description">
           <h1 className="switch-text-color capitalize text-6xl font-bold mb-2">{ props.title }</h1>
