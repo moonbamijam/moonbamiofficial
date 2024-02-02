@@ -2,7 +2,7 @@ import Earth from '@assets/img/earth.jpg'
 import TopicImage from './TopicImage'
 
 type Props = {
-  className: string
+  className?: string
   title: string
   desc: string
 }
