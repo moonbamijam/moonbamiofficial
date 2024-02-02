@@ -1,25 +1,42 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
 
 // Asssets
-import AkaneDream from '@assets/img/akane-dream.png'
-import Me from '@public/me.jpg'
-import lost from '@assets/img/sky-bg.jpg'
-import FacebookLogo from '@public/facebook-logo.png'
-import GitHubLogo from '@public/github-mark-white.png'
-import InstagramLogo from '@public/instagram-logo.png'
-import TwitterXLogo from '@public/twitter-x-logo.png'
+import AkaneDream from '@assets/img/akane-dream.png';
+import Me from '@public/me.jpg';
+import lost from '@assets/img/sky-bg.jpg';
+import FacebookLogo from '@public/facebook-logo.png';
+import GitHubLogo from '@public/github-mark-white.png';
+import InstagramLogo from '@public/instagram-logo.png';
+import TwitterXLogo from '@public/twitter-x-logo.png';
 
 // Components
-import StackIcon from '@components/StackIcon'
-import Detail from '@components/Detail'
-import ScrollForMore from '@components/ScrollForMore'
-import Topic from '@components/about/Topic'
-import BackToTop from '@components/BackToTop'
-import SocMed from '@components/SocMed'
-import TopicImage from '@components/about/TopicImage'
+import StackIcon from '@components/StackIcon';
+import Detail from '@components/Detail';
+import ScrollForMore from '@components/ScrollForMore';
+import Topic from '@components/about/Topic';
+import BackToTop from '@components/BackToTop';
+import SocMed from '@components/SocMed';
+import TopicImage from '@components/about/TopicImage';
 
-const Home = () => {
+// Types
+import { TopicType } from '@customs/topic';
+
+const handleTopics = async() => {
+  try {
+    const response = await fetch(`http://localhost:3000/${process.env.API_TOPIC}`, {
+      cache: 'no-store'
+    });
+
+    if(!response.ok) throw new Error("Failed to fetch");
+    else return response.json();
+  } catch (error) {
+    console.log("Error: ", error);
+  }
+}
+
+const Home = async () => {
+  const { topics } = await handleTopics()
   return (
     <>
       <Image priority src={ AkaneDream } alt="" id="home-bg" style={{ width: '100%', height: '930px' }} className=" object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
@@ -57,7 +74,8 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <Topic className={"lg:flex-row-reverse"} title={"universe"} desc={"I really, really, really love topics about this! Ever since I was young, I was wondering if are we; us humans are the only living things here in our universe. This is just one of the many questions I have. I wish before I leave planet earth, I want to see the future of it. Like what it would be like if we have floating vehicles, advance tech and many more! I hope Earth will live more than the scientists predictions and the YouTube speculations haha. Every night, I always think if we ever get a chance to colonize a planet. I always wonder what it would look and feels like. Looking to the cosmos at that newly colonized planet is a chef’s kiss for me. Seeing our own Milky Way Galaxy in front of our eyes is truly going to be once in a lifetime experience. Although, we can see it here in Earth but. Due to the light pollution, this prevents us from seeing it. That’s why I am wishing at least once in my life that I’ll be able to see the stars and our galaxy in a much clearer view."} />
+            {topics.map((topic: TopicType) => (
+            <Topic key={ topic._id } className={"lg:flex-row-reverse"} title={ topic.title } desc={ topic.desc } />))}
           </div>
         </section>
 
