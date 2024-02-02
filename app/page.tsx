@@ -73,7 +73,6 @@ const Home = () => {
               <StackIcon href={"https://react.dev/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"} alt={"react logo"} />
               <StackIcon href={"https://nextjs.org/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"} alt={"nextjs logo"} className={"bg-white rounded-full"} />
               <StackIcon href={"https://tailwindcss.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"} alt={"tailwindcss logo"} />
-              <StackIcon href={"https://www.djangoproject.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"} alt={"django logo"} />
               <StackIcon href={"https://sass-lang.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"} alt={"sass logo"} />
               <StackIcon href={"https://web.dev/learn/css"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"} alt={"css3 logo"} />
               <StackIcon href={"https://html.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"} alt={"html5 logo"} />
