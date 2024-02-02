@@ -74,8 +74,8 @@ const Home = async () => {
                 </div>
               </div>
             </div>
-            {topics.map((topic: TopicType) => (
-            <Topic key={ topic._id } className={"lg:flex-row-reverse"} title={ topic.title } desc={ topic.desc } />))}
+            {/* {topics.map((topic: TopicType) => (
+            <Topic key={ topic._id } className={"lg:flex-row-reverse"} title={ topic.title } desc={ topic.desc } />))} */}
           </div>
         </section>
 
