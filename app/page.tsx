@@ -22,21 +22,21 @@ import TopicImage from '@components/about/TopicImage';
 // Types
 import { TopicType } from '@customs/topic';
 
-// const handleTopics = async() => {
-//   try {
-//     const response = await fetch(`http://localhost:3000/${process.env.API_TOPIC}`, {
-//       cache: 'no-store'
-//     });
+const handleTopics = async() => {
+  try {
+    const response = await fetch(`http://localhost:3000/${process.env.API_TOPIC}`, {
+      cache: 'no-store'
+    });
 
-//     if(!response.ok) throw new Error("Failed to fetch");
-//     else return response.json();
-//   } catch (error) {
-//     console.log("Error: ", error);
-//   }
-// }
+    if(!response.ok) throw new Error("Failed to fetch");
+    else return response.json();
+  } catch (error) {
+    console.log("Error: ", error);
+  }
+}
 
 const Home = async () => {
-  // const { topics } = await handleTopics()
+  const { topics } = await handleTopics()
   return (
     <>
       <Image priority src={ AkaneDream } alt="" id="home-bg" style={{ width: '100%', height: '930px' }} className=" object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
@@ -74,8 +74,8 @@ const Home = async () => {
                 </div>
               </div>
             </div>
-            {/* {topics.map((topic: TopicType) => (
-            <Topic key={ topic._id } className={"lg:flex-row-reverse"} title={ topic.title } desc={ topic.desc } />))} */}
+            {topics.map((topic: TopicType) => (
+            <Topic key={ topic._id } className={"lg:flex-row-reverse"} title={ topic.title } desc={ topic.desc } />))}
           </div>
         </section>
 
