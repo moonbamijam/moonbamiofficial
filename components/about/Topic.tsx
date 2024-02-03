@@ -9,7 +9,7 @@ type Props = {
 
 const Topic = (props: Props) => {
   return (
-    <div className={`topics switch-text-color flex flex-col ${ props.className } justify-between items-center lg:items-start 2xl:justify-evenly`}>
+    <div className={`topics switch-text-color flex flex-col ${ props.className } lg:flex-row-reverse justify-between items-center lg:items-start 2xl:justify-evenly`}>
       <TopicImage src={ Earth } />
       <div className="flex flex-col gap-[30px] ">
         <div className="description">
