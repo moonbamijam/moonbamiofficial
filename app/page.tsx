@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import axios from 'axios';
 
 // Asssets
 import AkaneDream from '@assets/img/akane-dream.png';
