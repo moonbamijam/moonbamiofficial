@@ -24,7 +24,7 @@ import { TopicType } from '@customs/topic';
 
 const handleTopics = async() => {
   try {
-    const response = await fetch(`${process.env.API_TOPIC_PRODUCTION}`, {
+    const response = await fetch(`http://localhost:3000/api/topics`, {
       cache: 'no-store'
     });
 
@@ -36,7 +36,7 @@ const handleTopics = async() => {
 }
 
 const Home = async () => {
-  const { topics } = await handleTopics();
+  const { topics } = await handleTopics() || {};
   return (
     <>
       <Image priority src={ AkaneDream } alt="" id="home-bg" style={{ width: '100%', height: '930px' }} className=" object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
