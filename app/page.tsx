@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import axios from 'axios';
 
 // Asssets
 import AkaneDream from '@assets/img/akane-dream.png';
@@ -24,7 +25,7 @@ import { TopicType } from '@customs/topic';
 
 const handleTopics = async() => {
   try {
-    const response = await fetch("https://dev-portfolio-tau-azure.vercel.app/api/topics", {
+    const response = await fetch(`${process.env.API_TOPIC_PRODUCTION}`, {
       cache: 'no-store'
     });
 
