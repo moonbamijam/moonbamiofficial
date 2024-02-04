@@ -3,6 +3,9 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
+        'hostname': 'mongodb.net'
+      },
+      {
         'hostname': 'cdn.jsdelivr.net'
       },
       {
