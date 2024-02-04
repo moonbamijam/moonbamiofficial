@@ -23,16 +23,13 @@ import TopicImage from '@components/about/TopicImage';
 import { TopicType } from '@customs/topic';
 
 const handleTopics = async() => {
-  try {
-    const response = await fetch(`api/topics`, {
-      cache: 'no-store',
-    });
-    if(!response.ok) throw new Error("Failed to fetch");
-    
-    return await response.json();
-  } catch (error) {
-    console.log("Error: ", error);
-  }
+  const response = await fetch(process.env.URL + `/api/topics`, {
+    cache: 'no-store',
+    method: 'GET'
+  });
+  if(!response.ok) throw new Error("Failed to fetch");
+
+  return await response.json();
 }
 
 const Home = async () => {
