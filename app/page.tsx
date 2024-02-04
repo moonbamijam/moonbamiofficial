@@ -36,7 +36,7 @@ const handleTopics = async() => {
 }
 
 const Home = async () => {
-  // const { topics } = await handleTopics();
+  const { topics } = await handleTopics();
   return (
     <>
       <Image priority src={ AkaneDream } alt="" id="home-bg" width={'3000'} height={'3000'} className="w-full h-[930px] object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
@@ -74,9 +74,9 @@ const Home = async () => {
                 </div>
               </div>
             </div>
-            <Topic title={"universe"} desc={"I really, really, really love topics about this! Ever since I was young, I was wondering if are we; us humans are the only living things here in our universe. This is just one of the many questions I have. I wish before I leave planet earth, I want to see the future of it. Like what it would be like if we have floating vehicles, advance tech and many more! I hope Earth will live more than the scientists predictions and the YouTube speculations haha. Every night, I always think if we ever get a chance to colonize a planet. I always wonder what it would look and feels like. Looking to the cosmos at that newly colonized planet is a chef’s kiss for me. Seeing our own Milky Way Galaxy in front of our eyes is truly going to be once in a lifetime experience. Although, we can see it here in Earth but. Due to the light pollution, this prevents us from seeing it. That’s why I am wishing at least once in my life that I’ll be able to see the stars and our galaxy in a much clearer view."} />
-            {/* {topics.map((topic: TopicType) => (
-            <Topic key={ topic._id } className={"lg:flex-row-reverse"} title={ topic.title } desc={ topic.desc } />))} */}
+            {/* <Topic title={"universe"} desc={"I really, really, really love topics about this! Ever since I was young, I was wondering if are we; us humans are the only living things here in our universe. This is just one of the many questions I have. I wish before I leave planet earth, I want to see the future of it. Like what it would be like if we have floating vehicles, advance tech and many more! I hope Earth will live more than the scientists predictions and the YouTube speculations haha. Every night, I always think if we ever get a chance to colonize a planet. I always wonder what it would look and feels like. Looking to the cosmos at that newly colonized planet is a chef’s kiss for me. Seeing our own Milky Way Galaxy in front of our eyes is truly going to be once in a lifetime experience. Although, we can see it here in Earth but. Due to the light pollution, this prevents us from seeing it. That’s why I am wishing at least once in my life that I’ll be able to see the stars and our galaxy in a much clearer view."} /> */}
+            {topics.map((topic: TopicType) => (
+            <Topic key={ topic._id } className={"lg:flex-row-reverse"} title={ topic.title } desc={ topic.desc } />))}
           </div>
         </section>
 
