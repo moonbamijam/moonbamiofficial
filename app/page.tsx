@@ -82,20 +82,23 @@ const Home = async () => {
               <h1 className="switch-text-color text-6xl font-bold mb-[15px] " >Stacks</h1>
               <p className="switch-text-color text-center w-[400px]" >All of my current technology stack that I really enjoy using. Looking forward to learn more.</p>
             </div>
-            <div className="stacks grid grid-cols-5 sm:grid-cols-6 lg:grid-cols-7 gap-2">
-              <StackIcon href={"https://www.javascript.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"} alt={"javascript logo"} />
-              <StackIcon href={"https://www.typescriptlang.org/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"} alt={"typescript logo"} />
-              <StackIcon href={"https://www.python.org/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"} alt={"python logo"} />
-              <StackIcon href={"https://react.dev/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"} alt={"react logo"} />
-              <StackIcon href={"https://nextjs.org/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"} alt={"nextjs logo"}/>
-              <StackIcon href={"https://tailwindcss.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg"} alt={"tailwindcss logo"} />
-              <StackIcon href={"https://sass-lang.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"} alt={"sass logo"} />
-              <StackIcon href={"https://web.dev/learn/css"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"} alt={"css3 logo"} />
-              <StackIcon href={"https://html.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"} alt={"html5 logo"} />
-              <StackIcon href={"https://www.figma.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"} alt={"figma logo"} />
-              <StackIcon href={"https://www.adobe.com/ph_en/products/photoshop/landpa.html?gclid=Cj0KCQiAwbitBhDIARIsABfFYIIgrHeJQ4zSBpfJ5gX1rvBrFTQia5yFavi8cw0dkBzfcODhax_wzjoaAijwEALw_wcB&sdid=GVTYXXRQ&mv=search&mv2=paidsearch&ef_id=Cj0KCQiAwbitBhDIARIsABfFYIIgrHeJQ4zSBpfJ5gX1rvBrFTQia5yFavi8cw0dkBzfcODhax_wzjoaAijwEALw_wcB:G:s&s_kwcid=AL!3085!3!444512451750!e!!g!!photoshop!703953000!39399096689&gad_source=1"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-plain.svg"} alt={"photoshop logo"} className={"bg-[#4FCCFE] rounded-full"} />
-              <StackIcon href={"https://git-scm.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"} alt={"git logo"} />
-              <StackIcon href={"https://www.mongodb.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"} alt={"mongodb logo"} />          
+            <div className="stacks inline-grid grid-cols-5 sm:grid-cols-6 lg:grid-cols-7 gap-2">
+              <StackIcon id={"python"} href={"https://www.python.org/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"} alt={"python logo"} />
+              <StackIcon id={"renpy"} href={"https://www.renpy.org/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/renpy/renpy-original.svg"} alt={"renpy logo"} />
+              <StackIcon id={"javascript"} href={"https://www.javascript.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"} alt={"javascript logo"} />
+              <StackIcon id={"typescript"} href={"https://www.typescriptlang.org/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"} alt={"typescript logo"} />
+              <StackIcon id={"react"} href={"https://react.dev/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"} alt={"react logo"} />
+              <StackIcon id={"nextjs"} href={"https://nextjs.org/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"} alt={"nextjs logo"}/>
+              <StackIcon id={"nodejs"} href={"https://nodejs.org/en"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"} alt={"nodejs logo"}/>
+              <StackIcon id={"expressjs"} href={"https://expressjs.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"} alt={"expressjs logo"} className={"bg-gray-300 w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[70px] lg:h-[70px] rounded-full"} />
+              <StackIcon id={"tailwindcss"} href={"https://tailwindcss.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg"} alt={"tailwindcss logo"} />
+              <StackIcon id={"sass"} href={"https://sass-lang.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"} alt={"sass logo"} />
+              <StackIcon id={"css"} href={"https://web.dev/learn/css"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"} alt={"css3 logo"} />
+              <StackIcon id={"html"} href={"https://html.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"} alt={"html5 logo"} />
+              <StackIcon id={"figma"} href={"https://www.figma.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"} alt={"figma logo"} />
+              <StackIcon id={"photoshop"} href={"https://www.adobe.com/ph_en/products/photoshop/free-trial-download.html"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-plain.svg"} alt={"photoshop logo"} className={"bg-[#4FCCFE] rounded-full"} />
+              <StackIcon id={"git"} href={"https://git-scm.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"} alt={"git logo"} />
+              <StackIcon id={"mongodb"} href={"https://www.mongodb.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"} alt={"mongodb logo"} />          
             </div>
           </div>
         </section>
