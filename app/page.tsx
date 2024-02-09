@@ -21,6 +21,7 @@ import TopicImage from '@components/about/TopicImage';
 
 // Types
 import { TopicType } from '@customs/topic';
+import Title from '@components/texts/Title';
 
 const handleTopics = async() => {
   const response = await fetch(process.env.URL + `/api/topics`, {
@@ -43,21 +44,21 @@ const Home = async () => {
           <div className=" w-full px-[30px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] pt-[200px] lg:pt-[250px] flex flex-col lg:flex-row justify-between items-center gap-y-[50px]  ">
             <div className="description ">
               <h1 className="switch-text-color text-6xl md:text-7xl lg:text-8xl font-bold mb-8">Heya~!</h1>
-              <p className="switch-text-color w-[400px] lg:w-[450px] xl:w-[600px] text-sm lg:text-base xl:text-xl ">My name is <strong className="highlight">Moonbami</strong>, and I am currently pursuing a career for being a <strong className="highlight">full-stack web developer</strong>. I am still a novice, but I am making <strong className="highlight">progress and learning</strong> on a daily basis.</p>
+              <p className="switch-text-color w-[400px] lg:w-[450px] xl:w-[600px] text-sm lg:text-base xl:text-xl ">My name is <span className="highlight">Moonbami</span>, and I am currently pursuing a career for being a <span className="highlight">full-stack web developer</span>. I am still a novice, but I am making <span className="highlight">progress and learning</span> on a daily basis.</p>
             </div>
             <Image className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] border-[3px] border-solid border-black dark:border-white rounded-lg" src={`${process.env.API_AVATAR}`} width={'3000'} height={'3000'} alt="Jam Moonbami" />
           </div>
           <ScrollForMore />
         </section>
-        
-        <section id="about" className="px-[30px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] py-[100px] flex flex-col justify-between items-center ">
-          <div className="content w-full flex flex-col gap-[100px]">
-            <div className="about-me flex flex-col lg:flex-row justify-between items-center lg:items-start 2xl:justify-evenly ">
+        <section id="about" className="px-[30px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] py-[100px]">
+          <div className="content w-full flex flex-col items-center gap-[100px]">
+            <Title name={"about me"} desc={"Let's dive deeper of who am I behind the social media."} />
+            <div className="about-me w-full flex flex-col lg:flex-row justify-between items-center lg:items-start 2xl:justify-evenly ">
               <TopicImage src={ Me } />
               <div className="about-me flex flex-col gap-[30px] ">
                 <div className="description">
-                  <h1 className="switch-text-color capitalize text-6xl font-bold mb-2">{ "about me" }</h1>
-                  <p className="switch-text-color w-[400px] lg:w-[450px] xl:w-[600px]">{ "I face the world with the name of Moonbami. Yes, it is not my real name and I consider it as my IGN (In Game Name). It is the combination of the name of my very first “Waifu” and me being a “Selenophile”.  How about let's dive deeper of who am I behind the social media?" }</p>
+                  <h1 className="switch-text-color capitalize text-5xl font-bold mb-2">{ "jam moonbami" }</h1>
+                  <p className="switch-text-color w-[400px] lg:w-[450px] xl:w-[600px]">{"I face the world with the name of Moonbami. Yes, it is not my real name and I consider it as my IGN (In Game Name). It is the combination of the name of my very first “Waifu” and me being a “Selenophile”."}</p>
                 </div>
                 <div className="labels flex flex-col gap-2">
                   <Detail label={"Name"} detail={ "Jamiraquai Mikhail Alvarez" } />
@@ -71,11 +72,12 @@ const Home = async () => {
                 </div>
               </div>
             </div>
-            {topics.map((topic: TopicType) => (
-            <Topic key={ topic._id } className={"lg:flex-row-reverse"} title={ topic.title } desc={ topic.desc } />))}
+            <div className="topics w-full grid grid-cols-1 lg:grid-cols-2 gap-10 ">
+              {topics.map((topic: TopicType) => (
+              <Topic key={ topic._id } title={ topic.title } desc={ topic.desc } />))}
+            </div>
           </div>
         </section>
-
         <section id="stack" className="bg-gray-300 dark:bg-black relative px-[30px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] py-[100px] flex flex-col justify-between items-center">
           <div className="content w-full flex flex-col items-center gap-[100px]">
             <div className="title  flex flex-col items-center ">

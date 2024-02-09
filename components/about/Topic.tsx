@@ -9,12 +9,11 @@ type Props = {
 
 const Topic = (props: Props) => {
   return (
-    <div className={`topics switch-text-color flex flex-col ${ props.className } lg:flex-row-reverse justify-between items-center lg:items-start 2xl:justify-evenly`}>
-      <TopicImage src={ Earth } />
+    <div className={`topics switch-text-color flex flex-col items-center`}>
       <div className="flex flex-col gap-[30px] ">
         <div className="description">
-          <h1 className="switch-text-color capitalize text-6xl font-bold mb-2">{ props.title }</h1>
-          <p className="switch-text-color w-[400px] lg:w-[450px] xl:w-[600px]">{ props.desc }</p>
+          <h1 className="switch-text-color capitalize text-5xl font-bold mb-2">{ props.title }</h1>
+          <p className="switch-text-color premium:w-[600px]">{ props.desc }</p>
         </div>
       </div>
     </div>
