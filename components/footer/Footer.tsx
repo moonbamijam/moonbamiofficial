@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <div className="footer-bg relative bottom-0 border-t-[8px] border-electric-pink w-full "></div>
-      <section id="footer" className="container relative bottom-0 pt-[100px] pb-[50px] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] transition-all">
+      <section id="footer" className="container relative bottom-0 pt-[100px] pb-[50px] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px]">
         <div className="main flex flex-col lg:flex-row gap-[50px] items-center lg:items-start">
           <div className="brand flex flex-col gap-2 items-center">
             <Image src={`${process.env.API_AVATAR}`} alt="" width={"3000"} height={"3000"} className="w-[100px] sm:w-[125px] md:w-[150px] xl:w-[175px] premium:w-[200px]  rounded-lg" />

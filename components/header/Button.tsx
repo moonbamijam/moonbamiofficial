@@ -18,7 +18,7 @@ const Button = (props: Props) => {
   return (
     <div className="flex flex-col w-[100px] capitalize">
       <Link onClick={ props.onClick } href={ props.href }>
-        <div className={`${ props.state? 'text-electric-pink' : 'text-white' } flex gap-1 items-center hover:text-electric-pink transition-all`}>
+        <div className={`${ props.state? 'text-electric-pink' : 'text-white' } flex gap-1 items-center hover:text-electric-pink`}>
           <div className="rounded-full bg-rich-black p-1">{ props.icon }</div>
           { props.name }
         </div>
