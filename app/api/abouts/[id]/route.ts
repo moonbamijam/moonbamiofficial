@@ -36,6 +36,6 @@ export async function PUT(request: Request, { params }: Params) {
 export async function GET(request: Request, { params }: Params  ) {
   const { id } = params;
   await connectMongoDB();
-  const about = await About.findOne({ _id: id });
-  return NextResponse.json({ about }, { status: 200 });
+  const abouts = await About.findOne({ _id: id });
+  return NextResponse.json({ abouts }, { status: 200 });
 };

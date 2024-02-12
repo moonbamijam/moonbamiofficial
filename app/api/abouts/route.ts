@@ -33,6 +33,6 @@ export async function POST(request: Request, response: Response) {
 
 export async function GET() {
   await connectMongoDB();
-  const about = await About.find();
-  return NextResponse.json({ about })
+  const abouts = await About.find();
+  return NextResponse.json({ abouts })
 };

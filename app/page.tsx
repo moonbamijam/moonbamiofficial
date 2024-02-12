@@ -29,7 +29,7 @@ import { AboutType } from '@customs/about';
 
 const Home = async () => {
   const { topics } = await useFetch("/api/topics");
-  const { about } = await useFetch("/api/about");
+  const { abouts } = await useFetch("/api/abouts");
   return (
     <>
       <Image priority src={ AkaneDream } alt="" id="home-bg" width={'3000'} height={'3000'} className="w-full h-[930px] object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
@@ -51,7 +51,7 @@ const Home = async () => {
             <div className="about-me w-full flex flex-col lg:flex-row justify-between items-center lg:items-start 2xl:justify-evenly ">
               <TopicImage src={ Me } />
               <div className="about-me flex flex-col gap-[30px] ">
-                {about.map((about: AboutType) => (
+                {abouts.map((about: AboutType) => (
                   <About 
                     key={ about._id }
                     displayName={ about.displayName }
