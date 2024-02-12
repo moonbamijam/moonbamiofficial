@@ -24,37 +24,30 @@ import About from '@components/about/About';
 import { TopicType } from '@customs/topic';
 import { AboutType } from '@customs/about';
 
-async function HandleTopics() {
-  try {
-    const response = await fetch(process.env.URL + `/api/topics`, {
-      cache: 'no-store',
-      method: 'GET'
-    });
+async function handleTopics() {
+  const response = await fetch(process.env.URL + "/api/topics", {
+    cache: 'no-store',
+    method: 'GET'
+  });
+  if(!response.ok) throw new Error("Failed to fetch");
 
-    return await response.json();
+  return await response.json();
+}
 
-  } catch (error) {
-    console.log(error);
-  }
-};
+async function handleAboutMe() {
+  const response = await fetch(process.env.URL + "/api/abouts", {
+    cache: 'no-store',
+    method: 'GET'
+  });
+  if(!response.ok) throw new Error("Failed to fetch");
 
-async function HandleAboutMe() {
-  try {
-    const response = await fetch(process.env.URL + `/api/abouts`, {
-      cache: 'no-store',
-      method: 'GET'
-    });
-
-    return await response.json();
-
-  } catch (error) {
-    console.log(error);
-  }
-};
+  return await response.json();
+}
 
 const Home = async () => {
-  const { topics } = await HandleTopics();
-  const { abouts } = await HandleAboutMe();
+  const { topics } = await handleTopics();
+  const { abouts } = await handleAboutMe();
+
   return (
     <>
       <Image priority src={ AkaneDream } alt="" id="home-bg" width={'3000'} height={'3000'} className="w-full h-[930px] object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
