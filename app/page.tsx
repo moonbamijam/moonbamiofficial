@@ -27,14 +27,14 @@ import About from '@components/about/About';
 import { TopicType } from '@customs/topic';
 import { AboutType } from '@customs/about';
 
-const handleTopics = async () => {
+async function handleTopics() {
   const data = await useFetch("/api/topics");
   return data;
-}
-const handleAboutMe = async () => {
+};
+async function handleAboutMe() {
   const data = await useFetch("/api/about");
   return data;
-}
+};
 
 const Home = async () => {
   const { topics } = await handleTopics()
