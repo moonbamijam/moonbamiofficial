@@ -22,19 +22,10 @@ import TopicImage from '@components/about/TopicImage';
 // Types
 import { TopicType } from '@customs/topic';
 import Title from '@components/texts/Title';
-
-const handleTopics = async() => {
-  const response = await fetch(process.env.URL + `/api/topics`, {
-    cache: 'no-store',
-    method: 'GET'
-  });
-  if(!response.ok) throw new Error("Failed to fetch");
-
-  return await response.json();
-}
+import { useFetch } from '@hooks/useFetch';
 
 const Home = async () => {
-  const { topics } = await handleTopics();
+  const { topics } = await useFetch("/api/topics");
   return (
     <>
       <Image priority src={ AkaneDream } alt="" id="home-bg" width={'3000'} height={'3000'} className="w-full h-[930px] object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
