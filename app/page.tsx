@@ -1,9 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-// Hooks
-import { useFetch } from '@hooks/useFetch';
-
 // Asssets
 import AkaneDream from '@assets/img/akane-dream.png';
 import Me from '@public/me.jpg';
@@ -28,12 +25,29 @@ import { TopicType } from '@customs/topic';
 import { AboutType } from '@customs/about';
 
 async function HandleTopics() {
-  const topicsData = await useFetch("/api/topics");
-  return topicsData;
+  try {
+    const response = await fetch(process.env.URL + `/api/topics`, {
+      cache: 'no-store',
+      method: 'GET'
+    });  
+    return await response.json();
+
+  } catch (error) {
+    console.log("Error occured: ", error);
+  }
 };
+
 async function HandleAboutMe() {
-  const aboutMeData = await useFetch("/api/about");
-  return aboutMeData;
+  try {
+    const response = await fetch(process.env.URL + `/api/about`, {
+      cache: 'no-store',
+      method: 'GET'
+    });  
+    return await response.json();
+
+  } catch (error) {
+    console.log("Error occured: ", error);
+  }
 };
 
 const Home = async () => {
