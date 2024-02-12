@@ -28,7 +28,7 @@
   @apply  [&>a>h1]:text-black [&>nav>div>a]:text-black [&>a>h1]:dark:text-white [&>nav>div>a]:dark:text-white 
 }
 .unscrolled-header-bg {
-  @apply bg-transparent
+  @apply bg-transparent backdrop-blur-sm
 }
 .scrolled-header-bg {
   @apply bg-rich-black 
