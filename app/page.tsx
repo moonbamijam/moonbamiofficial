@@ -24,28 +24,34 @@ import About from '@components/about/About';
 import { TopicType } from '@customs/topic';
 import { AboutType } from '@customs/about';
 
-async function handleTopics() {
-  const response = await fetch(process.env.URL + "/api/topics", {
-    cache: 'no-store',
-    method: 'GET'
-  });
-  if(!response.ok) throw new Error("Failed to fetch");
+// async function handleTopics() {
+//   try {
+//     const response = await fetch(process.env.URL + "/api/topics", {
+//       cache: 'no-store',
+//       method: 'GET'
+//     });
 
-  return await response.json();
-}
+//     return await response.json();
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
 async function handleAboutMe() {
-  const response = await fetch(process.env.URL + "/api/abouts", {
-    cache: 'no-store',
-    method: 'GET'
-  });
-  if(!response.ok) throw new Error("Failed to fetch");
+  try {
+    const aboutMeResponse = await fetch(process.env.URL + "/api/abouts", {
+      cache: 'no-store',
+      method: 'GET'
+    });
 
-  return await response.json();
+    return await aboutMeResponse.json();
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 const Home = async () => {
-  const { topics } = await handleTopics();
+  // const { topics } = await handleTopics();
   const { abouts } = await handleAboutMe();
 
   return (
@@ -86,8 +92,8 @@ const Home = async () => {
               </div>
             </div>
             <div className="topics w-full grid grid-cols-1 lg:grid-cols-2 gap-10 ">
-              {topics.map((topic: TopicType) => (
-              <Topic key={ topic._id } title={ topic.title } desc={ topic.desc } />))}
+              {/* {topics.map((topic: TopicType) => (
+              <Topic key={ topic._id } title={ topic.title } desc={ topic.desc } />))} */}
             </div>
           </div>
         </section>
