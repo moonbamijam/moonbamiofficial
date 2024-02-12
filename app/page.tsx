@@ -28,12 +28,12 @@ import { TopicType } from '@customs/topic';
 import { AboutType } from '@customs/about';
 
 async function HandleTopics() {
-  const data = await useFetch("/api/topics");
-  return data;
+  const topicsData = await useFetch("/api/topics");
+  return topicsData;
 };
 async function HandleAboutMe() {
-  const data = await useFetch("/api/about");
-  return data;
+  const aboutMeData = await useFetch("/api/about");
+  return aboutMeData;
 };
 
 const Home = async () => {
