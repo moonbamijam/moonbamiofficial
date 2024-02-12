@@ -1,6 +1,4 @@
-import { Url } from "next/dist/shared/lib/router/router";
-
-export const useFetch = async (url: Url) => {
+export const useFetch = async (url: string) => {
   const response = await fetch(process.env.URL + `${ url }`, {
     cache: 'no-store',
     method: 'GET'
