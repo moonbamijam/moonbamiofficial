@@ -53,7 +53,7 @@ async function handleTopics() {
 
 const Home = async () => {
   const { abouts } = await useFetch("/api/abouts");
-  const { topics } = await useFetch("/api/topics");
+  // const { topics } = await useFetch("/api/topics");
 
   return (
     <>
@@ -93,8 +93,8 @@ const Home = async () => {
               </div>
             </div>
             <div className="topics w-full grid grid-cols-1 lg:grid-cols-2 gap-10 ">
-              {topics.map((topic: TopicType) => (
-              <Topic key={ topic._id } title={ topic.title } desc={ topic.desc } />))}
+              {/* {topics.map((topic: TopicType) => (
+              <Topic key={ topic._id } title={ topic.title } desc={ topic.desc } />))} */}
             </div>
           </div>
         </section>
