@@ -1,5 +1,5 @@
 export type TopicType = {
-  _id: string
+  _id?: string,
   title: string,
   desc: string,
 }
