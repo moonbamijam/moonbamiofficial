@@ -4,8 +4,8 @@ export const useFetch = async (url: string) => {
       cache: 'no-store',
       method: 'GET'
     });
-  
-    return await response.json();
+    const data = await response.json();
+    return await data;
 
   } catch (error) {
     console.log("Error occured: ", error);
