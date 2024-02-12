@@ -1,8 +1,6 @@
-import React from 'react'
-
 type Props = {
-  label?: string
-  detail?: string
+  label?: string;
+  detail?: string | number;
 }
 const Detail = (props: Props) => {
   return (

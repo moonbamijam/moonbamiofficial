@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+// Hooks
+import { useFetch } from '@hooks/useFetch';
+
 // Asssets
 import AkaneDream from '@assets/img/akane-dream.png';
 import Me from '@public/me.jpg';
@@ -12,20 +15,21 @@ import TwitterXLogo from '@public/twitter-x-logo.png';
 
 // Components
 import StackIcon from '@components/StackIcon';
-import Detail from '@components/Detail';
 import ScrollForMore from '@components/ScrollForMore';
 import Topic from '@components/about/Topic';
 import BackToTop from '@components/BackToTop';
 import SocMed from '@components/SocMed';
 import TopicImage from '@components/about/TopicImage';
+import Title from '@components/texts/Title';
+import About from '@components/about/About';
 
 // Types
 import { TopicType } from '@customs/topic';
-import Title from '@components/texts/Title';
-import { useFetch } from '@hooks/useFetch';
+import { AboutType } from '@customs/about';
 
 const Home = async () => {
   const { topics } = await useFetch("/api/topics");
+  const { about } = await useFetch("/api/about");
   return (
     <>
       <Image priority src={ AkaneDream } alt="" id="home-bg" width={'3000'} height={'3000'} className="w-full h-[930px] object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
@@ -47,20 +51,20 @@ const Home = async () => {
             <div className="about-me w-full flex flex-col lg:flex-row justify-between items-center lg:items-start 2xl:justify-evenly ">
               <TopicImage src={ Me } />
               <div className="about-me flex flex-col gap-[30px] ">
-                <div className="description">
-                  <h1 className="switch-text-color capitalize text-5xl font-bold mb-2">{ "jam moonbami" }</h1>
-                  <p className="switch-text-color w-[400px] lg:w-[450px] xl:w-[600px]">{"I face the world with the name of Moonbami. Yes, it is not my real name and I consider it as my IGN (In Game Name). It is the combination of the name of my very first “Waifu” and me being a “Selenophile”."}</p>
-                </div>
-                <div className="labels flex flex-col gap-2">
-                  <Detail label={"Name"} detail={ "Jamiraquai Mikhail Alvarez" } />
-                  <Detail label={"Nickname"} detail={ "Jam, Jamir, Moon" } />
-                  <Detail label={"Age"} detail={ "21" }/>
-                  <Detail label={"Birthday"} detail={ "August 15, 2002" }/>
-                  <Detail label={"Sex"} detail={ "male" }/>
-                  <Detail label={"Nationality"} detail={ "filipino" }/>
-                  <Detail label={"Status"} detail={ "single" }/>
-                  <Detail label={"Languages"} detail={ "Tagalog, English, Japanese(currently learning)" }/>
-                </div>
+                {about.map((about: AboutType) => (
+                  <About 
+                    key={ about._id }
+                    displayName={ about.displayName }
+                    desc={ about.desc }
+                    fullName={ about.fullName }
+                    nickname={ about.nickname }
+                    age={ about.age }
+                    birthday={ about.birthday }
+                    sex={ about.sex }
+                    nationality={ about.nationality }
+                    status={ about.status }
+                    languages={ about.languages }/>
+                ))}
               </div>
             </div>
             <div className="topics w-full grid grid-cols-1 lg:grid-cols-2 gap-10 ">
@@ -95,7 +99,6 @@ const Home = async () => {
             </div>
           </div>
         </section>
-
         <section id="project" className="relative px-[30px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] py-[100px] flex flex-col justify-between items-center">
           <div className="content w-full flex flex-col items-center gap-[150px]">
             <div className="title flex flex-col items-center ">
@@ -139,7 +142,6 @@ const Home = async () => {
             </div>
           </div>
         </section>
-
         <section id="contact" className=" relative py-[100px] flex flex-col justify-between items-center">
           <Image src={ lost } alt="" style={{ width: '100%', height: '500px' }} className=" object-cover absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] -z-50 opacity-[0.3] " />
           <div className="content flex flex-col items-center gap-[30px]">
@@ -163,4 +165,4 @@ const Home = async () => {
   )
 }
 
-export default Home
+export default Home;
