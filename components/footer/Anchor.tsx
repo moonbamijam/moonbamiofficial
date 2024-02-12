@@ -11,7 +11,7 @@ type Props = {
 
 const Anchor = (props: Props) => {
   return (
-    <Link href={ props.href } target={ props.target } className="switch-text-color capitalize">
+    <Link href={ props.href } target={ props.target } className="switch-text-color capitalize hover:text-electric-pink">
       <span>{ props.icon }</span>
       { props.text }
     </Link>

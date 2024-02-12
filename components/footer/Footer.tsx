@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="w-full mt-[50px]"/>
-        <p className="switch-text-color mt-2 text-center">&#169; { year.getFullYear() } Moonbami</p>
+        <p className="switch-text-color mt-2 text-center">&#169; { year.getFullYear().toString() } Moonbami</p>
       </section>
     </>
   )
