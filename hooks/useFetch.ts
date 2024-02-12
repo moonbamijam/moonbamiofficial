@@ -1,10 +1,15 @@
 export const useFetch = async (url: string) => {
-  const response = await fetch(process.env.URL + `${ url }`, {
-    cache: 'no-store',
-    method: 'GET'
-  });
+  try {
+    const response = await fetch(process.env.URL + `${ url }`, {
+      cache: 'no-store',
+      method: 'GET'
+    });
 
-  if(!response.ok) throw new Error("Failed to fetch");
+    if(!response.ok) throw new Error("Failed to fetch");
+  
+    return await response.json();
 
-  return await response.json();
+  } catch (error) {
+    console.log("Error occured: ", error);
+  }
 };
