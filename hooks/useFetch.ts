@@ -1,17 +1,12 @@
 import { Url } from "next/dist/shared/lib/router/router";
 
 export const useFetch = async (url: Url) => {
-  try {
-    const response = await fetch(process.env.URL + `${ url }`, {
-      cache: 'no-store',
-      method: 'GET'
-    });
+  const response = await fetch(process.env.URL + `${ url }`, {
+    cache: 'no-store',
+    method: 'GET'
+  });
 
-    if(!response.ok) throw new Error("Failed to fetch");
-  
-    return await response.json();
+  if(!response.ok) throw new Error("Failed to fetch");
 
-  } catch (error) {
-    console.log("Error occured: ", error);
-  }
+  return await response.json();
 };
