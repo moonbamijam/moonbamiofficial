@@ -166,7 +166,7 @@ const Header = () => {
       </header>
       {isMenuActive && (
         <>
-          <nav ref={ dropdown } id="main" className={` fixed  top-[60px] w-full z-[100] flex lg:hidden flex-col  px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] pt-[20px] pb-[40px] gap-2 ${ scrollHeaderBg } `}>
+          <nav ref={ dropdown } id="main" className={`fixed top-[60px] w-full z-[100] flex lg:hidden flex-col px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] pt-[20px] pb-[40px] gap-2 ${ scrollHeaderBg } backdrop-blur-sm`}>
             <Button href={"/"} state={ isHomeDropdownActive } onClick={ toggleHomeDropdown } icon={ isHomeDropdownActive? <FaCaretDown /> : <FaCaretRight /> } name={"home"} />
             {isHomeDropdownActive && (
               <>
@@ -201,7 +201,7 @@ const Header = () => {
                 <SubButton onClick={ () => handleScrollIntoView('#favorites') } name={"current"} />
               </>)}
           </nav>
-          <div className="screen-dim w-screen h-screen fixed z-[99] bg-black opacity-70 dark:opacity-50 backdrop-blur-sm  "></div>
+          <div className="screen-dim w-screen h-screen fixed z-[99] bg-black opacity-80 dark:opacity-70"></div>
         </>
       )}
     </>
