@@ -23,19 +23,20 @@ import About from '@components/about/About';
 // Types
 import { TopicType } from '@customs/topic';
 import { AboutType } from '@customs/about';
+import { useFetch } from '@hooks/useFetch';
 
-// async function handleAboutMe() {
-//   try {
-//     const response = await fetch(process.env.URL + "/api/abouts", {
-//       cache: 'no-store',
-//       method: 'GET'
-//     });
+async function handleAboutMe() {
+  try {
+    const response = await fetch(process.env.URL + "/api/abouts", {
+      cache: 'no-store',
+      method: 'GET'
+    });
     
-//     return await response.json();
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
+    return await response.json();
+  } catch (error) {
+    console.log(error);
+  }
+}
 
 async function handleTopics() {
   try {
@@ -51,8 +52,8 @@ async function handleTopics() {
 }
 
 const Home = async () => {
-  // const { abouts } = await handleAboutMe();
-  const { topics } = await handleTopics();
+  const { abouts } = await useFetch("/api/abouts");
+  const { topics } = await useFetch("/api/topics");
 
   return (
     <>
@@ -75,7 +76,7 @@ const Home = async () => {
             <div className="about-me w-full flex flex-col lg:flex-row justify-between items-center lg:items-start 2xl:justify-evenly ">
               <TopicImage src={ Me } />
               <div className="about-me flex flex-col gap-[30px] ">
-                {/* {abouts.map((about: AboutType) => (
+                {abouts.map((about: AboutType) => (
                   <About 
                     key={ about._id }
                     displayName={ about.displayName }
@@ -88,7 +89,7 @@ const Home = async () => {
                     nationality={ about.nationality }
                     status={ about.status }
                     languages={ about.languages }/>
-                ))} */}
+                ))}
               </div>
             </div>
             <div className="topics w-full grid grid-cols-1 lg:grid-cols-2 gap-10 ">
