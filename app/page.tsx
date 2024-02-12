@@ -27,9 +27,18 @@ import About from '@components/about/About';
 import { TopicType } from '@customs/topic';
 import { AboutType } from '@customs/about';
 
+const handleTopics = async () => {
+  const data = await useFetch("/api/topics");
+  return data;
+}
+const handleAboutMe = async () => {
+  const data = await useFetch("/api/about");
+  return data;
+}
+
 const Home = async () => {
-  const { topics } = await useFetch("/api/topics")
-  // const { abouts } = await useFetch("/api/abouts")
+  const { topics } = await handleTopics()
+  const { about } = await handleAboutMe()
   return (
     <>
       <Image priority src={ AkaneDream } alt="" id="home-bg" width={'3000'} height={'3000'} className="w-full h-[930px] object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
@@ -51,7 +60,7 @@ const Home = async () => {
             <div className="about-me w-full flex flex-col lg:flex-row justify-between items-center lg:items-start 2xl:justify-evenly ">
               <TopicImage src={ Me } />
               <div className="about-me flex flex-col gap-[30px] ">
-                {/* {abouts.map((about: AboutType) => (
+                {about.map((about: AboutType) => (
                   <About 
                     key={ about._id }
                     displayName={ about.displayName }
@@ -64,7 +73,7 @@ const Home = async () => {
                     nationality={ about.nationality }
                     status={ about.status }
                     languages={ about.languages }/>
-                ))} */}
+                ))}
               </div>
             </div>
             <div className="topics w-full grid grid-cols-1 lg:grid-cols-2 gap-10 ">
