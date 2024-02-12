@@ -39,7 +39,7 @@ async function HandleTopics() {
 
 async function HandleAboutMe() {
   try {
-    const response = await fetch(process.env.URL + `/api/about`, {
+    const response = await fetch(process.env.URL + `/api/abouts`, {
       cache: 'no-store',
       method: 'GET'
     });  
@@ -52,7 +52,7 @@ async function HandleAboutMe() {
 
 const Home = async () => {
   const { topics } = await HandleTopics()
-  const { about } = await HandleAboutMe()
+  const { abouts } = await HandleAboutMe()
   return (
     <>
       <Image priority src={ AkaneDream } alt="" id="home-bg" width={'3000'} height={'3000'} className="w-full h-[930px] object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
@@ -74,7 +74,7 @@ const Home = async () => {
             <div className="about-me w-full flex flex-col lg:flex-row justify-between items-center lg:items-start 2xl:justify-evenly ">
               <TopicImage src={ Me } />
               <div className="about-me flex flex-col gap-[30px] ">
-                {about.map((about: AboutType) => (
+                {abouts.map((about: AboutType) => (
                   <About 
                     key={ about._id }
                     displayName={ about.displayName }
