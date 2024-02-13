@@ -6,7 +6,7 @@ type Props = {
 
 const StayTuned = (props: Props) => {
   return (
-    <div id="" className=" container relative">
+    <div id="" className="container relative">
       <section className="content pb-[300px] pt-[200px] lg:pt-[250px] flex flex-col gap-10 items-center justify-center">
         <h1 className="switch-text-color font-bold md:text-xl lg:text-3xl xl:text-7xl text-center">Please stay tuned for this page!</h1>
         <Image src={`${ props.src }`} alt="" width={"3000"} height={"3000"} className="w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] object-cover rounded-full" />

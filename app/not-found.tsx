@@ -1,20 +1,17 @@
-import Link from "next/link"
-import { FaSadCry } from "react-icons/fa"
+import Image from "next/image";
+import Link from "next/link";
 
 const NotFound = () => {
   return (
-    <div id="" className=" container relative">
-      <section className="content pb-[300px] mt-[200px] lg:mt-[250px] flex flex-col gap-10 items-center justify-center">
-        <h1 className="switch-text-color font-bold text-7xl text-center w-[700px]">Page not found! 
-          <h2 className="switch-text-color text-4xl capitalize">go back <Link href="/" className="text-blue-400 capitalize underline">home</Link>
-          </h2>
+    <div id="" className="container relative">
+      <section className="content pb-[300px] pt-[200px] lg:pt-[250px] flex flex-col gap-10 items-center justify-center">
+        <h1 className="switch-text-color font-bold text-lg md:text-xl lg:text-3xl xl:text-7xl text-center">Page not found! 
+          <h2 className="switch-text-color font-normal text-lg">Go back to <Link href="/" className="text-blue-400 capitalize hover:underline inline">home</Link></h2>
         </h1>
-        <div className="rounded-full bg-black p-1 dark:bg-transparent text-3xl w-[200px]">
-          <FaSadCry />
-        </div>
+        <Image src={`${process.env.API_NOT_FOUND}`} alt="" width={"3000"} height={"3000"} className="w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] object-cover rounded-full" />
       </section>
     </div>
   )
 }
 
-export default NotFound
+export default NotFound;
