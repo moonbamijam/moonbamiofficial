@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+// Hooks
+import { useFetch } from '@hooks/useFetch';
+
 // Asssets
 import AkaneDream from '@assets/img/akane-dream.png';
 import Me from '@public/me.jpg';
@@ -24,7 +27,6 @@ import Section from '@components/wrappers/Section';
 // Types
 import { TopicType } from '@customs/topic';
 import { AboutType } from '@customs/about';
-import { useFetch } from '@hooks/useFetch';
 
 const Home = async () => {
   const { abouts } = await useFetch("/api/abouts");
