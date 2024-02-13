@@ -25,32 +25,6 @@ import { TopicType } from '@customs/topic';
 import { AboutType } from '@customs/about';
 import { useFetch } from '@hooks/useFetch';
 
-async function handleAboutMe() {
-  try {
-    const response = await fetch(process.env.URL + "/api/abouts", {
-      cache: 'no-store',
-      method: 'GET'
-    });
-    
-    return await response.json();
-  } catch (error) {
-    console.log(error);
-  }
-}
-
-async function handleTopics() {
-  try {
-    const response = await fetch(process.env.URL + "/api/topics", {
-      cache: 'no-store',
-      method: 'GET'
-    });
-
-    return await response.json();
-  } catch (error) {
-    console.log(error);
-  }
-}
-
 const Home = async () => {
   const { abouts } = await useFetch("/api/abouts");
   const { topics } = await useFetch("/api/topics");
