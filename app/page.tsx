@@ -74,10 +74,7 @@ const Home = async () => {
           </div>
         </Section>
         <Section id={"stack"} sectionClassName={"bg-gray-300 dark:bg-black"} contentClassName={"gap-100px]"}>
-          <div className="title  flex flex-col items-center ">
-            <h1 className="switch-text-color text-6xl font-bold mb-[15px] " >Stacks</h1>
-            <p className="switch-text-color text-center w-[400px]" >All of my current technology stack that I really enjoy using. Looking forward to learn more.</p>
-          </div>
+          <Title name={"Stacks"} desc={"All of my current technology stack that I really enjoy using. Looking forward to learn more."} />
           <div className="stacks inline-grid grid-cols-5 sm:grid-cols-6 lg:grid-cols-7 gap-2">
             <StackIcon id={"python"} href={"https://www.python.org/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"} alt={"python logo"} />
             <StackIcon id={"renpy"} href={"https://www.renpy.org/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/renpy/renpy-original.svg"} alt={"renpy logo"} />
@@ -98,10 +95,7 @@ const Home = async () => {
           </div>
         </Section>
         <Section id={"project"} contentClassName={"gap-[150px]"}>
-          <div className="title flex flex-col items-center ">
-            <h1 className="switch-text-color text-6xl font-bold mb-[15px] " >Projects</h1>
-            <p className="switch-text-color text-center w-[400px]" >These are the projects I made all throughout my coding career. I am happy to present it to you.</p>
-          </div>
+          <Title name={"projects"} desc={"These are the projects I made all throughout my coding career. I am happy to present it to you."} /> 
           <div className="projects flex flex-col gap-[100px]">
             <div className="flex flex-col premium:flex-row-reverse gap-[15px] ">
               <Image src={ `${process.env.API_TSUKIWA}` } alt='tsukiwa' width={'3000'} height={'3000'} className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
@@ -140,12 +134,9 @@ const Home = async () => {
         </Section>
         <Section 
           id={"contact"} 
-          image={<Image src={ lost } alt="" style={{ width: '100%', height: '500px' }} className=" object-cover absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] -z-50 opacity-[0.3] " />} 
+          image={<Image src={ lost } alt="" width={'3000'} height={'3000'} className="w-full h-[500px] object-cover absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] -z-50 opacity-[0.3] "/>}
           contentClassName={"gap-[30px]"}>
-          <div className="title flex flex-col items-center">
-            <h1 className="switch-text-color text-6xl font-bold mb-[15px] " >Contact Me</h1>
-            <p className="switch-text-color text-center w-[400px]" >If you have any concerns, questions or if you just want to be friends with me. Please, contact me to any of these that you prefer.</p>
-          </div>
+          <Title name={"Contact Me"} desc={"If you have any concerns, questions or if you just want to be friends with me. Please, contact me to any of these that you prefer."} /> 
           <hr className="w-full" />
           <div className=" socmeds grid grid-cols-2 gap-[30px]">
             <SocMed href={"https://www.facebook.com/MoonbamiOffcl"} src={ FacebookLogo } text={"facebook"} />
