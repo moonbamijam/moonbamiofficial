@@ -5,8 +5,8 @@ const About = (props: AboutType) => {
   return (
     <>
       <div className="description">
-        <h1 className="switch-text-color capitalize text-5xl font-bold mb-2">{ props.displayName }</h1>
-        <p className="switch-text-color w-[400px] lg:w-[450px] xl:w-[600px]">{ props.desc }</p>
+        <h1 className="switch-text-color capitalize text-4xl md:text-5xl font-bold mb-2 text-center lg:text-left">{ props.displayName }</h1>
+        <p className="switch-text-color paragraph-format">{ props.desc }</p>
       </div>
       <div className="labels flex flex-col gap-2">
         <Detail label={"Name"} detail={ props.fullName } />

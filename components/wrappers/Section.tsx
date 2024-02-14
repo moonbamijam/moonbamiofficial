@@ -10,9 +10,9 @@ type Props = {
 
 const Section = (props: Props) => {
   return (
-    <section id={ props.id } className={`w-full relative px-[40px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] py-[100px] ${ props.sectionClassName }`}>
+    <section id={ props.id } className={`w-full relative py-[100px] ${ props.sectionClassName }`}>
       { props.image }
-      <div className={`content relative flex flex-col items-center ${ props.contentClassName }`}>
+      <div className={`content relative flex flex-col items-center px-[30px] ${ props.contentClassName }`}>
         { props.children }
       </div>
     </section>

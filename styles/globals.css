@@ -22,6 +22,12 @@
 .show-back-to-top {
   @apply opacity-100 visible
 }
+.text-format {
+  @apply text-sm lg:text-base
+}
+.paragraph-format {
+  @apply text-sm lg:text-base w-[400px] lg:w-[500px] xl:w-[600px]
+}
 
 /* HEADER STYLES */
 .unscrolled-header {

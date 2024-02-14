@@ -9,13 +9,9 @@ type Props = {
 
 const Topic = (props: Props) => {
   return (
-    <div className={`topics switch-text-color flex flex-col items-center`}>
-      <div className="flex flex-col gap-[30px] ">
-        <div className="description">
-          <h1 className="switch-text-color capitalize text-5xl font-bold mb-2">{ props.title }</h1>
-          <p className="switch-text-color premium:w-[600px]">{ props.desc }</p>
-        </div>
-      </div>
+    <div className="topic flex flex-col items-center">
+      <h1 className="switch-text-color capitalize text-4xl md:text-5xl text-center font-bold mb-2">{ props.title }</h1>
+      <p className="switch-text-color paragraph-format">{ props.desc }</p>
     </div>
   )
 }

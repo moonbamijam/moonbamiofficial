@@ -38,10 +38,10 @@ const Home = async () => {
       <BackToTop id={"#home"} />
       <div className="container relative">
         <section id="home" className="h-[930px] flex flex-col justify-between items-center">
-          <div className="w-full relative px-[40px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] pt-[200px] lg:pt-[250px] flex flex-col lg:flex-row justify-between items-center gap-y-[50px]  ">
-            <div className="description ">
+          <div className="w-full relative px-[40px] lg:px-[50px] xl:px-[100px] 2xl:px-[200px] pt-[200px] lg:pt-[250px] flex flex-col lg:flex-row justify-between items-center gap-y-[50px]">
+            <div className="description">
               <h1 className="switch-text-color text-6xl md:text-7xl lg:text-8xl font-bold mb-8">Heya~!</h1>
-              <p className="switch-text-color w-[400px] lg:w-[450px] xl:w-[600px] text-sm lg:text-base xl:text-xl ">My name is <span className="highlight">Moonbami</span>, and I am currently pursuing a career for being a <span className="highlight">full-stack web developer</span>. I am still a novice, but I am making <span className="highlight">progress and learning</span> on a daily basis.</p>
+              <p className="switch-text-color text-sm lg:text-base xl:text-lg w-[400px] lg:w-[500px]">My name is <strong className="highlight">Moonbami</strong>, and I am currently pursuing a career for being a <strong className="highlight">full-stack web developer</strong>. I am still a novice, but I am making <strong className="highlight">progress and learning</strong> on a daily basis.</p>
             </div>
             <Image className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] border-[3px] border-solid border-black dark:border-white rounded-lg" src={`${process.env.API_AVATAR}`} width={'3000'} height={'3000'} alt="Jam Moonbami" />
           </div>
@@ -49,7 +49,7 @@ const Home = async () => {
         </section>
         <Section id={"about"} contentClassName={"gap-[100px]"}>
           <Title name={"about me"} desc={"Let's dive deeper of who am I behind the social media."} />
-          <div className="about-me w-full flex flex-col lg:flex-row justify-between items-center lg:items-start 2xl:justify-evenly ">
+          <div className="about-me w-full flex flex-col lg:flex-row justify-between items-center lg:items-start xl:justify-evenly ">
             <TopicImage src={ Me } />
             <div className="about-me flex flex-col gap-[30px] ">
               {abouts.map((about: AboutType) => (
@@ -68,12 +68,12 @@ const Home = async () => {
               ))}
             </div>
           </div>
-          <div className="topics w-full grid grid-cols-1 lg:grid-cols-2 gap-10 ">
+          <div className="topics w-full grid grid-cols-1 xl:grid-cols-2 gap-x-5 gap-y-10 ">
             {topics.map((topic: TopicType) => (
             <Topic key={ topic._id } title={ topic.title } desc={ topic.desc } />))}
           </div>
         </Section>
-        <Section id={"stack"} sectionClassName={"bg-gray-300 dark:bg-black"} contentClassName={"gap-100px]"}>
+        <Section id={"stack"} sectionClassName={"bg-gray-300 dark:bg-black"} contentClassName={"gap-[100px]"}>
           <Title name={"Stacks"} desc={"All of my current technology stack that I really enjoy using. Looking forward to learn more."} />
           <div className="stacks inline-grid grid-cols-5 sm:grid-cols-6 lg:grid-cols-7 gap-2">
             <StackIcon id={"python"} href={"https://www.python.org/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"} alt={"python logo"} />
@@ -101,7 +101,7 @@ const Home = async () => {
               <Image src={ `${process.env.API_TSUKIWA}` } alt='tsukiwa' width={'3000'} height={'3000'} className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
               <div className="description">
                 <li className="switch-text-color text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >tsukiwa</li>
-                <p className="switch-text-color w-[400px] md:w-[600px]">
+                <p className="switch-text-color paragraph-format">
                   A place where your “Waifus” matter. This is a website that you can rank, rate, organize and flex your waifus all over the world. This is still currently in designing phase because of my schedule being strict to my academics and gaming. But, I swear that this will be in production once I get free time.
                   <br /><br />
                   You can visit the GitHub repository <Link href="https://github.com/MoonbamiOfficial/tsukiwa-web.git" target='_blank' className="text-blue-400">here</Link>.
@@ -112,7 +112,7 @@ const Home = async () => {
               <Image src={ `${process.env.API_REALPOP}` } alt='Realpop' width={'3000'} height={'3000'} className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
               <div className="description">
                 <li className="switch-text-color text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >Realpop</li>
-                <p className="switch-text-color w-[400px] md:w-[600px]">
+                <p className="switch-text-color paragraph-format">
                   An online store of K-Pop photocards. This is an e-commerce website that are dedicated for photocards. This is a school project from my subject called DCIT 26. This is soon going to be in production so if you have any questions, please wait for its release.
                   <br /><br />
                   You can visit the GitHub repository <Link href="https://github.com/MoonbamiOfficial/realpop-web.git" target='_blank' className="text-blue-400">here</Link>.
@@ -123,7 +123,7 @@ const Home = async () => {
               <Image src={ `${process.env.API_SPA}` } alt='Student Portal App' width={'3000'} height={'3000'} className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
               <div className="description">
                 <li className="switch-text-color text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >Student Portal App</li>
-                <p className="switch-text-color w-[400px] md:w-[600px]">
+                <p className="switch-text-color paragraph-format">
                   This is another school project from my subject called ITEC 80. It’s a software for students to monitor their academics. This is a team project so I didn’t do all of these by myself, special thanks to my members!
                   <br /><br />
                   You can visit the GitHub repository <Link href="https://github.com/MoonbamiOfficial/student-portal-app.git" target='_blank' className="text-blue-400">here</Link>.
@@ -145,7 +145,7 @@ const Home = async () => {
             <SocMed href={"https://github.com/MoonbamiOfficial"} src={ GitHubLogo } text={"GitHub"} />
           </div>
           <hr className="w-full" />
-          <p className="switch-text-color last-phrase text-center w-[400px] ">I do have more social media accounts but these are my commonly used ones.</p>
+          <p className="switch-text-color last-phrase text-center paragraph-format">I do have more social media accounts but these are my commonly used ones.</p>
         </Section>
       </div>
     </>
