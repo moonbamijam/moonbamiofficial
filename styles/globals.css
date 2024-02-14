@@ -5,7 +5,7 @@
 *,
 ::before,
 ::after {
-  @apply box-border p-0 m-0 font-default text-white transition-all
+  @apply box-border p-0 m-0 text-white transition-all
 }
 
 /* utility class */

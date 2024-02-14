@@ -1,11 +1,17 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next';
+import { Noto_Sans } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from '@vercel/analytics/react';
 import Providers from '@providers/providers';
 import '@styles/globals.css';
 
 import Header from '@components/header/Header';
 import Footer from '@components/footer/Footer';
+
+const inter = Noto_Sans({ 
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin']
+});
 
 export const metadata: Metadata = {
   title: {
@@ -22,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className=" dark:bg-rich-black">
+      <body className={`${inter.className} dark:bg-rich-black`}>
         <Providers >
           <Header />
           <main>

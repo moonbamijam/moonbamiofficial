@@ -15,9 +15,6 @@ const config: Config = {
         'electric-pink': '#FB2576',
         'opaque-rb': 'rgba(3, 0, 28, 0.8)'
       },
-      fontFamily: {
-        default: ['Poppins', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif']
-      },
       container: {
         center: true,
       },
