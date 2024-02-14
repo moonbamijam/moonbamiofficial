@@ -112,7 +112,7 @@ const Header = () => {
       <header ref={ dropdown } className={`${ scrollHeader } container h-[60px] w-full z-[100] fixed top-0 left-[50%] translate-x-[-50%] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] flex justify-between items-center `}>
         <Link href="/" id="brand" className="flex items-center gap-4 [&>img]:hover:animate-pulse ">
           <Image priority src={ Moonbami_Logo } alt="" className="rounded-full p-1 bg-black dark:bg-transparent w-[40px] " />
-          <h1 className="hidden md:block font-bold text-sm">Moonbami</h1>
+          <h1 className="hidden lg:block font-bold text-sm xl:text-base">Moonbami</h1>
         </Link>
         <div className="user-options flex items-center gap-2">
           <button onClick={ toggleMenu } id="menu" className={` w-[40px] h-[40px] flex lg:hidden justify-center items-center text-xl rounded-full hover:bg-electric-pink dark:hover:bg-electric-pink ${ isMenuActive? 'bg-electric-pink' : 'dark:bg-transparent' } ${ isMenuActive? 'bg-electric-pink' : 'bg-rich-black' } `}>
