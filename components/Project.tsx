@@ -1,16 +1,8 @@
-import { Url } from 'next/dist/shared/lib/router/router'
+import { ProjectType } from '@customs/project'
 import Image from 'next/image'
 import Link from 'next/link'
 
-type Props = {
-  _id?: string
-  src: Url
-  projectTitle: string
-  projectDesc: string
-  href: string
-}
-
-const Project = (props: Props) => {
+const Project = (props: ProjectType) => {
   return (
     <div className="flex flex-col premium:flex-row-reverse gap-[15px] ">
       <Image src={ `${props.src}` } alt="" width={'3000'} height={'3000'} className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-cover rounded-lg" />
