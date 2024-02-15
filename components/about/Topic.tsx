@@ -1,13 +1,6 @@
-import Earth from '@assets/img/earth.jpg'
-import TopicImage from './TopicImage'
+import { TopicType } from '@customs/topic'
 
-type Props = {
-  className?: string
-  title: string
-  desc: string
-}
-
-const Topic = (props: Props) => {
+const Topic = (props: TopicType) => {
   return (
     <div className="topic flex flex-col items-center">
       <h1 className="switch-text-color capitalize text-4xl md:text-5xl text-center font-bold mb-2">{ props.title }</h1>
