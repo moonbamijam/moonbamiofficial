@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} dark:bg-rich-black`}>
+      <body className={`dark:bg-rich-black ${inter.className}`}>
         <Providers >
           <Header />
           <main>
@@ -36,7 +36,6 @@ export default function RootLayout({
             <Analytics />
             <SpeedInsights />
           </main>
-          <Footer />
         </Providers>
       </body>
     </html>

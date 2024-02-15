@@ -14,6 +14,8 @@ import InstagramLogo from '@public/instagram-logo.png';
 import TwitterXLogo from '@public/twitter-x-logo.png';
 
 // Components
+import LoadingSpinner from '@components/LoadingSpinner';
+import Footer from '@components/footer/Footer';
 import StackIcon from '@components/StackIcon';
 import ScrollForMore from '@components/ScrollForMore';
 import Topic from '@components/about/Topic';
@@ -55,7 +57,7 @@ const Home = async () => {
           <div className="about-me w-full flex flex-col lg:flex-row justify-between items-center lg:items-start xl:justify-evenly ">
             <TopicImage src={ Me } />
             <div className="about-me flex flex-col gap-[30px] ">
-              {abouts.map((about: AboutType) => (
+              {abouts ? abouts.map((about: AboutType) => (
                 <About 
                   key={ about._id }
                   displayName={ about.displayName }
@@ -68,12 +70,17 @@ const Home = async () => {
                   nationality={ about.nationality }
                   status={ about.status }
                   languages={ about.languages }/>
-              ))}
+              )) : (
+                <LoadingSpinner />
+              )}
             </div>
           </div>
           <div className="topics w-full grid grid-cols-1 xl:grid-cols-2 gap-x-5 gap-y-10 ">
-            {topics.map((topic: TopicType) => (
-            <Topic key={ topic._id } title={ topic.title } desc={ topic.desc } />))}
+            {topics ? topics.map((topic: TopicType) => (
+            <Topic key={ topic._id } title={ topic.title } desc={ topic.desc } />
+            )) : (
+              <LoadingSpinner />
+            )}
           </div>
         </Section>
         <Section id={"stack"} sectionClassName={"bg-gray-300 dark:bg-black"} contentClassName={"gap-[100px]"}>
@@ -100,9 +107,11 @@ const Home = async () => {
         <Section id={"project"} contentClassName={"gap-[150px]"}>
           <Title name={"projects"} desc={"These are the projects I made all throughout my coding career. I am happy to present it to you."} /> 
           <div className="projects flex flex-col gap-[100px]">
-            {projects.map((project: ProjectType) => (
+            {projects ? projects.map((project: ProjectType) => (
               <Project key={ project._id } src={ project.src } projectTitle={ project.projectTitle } projectDesc={ project.projectDesc } href={ project.href } />
-            ))}
+            )) : (
+              <LoadingSpinner />
+            )}
           </div>
         </Section>
         <Section 
@@ -121,6 +130,7 @@ const Home = async () => {
           <p className="switch-text-color last-phrase text-center paragraph-format">I do have more social media accounts but these are my commonly used ones.</p>
         </Section>
       </div>
+      <Footer />
     </>
   )
 }

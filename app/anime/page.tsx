@@ -1,5 +1,8 @@
-import StayTuned from "@components/StayTuned"
 import { Metadata } from "next"
+
+// Components
+import StayTuned from "@components/StayTuned"
+import Footer from "@components/footer/Footer"
 
 export const metadata: Metadata = {
   title: "Anime"
@@ -7,7 +10,10 @@ export const metadata: Metadata = {
 
 const AnimePage = () => {
   return (
-    <StayTuned src={`${process.env.API_ANIME_AVATAR}`} />
+    <>
+      <StayTuned src={`${process.env.API_ANIME_AVATAR}`} />
+      <Footer />
+    </>
   )
 }
 
