@@ -27,10 +27,13 @@ import Section from '@components/wrappers/Section';
 // Types
 import { TopicType } from '@customs/topic';
 import { AboutType } from '@customs/about';
+import Project from '@components/Project';
+import { ProjectType } from '@customs/project';
 
 const Home = async () => {
   const { abouts } = await useFetch("/api/abouts");
   const { topics } = await useFetch("/api/topics");
+  const { projects } = await useFetch("/api/projects");
 
   return (
     <>
@@ -97,39 +100,9 @@ const Home = async () => {
         <Section id={"project"} contentClassName={"gap-[150px]"}>
           <Title name={"projects"} desc={"These are the projects I made all throughout my coding career. I am happy to present it to you."} /> 
           <div className="projects flex flex-col gap-[100px]">
-            <div className="flex flex-col premium:flex-row-reverse gap-[15px] ">
-              <Image src={ `${process.env.API_TSUKIWA}` } alt='tsukiwa' width={'3000'} height={'3000'} className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
-              <div className="description">
-                <li className="switch-text-color text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >tsukiwa</li>
-                <p className="switch-text-color paragraph-format">
-                  A place where your “Waifus” matter. This is a website that you can rank, rate, organize and flex your waifus all over the world. This is still currently in designing phase because of my schedule being strict to my academics and gaming. But, I swear that this will be in production once I get free time.
-                  <br /><br />
-                  You can visit the GitHub repository <Link href="https://github.com/MoonbamiOfficial/tsukiwa-web.git" target='_blank' className="text-blue-400">here</Link>.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col premium:flex-row-reverse gap-[15px] ">
-              <Image src={ `${process.env.API_REALPOP}` } alt='Realpop' width={'3000'} height={'3000'} className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
-              <div className="description">
-                <li className="switch-text-color text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >Realpop</li>
-                <p className="switch-text-color paragraph-format">
-                  An online store of K-Pop photocards. This is an e-commerce website that are dedicated for photocards. This is a school project from my subject called DCIT 26. This is soon going to be in production so if you have any questions, please wait for its release.
-                  <br /><br />
-                  You can visit the GitHub repository <Link href="https://github.com/MoonbamiOfficial/realpop-web.git" target='_blank' className="text-blue-400">here</Link>.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col premium:flex-row-reverse gap-[15px] ">
-              <Image src={ `${process.env.API_SPA}` } alt='Student Portal App' width={'3000'} height={'3000'} className="w-[400px] h-[220px] md:w-[640px] md:h-[480px] lg:w-[800px] lg:h-[400px] object-contain rounded-lg" />
-              <div className="description">
-                <li className="switch-text-color text-3xl md:text-4xl lg:text-5xl font-bold mb-2 " >Student Portal App</li>
-                <p className="switch-text-color paragraph-format">
-                  This is another school project from my subject called ITEC 80. It’s a software for students to monitor their academics. This is a team project so I didn’t do all of these by myself, special thanks to my members!
-                  <br /><br />
-                  You can visit the GitHub repository <Link href="https://github.com/MoonbamiOfficial/student-portal-app.git" target='_blank' className="text-blue-400">here</Link>.
-                </p>
-              </div>
-            </div>
+            {projects.map((project: ProjectType) => (
+              <Project key={ project._id } src={ project.src } projectTitle={ project.projectTitle } projectDesc={ project.projectDesc } href={ project.href } />
+            ))}
           </div>
         </Section>
         <Section 
