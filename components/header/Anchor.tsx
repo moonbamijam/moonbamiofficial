@@ -18,8 +18,8 @@ const Anchor = (props: Props) => {
   const [ isHovered, setIsHovered ] = useState("rotate-0")
 
   return (
-    <div onMouseEnter={ () => setIsHovered("-rotate-90") } onMouseLeave={ () => setIsHovered("rotate-0") } className="h-full relative flex flex-col justify-center items-center cursor-pointer ">
-      <Link onClick={ props.onClick } href={ props.href } className={`${ props.state? '[&>div]:-rotate-90 [&>div]:bg-electric-pink [&>div]:dark:bg-electric-pink w-[100px]' : '[&>div]:rotate-0' } h-full rounded text-sm text-center hover:text-electric-pink dark:hover:text-electric-pink [&>div]:hover:bg-electric-pink [&>div]:dark:hover:bg-electric-pink w-[100px] py-2 flex justify-center items-center gap-2  capitalize`}>
+    <div onClick={ props.onClick } className="h-full relative flex flex-col justify-center items-center cursor-pointer ">
+      <Link href={ props.href } className={`${ props.state? '[&>div]:-rotate-90 [&>div]:bg-electric-pink [&>div]:dark:bg-electric-pink w-[100px]' : '[&>div]:rotate-0' } h-full rounded text-sm text-center hover:text-electric-pink dark:hover:text-electric-pink [&>div]:hover:bg-electric-pink [&>div]:dark:hover:bg-electric-pink w-[100px] py-2 flex justify-center items-center gap-2  capitalize`}>
         { props.name } 
         <div className="rounded-full bg-black p-1 dark:bg-transparent">
           <FaAngleLeft />
@@ -33,4 +33,4 @@ const Anchor = (props: Props) => {
   )
 }
 
-export default Anchor
+export default Anchor;
