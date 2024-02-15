@@ -37,5 +37,5 @@
   @apply bg-transparent backdrop-blur-sm
 }
 .scrolled-header-bg {
-  @apply bg-rich-black 
+  @apply bg-rich-black backdrop-blur-sm
 }
