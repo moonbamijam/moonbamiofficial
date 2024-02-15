@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 // Hooks
 import { useFetch } from '@hooks/useFetch';
@@ -24,12 +23,12 @@ import SocMed from '@components/SocMed';
 import TopicImage from '@components/about/TopicImage';
 import Title from '@components/texts/Title';
 import About from '@components/about/About';
+import Project from '@components/project/Project';
 import Section from '@components/wrappers/Section';
 
 // Types
 import { TopicType } from '@customs/topic';
 import { AboutType } from '@customs/about';
-import Project from '@components/Project';
 import { ProjectType } from '@customs/project';
 
 const Home = async () => {
