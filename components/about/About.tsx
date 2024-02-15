@@ -5,7 +5,7 @@ const About = (props: AboutType) => {
   return (
     <>
       <div className="description">
-        <h1 className="switch-text-color capitalize text-4xl md:text-5xl font-bold mb-2 text-center lg:text-left">{ props.displayName }</h1>
+        <h1 className="switch-text-color capitalize text-4xl md:text-5xl lg:px-2 font-bold mb-2 text-center lg:text-left">{ props.displayName }</h1>
         <p className="switch-text-color paragraph-format">{ props.desc }</p>
       </div>
       <div className="labels flex flex-col gap-2">
