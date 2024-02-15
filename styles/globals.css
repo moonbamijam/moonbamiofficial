@@ -23,10 +23,10 @@
   @apply opacity-100 visible
 }
 .text-format {
-  @apply text-sm lg:text-base
+  @apply text-sm lg:text-base px-2
 }
 .paragraph-format {
-  @apply text-sm lg:text-base w-[400px] lg:w-[500px] xl:w-[600px]
+  @apply text-sm lg:text-base px-2 w-[400px] lg:w-[500px] xl:w-[600px]
 }
 
 /* HEADER STYLES */

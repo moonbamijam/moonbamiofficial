@@ -7,7 +7,7 @@ const Detail = (props: Props) => {
     <div className="details flex">
       <div className="label flex">
         <span className="switch-text-color capitalize w-[100px] lg:w-[115px] xl:w-[130px] text-format">{ props.label }</span>
-        <span>: &#160;</span>
+        <span>:</span>
       </div>
       <span className="switch-text-color capitalize flex flex-wrap w-[200px] lg:w-[300px] xl:w-[400px] text-format">{ props.detail }</span>
     </div>
