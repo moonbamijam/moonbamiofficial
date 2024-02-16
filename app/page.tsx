@@ -6,7 +6,6 @@ import { useFetch } from '@hooks/useFetch';
 // Asssets
 import AkaneDream from '@assets/img/akane-dream.webp';
 import Me from '@public/me.webp';
-import lost from '@assets/img/sky-bg.webp';
 import FacebookLogo from '@public/facebook-logo.webp';
 import GitHubLogo from '@public/github-mark-white.webp';
 import InstagramLogo from '@public/instagram-logo.webp';
@@ -113,10 +112,7 @@ const Home = async () => {
             )}
           </div>
         </Section>
-        <Section 
-          id={"contact"} 
-          image={<Image src={ lost } alt="" width={'3000'} height={'3000'} className="w-full h-[500px] object-cover absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] -z-50 opacity-[0.3] "/>}
-          contentClassName={"gap-[30px]"}>
+        <Section id={"contact"} contentClassName={"gap-[30px]"}>
           <Title name={"Contact Me"} desc={"If you have any concerns, questions or if you just want to be friends with me. Please, contact me to any of these that you prefer."} /> 
           <hr className="w-full" />
           <div className=" socmeds grid grid-cols-2 gap-[30px]">
