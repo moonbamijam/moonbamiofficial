@@ -7,7 +7,7 @@ import Link from "next/link";
 // Utilities
 
 // Assets
-import Moonbami_Logo from '@public/tsukiwa-logo.png'
+import Moonbami_Logo from '@public/tsukiwa-logo.webp'
 import Button from "./Button";
 import SubButton from "./SubButton";
 
