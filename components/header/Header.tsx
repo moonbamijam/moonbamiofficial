@@ -4,6 +4,8 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+// Utilities
+
 // Assets
 import Moonbami_Logo from '@public/tsukiwa-logo.png'
 import Button from "./Button";
@@ -21,89 +23,89 @@ import { FaCaretRight } from "react-icons/fa"
 import { FaCaretDown } from "react-icons/fa";
 
 const Header = () => {
-  const [ isMenuActive, setIsMenuActive ] = useState(false)
-  const [ isHomeDropdownActive, setIsHomeDropdownActive ] = useState(false)
-  const [ isAnimeDropdownActive, setIsAnimeDropdownActive ] = useState(false)
-  const [ isGamesDropdownActive, setIsGamesDropdownActive ] = useState(false)
-  const [ isHobbiesDropdownActive, setIsHobbiesDropdownActive ] = useState(false)
-  const [ isMusicDropdownActive, seetIsMusicDropdowenActive ] = useState(false)
-  const [ scrollHeaderBg, setScrollHeaderBg ] = useState("unscrolled-header-bg")
-  const [ scrollHeader, setScrollHeader ] = useState("unscrolled-header")
+  const [ isMenuActive, setIsMenuActive ] = useState(false);
+  const [ isHomeDropdownActive, setIsHomeDropdownActive ] = useState(false);
+  const [ isAnimeDropdownActive, setIsAnimeDropdownActive ] = useState(false);
+  const [ isGamesDropdownActive, setIsGamesDropdownActive ] = useState(false);
+  const [ isHobbiesDropdownActive, setIsHobbiesDropdownActive ] = useState(false);
+  const [ isMusicDropdownActive, seetIsMusicDropdowenActive ] = useState(false);
+  const [ scrollHeaderBg, setScrollHeaderBg ] = useState("unscrolled-header-bg");
+  const [ scrollHeader, setScrollHeader ] = useState("unscrolled-header");
 
   const handleScrollHeader = () => {
-    if(window.scrollY < 100) return setScrollHeader("unscrolled-header")
-    else if(window.scrollY > 100) return setScrollHeader("scrolled-header")
-  }
+    if(window.scrollY < 100) return setScrollHeader("unscrolled-header");
+    else if(window.scrollY > 100) return setScrollHeader("scrolled-header");
+  };
   const handleScrollHeaderBg = () => {
-    if(window.scrollY < 100) return setScrollHeaderBg("unscrolled-header-bg")
-    else if(window.scrollY > 100) return setScrollHeaderBg("scrolled-header-bg")
-  }
+    if(window.scrollY < 100) return setScrollHeaderBg("unscrolled-header-bg");
+    else if(window.scrollY > 100) return setScrollHeaderBg("scrolled-header-bg");
+  };
 
   const handleScrollIntoView = (scrollInto: string) => {
-    const section = document.querySelector(scrollInto)
-    if(section) section.scrollIntoView({ behavior: 'smooth' })
-  }
+    const section = document.querySelector(scrollInto);
+    if(section) section.scrollIntoView({ behavior: 'smooth' });
+  };
 
   const toggleMenu = () => {
-    setIsMenuActive(!isMenuActive)
-  }
+    setIsMenuActive(!isMenuActive);
+  };
   const toggleHomeDropdown = () => {
-    setIsHomeDropdownActive(!isHomeDropdownActive)
-    setIsAnimeDropdownActive(false)
-    setIsGamesDropdownActive(false)
-    setIsHobbiesDropdownActive(false)
-    seetIsMusicDropdowenActive(false)
-  }
+    setIsHomeDropdownActive(!isHomeDropdownActive);
+    setIsAnimeDropdownActive(false);
+    setIsGamesDropdownActive(false);
+    setIsHobbiesDropdownActive(false);
+    seetIsMusicDropdowenActive(false);
+  };
   const toggleAnimeDropdown = () => {
-    setIsHomeDropdownActive(false)
-    setIsAnimeDropdownActive(!isAnimeDropdownActive)
-    setIsGamesDropdownActive(false)
-    setIsHobbiesDropdownActive(false)
-    seetIsMusicDropdowenActive(false)
-  }
+    setIsHomeDropdownActive(false);
+    setIsAnimeDropdownActive(!isAnimeDropdownActive);
+    setIsGamesDropdownActive(false);
+    setIsHobbiesDropdownActive(false);
+    seetIsMusicDropdowenActive(false);
+  };
   const toggleGamesDropdown = () => {
-    setIsHomeDropdownActive(false)
-    setIsAnimeDropdownActive(false)
-    setIsGamesDropdownActive(!isGamesDropdownActive)
-    setIsHobbiesDropdownActive(false)
-    seetIsMusicDropdowenActive(false)
-  }
+    setIsHomeDropdownActive(false);
+    setIsAnimeDropdownActive(false);
+    setIsGamesDropdownActive(!isGamesDropdownActive);
+    setIsHobbiesDropdownActive(false);
+    seetIsMusicDropdowenActive(false);
+  };
   const toggleHobbiesDropdown = () => {
-    setIsHomeDropdownActive(false)
-    setIsAnimeDropdownActive(false)
-    setIsGamesDropdownActive(false)
-    setIsHobbiesDropdownActive(!isHobbiesDropdownActive)
-    seetIsMusicDropdowenActive(false)
-  }
+    setIsHomeDropdownActive(false);
+    setIsAnimeDropdownActive(false);
+    setIsGamesDropdownActive(false);
+    setIsHobbiesDropdownActive(!isHobbiesDropdownActive);
+    seetIsMusicDropdowenActive(false);
+  };
   const toggleMusicDropdown = () => {
-    setIsHomeDropdownActive(false)
-    setIsAnimeDropdownActive(false)
-    setIsGamesDropdownActive(false)
-    setIsHobbiesDropdownActive(false)
-    seetIsMusicDropdowenActive(!isMusicDropdownActive)
-  }
+    setIsHomeDropdownActive(false);
+    setIsAnimeDropdownActive(false);
+    setIsGamesDropdownActive(false);
+    setIsHobbiesDropdownActive(false);
+    seetIsMusicDropdowenActive(!isMusicDropdownActive);
+  };
 
-  const dropdown = useRef<HTMLButtonElement | null>(null)
+  const dropdown = useRef<HTMLButtonElement | null>(null);
 
   useEffect(() => {
     const handleDropdowns = ({ target }: Event) => {
       if(!dropdown.current?.contains(target as Node)) {
-        setIsMenuActive(false)
-        setIsHomeDropdownActive(false)
-        setIsAnimeDropdownActive(false)
-        setIsGamesDropdownActive(false)
-        setIsHobbiesDropdownActive(false)
-        seetIsMusicDropdowenActive(false)
-      }
-    }
-    document.addEventListener('mousedown', handleDropdowns)
-    document.addEventListener('scroll', handleScrollHeader)
-    document.addEventListener('scroll', handleScrollHeaderBg)
+        setIsMenuActive(false);
+        setIsHomeDropdownActive(false);
+        setIsAnimeDropdownActive(false);
+        setIsGamesDropdownActive(false);
+        setIsHobbiesDropdownActive(false);
+        seetIsMusicDropdowenActive(false);
+      };
+    };
+    document.addEventListener('mousedown', handleDropdowns);
+    document.addEventListener('scroll', handleScrollHeader);
+    document.addEventListener('scroll', handleScrollHeaderBg);
     return () => {
-      document.removeEventListener('mousedown', handleDropdowns)
-      document.removeEventListener('scroll', handleScrollHeader)
-      document.removeEventListener('scroll', handleScrollHeaderBg)
-    }
+      document.removeEventListener('mousedown', handleDropdowns);
+      document.removeEventListener('scroll', handleScrollHeader);
+      document.removeEventListener('scroll', handleScrollHeaderBg);
+    };
   }, []);
 
   return (
