@@ -5,12 +5,12 @@ import { useFetch } from '@hooks/useFetch';
 
 // Asssets
 import AkaneDream from '@assets/img/akane-dream.webp';
-import Me from '@public/me.jpg';
-import lost from '@assets/img/sky-bg.jpg';
-import FacebookLogo from '@public/facebook-logo.png';
-import GitHubLogo from '@public/github-mark-white.png';
-import InstagramLogo from '@public/instagram-logo.png';
-import TwitterXLogo from '@public/twitter-x-logo.png';
+import Me from '@public/me.webp';
+import lost from '@assets/img/sky-bg.webp';
+import FacebookLogo from '@public/facebook-logo.webp';
+import GitHubLogo from '@public/github-mark-white.webp';
+import InstagramLogo from '@public/instagram-logo.webp';
+import TwitterXLogo from '@public/twitter-x-logo.webp';
 
 // Components
 import LoadingSpinner from '@components/LoadingSpinner';
