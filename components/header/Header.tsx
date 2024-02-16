@@ -116,15 +116,13 @@ const Header = () => {
           <Image priority src={ Moonbami_Logo } alt="" width={'40'} height={'40'} className="rounded-full p-1 bg-black dark:bg-transparent w-[40px] " />
           <h1 className="hidden lg:block font-bold text-sm xl:text-base">Moonbami</h1>
         </Link>
-        <div className="user-options flex items-center gap-2">
-          <button onClick={ toggleMenu } id="menu" className={` w-[40px] h-[40px] flex lg:hidden justify-center items-center text-xl rounded-full hover:bg-electric-pink dark:hover:bg-electric-pink ${ isMenuActive? 'bg-electric-pink' : 'dark:bg-transparent' } ${ isMenuActive? 'bg-electric-pink' : 'bg-rich-black' } `}>
+        <nav className="mobile-nav flex items-center lg:hidden gap-2">
+          <button name="burger-menu" onClick={ toggleMenu } id="menu" className={` w-[40px] h-[40px] flex justify-center items-center text-xl rounded-full hover:bg-electric-pink dark:hover:bg-electric-pink ${ isMenuActive? 'bg-electric-pink' : 'dark:bg-transparent' } ${ isMenuActive? 'bg-electric-pink' : 'bg-rich-black' } `}>
             {isMenuActive? <FaBarsStaggered /> : <FaBars /> }
           </button>
-          <div className="lg:hidden">
-            <ThemeSwitchBtn />
-          </div>
-        </div>
-        <nav className="hidden lg:flex items-center h-full ">
+          <ThemeSwitchBtn />
+        </nav>
+        <nav className="desktop-nav hidden lg:flex items-center h-full ">
           <Anchor state={ isHomeDropdownActive } onClick={ toggleHomeDropdown } href={"/"} name={"home"} >
           {isHomeDropdownActive && (
             <>
