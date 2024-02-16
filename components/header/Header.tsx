@@ -117,7 +117,7 @@ const Header = () => {
           <h1 className="hidden lg:block font-bold text-sm xl:text-base">Moonbami</h1>
         </Link>
         <nav className="mobile-nav flex items-center lg:hidden gap-2">
-          <button name="burger-menu" onClick={ toggleMenu } id="menu" className={` w-[40px] h-[40px] flex justify-center items-center text-xl rounded-full hover:bg-electric-pink dark:hover:bg-electric-pink ${ isMenuActive? 'bg-electric-pink' : 'dark:bg-transparent' } ${ isMenuActive? 'bg-electric-pink' : 'bg-rich-black' } `}>
+          <button aria-label="menu" onClick={ toggleMenu } id="menu" className={` w-[40px] h-[40px] flex justify-center items-center text-xl rounded-full hover:bg-electric-pink dark:hover:bg-electric-pink ${ isMenuActive? 'bg-electric-pink' : 'dark:bg-transparent' } ${ isMenuActive? 'bg-electric-pink' : 'bg-rich-black' } `}>
             {isMenuActive? <FaBarsStaggered /> : <FaBars /> }
           </button>
           <ThemeSwitchBtn />
