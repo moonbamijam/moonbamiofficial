@@ -6,7 +6,6 @@ import Providers from '@providers/providers';
 import '@styles/globals.css';
 
 import Header from '@components/header/Header';
-import Footer from '@components/footer/Footer';
 
 const inter = Noto_Sans({ 
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -28,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`dark:bg-rich-black ${inter.className}`}>
+      <body className={`${inter.className}`}>
         <Providers >
           <Header />
           <main>

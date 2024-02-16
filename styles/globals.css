@@ -7,6 +7,9 @@
 ::after {
   @apply box-border p-0 m-0 text-white transition-all
 }
+body {
+  @apply dark:bg-rich-black
+}
 
 /* utility class */
 .highlight {
