@@ -98,7 +98,7 @@ const Home = async () => {
             <StackIcon id={"css"} href={"https://web.dev/learn/css"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"} alt={"css3 logo"} />
             <StackIcon id={"html"} href={"https://html.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"} alt={"html5 logo"} />
             <StackIcon id={"figma"} href={"https://www.figma.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"} alt={"figma logo"} />
-            <StackIcon id={"photoshop"} href={"https://www.adobe.com/ph_en/products/photoshop/free-trial-download.html"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-plain.svg"} alt={"photoshop logo"} className={"bg-[#31A8FF] rounded-full"} />
+            <StackIcon id={"photoshop"} href={"https://www.adobe.com/ph_en/products/photoshop/free-trial-download.html"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg"} alt={"photoshop logo"} />
             <StackIcon id={"git"} href={"https://git-scm.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"} alt={"git logo"} />
             <StackIcon id={"mongodb"} href={"https://www.mongodb.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"} alt={"mongodb logo"} />          
           </div>
