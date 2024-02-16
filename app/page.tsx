@@ -82,7 +82,7 @@ const Home = async () => {
             )}
           </div>
         </Section>
-        <Section id={"stack"} sectionClassName={"bg-gray-300 dark:bg-black"} contentClassName={"gap-[100px]"}>
+        <Section id={"stack"} contentClassName={"gap-[100px]"}>
           <Title name={"Stacks"} desc={"All of my current technology stack that I really enjoy using. Looking forward to learn more."} />
           <div className="stacks inline-grid grid-cols-5 sm:grid-cols-6 lg:grid-cols-7 gap-2">
             <StackIcon id={"python"} href={"https://www.python.org/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"} alt={"python logo"} />
@@ -93,7 +93,7 @@ const Home = async () => {
             <StackIcon id={"nextjs"} href={"https://nextjs.org/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"} alt={"nextjs logo"}/>
             <StackIcon id={"nodejs"} href={"https://nodejs.org/en"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"} alt={"nodejs logo"}/>
             <StackIcon id={"expressjs"} href={"https://expressjs.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"} alt={"expressjs logo"} className={"bg-gray-300 w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[70px] lg:h-[70px] rounded-full"} />
-            <StackIcon id={"tailwindcss"} href={"https://tailwindcss.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg"} alt={"tailwindcss logo"} />
+            <StackIcon id={"tailwindcss"} href={"https://tailwindcss.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"} alt={"tailwindcss logo"} />
             <StackIcon id={"sass"} href={"https://sass-lang.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"} alt={"sass logo"} />
             <StackIcon id={"css"} href={"https://web.dev/learn/css"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"} alt={"css3 logo"} />
             <StackIcon id={"html"} href={"https://html.com/"} src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"} alt={"html5 logo"} />
