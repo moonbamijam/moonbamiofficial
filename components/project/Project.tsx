@@ -11,7 +11,7 @@ const Project = (props: ProjectType) => {
         <p className="switch-text-color paragraph-format">
           { props.projectDesc }
           <br /><br />
-          You can visit the GitHub repository <Link href={ props.href } target='_blank' className="text-blue-400">here</Link>.
+          Visit the GitHub repository of <Link href={ props.href } target='_blank' className="text-blue-400 hover:underline">{ props.projectTitle }</Link>.
         </p>
       </div>
     </div>
