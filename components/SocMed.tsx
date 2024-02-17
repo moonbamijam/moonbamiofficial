@@ -12,7 +12,7 @@ type Props = {
 const SocMed = (props: Props) => {
   return (
     <Link href={ props.href } className="flex items-center gap-2">
-      <Image src={ props.src } alt="" width={"50"} height={"50"} className="w-[50px]" />
+      <Image src={ props.src } alt="" width={50} height={50} className="w-[50px]" />
       <p className="switch-text-color font-bold text-xl capitalize">{ props.text } </p>
     </Link>
   )

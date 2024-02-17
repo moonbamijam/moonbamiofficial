@@ -1,8 +1,9 @@
-import { Metadata } from "next"
+import { Metadata } from "next";
+import dynamic from "next/dynamic";
 
 // Components
-import StayTuned from "@components/StayTuned"
-import Footer from "@components/footer/Footer"
+import StayTuned from "@components/StayTuned";
+const Footer = dynamic(() => import('@components/footer/Footer'));
 
 export const metadata: Metadata = {
   title: "Anime"
@@ -15,6 +16,6 @@ const AnimePage = () => {
       <Footer />
     </>
   )
-}
+};
 
-export default AnimePage
+export default AnimePage;

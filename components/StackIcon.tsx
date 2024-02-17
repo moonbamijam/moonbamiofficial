@@ -17,7 +17,7 @@ const StackIcon = (props: Props) => {
   return (
     <Link id={ props.id } href={ props.href } target='_blank' className="relative flex items-center justify-center">
       <div className={`w-[40px] h-[40px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] ${ props.className } absolute `}></div>
-      <Image src={ props.src } alt={ props.alt } width={'1000'} height={'1000'} className="relative w-[50px] md:w-[60px] lg:w-[70px]" />
+      <Image src={ props.src } alt={ props.alt } width={70} height={70} className="relative w-[50px] md:w-[60px] lg:w-[70px]" />
     </Link>
   )
 }
