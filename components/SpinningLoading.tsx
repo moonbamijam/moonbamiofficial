@@ -1,9 +1,9 @@
-import { ImSpinner2 } from "react-icons/im";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 const SpinningLoading = () => {
   return (
     <div className="animate-spin">
-      <ImSpinner2 />
+      <AiOutlineLoading3Quarters />
     </div>
   )
 }
