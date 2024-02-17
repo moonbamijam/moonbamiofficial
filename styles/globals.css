@@ -34,7 +34,7 @@ body {
 
 /* HEADER STYLES */
 .unscrolled-header {
-  @apply [&>a>h1]:text-black [&>nav>div>a]:text-black [&>a>h1]:dark:text-white [&>nav>div>a]:dark:text-white [&>div>a]:text-black
+  @apply [&>a>h1]:text-black [&>nav>div>a]:text-black [&>a>h1]:dark:text-white [&>nav>div>a]:dark:text-white [&>div>a]:text-black [&>div>a]:dark:text-white
 }
 .unscrolled-header-bg {
   @apply bg-transparent backdrop-blur-sm
