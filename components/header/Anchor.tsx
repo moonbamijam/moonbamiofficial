@@ -26,7 +26,7 @@ const Anchor = (props: Props) => {
         </div>
       </Link>
       {props.state && (
-      <div className="absolute top-[60px] flex flex-col gap-2 px-4 py-8 rounded-lg bg-rich-black border border-transparent dark:border-white">
+      <div className="absolute top-[60px] flex flex-col gap-2 mt-2 px-4 py-8 rounded-lg bg-rich-black border border-transparent dark:border-white">
         { props.children }
       </div>)}
     </div>
