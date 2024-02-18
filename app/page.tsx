@@ -39,7 +39,14 @@ const Home = async () => {
 
   return (
     <>
-      <Image priority src={ AkaneDream } alt="" id="home-bg" width={1920} height={930} className="w-full h-[930px] object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
+      <Image 
+        priority 
+        src={ AkaneDream } 
+        alt="Akane Home Background" 
+        id="home-bg" 
+        width={1920} 
+        height={1080} 
+        className="w-full h-[930px] object-cover absolute z-[-100] opacity-[0.5] dark:opacity-[0.3] " />
       <BackToTop id={"#home"} />
       <div className="container relative">
         <section id="home" className="h-[930px] flex flex-col justify-between items-center">
@@ -48,7 +55,13 @@ const Home = async () => {
               <h1 className="switch-text-color text-6xl md:text-7xl lg:text-8xl px-1 font-bold mb-8">Heya~!</h1>
               <p className="switch-text-color text-sm lg:text-base xl:text-lg px-2 w-[400px] lg:w-[500px]">My name is <strong className="highlight">Moonbami</strong>, and I am currently pursuing a career for being a <strong className="highlight">full-stack web developer</strong>. I am still a novice, but I am making <strong className="highlight">progress and learning</strong> on a daily basis.</p>
             </div>
-            <Image className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] border-[3px] border-solid border-black dark:border-white rounded-lg" src={ Moonbami } width={300} height={300} alt="Jam Moonbami" />
+            <Image 
+              src={ Moonbami } 
+              width={300} 
+              height={300} 
+              priority
+              alt="Jam Moonbami" 
+              className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] border-[3px] border-solid border-black dark:border-white rounded-lg"  />
           </div>
           <ScrollForMore />
         </section>
