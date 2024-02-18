@@ -16,8 +16,8 @@ const Footer = () => {
           </div>
           <div className="content w-full flex justify-around">
             <div className="navigate">
-              <h1 className="switch-text-color font-bold text-2xl ">Navigate</h1>
-              <div className="links flex flex-col">
+              <h1 className="switch-text-color font-bold text-2xl mb-1">Navigate</h1>
+              <div className="links flex flex-col gap-1">
                 <Anchor href={"/"} text={"home"} />
                 <Anchor href={"/anime"} text={"anime"} />
                 <Anchor href={"/games"} text={"games"} />
@@ -26,8 +26,8 @@ const Footer = () => {
               </div>
             </div>
             <div className="contact">
-              <h1 className="switch-text-color font-bold text-2xl ">Contact</h1>
-              <div className="links flex flex-col">
+              <h1 className="switch-text-color font-bold text-2xl mb-1">Contact</h1>
+              <div className="links flex flex-col gap-1">
                 <Anchor href={"https://www.facebook.com/MoonbamiOffcl"} text={"facebook"} target="_blank"/>
                 <Anchor href={"https://www.instagram.com/moonbamidesu/"} text={"instagra"} target="_blank"/>
                 <Anchor href={"https://twitter.com/Moonbami_"} text={"twitter x"} target="_blank"/>
