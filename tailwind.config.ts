@@ -10,10 +10,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'rich-black': '#03001C',
-        'deep-koamaru': '#301E67',
-        'electric-pink': '#FB2576',
-        'opaque-rb': 'rgba(3, 0, 28, 0.8)'
+        'opaque-rb': 'rgba(3, 0, 28, 0.8)',
+        primary: 'rgb(var(--primary))',
+        secondary: 'rgb(var(--secondary))',
+        azure: 'rgb(var(--azure))',
       },
       container: {
         center: true,
