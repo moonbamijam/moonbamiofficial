@@ -1,5 +1,5 @@
 import Detail from '@components/about/Detail';
-import { AboutType } from '@customs/about';
+import { AboutType } from '@shared-types/about';
 
 const About = (props: AboutType) => {  
   return (

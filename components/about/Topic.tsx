@@ -1,4 +1,4 @@
-import { TopicType } from '@customs/topic'
+import { TopicType } from '@shared-types/topic'
 
 const Topic = (props: TopicType) => {
   return (
