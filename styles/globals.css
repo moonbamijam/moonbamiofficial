@@ -2,43 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --primary: 2 2 2;
+    --secondary: 0 5 11;
+    --aqua: 0 255 255;
+    --marine: 127 255 212;
+    --azure: 0 127 255;
+  }
+}
+
 *,
 ::before,
 ::after {
-  @apply box-border p-0 m-0 text-white transition-all
+  @apply box-border p-0 m-0 text-white transition-all;
 }
 body {
-  @apply dark:bg-rich-black
+  @apply dark:bg-gradient-to-b from-primary via-secondary to-primary;
 }
 
-/* utility class */
+/* UTILITY CLASSES */
 .highlight {
-  @apply text-electric-pink
+  @apply text-azure;
 }
 .switch-text-color {
-  @apply text-black dark:text-white
+  @apply text-black dark:text-white;
 }
-/* HOMEPAGE STYLES */
 .hide-back-to-top {
-  @apply opacity-0 invisible
+  @apply opacity-0 invisible;
 }
 .show-back-to-top {
-  @apply opacity-100 visible
+  @apply opacity-100 visible;
 }
 .text-format {
-  @apply text-sm lg:text-base px-2
+  @apply text-sm lg:text-base px-2;
 }
 .paragraph-format {
-  @apply text-sm lg:text-base px-2 w-[400px] lg:w-[500px] xl:w-[600px]
+  @apply text-sm lg:text-base px-2 w-[400px] lg:w-[500px] xl:w-[600px];
 }
-
-/* HEADER STYLES */
-.unscrolled-header {
-  @apply [&>a>h1]:text-black [&>nav>div>a]:text-black [&>a>h1]:dark:text-white [&>nav>div>a]:dark:text-white [&>div>a]:text-black [&>div>a]:dark:text-white
-}
-.unscrolled-header-bg {
-  @apply bg-transparent backdrop-blur-sm
-}
-.scrolled-header-bg {
-  @apply bg-rich-black backdrop-blur-sm
+.active {
+  @apply bg-azure text-white;
 }

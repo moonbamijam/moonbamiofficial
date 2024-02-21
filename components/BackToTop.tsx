@@ -15,7 +15,7 @@ const BackToTop = (props: Props) => {
     if(profileSection) profileSection.scrollIntoView({ behavior: 'smooth' })}
 
   const handleBackToTop = () => {
-    if(window.scrollY > 1500) return setBackToTop("show-back-to-top")
+    if(window.scrollY > 500) return setBackToTop("show-back-to-top")
     else if(window.scrollY < 1) return setBackToTop("hide-back-to-top")
   } 
 

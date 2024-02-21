@@ -7,7 +7,7 @@ const Footer = () => {
   const year = new Date()
   return (
     <>
-      <div className="footer-bg relative bottom-0 border-t-[8px] border-electric-pink w-full "></div>
+      <div className="footer-bg relative bottom-0 border-t-4 border-azure w-full "></div>
       <section id="footer" className="container relative bottom-0 pt-[100px] pb-[50px] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px]">
         <div className="main flex flex-col lg:flex-row gap-[50px] items-center lg:items-start">
           <div className="brand flex flex-col gap-2 items-center">

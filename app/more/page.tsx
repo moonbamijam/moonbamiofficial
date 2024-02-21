@@ -6,15 +6,16 @@ import StayTuned from "@components/StayTuned";
 const Footer = dynamic(() => import('@components/footer/Footer'));
 
 export const metadata: Metadata = {
-  title: "Games"
+  title: "More"
 }
-const Games = () => {
+
+const MorePage = () => {
   return (
     <>
-      <StayTuned src={`${process.env.API_GAMES_AVATAR}`} />
+      <StayTuned src={`${process.env.API_MUSIC_AVATAR}`} />
       <Footer />
     </>
   )
 };
 
-export default Games;
+export default MorePage;

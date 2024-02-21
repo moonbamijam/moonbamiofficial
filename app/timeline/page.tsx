@@ -6,9 +6,9 @@ import StayTuned from "@components/StayTuned";
 const Footer = dynamic(() => import('@components/footer/Footer'));
 
 export const metadata: Metadata = {
-  title: "Hobbies"
+  title: "Timeline"
 }
-const Hobbies = () => {
+const TimelinePage = () =>{
   return (
     <>
       <StayTuned src={`${process.env.API_HOBBIES_AVATAR}`} />
@@ -17,4 +17,4 @@ const Hobbies = () => {
   )
 };
 
-export default Hobbies;
+export default TimelinePage;
