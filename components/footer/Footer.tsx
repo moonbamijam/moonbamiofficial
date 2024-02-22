@@ -47,7 +47,7 @@ const Footer = () => {
                 />
                 <Anchor
                   href={"https://www.instagram.com/moonbamidesu/"}
-                  text={"instagra"}
+                  text={"instagram"}
                   target="_blank"
                 />
                 <Anchor
