@@ -5,7 +5,7 @@
 @layer base {
   :root {
     --primary: 2 2 2;
-    --secondary: 0 5 11;
+    --secondary: 45 52 54;
     --aqua: 0 255 255;
     --marine: 127 255 212;
     --azure: 0 127 255;
@@ -15,18 +15,15 @@
 *,
 ::before,
 ::after {
-  @apply box-border p-0 m-0 text-white transition-all;
+  @apply box-border p-0 m-0 transition-all;
 }
 body {
-  @apply dark:bg-gradient-to-b from-primary via-secondary to-primary;
+  @apply dark:bg-gradient-to-br from-primary to-secondary;
 }
 
 /* UTILITY CLASSES */
 .highlight {
   @apply text-azure;
-}
-.switch-text-color {
-  @apply text-black dark:text-white;
 }
 .hide-back-to-top {
   @apply opacity-0 invisible;
@@ -40,6 +37,23 @@ body {
 .paragraph-format {
   @apply text-sm lg:text-base px-2 w-[400px] lg:w-[500px] xl:w-[600px];
 }
+.desc-format {
+  @apply text-sm lg:text-base px-2 line-clamp-2;
+}
 .active {
   @apply bg-azure text-white;
+}
+.card {
+  @apply cursor-pointer border border-gray-500 hover:shadow-md hover:shadow-gray-500 hover:-translate-y-4;
+}
+.button-format {
+  @apply text-center text-sm lg:text-base w-[150px] py-[15px] rounded-lg;
+}
+
+/* HEADER */
+.unscrolled-header-bg {
+  @apply bg-transparent;
+}
+.scrolled-header-bg {
+  @apply bg-white dark:bg-primary shadow shadow-gray-200 dark:shadow-transparent;
 }
