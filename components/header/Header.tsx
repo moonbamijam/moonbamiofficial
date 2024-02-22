@@ -17,7 +17,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 
 const NavLinks = [
-  { id: 1, name: "home", path: "/" },
+  { id: 1, name: "moonbami", path: "/" },
   { id: 2, name: "about", path: "/about" },
   { id: 3, name: "projects", path: "/projects" },
   { id: 4, name: "timeline", path: "/timeline" },
