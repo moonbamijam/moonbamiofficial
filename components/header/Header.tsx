@@ -51,7 +51,7 @@ const Header = () => {
         ref={dropdown}
         className="container h-[60px] w-full z-[100] fixed top-0 left-[50%] translate-x-[-50%] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] flex justify-between items-center"
       >
-        <Link href="/" id="brand" className="flex items-center gap-4">
+        <Link href="/" id="brand" className="flex items-center gap-4 ">
           <div
             aria-label="tsukiwa-logo"
             className="rounded-full p-1 bg-black dark:bg-transparent w-[40px] "
