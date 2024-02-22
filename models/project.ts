@@ -3,9 +3,11 @@ import mongoose, { Schema } from "mongoose";
 const projectSchema = new Schema(
   {
     src: String,
-    projectTitle: String,
-    projectDesc: String,
-    href: String,
+    alt: String,
+    title: String,
+    desc: String,
+    website: String,
+    github: String,
   }, {
     timestamps: true,
   }

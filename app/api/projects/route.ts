@@ -3,24 +3,21 @@ import Project from "@models/project";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request, response: Response) {
-  const { 
-    src,
-    projectTitle,
-    projectDesc,
-    href,
-  } = await request.json();
+  const { src, alt, title, desc, website, github } = await request.json();
   await connectMongoDB();
-  await Project.create({ 
+  await Project.create({
     src,
-    projectTitle,
-    projectDesc,
-    href,
+    alt,
+    title,
+    desc,
+    website,
+    github,
   });
-  return NextResponse.json({message: "Project created"})
-};
+  return NextResponse.json({ message: "Project created" });
+}
 
 export async function GET() {
   await connectMongoDB();
   const projects = await Project.find();
-  return NextResponse.json({ projects })
-};
+  return NextResponse.json({ projects });
+}
