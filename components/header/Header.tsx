@@ -29,6 +29,12 @@ const Header = () => {
   const isLinkActive = (path: any) => path === pathName;
 
   const [isMenuActive, setIsMenuActive] = useState(false);
+  const [scrollHeaderBg, setScrollHeaderBg] = useState("unscrolled-header-bg");
+
+  const handleScrollHeaderBg = () => {
+    if (window.scrollY < 100) return setScrollHeaderBg("unscrolled-header-bg");
+    else if (window.scrollY > 100) return setScrollHeaderBg("scrolled-header-bg");
+  };
 
   const toggleMenu = () => setIsMenuActive(!isMenuActive);
 
@@ -39,19 +45,21 @@ const Header = () => {
       if (!dropdown.current?.contains(target as Node)) setIsMenuActive(false);
     };
     document.addEventListener("mousedown", handleDropdowns);
+    document.addEventListener("scroll", handleScrollHeaderBg);
     return () => {
       document.removeEventListener("mousedown", handleDropdowns);
+      document.removeEventListener("scroll", handleScrollHeaderBg);
     };
   }, []);
 
   return (
     <>
-      <div className="header-bg bg-white dark:bg-primary shadow shadow-gray-200 dark:shadow-transparent w-full h-[60px] z-[100] fixed top-0"></div>
+      <div className={`${ scrollHeaderBg } w-full h-[60px] z-[100] fixed top-0`}></div>
       <header
         ref={dropdown}
         className="container h-[60px] w-full z-[100] fixed top-0 left-[50%] translate-x-[-50%] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] flex justify-between items-center"
       >
-        <Link href="/" id="brand" className="flex items-center gap-4 ">
+        <Link href="/" id="brand" className="flex items-center gap-4">
           <div
             aria-label="tsukiwa-logo"
             className="rounded-full p-1 bg-black dark:bg-transparent w-[40px] "
