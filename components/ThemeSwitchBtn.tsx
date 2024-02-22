@@ -2,7 +2,7 @@
 
 import { MouseEventHandler, ReactNode, useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import { FiMoon, FiSun } from "react-icons/fi";
+import { FiSun, FiMoon } from "react-icons/fi";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 type Props = {
@@ -20,7 +20,7 @@ const ThemeSwitchBtn = () => {
     return (
       <button
         aria-label="loading-theme-switch"
-        className="switch-text-color rounded-full bg-primary dark:bg-transparent hover:bg-azure dark:hover:bg-azure w-[40px] h-[40px] flex items-center justify-center text-xl animate-spin"
+        className="rounded-full w-[40px] h-[40px] flex items-center justify-center text-xl xl:text-2xl hover:shadow-md hover:shadow-gray-500 dark:hover:bg-azure animate-spin"
       >
         <AiOutlineLoading3Quarters />
       </button>
@@ -38,7 +38,7 @@ const Button = (props: Props) => {
     <button
       aria-label="theme-switch"
       onClick={props.onClick}
-      className="switch-text-color rounded-full bg-primary dark:bg-transparent hover:bg-azure dark:hover:bg-azure w-[40px] h-[40px] flex items-center justify-center text-xl hover:rotate-45"
+      className="rounded-full w-[40px] h-[40px] flex items-center justify-center text-xl hover:shadow-md hover:shadow-gray-500 dark:hover:bg-azure hover:rotate-45"
     >
       {props.icon}
     </button>
