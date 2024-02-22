@@ -33,7 +33,8 @@ const Header = () => {
 
   const handleScrollHeaderBg = () => {
     if (window.scrollY < 100) return setScrollHeaderBg("unscrolled-header-bg");
-    else if (window.scrollY > 100) return setScrollHeaderBg("scrolled-header-bg");
+    else if (window.scrollY > 100)
+      return setScrollHeaderBg("scrolled-header-bg");
   };
 
   const toggleMenu = () => setIsMenuActive(!isMenuActive);
@@ -54,10 +55,12 @@ const Header = () => {
 
   return (
     <>
-      <div className={`${ scrollHeaderBg } w-full h-[60px] z-[100] fixed top-0`}></div>
+      <div
+        className={`${scrollHeaderBg} w-full h-[60px] z-[1000] fixed top-0`}
+      ></div>
       <header
         ref={dropdown}
-        className="container h-[60px] w-full z-[100] fixed top-0 left-[50%] translate-x-[-50%] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] flex justify-between items-center"
+        className="container h-[60px] w-full z-[1000] fixed top-0 left-[50%] translate-x-[-50%] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] flex justify-between items-center"
       >
         <Link href="/" id="brand" className="flex items-center gap-4">
           <div
@@ -74,7 +77,7 @@ const Header = () => {
           </div>
           <h1
             aria-label="moonbami"
-            className="switch-text-color hidden lg:block font-bold text-sm xl:text-base"
+            className="hidden lg:block font-bold text-sm xl:text-base"
           >
             Moonbami
           </h1>
@@ -84,9 +87,9 @@ const Header = () => {
             aria-label="menu"
             onClick={toggleMenu}
             id="menu"
-            className={` w-[40px] h-[40px] flex justify-center items-center text-xl rounded-full hover:bg-azure dark:hover:bg-azure ${
-              isMenuActive ? "bg-azure" : "dark:bg-transparent"
-            } ${isMenuActive ? "bg-azure" : "bg-primary"} `}
+            className={`w-[40px] h-[40px] flex justify-center items-center text-xl rounded-full hover:shadow-md hover:shadow-gray-500 dark:hover:bg-azure ${
+              isMenuActive && "bg-white dark:bg-azure shadow-md shadow-gray-500"
+            }`}
           >
             {isMenuActive ? <FaBarsStaggered /> : <FaBars />}
             {isMenuActive && (
@@ -105,7 +108,7 @@ const Header = () => {
         </nav>
       </header>
       {isMenuActive && (
-        <div className="screen-dim w-screen h-screen fixed z-[99] bg-primary opacity-80 dark:opacity-70"></div>
+        <div className="screen-dim w-screen h-screen fixed z-[90] bg-primary opacity-80 dark:opacity-70"></div>
       )}
     </>
   );
