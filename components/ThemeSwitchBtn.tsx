@@ -20,7 +20,7 @@ const ThemeSwitchBtn = () => {
     return (
       <button
         aria-label="loading-theme-switch"
-        className="rounded-full w-[40px] h-[40px] flex items-center justify-center text-xl xl:text-2xl hover:shadow-md hover:shadow-gray-500 dark:hover:bg-highlight animate-spin"
+        className="rounded-full w-[40px] h-[40px] flex items-center justify-center text-xl xl:text-2xl dark:hover:bg-highlight animate-spin"
       >
         <AiOutlineLoading3Quarters />
       </button>
