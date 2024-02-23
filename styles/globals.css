@@ -6,9 +6,7 @@
   :root {
     --primary: 2 2 2;
     --secondary: 45 52 54;
-    --aqua: 0 255 255;
-    --marine: 127 255 212;
-    --azure: 0 127 255;
+    --highlight: 0 127 255;
   }
 }
 
@@ -23,7 +21,7 @@ body {
 
 /* UTILITY CLASSES */
 .highlight {
-  @apply text-azure;
+  @apply text-highlight;
 }
 .hide-back-to-top {
   @apply opacity-0 invisible;
@@ -41,7 +39,7 @@ body {
   @apply px-2 line-clamp-2;
 }
 .active {
-  @apply bg-azure text-white;
+  @apply bg-highlight text-white;
 }
 .card {
   @apply cursor-pointer border border-gray-500 hover:shadow-md hover:shadow-gray-500 hover:-translate-y-4;

@@ -13,7 +13,7 @@ const config: Config = {
         'opaque-rb': 'rgba(3, 0, 28, 0.8)',
         primary: 'rgb(var(--primary))',
         secondary: 'rgb(var(--secondary))',
-        azure: 'rgb(var(--azure))',
+        highlight: 'rgb(var(--highlight))',
       },
       container: {
         center: true,

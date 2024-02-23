@@ -87,8 +87,8 @@ const Header = () => {
             aria-label="menu"
             onClick={toggleMenu}
             id="menu"
-            className={`w-[40px] h-[40px] flex justify-center items-center text-xl rounded-full hover:shadow-md hover:shadow-gray-500 dark:hover:bg-azure ${
-              isMenuActive && "bg-white dark:bg-azure shadow-md shadow-gray-500"
+            className={`w-[40px] h-[40px] flex justify-center items-center text-xl rounded-full hover:shadow-md hover:shadow-gray-500 dark:hover:bg-highlight ${
+              isMenuActive && "bg-white dark:bg-highlight shadow-md shadow-gray-500"
             }`}
           >
             {isMenuActive ? <FaBarsStaggered /> : <FaBars />}

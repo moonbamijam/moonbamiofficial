@@ -33,7 +33,7 @@ const ProjectCard = ({
           target="_blank"
           className={`${
             !website ? "mr-auto" : ""
-          } hover:text-white button-format border border-[#24292e] dark:border-azure dark:hover:border-[#2dba4e] hover:border-[#2dba4e] hover:bg-[#2dba4e] dark:hover:bg-[#2dba4e] capitalize`}
+          } hover:text-white button-format border border-[#24292e] dark:border-highlight dark:hover:border-[#2dba4e] hover:border-[#2dba4e] hover:bg-[#2dba4e] dark:hover:bg-[#2dba4e] capitalize`}
         >
           GitHub
         </Link>
@@ -41,7 +41,7 @@ const ProjectCard = ({
           <Link
             href={website}
             target="_blank"
-            className="text-white button-format bg-gray-500 hover:bg-azure capitalize"
+            className="text-white button-format bg-gray-500 hover:bg-highlight capitalize"
           >
             visit
           </Link>

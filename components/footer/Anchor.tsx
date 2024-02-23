@@ -11,11 +11,15 @@ type Props = {
 
 const Anchor = (props: Props) => {
   return (
-    <Link href={ props.href } target={ props.target } className="capitalize hover:text-azure">
-      <span>{ props.icon }</span>
-      { props.text }
+    <Link
+      href={props.href}
+      target={props.target}
+      className="capitalize hover:text-highlight"
+    >
+      <span>{props.icon}</span>
+      {props.text}
     </Link>
-  )
+  );
 }
 
 export default Anchor

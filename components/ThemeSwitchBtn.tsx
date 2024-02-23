@@ -20,7 +20,7 @@ const ThemeSwitchBtn = () => {
     return (
       <button
         aria-label="loading-theme-switch"
-        className="rounded-full w-[40px] h-[40px] flex items-center justify-center text-xl xl:text-2xl hover:shadow-md hover:shadow-gray-500 dark:hover:bg-azure animate-spin"
+        className="rounded-full w-[40px] h-[40px] flex items-center justify-center text-xl xl:text-2xl hover:shadow-md hover:shadow-gray-500 dark:hover:bg-highlight animate-spin"
       >
         <AiOutlineLoading3Quarters />
       </button>
@@ -38,7 +38,7 @@ const Button = (props: Props) => {
     <button
       aria-label="theme-switch"
       onClick={props.onClick}
-      className="rounded-full w-[40px] h-[40px] flex items-center justify-center text-xl hover:shadow-md hover:shadow-gray-500 dark:hover:bg-azure hover:rotate-45"
+      className="rounded-full w-[40px] h-[40px] flex items-center justify-center text-xl hover:shadow-md hover:shadow-gray-500 dark:hover:bg-highlight hover:rotate-45"
     >
       {props.icon}
     </button>

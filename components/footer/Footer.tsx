@@ -7,7 +7,7 @@ const Footer = () => {
   const year = new Date();
   return (
     <>
-      <div className="footer-bg relative bottom-0 border-t-4 border-azure w-full "></div>
+      <div className="footer-bg relative bottom-0 border-t-4 border-highlight w-full "></div>
       <section
         id="footer"
         className="container relative bottom-0 pt-[100px] pb-[50px] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px]"
