@@ -29,10 +29,10 @@ const Header = () => {
   const isLinkActive = (path: any) => path === pathName;
 
   const [isMenuActive, setIsMenuActive] = useState(false);
-  const [scrollHeaderBg, setScrollHeaderBg] = useState("unscrolled-header-bg");
+  const [scrollHeaderBg, setScrollHeaderBg] = useState("");
 
   const handleScrollHeaderBg = () => {
-    if (window.scrollY < 100) return setScrollHeaderBg("unscrolled-header-bg");
+    if (window.scrollY < 100) return setScrollHeaderBg("");
     else if (window.scrollY > 100)
       return setScrollHeaderBg("scrolled-header-bg");
   };

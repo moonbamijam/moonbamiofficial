@@ -49,9 +49,6 @@ body {
 }
 
 /* HEADER */
-.unscrolled-header-bg {
-  @apply bg-transparent;
-}
 .scrolled-header-bg {
   @apply bg-white dark:bg-primary shadow shadow-gray-200 dark:shadow-transparent;
 }
