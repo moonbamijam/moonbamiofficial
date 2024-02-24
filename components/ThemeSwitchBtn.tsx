@@ -33,14 +33,14 @@ const ThemeSwitchBtn = () => {
   }
 };
 
-const Button = (props: Props) => {
+const Button = ({ onClick, icon }: Props) => {
   return (
     <button
       aria-label="theme-switch"
-      onClick={props.onClick}
+      onClick={onClick}
       className="rounded-full w-[40px] h-[40px] flex items-center justify-center text-xl hover:shadow-md hover:shadow-gray-500 dark:hover:bg-highlight hover:rotate-45"
     >
-      {props.icon}
+      {icon}
     </button>
   );
 };
