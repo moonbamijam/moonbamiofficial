@@ -1,6 +1,7 @@
 import { ProjectType } from "@shared-types/project";
 import Image from "next/image";
 import Link from "next/link";
+import DefaultBanner from "@assets/default-banner.webp"
 
 const ProjectCard = ({
   href,
@@ -15,10 +16,12 @@ const ProjectCard = ({
     <div className="card relative w-[400px] rounded-xl flex flex-col bg-transparent overflow-hidden">
       <Link href={href}>
         <Image
-          src={`${src}`}
+          src={src ? `${src}` : DefaultBanner}
           alt={`${alt}`}
           width={720}
           height={1080}
+          placeholder="blur"
+          blurDataURL="URL"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="w-full h-[200px] object-cover"
         />
