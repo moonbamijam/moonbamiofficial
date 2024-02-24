@@ -1,4 +1,4 @@
-import { Url } from "next/dist/shared/lib/router/router"
+import { Url } from "next/dist/shared/lib/router/router";
 
 export type ProjectType = {
   _id?: string;
