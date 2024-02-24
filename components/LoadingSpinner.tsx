@@ -1,11 +1,11 @@
-import { ImSpinner2 } from "react-icons/im";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 const LoadingSpinner = () => {
   return (
     <div className="text-6xl flex items-center justify-center rounded-full bg-rich-black dark:bg-transparent animate-spin">
-      <ImSpinner2 />
+      <AiOutlineLoading3Quarters />
     </div>
-  )
-}
+  );
+};
 
-export default LoadingSpinner
+export default LoadingSpinner;
