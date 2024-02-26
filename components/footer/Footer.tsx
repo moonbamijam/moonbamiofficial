@@ -2,6 +2,7 @@ import Image from "next/image";
 import Anchor from "./Anchor";
 
 import Moonbami from "@public/moonbami.webp";
+import Version from "@components/Version";
 
 const Footer = () => {
   const year = new Date();
@@ -50,9 +51,12 @@ const Footer = () => {
           </div>
         </div>
         <hr className="w-full mt-[50px]" />
-        <p className="mt-2 text-center">
-          &#169; {year.getFullYear().toString()} Moonbami
-        </p>
+        <div className="mt-2 flex gap-2 justify-center">
+          <span className="text-center">
+            &#169; {year.getFullYear().toString()} Moonbami
+          </span>{" "}
+          <Version />
+        </div>
       </section>
     </>
   );
