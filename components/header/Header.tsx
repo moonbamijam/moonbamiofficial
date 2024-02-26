@@ -1,20 +1,15 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import Image from "next/image";
-import Link from "next/link";
-
-// Assets
-import Moonbami_Logo from "@public/tsukiwa-logo.webp";
-
-import ThemeSwitchBtn from "@components/ThemeSwitchBtn";
-import Dropdown from "../ui/Dropdown";
-import Anchor from "./Anchor";
-
-// Fontawesome
 import { FaBars } from "react-icons/fa";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
+import Moonbami_Logo from "@public/tsukiwa-logo.webp";
+import ThemeSwitchBtn from "@components/ThemeSwitchBtn";
+import Dropdown from "../ui/Dropdown";
+import Anchor from "./Anchor";
 
 const NavLinks = [
   { id: 1, name: "moonbami", path: "/" },
@@ -77,7 +72,7 @@ const Header = () => {
           </div>
           <h1
             aria-label="moonbami"
-            className="hidden lg:block font-bold text-sm xl:text-base"
+            className="relative hidden lg:block font-bold text-sm xl:text-base"
           >
             Moonbami
           </h1>
@@ -88,7 +83,8 @@ const Header = () => {
             onClick={toggleMenu}
             id="menu"
             className={`w-[40px] h-[40px] flex justify-center items-center text-xl rounded-full hover:shadow-md hover:shadow-gray-500 dark:hover:bg-highlight ${
-              isMenuActive && "bg-white dark:bg-highlight shadow-md shadow-gray-500"
+              isMenuActive &&
+              "bg-white dark:bg-highlight shadow-md shadow-gray-500"
             }`}
           >
             {isMenuActive ? <FaBarsStaggered /> : <FaBars />}
