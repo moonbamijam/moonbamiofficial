@@ -2,7 +2,7 @@ import Image from "next/image";
 import Anchor from "./Anchor";
 
 import Moonbami from "@public/moonbami.webp";
-import Version from "@components/Version";
+import Version from "@components/ui/Version";
 
 const Footer = () => {
   const year = new Date();

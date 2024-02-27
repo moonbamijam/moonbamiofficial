@@ -2,12 +2,12 @@ import { Metadata } from "next";
 import dynamic from "next/dynamic";
 
 // Components
-import StayTuned from "@components/StayTuned";
-const Footer = dynamic(() => import('@components/footer/Footer'));
+import StayTuned from "@components/ui/StayTuned";
+const Footer = dynamic(() => import("@components/footer/Footer"));
 
 export const metadata: Metadata = {
-  title: "More"
-}
+  title: "More",
+};
 
 const MorePage = () => {
   return (
@@ -15,7 +15,7 @@ const MorePage = () => {
       <StayTuned src={`${process.env.API_MUSIC_AVATAR}`} />
       <Footer />
     </>
-  )
+  );
 };
 
 export default MorePage;

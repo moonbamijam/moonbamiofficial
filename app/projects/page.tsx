@@ -3,9 +3,9 @@ import { useFetch } from "@hooks/useFetch";
 import { ProjectType } from "@shared-types/project";
 import dynamic from "next/dynamic";
 import Title from "@components/texts/Title";
-import LoadingSpinner from "@components/LoadingSpinner";
+import LoadingSpinner from "@components/ux/LoadingSpinner";
 import Section from "@components/wrappers/Section";
-import BackToTop from "@components/BackToTop";
+import BackToTop from "@components/buttons/BackToTop";
 import ProjectCard from "@components/ui/ProjectCard";
 
 const Footer = dynamic(() => import("@components/footer/Footer"));

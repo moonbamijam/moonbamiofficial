@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import Moonbami_Logo from "@public/tsukiwa-logo.webp";
-import ThemeSwitchBtn from "@components/ThemeSwitchBtn";
+import ThemeSwitchBtn from "@components/buttons/ThemeSwitchBtn";
 import Dropdown from "../ui/Dropdown";
 import Anchor from "./Anchor";
 

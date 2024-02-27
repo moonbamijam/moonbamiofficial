@@ -9,16 +9,16 @@ import Me from "@public/me.webp";
 import { useFetch } from "@hooks/useFetch";
 import { AboutType } from "@shared-types/about";
 import About from "@components/about/About";
-import LoadingSpinner from "@components/LoadingSpinner";
+import LoadingSpinner from "@components/ux/LoadingSpinner";
 import { TopicType } from "@shared-types/topic";
 import Topic from "@components/about/Topic";
-import SocMed from "@components/SocMed";
+import SocMed from "@components/ui/SocMed";
 import FacebookLogo from "@public/facebook-logo.webp";
 import GitHubLogo from "@public/github-mark-white.webp";
 import InstagramLogo from "@public/instagram-logo.webp";
 import TwitterXLogo from "@public/twitter-x-logo.webp";
-import BackToTop from "@components/BackToTop";
-import StackIcon from "@components/StackIcon";
+import BackToTop from "@components/buttons/BackToTop";
+import StackIcon from "@components/ui/StackIcon";
 
 const Footer = dynamic(() => import("@components/footer/Footer"));
 
