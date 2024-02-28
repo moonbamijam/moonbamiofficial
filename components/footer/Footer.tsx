@@ -1,8 +1,4 @@
-import Image from "next/image";
 import Anchor from "./Anchor";
-
-import Moonbami from "@public/moonbami.webp";
-import Version from "@components/ui/Version";
 
 const Footer = () => {
   const year = new Date();
@@ -55,7 +51,6 @@ const Footer = () => {
           <span className="text-center">
             &#169; {year.getFullYear().toString()} Moonbami
           </span>{" "}
-          <Version />
         </div>
       </section>
     </>
