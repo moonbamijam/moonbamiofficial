@@ -1,7 +1,7 @@
 import { Url } from "next/dist/shared/lib/router/router";
 
 export type ProjectType = {
-  _id?: string;
+  _id: string;
   href: string;
   src: Url;
   alt?: string;
