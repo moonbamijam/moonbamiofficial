@@ -24,7 +24,9 @@ const HomePage = async () => {
               src={Moonbami}
               width={300}
               height={300}
-              priority
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL="URL"
               alt="Jam Moonbami"
               className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] border-[3px] border-solid border-black dark:border-white rounded-lg"
             />
