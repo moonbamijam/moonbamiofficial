@@ -10,6 +10,7 @@ import Moonbami_Logo from "@public/tsukiwa-logo.webp";
 import ThemeSwitchBtn from "@components/buttons/ThemeSwitchBtn";
 import Dropdown from "../ui/Dropdown";
 import Anchor from "./Anchor";
+import Version from "@components/ui/Version";
 
 const NavLinks = [
   { id: 1, name: "moonbami", path: "/" },
@@ -98,6 +99,10 @@ const Header = () => {
                     name={link.name}
                   />
                 ))}
+                <div className="flex flex-col gap-4 items-center px-4 mt-4">
+                  <hr className="w-full" />
+                  <Version />
+                </div>
               </Dropdown>
             )}
           </button>
@@ -105,7 +110,7 @@ const Header = () => {
         </nav>
       </header>
       {isMenuActive && (
-        <div className="screen-dim w-screen h-screen fixed z-[90] bg-primary opacity-80 dark:opacity-70"></div>
+        <div className="screen-dim w-full h-full fixed z-[90] bg-primary opacity-80 dark:opacity-70"></div>
       )}
     </>
   );
