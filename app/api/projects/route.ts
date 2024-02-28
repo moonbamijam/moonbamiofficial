@@ -1,4 +1,4 @@
-import connectMongoDB from "@utilities/mongodb";
+import connectMongoDB from "@utils/mongodb";
 import Project from "@models/project";
 import { NextResponse } from "next/server";
 

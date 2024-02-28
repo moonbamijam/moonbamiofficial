@@ -1,9 +1,9 @@
-import connectMongoDB from "@utilities/mongodb";
+import connectMongoDB from "@utils/mongodb";
 import About from "@models/about";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request, response: Response) {
-  const { 
+  const {
     displayName,
     desc,
     fullName,
@@ -13,10 +13,10 @@ export async function POST(request: Request, response: Response) {
     sex,
     nationality,
     status,
-    languages, 
+    languages,
   } = await request.json();
   await connectMongoDB();
-  await About.create({ 
+  await About.create({
     displayName,
     desc,
     fullName,
@@ -28,11 +28,11 @@ export async function POST(request: Request, response: Response) {
     status,
     languages,
   });
-  return NextResponse.json({message: "About created"})
-};
+  return NextResponse.json({ message: "About created" });
+}
 
 export async function GET() {
   await connectMongoDB();
   const abouts = await About.find();
-  return NextResponse.json({ abouts })
-};
+  return NextResponse.json({ abouts });
+}

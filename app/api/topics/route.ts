@@ -1,22 +1,19 @@
-import connectMongoDB from "@utilities/mongodb";
+import connectMongoDB from "@utils/mongodb";
 import Topic from "@models/topic";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request, response: Response) {
-  const { 
-    title, 
-    desc, 
-  } = await request.json();
+  const { title, desc } = await request.json();
   await connectMongoDB();
-  await Topic.create({ 
-    title, 
+  await Topic.create({
+    title,
     desc,
   });
-  return NextResponse.json({message: "New topic created"})
-};
+  return NextResponse.json({ message: "New topic created" });
+}
 
 export async function GET() {
   await connectMongoDB();
   const topics = await Topic.find();
-  return NextResponse.json({ topics })
-};
+  return NextResponse.json({ topics });
+}

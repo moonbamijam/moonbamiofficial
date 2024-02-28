@@ -1,4 +1,4 @@
-import connectMongoDB from "@utilities/mongodb";
+import connectMongoDB from "@utils/mongodb";
 import Project from "@models/project";
 import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 import { NextResponse } from "next/server";
