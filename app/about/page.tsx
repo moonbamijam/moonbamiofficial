@@ -1,22 +1,20 @@
 import { Metadata } from "next";
+import { AboutType } from "@shared-types/about";
+import { TopicType } from "@shared-types/topic";
+import { useFetch } from "@hooks/useFetch";
+import { FaFacebook } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
 import dynamic from "next/dynamic";
-
-// Components
 import Section from "@components/wrappers/Section";
 import Title from "@components/texts/Title";
 import TopicImage from "@components/about/TopicImage";
 import Me from "@public/me.webp";
-import { useFetch } from "@hooks/useFetch";
-import { AboutType } from "@shared-types/about";
 import About from "@components/about/About";
 import LoadingSpinner from "@components/ux/LoadingSpinner";
-import { TopicType } from "@shared-types/topic";
 import Topic from "@components/about/Topic";
 import SocMed from "@components/ui/SocMed";
-import FacebookLogo from "@public/facebook-logo.webp";
-import GitHubLogo from "@public/github-mark-white.webp";
-import InstagramLogo from "@public/instagram-logo.webp";
-import TwitterXLogo from "@public/twitter-x-logo.webp";
 import BackToTop from "@components/buttons/BackToTop";
 import StackIcon from "@components/ui/StackIcon";
 
@@ -222,28 +220,28 @@ const AboutPage = async () => {
           <hr className="w-full" />
           <div className=" socmeds grid grid-cols-2 gap-[30px]">
             <SocMed
-              href={"https://www.facebook.com/MoonbamiOffcl"}
-              src={FacebookLogo}
+              href={"https://www.facebook.com/moonbamijam"}
+              icon={<FaFacebook />}
               text={"facebook"}
             />
             <SocMed
               href={"https://www.instagram.com/moonbamidesu/"}
-              src={InstagramLogo}
+              icon={<FaInstagram />}
               text={"instagram"}
             />
             <SocMed
               href={"https://twitter.com/Moonbami_"}
-              src={TwitterXLogo}
+              icon={<FaXTwitter />}
               text={"twitter x"}
             />
             <SocMed
               href={"https://github.com/MoonbamiOfficial"}
-              src={GitHubLogo}
+              icon={<FaGithub />}
               text={"GitHub"}
             />
           </div>
           <hr className="w-full" />
-          <p className="switch-text-color last-phrase text-center paragraph-format">
+          <p className="last-phrase text-center paragraph-format">
             I do have more social media accounts but these are my commonly used
             ones.
           </p>
