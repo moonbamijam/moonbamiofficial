@@ -33,7 +33,7 @@ body {
   @apply px-2;
 }
 .paragraph-format {
-  @apply px-2 w-[400px] lg:w-[500px] xl:w-[600px];
+  @apply px-2 w-full lg:w-[500px];
 }
 .desc-format {
   @apply px-2 line-clamp-2;
@@ -45,7 +45,7 @@ body {
   @apply cursor-pointer border border-gray-500 hover:shadow-md hover:shadow-gray-500 hover:-translate-y-4;
 }
 .button-format {
-  @apply text-center w-[150px] py-[15px] rounded-lg;
+  @apply text-center w-[150px] h-[50px] py-[15px] rounded-lg;
 }
 
 /* HEADER */
