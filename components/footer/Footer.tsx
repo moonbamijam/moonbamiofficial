@@ -24,7 +24,7 @@ const Footer = () => {
             <h1 className="font-bold text-2xl mb-2">Contact</h1>
             <div className="links flex flex-col gap-2">
               <Anchor
-                href={"https://www.facebook.com/MoonbamiOffcl"}
+                href={"https://www.facebook.com/moonbamijam"}
                 text={"facebook"}
                 target="_blank"
               />
@@ -49,7 +49,8 @@ const Footer = () => {
         <hr className="w-full mt-[50px]" />
         <div className="mt-2 flex gap-2 justify-center">
           <span className="text-center">
-            &#169; {year.getFullYear().toString()} Moonbami
+            &#169; {year.getFullYear().toString()} Moonbami. Developer's
+            Portfolio.
           </span>{" "}
         </div>
       </section>
