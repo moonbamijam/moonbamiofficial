@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import dynamic from 'next/dynamic';
 import { Noto_Sans } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/next';
 import Providers from '@providers/providers';
 import '@styles/globals.css';
 
@@ -16,10 +16,11 @@ const inter = Noto_Sans({
 export const metadata: Metadata = {
   title: {
     default: "Moonbami",
-    template: "Moonbami | %s"
+    template: "Moonbami | %s",
   },
-  description: 'An aspiring full-stack web developer',
-}
+  description:
+    "Pursuing a career for being a developer. Still a novice, but making progress on a daily basis.",
+};
 
 export default function RootLayout({
   children,
