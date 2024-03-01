@@ -16,7 +16,7 @@ const Section = (props: Props) => {
     >
       {props.image}
       <div
-        className={`content relative flex flex-col items-center px-[30px] ${props.contentClassName}`}
+        className={`content relative flex flex-col items-center px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] ${props.contentClassName}`}
       >
         {props.children}
       </div>
