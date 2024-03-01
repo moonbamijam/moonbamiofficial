@@ -2,6 +2,8 @@ import { ProjectType } from "@shared-types/project";
 import Image from "next/image";
 import Link from "next/link";
 import DefaultBanner from "@assets/default-banner.webp"
+import GitHubBtn from "@components/buttons/GitHubBtn";
+import WebsiteBtn from "@components/buttons/WebsiteBtn";
 
 const ProjectCard = ({
   href,
@@ -23,7 +25,6 @@ const ProjectCard = ({
           loading="lazy"
           placeholder="blur"
           blurDataURL="URL"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="w-full h-[200px] object-cover"
         />
         <div className="details px-[30px] py-[30px]">
@@ -32,26 +33,8 @@ const ProjectCard = ({
         </div>
       </Link>
       <div className="links flex justify-between px-[30px] pb-[30px]">
-        <Link
-          href={github}
-          target="_blank"
-          className={`${
-            !website ? "mr-auto" : ""
-          } hover:text-white button-format border border-[#24292e] dark:border-highlight dark:hover:border-[#2dba4e] hover:border-[#2dba4e] hover:bg-[#2dba4e] dark:hover:bg-[#2dba4e] capitalize`}
-        >
-          GitHub
-        </Link>
-        {website ? (
-          <Link
-            href={website}
-            target="_blank"
-            className="text-white button-format bg-gray-500 hover:bg-highlight capitalize"
-          >
-            visit
-          </Link>
-        ) : (
-          <></>
-        )}
+        <GitHubBtn href={github.toString()} />
+        {website ? <WebsiteBtn href={website.toString()} /> : <></>}
       </div>
     </div>
   );
