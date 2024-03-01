@@ -27,11 +27,12 @@ const ProjectsPage = async () => {
               "These are the projects I made all throughout my coding career. I am happy to present it to you."
             }
           />
-          <div className="projects grid lg:grid-cols-2 2xl:grid-cols-3 gap-[50px]">
+          <div className="projects grid lg:grid-cols-2 premium:grid-cols-3 gap-[50px]">
             {projects ? (
               projects.map((project: ProjectType) => (
                 <ProjectCard
                   key={project._id}
+                  _id={project._id}
                   href={`projects/${project._id}`}
                   src={project.src}
                   alt={project.alt}
