@@ -16,10 +16,10 @@ const About = ({
   return (
     <>
       <div className="description">
-        <h1 className="switch-text-color capitalize text-4xl md:text-5xl lg:px-2 font-bold mb-2 text-center lg:text-left">
+        <h1 className="capitalize text-4xl md:text-5xl lg:px-2 font-bold mb-2 text-center lg:text-left">
           {displayName}
         </h1>
-        <p className="switch-text-color paragraph-format">{desc}</p>
+        <p className="paragraph-format">{desc}</p>
       </div>
       <div className="labels flex flex-col gap-2">
         <Detail label={"Name"} detail={fullName} />
