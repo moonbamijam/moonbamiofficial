@@ -39,16 +39,18 @@ const ProjectPageById = async ({ params }: { params: { _id: string } }) => {
           blurDataURL="URL"
           className="w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[400px] xl:h-[500px] rounded-lg object-cover mb-8"
         />
-        <div className="mb-8 mr-auto ">
-          <div className="font-bold text-4xl mb-1">{projects.title}</div>
-          <div className="w-[400px] lg:w-[500px] premium:w-[600px]">
-            {projects.desc}
+        <div className="w-full flex flex-col xl:flex-row justify-evenly items-center">
+          <div className="mb-8">
+            <div className="font-bold text-4xl mb-1">{projects.title}</div>
+            <div className="w-[400px] lg:w-[500px] premium:w-[600px]">
+              {projects.desc}
+            </div>
           </div>
-        </div>
-        <div className="links w-full md:w-min flex justify-between gap-12 pb-[30px] mr-auto">
-          <GitHubBtn href={projects.github} />
-          {projects.website ? <WebsiteBtn href={projects.website} /> : <></>}
-          <BackBtn href={"/projects"} />
+          <div className="links w-full sm:w-min flex xl:flex-col justify-between gap-x-8 gap-y-4 pb-[30px]">
+            <GitHubBtn href={projects.github} />
+            {projects.website ? <WebsiteBtn href={projects.website} /> : <></>}
+            <BackBtn href={"/projects"} />
+          </div>
         </div>
       </Section>
       <Footer />
