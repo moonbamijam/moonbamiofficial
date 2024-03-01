@@ -49,7 +49,7 @@ const Footer = () => {
         <hr className="w-full mt-[50px]" />
         <div className="mt-2 flex gap-2 justify-center">
           <span className="text-center">
-            &#169; {year.getFullYear().toString()} Moonbami. Developer's
+            &#169; {year.getFullYear().toString()} Moonbami. Developer&apos;s
             Portfolio.
           </span>{" "}
         </div>
