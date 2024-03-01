@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { IoIosArrowDropupCircle } from "react-icons/io";
 import { FiArrowUpCircle } from "react-icons/fi";
 
 type Props = {
