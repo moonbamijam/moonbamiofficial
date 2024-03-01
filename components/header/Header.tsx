@@ -6,7 +6,8 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import Moonbami_Logo from "@public/tsukiwa-logo.webp";
+import tsukiwaLogoLight from "@public/tsukiwa-logo.webp";
+import tsukiwaLogoDark from "@public/tsukiwa-logo-dark.webp";
 import ThemeSwitchBtn from "@components/buttons/ThemeSwitchBtn";
 import Dropdown from "../ui/Dropdown";
 import Anchor from "./Anchor";
@@ -59,13 +60,19 @@ const Header = () => {
         className="container h-[60px] w-full z-[1000] fixed top-0 left-[50%] translate-x-[-50%] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] flex justify-between items-center"
       >
         <Link href="/" id="brand" className="flex items-center gap-4">
-          <div
-            aria-label="tsukiwa-logo"
-            className="rounded-full p-1 bg-black dark:bg-transparent w-[40px] "
-          >
+          <div aria-label="tsukiwa-logo" className="rounded-full p-1 w-[40px] ">
             <Image
+              className="hidden dark:block"
               priority
-              src={Moonbami_Logo}
+              src={tsukiwaLogoLight}
+              alt=""
+              width={"40"}
+              height={"40"}
+            />
+            <Image
+              className="block dark:hidden"
+              priority
+              src={tsukiwaLogoDark}
               alt=""
               width={"40"}
               height={"40"}
