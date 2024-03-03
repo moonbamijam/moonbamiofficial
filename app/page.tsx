@@ -20,11 +20,11 @@ const HomePage = async () => {
                 basis.
               </p>
             </div>
-            <Image
+            <Image 
+              priority
               src={Moonbami}
               width={300}
               height={300}
-              loading="lazy"
               alt="Jam Moonbami"
               className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] border-[3px] border-solid border-black dark:border-white rounded-lg"
             />

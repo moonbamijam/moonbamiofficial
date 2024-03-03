@@ -65,17 +65,17 @@ const Header = () => {
               className="hidden dark:block"
               priority
               src={tsukiwaLogoLight}
-              alt=""
-              width={"40"}
-              height={"40"}
+              alt="tsukiwa logo"
+              width={40}
+              height={40}
             />
             <Image
               className="block dark:hidden"
               priority
               src={tsukiwaLogoDark}
-              alt=""
-              width={"40"}
-              height={"40"}
+              alt="tsukiwa logo"
+              width={40}
+              height={40}
             />
           </div>
           <h1
