@@ -10,7 +10,7 @@ import dynamic from "next/dynamic";
 import Section from "@components/wrappers/Section";
 import Title from "@components/texts/Title";
 import TopicImage from "@components/about/TopicImage";
-import Me from "@public/me.webp";
+import Me from "@assets/me.webp";
 import About from "@components/about/About";
 import LoadingSpinner from "@components/ux/LoadingSpinner";
 import Topic from "@components/about/Topic";
