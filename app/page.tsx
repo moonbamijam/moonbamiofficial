@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Moonbami from "@public/moonbami.webp";
+import Moonbami from "@assets/moonbami.webp";
 
 const HomePage = async () => {
   return (
