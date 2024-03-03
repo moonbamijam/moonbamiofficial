@@ -14,13 +14,27 @@ const inter = Noto_Sans({
 });
 
 export const metadata: Metadata = {
-  manifest: "/manifest.json",
   title: {
     default: "Moonbami",
     template: "Moonbami | %s",
   },
   description:
     "Pursuing a career for being a developer. Still a novice, but making progress on a daily basis.",
+  manifest: "/manifest.json",
+  keywords: [
+    "moonbami",
+    "portfolio",
+    "dev-portfolio",
+    "developer",
+    "jam moonbami",
+  ],
+  authors: [
+    { name: "Jam Moonbami" },
+    {
+      name: "Jam Moonbami",
+      url: "https://github.com/MoonbamiOfficial",
+    },
+  ],
 };
 
 export default function RootLayout({
