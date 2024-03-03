@@ -1,17 +1,22 @@
-import type { Metadata } from "next";
-import dynamic from "next/dynamic";
+import type { Metadata, Viewport } from "next";
 import { Noto_Sans } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import Header from "@components/header/Header";
 import Providers from "@providers/providers";
 import "@styles/globals.css";
-
-const Header = dynamic(() => import("@components/header/Header"));
 
 const inter = Noto_Sans({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+    { media: "(prefers-color-scheme: light)", color: "white" },
+  ],
+};
 
 export const metadata: Metadata = {
   title: {
