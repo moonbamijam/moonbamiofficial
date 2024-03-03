@@ -29,8 +29,8 @@ const Header = () => {
   const [scrollHeaderBg, setScrollHeaderBg] = useState("");
 
   const handleScrollHeaderBg = () => {
-    if (window.scrollY < 50) return setScrollHeaderBg("");
-    else if (window.scrollY > 50)
+    if (window.scrollY < 15) return setScrollHeaderBg("");
+    else if (window.scrollY > 15)
       return setScrollHeaderBg("scrolled-header-bg");
   };
 
