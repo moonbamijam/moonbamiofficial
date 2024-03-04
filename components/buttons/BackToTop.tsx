@@ -29,7 +29,7 @@ const BackToTop = ({ id }: Props) => {
     <button
       aria-label="back-to-top"
       onClick={() => handleScrollIntoView(`${id}`)}
-      className={`${backToTop} fixed text-4xl md:text-5xl z-[100] right-8 sm:right-12 sm:bottom-12 bottom-8 lg:right-24 lg:bottom-16 flex flex-col items-center gap-2 animate-bounce`}
+      className={`${backToTop} fixed text-4xl md:text-5xl z-[100] right-8 sm:right-12 sm:bottom-12 bottom-6 lg:right-24 lg:bottom-16 flex flex-col items-center gap-2 animate-bounce`}
     >
       <div className="rounded-full">
         <BiSolidUpArrow />
