@@ -7,6 +7,7 @@ import LoadingSpinner from "@components/ux/LoadingSpinner";
 import Section from "@components/wrappers/Section";
 import BackToTop from "@components/buttons/BackToTop";
 import ProjectCard from "@components/ui/ProjectCard";
+import Grid from "@components/common/Grid";
 
 const Footer = dynamic(() => import("@components/footer/Footer"));
 
@@ -27,7 +28,7 @@ const ProjectsPage = async () => {
               "These are the projects I made all throughout my coding career. I am happy to present it to you."
             }
           />
-          <div className="projects grid lg:grid-cols-2 premium:grid-cols-3 gap-[50px]">
+          <Grid>
             {projects ? (
               projects.map((project: ProjectType) => (
                 <ProjectCard
@@ -45,7 +46,7 @@ const ProjectsPage = async () => {
             ) : (
               <LoadingSpinner />
             )}
-          </div>
+          </Grid>
         </Section>
       </div>
       <Footer />
