@@ -7,7 +7,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import dynamic from "next/dynamic";
-import Section from "@components/wrappers/Section";
+import Section from "@components/common/Section";
 import Title from "@components/texts/Title";
 import TopicImage from "@components/about/TopicImage";
 import Me from "@assets/me.webp";

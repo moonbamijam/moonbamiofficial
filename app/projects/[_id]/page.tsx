@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { useFetch } from "@hooks/useFetch";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import Section from "@components/wrappers/Section";
+import Section from "@components/common/Section";
 import DefaultBanner from "@assets/default-banner.webp";
 import GitHubBtn from "@components/buttons/GitHubBtn";
 import WebsiteBtn from "@components/buttons/WebsiteBtn";

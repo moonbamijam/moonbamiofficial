@@ -4,7 +4,7 @@ import { ProjectType } from "@shared-types/project";
 import dynamic from "next/dynamic";
 import Title from "@components/texts/Title";
 import LoadingSpinner from "@components/ux/LoadingSpinner";
-import Section from "@components/wrappers/Section";
+import Section from "@components/common/Section";
 import BackToTop from "@components/buttons/BackToTop";
 import ProjectCard from "@components/ui/ProjectCard";
 import Grid from "@components/common/Grid";
