@@ -21,6 +21,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-transition-group": "^4.4.5",
+    "release-please": "^16.9.0",
     "standard-version": "^9.5.0",
     "uuid": "^9.0.1"
   },
