@@ -12,22 +12,15 @@ const Footer = () => {
   const year = new Date();
   return (
     <>
-      <div className="footer-bg relative bottom-0 border-t-4 border-highlight w-full "></div>
+      <div className="relative bottom-0 border-t-4 border-highlight bg-highlight"></div>
       <section
         id="footer"
         className="container relative bottom-0 py-[50px] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px]"
       >
-        <div className="content w-full flex justify-around">
-          <div className="links flex gap-6">
-            <Anchor href={"/"} text={"moonbami"} />
-            <Anchor href={"/anime"} text={"about"} />
-            <Anchor href={"/games"} text={"projects"} />
-            <Anchor href={"/hobbies"} text={"timeline"} />
-            <Anchor href={"/music"} text={"more"} />
-          </div>
-        </div>
-        <hr className="w-full mt-[50px]" />
-        <div className="w-full flex gap-4 justify-center mt-12">
+        <h1 className="text-3xl lg:text-4xl font-semibold text-center">
+          Let&apos;s build from here!
+        </h1>
+        <div className="w-full flex gap-4 justify-center my-8">
           <SocMedIcon
             href={"https://anilist.co/user/Moonbami/"}
             icon={<SiAnilist />}
@@ -57,6 +50,7 @@ const Footer = () => {
             icon={<FaYoutube />}
           />
         </div>
+        <hr />
         <div className="mt-4 flex gap-2 justify-center">
           <span className="text-center">
             &#169;{year.getFullYear().toString()} Moonbami.
