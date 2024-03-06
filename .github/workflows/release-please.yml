@@ -16,4 +16,5 @@ jobs:
       - uses: google-github-actions/release-please-action@v4
         with:
           token: ${{ secrets.DEV_PORTFOLIO_RELEASE }}
+          repo-url: MoonbamiOfficial/dev-portfolio
           release-type: node
