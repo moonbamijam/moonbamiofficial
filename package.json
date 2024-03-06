@@ -6,14 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "release": "standard-version"
+    "lint": "next lint"
   },
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.2.5",
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
-    "cloudinary": "^2.0.1",
     "mongoose": "^8.2.0",
     "next": "14.1.0",
     "next-themes": "^0.2.1",
@@ -21,9 +19,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-transition-group": "^4.4.5",
-    "release-please": "^16.9.0",
-    "standard-version": "^9.5.0",
-    "uuid": "^9.0.1"
+    "release-please": "^16.9.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.21",
