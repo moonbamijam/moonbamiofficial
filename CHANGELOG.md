@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.8.0...v1.9.0) (2024-03-06)
+
+
+### Features
+
+* replace links to github quote in footer ([91b0a3a](https://github.com/MoonbamiOfficial/dev-portfolio/commit/91b0a3ae905b05c0f1d3703fb3925e4a4d5412b5))
+
+
+### Bug Fixes
+
+* repeating linear gradient background ([6b1d6b7](https://github.com/MoonbamiOfficial/dev-portfolio/commit/6b1d6b77348e11ff86cfb5fd0e391f85c797065e))
+
 ## [1.8.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.7.0...v1.8.0) (2024-03-06)
 
 
