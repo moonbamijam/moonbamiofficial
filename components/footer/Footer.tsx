@@ -1,4 +1,12 @@
+import { SiAnilist } from "react-icons/si";
+import { FaFacebook } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaRedditAlien } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
 import Anchor from "./Anchor";
+import SocMedIcon from "./SocMedIcon";
 
 const Footer = () => {
   const year = new Date();
@@ -10,47 +18,48 @@ const Footer = () => {
         className="container relative bottom-0 py-[50px] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px]"
       >
         <div className="content w-full flex justify-around">
-          <div className="navigate">
-            <h1 className="font-bold text-2xl mb-2">Navigate</h1>
-            <div className="links flex flex-col gap-2">
-              <Anchor href={"/"} text={"moonbami"} />
-              <Anchor href={"/anime"} text={"about"} />
-              <Anchor href={"/games"} text={"projects"} />
-              <Anchor href={"/hobbies"} text={"timeline"} />
-              <Anchor href={"/music"} text={"more"} />
-            </div>
-          </div>
-          <div className="contact">
-            <h1 className="font-bold text-2xl mb-2">Contact</h1>
-            <div className="links flex flex-col gap-2">
-              <Anchor
-                href={"https://www.facebook.com/moonbamijam"}
-                text={"facebook"}
-                target="_blank"
-              />
-              <Anchor
-                href={"https://www.instagram.com/moonbamidesu/"}
-                text={"instagram"}
-                target="_blank"
-              />
-              <Anchor
-                href={"https://twitter.com/Moonbami_"}
-                text={"twitter x"}
-                target="_blank"
-              />
-              <Anchor
-                href={"https://github.com/MoonbamiOfficial"}
-                text={"GitHub"}
-                target="_blank"
-              />
-            </div>
+          <div className="links flex gap-6">
+            <Anchor href={"/"} text={"moonbami"} />
+            <Anchor href={"/anime"} text={"about"} />
+            <Anchor href={"/games"} text={"projects"} />
+            <Anchor href={"/hobbies"} text={"timeline"} />
+            <Anchor href={"/music"} text={"more"} />
           </div>
         </div>
         <hr className="w-full mt-[50px]" />
-        <div className="mt-2 flex gap-2 justify-center">
+        <div className="w-full flex gap-4 justify-center mt-12">
+          <SocMedIcon
+            href={"https://anilist.co/user/Moonbami/"}
+            icon={<SiAnilist />}
+          />
+          <SocMedIcon
+            href={"https://www.facebook.com/moonbamijam"}
+            icon={<FaFacebook />}
+          />
+          <SocMedIcon
+            href={"https://www.instagram.com/moonbamidesu/"}
+            icon={<FaInstagram />}
+          />
+          <SocMedIcon
+            href={"https://github.com/MoonbamiOfficial"}
+            icon={<FaGithub />}
+          />
+          <SocMedIcon
+            href={"https://twitter.com/Moonbami_"}
+            icon={<FaXTwitter />}
+          />
+          <SocMedIcon
+            href={"https://www.reddit.com/user/MoonbamiOfficial/"}
+            icon={<FaRedditAlien />}
+          />
+          <SocMedIcon
+            href={"https://www.youtube.com/@Moonbami"}
+            icon={<FaYoutube />}
+          />
+        </div>
+        <div className="mt-4 flex gap-2 justify-center">
           <span className="text-center">
-            &#169; {year.getFullYear().toString()} Moonbami. Developer&apos;s
-            Portfolio.
+            &#169;{year.getFullYear().toString()} Moonbami.
           </span>{" "}
         </div>
       </section>
