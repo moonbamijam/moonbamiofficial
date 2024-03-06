@@ -15,8 +15,11 @@
 ::after {
   @apply box-border p-0 m-0 text-black dark:text-white transition-all;
 }
+html {
+  @apply min-h-full relative;
+}
 body {
-  @apply dark:bg-gradient-to-br from-primary to-secondary;
+  @apply w-full h-full bg-no-repeat bg-cover dark:bg-gradient-to-br from-primary to-secondary;
 }
 
 /* UTILITY CLASSES */
