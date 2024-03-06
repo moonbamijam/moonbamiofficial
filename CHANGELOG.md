@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.7.0...v1.8.0) (2024-03-06)
+
+
+### Features
+
+* add new logo to header using .png extention ([041bc53](https://github.com/MoonbamiOfficial/dev-portfolio/commit/041bc53a1700039488735f2df5844884c90e7e61))
+* add new ui to footer ([1e4b371](https://github.com/MoonbamiOfficial/dev-portfolio/commit/1e4b3716fa8d30e04998ce3cc02b2b6f061dfb90))
+* update favicon and public assets for pwa ([bfb5850](https://github.com/MoonbamiOfficial/dev-portfolio/commit/bfb5850eab2c47e0dbf42612cc37e1e8bdc5f876))
+
 ## [1.7.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.6.0...v1.7.0) (2024-03-05)
 
 
