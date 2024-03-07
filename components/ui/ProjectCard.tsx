@@ -28,8 +28,8 @@ const ProjectCard = ({
           className="w-full h-[200px] object-cover"
         />
         <div className="details px-[30px] py-[30px]">
-          <h1 className="title text-2xl font-bold px-2">{title}</h1>
-          <p className="desc desc-format">{desc}</p>
+          <h1 className="truncate text-2xl font-bold px-2">{title}</h1>
+          <p className="desc-format">{desc}</p>
         </div>
       </Link>
       <div className="links flex justify-between px-[30px] pb-[30px]">
