@@ -53,5 +53,5 @@ body {
 
 /* HEADER */
 .scrolled-header-bg {
-  @apply bg-white dark:bg-primary shadow shadow-gray-200 dark:shadow-transparent;
+  @apply bg-white dark:bg-primary shadow shadow-gray-300 dark:shadow-transparent;
 }
