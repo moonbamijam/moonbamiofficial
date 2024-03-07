@@ -18,7 +18,7 @@ const StackIcon = ({ id, href, src, alt, className }: Props) => {
       id={id}
       href={href}
       target="_blank"
-      className="relative flex items-center justify-center"
+      className="relative flex items-center justify-center p-4 rounded-2xl hover:shadow-gray-500 hover:shadow-lg hover:-translate-y-2 dark:hover:bg-highlight"
     >
       <div
         className={`w-[40px] h-[40px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] ${className} absolute `}
