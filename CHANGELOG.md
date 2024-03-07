@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.1](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.10.0...v1.10.1) (2024-03-07)
+
+
+### Bug Fixes
+
+* project title will next line when too long ([e35e18d](https://github.com/MoonbamiOfficial/dev-portfolio/commit/e35e18df8f08830d8198837ef7935a3528e20c2e))
+
 ## [1.10.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.9.0...v1.10.0) (2024-03-07)
 
 
