@@ -77,7 +77,7 @@ const AboutPage = async () => {
               "All of my current technology stack that I really enjoy using. Looking forward to learn more."
             }
           />
-          <div className="stacks inline-grid grid-cols-5 sm:grid-cols-6 lg:grid-cols-7 gap-2">
+          <div className="stacks inline-grid grid-cols-5 sm:grid-cols-6 lg:grid-cols-7">
             <StackIcon
               id={"python"}
               href={"https://www.python.org/"}
