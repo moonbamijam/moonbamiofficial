@@ -7,6 +7,7 @@ type Props = {
 const TopicImage = ({ src }: Props) => {
   return (
     <Image
+      priority
       src={src}
       alt="image"
       width={2944}
