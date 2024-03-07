@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.9.0...v1.10.0) (2024-03-07)
+
+
+### Features
+
+* add shadow styling on hover in tech stacks ([fdc74ad](https://github.com/MoonbamiOfficial/dev-portfolio/commit/fdc74ada8ccde81c2b5990b23c35b29bd79f758f))
+* increase gray density to shadow in header ([930ab77](https://github.com/MoonbamiOfficial/dev-portfolio/commit/930ab77a81ad70148f6f40fe4d8f605e00ab8cee))
+* remove gap in grid in tech stacks ([4d1369f](https://github.com/MoonbamiOfficial/dev-portfolio/commit/4d1369ffccc3aa6aa68dbd1f30cf22ab69732d7c))
+
+
+### Performance Improvements
+
+* add priority property to my image in about ([61c1bf6](https://github.com/MoonbamiOfficial/dev-portfolio/commit/61c1bf66fcfb8c6a6b64d9875d297ed43153c7c8))
+
 ## [1.9.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.8.0...v1.9.0) (2024-03-06)
 
 
