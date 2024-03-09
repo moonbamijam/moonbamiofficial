@@ -1,4 +1,15 @@
+# What's New
 
+## [1.12.6](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.12.5...v1.12.6) (2024-03-09)
+
+
+### Bug Fixes
+
+* env variable is required for auto release ([b56e3ea](https://github.com/MoonbamiOfficial/dev-portfolio/commit/b56e3ea7893a7539913873bc3ecc2200fcc0efa8))
+* env variable warning from release-it ([e654c85](https://github.com/MoonbamiOfficial/dev-portfolio/commit/e654c851d3823aa299ce27daf3543e33293ca4b2))
+* env variable warning using dotenv ([ba61e27](https://github.com/MoonbamiOfficial/dev-portfolio/commit/ba61e27a78812ad29471946a2b6043be736a0a58))
+* release-it is not using commitMessage ([d36f69c](https://github.com/MoonbamiOfficial/dev-portfolio/commit/d36f69cc7f946532a8772b2f7033b68df3f9fc90))
+* warning in env variable from release-it ([96b14be](https://github.com/MoonbamiOfficial/dev-portfolio/commit/96b14be206fc2efb058d6eceb19528a3bddc90cf))
 
 ## [1.12.5](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.12.4...v1.12.5) (2024-03-09)
 
