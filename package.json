@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "release": "release-it",
+    "prepare": "husky"
   },
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.2.5",
@@ -19,6 +21,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.0.3",
+    "@commitlint/config-conventional": "^19.0.3",
+    "@release-it/conventional-changelog": "^8.0.1",
     "@types/node": "^20.11.21",
     "@types/react": "^18.2.60",
     "@types/react-dom": "^18.2.19",
@@ -26,10 +31,67 @@
     "autoprefixer": "^10.4.17",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.1.0",
+    "husky": "^9.0.11",
     "postcss": "^8.4.35",
     "react-icons": "^5.0.1",
+    "release-it": "^17.1.1",
     "release-please": "^16.9.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore(build): release v${version}"
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": false
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "infile": "CHANGELOG.md",
+        "preset": {
+          "name": "conventionalcommits",
+          "types": [
+            {
+              "type": [
+                "feat!",
+                "fix!",
+                "perf!"
+              ],
+              "section": "⚠ BREAKING CHANGES"
+            },
+            {
+              "type": "feat",
+              "section": "Features"
+            },
+            {
+              "type": "fix",
+              "section": "Fixes"
+            },
+            {
+              "type": "perf",
+              "section": "Performance Improvements"
+            },
+            {
+              "type": "docs",
+              "section": "Documentations"
+            },
+            {
+              "type": [
+                "style",
+                "refactor",
+                "deps",
+                "config",
+                "chore"
+              ],
+              "section": "Others"
+            }
+          ]
+        }
+      }
+    }
   }
 }
