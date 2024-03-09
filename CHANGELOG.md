@@ -1,5 +1,7 @@
 
 
+## [1.12.5](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.12.4...v1.12.5) (2024-03-09)
+
 ## [1.12.4](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.12.3...v1.12.4) (2024-03-09)
 
 
