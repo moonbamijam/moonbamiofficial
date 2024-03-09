@@ -20,14 +20,15 @@ const HomePage = async () => {
                 basis.
               </p>
             </div>
-            <Image 
-              priority
-              src={Moonbami}
-              width={300}
-              height={300}
-              alt="Jam Moonbami"
-              className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] border-[3px] border-solid border-black dark:border-white rounded-lg"
-            />
+            <div className="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] aspect-square border-[3px] border-solid border-black dark:border-white rounded-lg">
+              <Image
+                priority
+                src={Moonbami}
+                fill
+                sizes="(min-width: 1040px) 344px, (min-width: 780px) 294px, 244px"
+                alt="Jam Moonbami"
+              />
+            </div>
           </div>
         </section>
       </div>
