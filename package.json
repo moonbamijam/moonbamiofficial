@@ -36,25 +36,5 @@
     "release-it": "^17.1.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
-  },
-  "release-it": {
-    "git": {
-      "commitMessage": "chore(build): release v${version}"
-    },
-    "github": {
-      "release": true,
-      "releaseName": "v${version}",
-      "tokenRef": "DEV_PORTFOLIO_TOKEN"
-    },
-    "npm": {
-      "publish": false
-    },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "infile": "CHANGELOG.md",
-        "header": "# What's New",
-        "preset": "angular"
-      }
-    }
   }
 }
