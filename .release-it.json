@@ -4,7 +4,8 @@
       "commitMessage": "chore(build): release v${version}"
     },
     "github": {
-      "release": true
+      "release": true,
+      "releaseName": "chore(build): release v${version}"
     },
     "npm": {
       "publish": false
