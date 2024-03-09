@@ -15,7 +15,7 @@ const ProjectCard = ({
   github,
 }: ProjectType) => {
   return (
-    <div className="cursor-pointer hover:shadow-gray-500 hover:shadow-lg hover:-translate-y-2 relative w-[400px] rounded-xl flex flex-col overflow-hidden">
+    <div className="cursor-pointer hover:shadow-gray-500 hover:shadow-lg hover:-translate-y-2 relative w-[400px] rounded-xl flex flex-col overflow-hidden [&>a>img]:hover:rounded-none">
       <Link href={href}>
         <Image
           src={src ? `${src}` : DefaultBanner}
