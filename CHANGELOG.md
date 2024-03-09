@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.11.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.10.1...v1.11.0) (2024-03-09)
+
+
+### Features
+
+* remove border to projects and add new shadow ([7633f18](https://github.com/MoonbamiOfficial/dev-portfolio/commit/7633f185e8322f4382f59f4d23309e0f1155209c))
+
 ## [1.10.1](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.10.0...v1.10.1) (2024-03-07)
 
 
