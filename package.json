@@ -44,7 +44,7 @@
     },
     "github": {
       "release": true,
-      "token": "${{ secrets.DEV_PORTFOLIO_RELEASE }}"
+      "GITHUB_TOKEN": "${{ secrets.DEV_PORTFOLIO_RELEASE }}"
     },
     "npm": {
       "publish": false
@@ -98,8 +98,7 @@
             {
               "type": "config",
               "section": "Others"
-            },
-            {}
+            }
           ]
         }
       }
