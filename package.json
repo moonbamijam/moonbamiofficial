@@ -43,7 +43,8 @@
       "commitMessage": "chore(build): release v${version}"
     },
     "github": {
-      "release": true
+      "release": true,
+      "token": "${{ secrets.DEV_PORTFOLIO_RELEASE }}"
     },
     "npm": {
       "publish": false
