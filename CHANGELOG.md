@@ -1,3 +1,7 @@
+
+
+## [1.11.1](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.11.0...v1.11.1) (2024-03-09)
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
