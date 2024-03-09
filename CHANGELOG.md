@@ -1,5 +1,12 @@
 # What's New
 
+# [1.13.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.12.6...v1.13.0) (2024-03-09)
+
+
+### Features
+
+* responsive images for landing and about page ([31c84d9](https://github.com/MoonbamiOfficial/dev-portfolio/commit/31c84d95bfb228acbe6a5b9e7e2f43eb5d9fa28c))
+
 ## [1.12.6](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.12.5...v1.12.6) (2024-03-09)
 
 
