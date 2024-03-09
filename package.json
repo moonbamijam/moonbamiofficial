@@ -36,5 +36,71 @@
     "release-it": "^17.1.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore(build): release v${version}"
+    },
+    "github": {
+      "release": true,
+      "releaseName": "chore(build): release v${version}"
+    },
+    "npm": {
+      "publish": false
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "infile": "CHANGELOG.md",
+        "preset": {
+          "name": "conventionalcommits",
+          "types": [
+            {
+              "type": "feat!",
+              "section": "⚠ BREAKING CHANGES"
+            },
+            {
+              "type": "fix!",
+              "section": "⚠ BREAKING CHANGES"
+            },
+            {
+              "type": "perf!",
+              "section": "⚠ BREAKING CHANGES"
+            },
+            {
+              "type": "feat",
+              "section": "Features"
+            },
+            {
+              "type": "fix",
+              "section": "Fixes"
+            },
+            {
+              "type": "perf",
+              "section": "Performance Improvements"
+            },
+            {
+              "type": "docs",
+              "section": "Documentations"
+            },
+            {
+              "type": "style",
+              "section": "Others"
+            },
+            {
+              "type": "refactor",
+              "section": "Others"
+            },
+            {
+              "type": "deps",
+              "section": "Others"
+            },
+            {
+              "type": "config",
+              "section": "Others"
+            }
+          ]
+        }
+      }
+    }
   }
 }
