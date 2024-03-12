@@ -1,5 +1,19 @@
 # What's New
 
+## [1.13.1](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.13.0...v1.13.1) (2024-03-12)
+
+
+### Bug Fixes
+
+* defer offscreen images ([395c357](https://github.com/MoonbamiOfficial/dev-portfolio/commit/395c357736203b29993d7e954ce774236f41dd02))
+* links must have discernible text ([a846442](https://github.com/MoonbamiOfficial/dev-portfolio/commit/a846442f84be83fecd4137d2397ae1b683450783))
+
+
+### Performance Improvements
+
+* change href property value to url ([80bc361](https://github.com/MoonbamiOfficial/dev-portfolio/commit/80bc36166cbba7f6134b7d2d76a86af1b5f93177))
+* change href property value to url in types ([0307404](https://github.com/MoonbamiOfficial/dev-portfolio/commit/03074045e7080b6798639732339023cf76613162))
+
 # [1.13.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.12.6...v1.13.0) (2024-03-09)
 
 
