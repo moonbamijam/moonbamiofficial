@@ -5,7 +5,6 @@ import { FaGithub } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaRedditAlien } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
-import Anchor from "./Anchor";
 import SocMedIcon from "./SocMedIcon";
 
 const Footer = () => {
@@ -23,30 +22,37 @@ const Footer = () => {
         <div className="w-full flex gap-4 justify-center my-8">
           <SocMedIcon
             href={"https://anilist.co/user/Moonbami/"}
+            ariaLabel={"AniList"}
             icon={<SiAnilist />}
           />
           <SocMedIcon
             href={"https://www.facebook.com/moonbamijam"}
+            ariaLabel={"Facebook"}
             icon={<FaFacebook />}
           />
           <SocMedIcon
             href={"https://www.instagram.com/moonbamidesu/"}
+            ariaLabel={"Instagram"}
             icon={<FaInstagram />}
           />
           <SocMedIcon
             href={"https://github.com/MoonbamiOfficial"}
+            ariaLabel={"GitHub"}
             icon={<FaGithub />}
           />
           <SocMedIcon
             href={"https://twitter.com/Moonbami_"}
+            ariaLabel={"X"}
             icon={<FaXTwitter />}
           />
           <SocMedIcon
             href={"https://www.reddit.com/user/MoonbamiOfficial/"}
+            ariaLabel={"Reddit"}
             icon={<FaRedditAlien />}
           />
           <SocMedIcon
             href={"https://www.youtube.com/@Moonbami"}
+            ariaLabel={"YouTube"}
             icon={<FaYoutube />}
           />
         </div>

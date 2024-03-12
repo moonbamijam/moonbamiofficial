@@ -4,14 +4,16 @@ import Link from "next/link";
 
 type Props = {
   href: Url;
+  ariaLabel: string;
   icon: React.ReactNode;
   text?: string;
 };
 
-const SocMed = ({ href, icon, text }: Props) => {
+const SocMed = ({ href, ariaLabel, icon, text }: Props) => {
   return (
     <Link
       href={href}
+      aria-label={ariaLabel}
       className="flex items-center gap-2 font-bold text-xl capitalize"
     >
       {icon}

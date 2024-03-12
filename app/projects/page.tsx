@@ -35,6 +35,7 @@ const ProjectsPage = async () => {
                   key={project._id}
                   _id={project._id}
                   href={`projects/${project._id}`}
+                  ariaLabel={project.title}
                   src={project.src}
                   alt={project.alt}
                   title={project.title}

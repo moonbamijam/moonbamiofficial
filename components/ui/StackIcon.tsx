@@ -2,21 +2,20 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { Url } from "next/dist/shared/lib/router/router";
 import Image from "next/image";
 import Link from "next/link";
-import { ReactNode } from "react";
 
 type Props = {
-  id: string;
   href: Url;
+  ariaLabel: string;
   src: string | StaticImport;
   alt: string;
   className?: string;
 };
 
-const StackIcon = ({ id, href, src, alt, className }: Props) => {
+const StackIcon = ({ href, ariaLabel, src, alt, className }: Props) => {
   return (
     <Link
-      id={id}
       href={href}
+      aria-label={ariaLabel}
       target="_blank"
       className="relative flex items-center justify-center p-4 rounded-2xl hover:shadow-gray-500 hover:shadow-lg hover:-translate-y-2 dark:hover:bg-highlight"
     >

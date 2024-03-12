@@ -7,6 +7,7 @@ import WebsiteBtn from "@components/buttons/WebsiteBtn";
 
 const ProjectCard = ({
   href,
+  ariaLabel,
   src,
   alt,
   title,
@@ -16,7 +17,7 @@ const ProjectCard = ({
 }: ProjectType) => {
   return (
     <div className="cursor-pointer hover:shadow-gray-500 hover:shadow-lg hover:-translate-y-2 relative w-[400px] rounded-xl flex flex-col overflow-hidden [&>a>img]:hover:rounded-none">
-      <Link href={href}>
+      <Link aria-label={ariaLabel} href={href}>
         <Image
           src={src ? `${src}` : DefaultBanner}
           alt={`${alt}`}

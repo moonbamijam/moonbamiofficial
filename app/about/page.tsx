@@ -79,7 +79,7 @@ const AboutPage = async () => {
           />
           <div className="stacks inline-grid grid-cols-5 sm:grid-cols-6 lg:grid-cols-7">
             <StackIcon
-              id={"python"}
+              ariaLabel={"Python"}
               href={"https://www.python.org/"}
               src={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
@@ -87,7 +87,7 @@ const AboutPage = async () => {
               alt={"python logo"}
             />
             <StackIcon
-              id={"renpy"}
+              ariaLabel={"Ren'Py"}
               href={"https://www.renpy.org/"}
               src={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/renpy/renpy-original.svg"
@@ -95,7 +95,7 @@ const AboutPage = async () => {
               alt={"renpy logo"}
             />
             <StackIcon
-              id={"javascript"}
+              ariaLabel={"JavaScript"}
               href={"https://www.javascript.com/"}
               src={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
@@ -103,7 +103,7 @@ const AboutPage = async () => {
               alt={"javascript logo"}
             />
             <StackIcon
-              id={"typescript"}
+              ariaLabel={"TypeScript"}
               href={"https://www.typescriptlang.org/"}
               src={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
@@ -111,7 +111,7 @@ const AboutPage = async () => {
               alt={"typescript logo"}
             />
             <StackIcon
-              id={"react"}
+              ariaLabel={"React"}
               href={"https://react.dev/"}
               src={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
@@ -119,7 +119,7 @@ const AboutPage = async () => {
               alt={"react logo"}
             />
             <StackIcon
-              id={"nextjs"}
+              ariaLabel={"NextJs"}
               href={"https://nextjs.org/"}
               src={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
@@ -127,7 +127,7 @@ const AboutPage = async () => {
               alt={"nextjs logo"}
             />
             <StackIcon
-              id={"nodejs"}
+              ariaLabel={"NodeJs"}
               href={"https://nodejs.org/en"}
               src={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
@@ -135,7 +135,7 @@ const AboutPage = async () => {
               alt={"nodejs logo"}
             />
             <StackIcon
-              id={"expressjs"}
+              ariaLabel={"ExpressJs"}
               href={"https://expressjs.com/"}
               src={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
@@ -143,7 +143,7 @@ const AboutPage = async () => {
               alt={"expressjs logo"}
             />
             <StackIcon
-              id={"tailwindcss"}
+              ariaLabel={"TailwindCSS"}
               href={"https://tailwindcss.com/"}
               src={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
@@ -151,7 +151,7 @@ const AboutPage = async () => {
               alt={"tailwindcss logo"}
             />
             <StackIcon
-              id={"sass"}
+              ariaLabel={"Sass"}
               href={"https://sass-lang.com/"}
               src={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
@@ -159,7 +159,7 @@ const AboutPage = async () => {
               alt={"sass logo"}
             />
             <StackIcon
-              id={"css"}
+              ariaLabel={"CSS"}
               href={"https://web.dev/learn/css"}
               src={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
@@ -167,7 +167,7 @@ const AboutPage = async () => {
               alt={"css3 logo"}
             />
             <StackIcon
-              id={"html"}
+              ariaLabel={"HTML"}
               href={"https://html.com/"}
               src={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
@@ -175,7 +175,7 @@ const AboutPage = async () => {
               alt={"html5 logo"}
             />
             <StackIcon
-              id={"figma"}
+              ariaLabel={"Figma"}
               href={"https://www.figma.com/"}
               src={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
@@ -183,7 +183,7 @@ const AboutPage = async () => {
               alt={"figma logo"}
             />
             <StackIcon
-              id={"photoshop"}
+              ariaLabel={"Photoshop"}
               href={
                 "https://www.adobe.com/ph_en/products/photoshop/free-trial-download.html"
               }
@@ -193,7 +193,7 @@ const AboutPage = async () => {
               alt={"photoshop logo"}
             />
             <StackIcon
-              id={"git"}
+              ariaLabel={"Git"}
               href={"https://git-scm.com/"}
               src={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
@@ -201,7 +201,7 @@ const AboutPage = async () => {
               alt={"git logo"}
             />
             <StackIcon
-              id={"mongodb"}
+              ariaLabel={"MongoDB"}
               href={"https://www.mongodb.com/"}
               src={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
@@ -221,21 +221,25 @@ const AboutPage = async () => {
           <div className=" socmeds grid grid-cols-2 gap-[30px]">
             <SocMed
               href={"https://www.facebook.com/moonbamijam"}
+              ariaLabel={"Facebook"}
               icon={<FaFacebook />}
               text={"facebook"}
             />
             <SocMed
               href={"https://www.instagram.com/moonbamidesu/"}
+              ariaLabel={"Instagram"}
               icon={<FaInstagram />}
               text={"instagram"}
             />
             <SocMed
               href={"https://twitter.com/Moonbami_"}
+              ariaLabel={"X"}
               icon={<FaXTwitter />}
               text={"twitter x"}
             />
             <SocMed
               href={"https://github.com/MoonbamiOfficial"}
+              ariaLabel={"GitHub"}
               icon={<FaGithub />}
               text={"GitHub"}
             />

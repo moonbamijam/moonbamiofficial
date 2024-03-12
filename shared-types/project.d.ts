@@ -3,6 +3,7 @@ import { Url } from "next/dist/shared/lib/router/router";
 export type ProjectType = {
   _id: string;
   href: string;
+  ariaLabel: string;
   src: Url;
   alt?: string;
   title: string;

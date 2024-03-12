@@ -101,6 +101,7 @@ const Header = () => {
                 {NavLinks.map((link) => (
                   <Anchor
                     href={link.path}
+                    ariaLabel={link.name}
                     key={link.id}
                     className={isLinkActive(link.path) ? "active" : ""}
                     name={link.name}
