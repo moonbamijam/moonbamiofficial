@@ -1,8 +1,9 @@
-import Link from "next/link";
+import { Url } from "next/dist/shared/lib/router/router";
 import { ReactNode } from "react";
+import Link from "next/link";
 
 type Props = {
-  href: string;
+  href: Url;
   ariaLabel: string
   icon: ReactNode;
 };

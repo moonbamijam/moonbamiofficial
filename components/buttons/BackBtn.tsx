@@ -1,7 +1,9 @@
-import Link from "next/link";
+import { Url } from "next/dist/shared/lib/router/router";
 import { FaBackwardStep } from "react-icons/fa6";
+import Link from "next/link";
+
 type Props = {
-  href: string;
+  href: Url;
   extraClass?: string;
 };
 
