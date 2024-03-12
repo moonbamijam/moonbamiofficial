@@ -64,6 +64,7 @@ const Header = () => {
             <Image
               className="hidden dark:block"
               priority
+              loading="eager"
               src={tsukiwaLogoLight}
               alt="tsukiwa logo"
               width={40}
@@ -72,6 +73,7 @@ const Header = () => {
             <Image
               className="block dark:hidden"
               priority
+              loading="eager"
               src={tsukiwaLogoDark}
               alt="tsukiwa logo"
               width={40}
