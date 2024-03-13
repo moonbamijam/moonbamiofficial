@@ -1,5 +1,18 @@
 # What's New
 
+# [2.0.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.13.1...v2.0.0) (2024-03-13)
+
+
+### Performance Improvements
+
+* new sizes for responsive images ([842f5c5](https://github.com/MoonbamiOfficial/dev-portfolio/commit/842f5c5af157a42b8a2e94e6c0e2772017249373))
+* new sizes for responsive stay tuned ui ([1d03223](https://github.com/MoonbamiOfficial/dev-portfolio/commit/1d0322313eae45b4efd49ce5f8b664c6b191c366))
+
+
+### BREAKING CHANGES
+
+* add cloudinary api to handle images
+
 ## [1.13.1](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.13.0...v1.13.1) (2024-03-12)
 
 
