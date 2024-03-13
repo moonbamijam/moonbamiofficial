@@ -16,7 +16,7 @@ const StayTuned = ({ src }: Props) => {
           alt="Stay tuned image"
           width={1000}
           height={1000}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(min-width: 475px) 100vw, (min-width: 768px) 1080px, (min-width: 1024px) 1920px"
           className="w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] object-cover rounded-full"
         />
       </section>
