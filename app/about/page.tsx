@@ -9,14 +9,13 @@ import { FaGithub } from "react-icons/fa6";
 import dynamic from "next/dynamic";
 import Section from "@components/common/Section";
 import Title from "@components/texts/Title";
-import TopicImage from "@components/about/TopicImage";
-import Me from "@assets/me.webp";
 import About from "@components/about/About";
 import LoadingSpinner from "@components/ux/LoadingSpinner";
 import Topic from "@components/about/Topic";
 import SocMed from "@components/ui/SocMed";
 import BackToTop from "@components/buttons/BackToTop";
 import StackIcon from "@components/ui/StackIcon";
+import Picture from "@components/common/Picture";
 
 const Footer = dynamic(() => import("@components/footer/Footer"));
 
@@ -37,7 +36,9 @@ const AboutPage = async () => {
             desc={"Let's dive deeper of who am I behind the social media."}
           />
           <div className="about-me w-full flex flex-col lg:flex-row justify-between items-center lg:items-start xl:justify-evenly ">
-            <TopicImage src={Me} />
+            <div className="relative w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] 2xl:w-[500px] 2xl:h-[500px] aspect-square shadow-md shadow-gray-500 mb-4 rounded-lg">
+              <Picture src={"me_x4brue"} alt={"Jam Moonbami"} />
+            </div>
             <div className="about-me flex flex-col gap-[30px] ">
               {abouts ? (
                 abouts.map((about: AboutType) => (
