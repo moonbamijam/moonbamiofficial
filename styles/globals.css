@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --primary: 2 2 2;
-    --secondary: 45 52 54;
-    --highlight: 0 122 204;
-  }
-}
-
 *,
 ::before,
 ::after {
