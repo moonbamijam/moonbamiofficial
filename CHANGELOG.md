@@ -1,5 +1,19 @@
 # What's New
 
+## [2.0.1](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.0.0...v2.0.1) (2024-03-18)
+
+
+### Bug Fixes
+
+* colors do not have enough contrast ([8b96733](https://github.com/MoonbamiOfficial/dev-portfolio/commit/8b967338d5a05c6c4ec594fe17b3532fb6c4fa69))
+
+
+### Performance Improvements
+
+* add conditional priority props for images ([a5510d2](https://github.com/MoonbamiOfficial/dev-portfolio/commit/a5510d20e34d220f9fc3fd403cd14ba25dbbd88b))
+* new sizes for responsive stay tuned ui ([dfaedf9](https://github.com/MoonbamiOfficial/dev-portfolio/commit/dfaedf9a5a081425ef447822bb77e17d198331f4))
+* remove excess utility classes in styles ([62b1417](https://github.com/MoonbamiOfficial/dev-portfolio/commit/62b14170429b9d49dde366e10c9a52a1ba03067b))
+
 # [2.0.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v1.13.1...v2.0.0) (2024-03-13)
 
 
