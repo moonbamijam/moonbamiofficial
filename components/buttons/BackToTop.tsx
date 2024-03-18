@@ -13,11 +13,11 @@ const handleScrollIntoView = (scrollInto: string) => {
 };
 
 const BackToTop = ({ id }: Props) => {
-  const [backToTop, setBackToTop] = useState("hide-back-to-top");
+  const [backToTop, setBackToTop] = useState("opacity-0 invisible");
 
   const handleBackToTop = () => {
-    if (window.scrollY > 500) return setBackToTop("show-back-to-top");
-    else if (window.scrollY < 15) return setBackToTop("hide-back-to-top");
+    if (window.scrollY > 500) return setBackToTop("opacity-100 visible");
+    else if (window.scrollY < 15) return setBackToTop("opacity-0 invisible");
   };
 
   useEffect(() => {

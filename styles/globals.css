@@ -18,12 +18,6 @@ body {
 .highlight {
   @apply text-highlight;
 }
-.hide-back-to-top {
-  @apply opacity-0 invisible;
-}
-.show-back-to-top {
-  @apply opacity-100 visible;
-}
 .text-format {
   @apply px-2;
 }
