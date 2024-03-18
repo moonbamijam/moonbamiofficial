@@ -3,7 +3,7 @@ import { Noto_Sans } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import Header from "@components/header/Header";
-import Providers from "@providers/providers";
+import ThemesProvider from "@providers/themesProvider";
 import "@styles/globals.css";
 
 const inter = Noto_Sans({
@@ -50,14 +50,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className}`}>
-        <Providers>
+        <ThemesProvider>
           <Header />
           <main>
             {children}
             <Analytics />
             <SpeedInsights />
           </main>
-        </Providers>
+        </ThemesProvider>
       </body>
     </html>
   );
