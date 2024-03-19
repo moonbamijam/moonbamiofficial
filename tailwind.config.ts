@@ -12,7 +12,7 @@ const config: Config = {
       colors: {
         primary: "#020202",
         secondary: "#2D3436",
-        highlight: "#0CAFFF",
+        highlight: "#007acc",
       },
       container: {
         center: true,
