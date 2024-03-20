@@ -5,7 +5,7 @@
   },
   "github": {
     "release": true,
-    "releaseName": "Portfolio v${version}",
+    "releaseName": "v${version}",
     "tokenRef": "DEV_PORTFOLIO_TOKEN"
   },
   "npm": {
