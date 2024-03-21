@@ -1,5 +1,17 @@
 # What's New
 
+# [2.1.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.0.1...v2.1.0) (2024-03-21)
+
+
+### Bug Fixes
+
+* random bug in back to top btn component ([5638cfb](https://github.com/MoonbamiOfficial/dev-portfolio/commit/5638cfb340823f34eae1062f5a473a2f87c12036))
+
+
+### Features
+
+* new highlight color ([13282cf](https://github.com/MoonbamiOfficial/dev-portfolio/commit/13282cf7ca0db76d904b3194b0bf63cbb22038b1))
+
 ## [2.0.1](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.0.0...v2.0.1) (2024-03-18)
 
 
