@@ -17,7 +17,7 @@ const Picture = ({ src, alt, isPriority }: Props) => {
       fill
       sizes="(min-width: 475px) 100vw, (min-width: 768px) 1080px, (min-width: 1024px) 1920px"
       alt={`${alt}`}
-      className="object-cover rounded-lg"
+      className="object-cover"
     />
   );
 };

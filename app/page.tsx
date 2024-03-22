@@ -19,8 +19,12 @@ const HomePage = async () => {
                 basis.
               </p>
             </div>
-            <div className="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] aspect-square border-[3px] border-solid border-black dark:border-white rounded-lg">
-              <Picture src={"moonbami_nkcmku"} alt={"Jam Moonbami"} isPriority={true} />
+            <div className="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] aspect-square border-[3px] border-solid border-black dark:border-white rounded-lg overflow-hidden">
+              <Picture
+                src={"moonbami_nkcmku"}
+                alt={"Jam Moonbami"}
+                isPriority={true}
+              />
             </div>
           </div>
         </section>
