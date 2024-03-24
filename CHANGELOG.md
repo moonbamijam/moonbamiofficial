@@ -1,5 +1,17 @@
 # What's New
 
+# [2.2.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.1.0...v2.2.0) (2024-03-24)
+
+
+### Bug Fixes
+
+* unbalanced border radii in pictures ([46223a8](https://github.com/MoonbamiOfficial/dev-portfolio/commit/46223a86e4b6eaa9c2417fca10c3efcadc4f1745))
+
+
+### Features
+
+* new landing page image ([51b49c5](https://github.com/MoonbamiOfficial/dev-portfolio/commit/51b49c5191cf0c62e9119a59cbb6acba8843a080))
+
 # [2.1.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.0.1...v2.1.0) (2024-03-21)
 
 
