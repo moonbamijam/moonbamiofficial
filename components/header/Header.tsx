@@ -21,7 +21,7 @@ const NavLinks = [
   { id: 5, name: "more", path: "/more" },
 ];
 
-const Header = () => {
+export default function Header() {
   const pathName = usePathname();
   const isLinkActive = (path: any) => path === pathName;
 
@@ -124,6 +124,4 @@ const Header = () => {
       )}
     </>
   );
-};
-
-export default Header;
+}

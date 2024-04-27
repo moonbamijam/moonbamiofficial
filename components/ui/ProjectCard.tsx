@@ -4,7 +4,7 @@ import GitHubBtn from "@components/buttons/GitHubBtn";
 import WebsiteBtn from "@components/buttons/WebsiteBtn";
 import Picture from "@components/common/Picture";
 
-const ProjectCard = ({
+export default function ProjectCard({
   href,
   ariaLabel,
   src,
@@ -13,7 +13,7 @@ const ProjectCard = ({
   desc,
   website,
   github,
-}: ProjectType) => {
+}: ProjectType) {
   return (
     <div className="cursor-pointer hover:shadow-gray-500 hover:shadow-lg hover:-translate-y-2 relative w-[400px] rounded-xl flex flex-col overflow-hidden [&>a>div>img]:hover:rounded-none">
       <Link aria-label={ariaLabel} href={href}>
@@ -31,6 +31,4 @@ const ProjectCard = ({
       </div>
     </div>
   );
-};
-
-export default ProjectCard;
+}

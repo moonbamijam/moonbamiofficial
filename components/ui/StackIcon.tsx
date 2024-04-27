@@ -11,7 +11,13 @@ type Props = {
   className?: string;
 };
 
-const StackIcon = ({ href, ariaLabel, src, alt, className }: Props) => {
+export default function StackIcon({
+  href,
+  ariaLabel,
+  src,
+  alt,
+  className,
+}: Props) {
   return (
     <Link
       href={href}
@@ -31,6 +37,4 @@ const StackIcon = ({ href, ariaLabel, src, alt, className }: Props) => {
       />
     </Link>
   );
-};
-
-export default StackIcon;
+}

@@ -2,7 +2,7 @@ type Props = {
   children?: React.ReactNode;
 };
 
-const Dropdown = ({ children }: Props) => {
+export default function Dropdown({ children }: Props) {
   return (
     <nav
       id="main"
@@ -11,6 +11,4 @@ const Dropdown = ({ children }: Props) => {
       {children}
     </nav>
   );
-};
-
-export default Dropdown;
+}

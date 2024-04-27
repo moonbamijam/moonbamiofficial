@@ -4,7 +4,7 @@ type Props = {
   src: string | undefined;
 };
 
-const StayTuned = ({ src }: Props) => {
+export default function StayTuned({ src }: Props) {
   return (
     <div id="" className="container relative">
       <section className="content pb-[300px] pt-[200px] lg:pt-[250px] flex flex-col gap-10 items-center justify-center">
@@ -22,6 +22,4 @@ const StayTuned = ({ src }: Props) => {
       </section>
     </div>
   );
-};
-
-export default StayTuned;
+}

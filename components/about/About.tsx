@@ -1,7 +1,7 @@
 import Detail from "@components/about/Detail";
 import { AboutType } from "@shared-types/about";
 
-const About = ({
+export default function About({
   displayName,
   desc,
   fullName,
@@ -12,7 +12,7 @@ const About = ({
   nationality,
   status,
   languages,
-}: AboutType) => {
+}: AboutType) {
   return (
     <>
       <div className="description">
@@ -33,6 +33,4 @@ const About = ({
       </div>
     </>
   );
-};
-
-export default About;
+}

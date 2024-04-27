@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "Projects",
 };
 
-const ProjectsPage = async () => {
+export default async function ProjectsPage() {
   const { projects } = await useFetch("/api/projects");
   return (
     <>
@@ -53,6 +53,4 @@ const ProjectsPage = async () => {
       <Footer />
     </>
   );
-};
-
-export default ProjectsPage;
+}

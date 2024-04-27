@@ -6,7 +6,7 @@ type Props = {
   extraClass?: string;
 };
 
-const WebsiteBtn = ({ href, extraClass }: Props) => {
+export default function WebsiteBtn({ href, extraClass }: Props) {
   return (
     <Link
       href={href}
@@ -17,6 +17,4 @@ const WebsiteBtn = ({ href, extraClass }: Props) => {
       <FiExternalLink /> visit
     </Link>
   );
-};
-
-export default WebsiteBtn;
+}

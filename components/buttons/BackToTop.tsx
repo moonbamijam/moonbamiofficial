@@ -7,7 +7,7 @@ type Props = {
   id: string;
 };
 
-const BackToTop = ({ id }: Props) => {
+export default function BackToTop({ id }: Props) {
   const [backToTop, setBackToTop] = useState("opacity-0 invisible");
 
   const handleScrollIntoView = (scrollInto: string) => {
@@ -38,6 +38,4 @@ const BackToTop = ({ id }: Props) => {
       </h1>
     </button>
   );
-};
-
-export default BackToTop;
+}

@@ -23,9 +23,10 @@ export const metadata: Metadata = {
   title: "About",
 };
 
-const AboutPage = async () => {
+export default async function AboutPage() {
   const { abouts } = await useFetch("/api/abouts");
   const { topics } = await useFetch("/api/topics");
+
   return (
     <>
       <div className="container relative">
@@ -120,6 +121,4 @@ const AboutPage = async () => {
       <Footer />
     </>
   );
-};
-
-export default AboutPage;
+}

@@ -4,11 +4,11 @@ import Link from "next/link";
 
 type Props = {
   href: Url;
-  ariaLabel: string
+  ariaLabel: string;
   icon: ReactNode;
 };
 
-const SocMedIcon = ({ href, ariaLabel, icon }: Props) => {
+export default function SocMedIcon({ href, ariaLabel, icon }: Props) {
   return (
     <Link
       href={href}
@@ -19,6 +19,4 @@ const SocMedIcon = ({ href, ariaLabel, icon }: Props) => {
       {icon}
     </Link>
   );
-};
-
-export default SocMedIcon;
+}

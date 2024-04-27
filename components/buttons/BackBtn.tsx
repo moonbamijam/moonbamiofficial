@@ -7,7 +7,7 @@ type Props = {
   extraClass?: string;
 };
 
-const BackBtn = ({ href, extraClass }: Props) => {
+export default function BackBtn({ href, extraClass }: Props) {
   return (
     <Link
       href={href}
@@ -16,6 +16,4 @@ const BackBtn = ({ href, extraClass }: Props) => {
       <FaBackwardStep /> back
     </Link>
   );
-};
-
-export default BackBtn;
+}

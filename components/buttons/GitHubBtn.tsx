@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa6";
-type Props = {
-  href: string
-  extraClass?: string
-}
 
-const GitHubBtn = ({href, extraClass}: Props) => {
+type Props = {
+  href: string;
+  extraClass?: string;
+};
+
+export default function GitHubBtn({ href, extraClass }: Props) {
   return (
     <Link
       href={href}
@@ -18,5 +19,3 @@ const GitHubBtn = ({href, extraClass}: Props) => {
     </Link>
   );
 }
-
-export default GitHubBtn

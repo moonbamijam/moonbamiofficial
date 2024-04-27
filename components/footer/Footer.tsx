@@ -7,7 +7,7 @@ import { FaRedditAlien } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
 import SocMedIcon from "./SocMedIcon";
 
-const Footer = () => {
+export default function Footer() {
   const year = new Date();
   return (
     <>
@@ -65,6 +65,4 @@ const Footer = () => {
       </section>
     </>
   );
-};
-
-export default Footer;
+}

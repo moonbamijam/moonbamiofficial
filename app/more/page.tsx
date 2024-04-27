@@ -8,13 +8,11 @@ export const metadata: Metadata = {
   title: "More",
 };
 
-const MorePage = () => {
+export default function MorePage() {
   return (
     <>
       <StayTuned src={`${process.env.API_MUSIC_AVATAR}`} />
       <Footer />
     </>
   );
-};
-
-export default MorePage;
+}

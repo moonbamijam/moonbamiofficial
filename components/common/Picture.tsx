@@ -6,10 +6,10 @@ import { Url } from "next/dist/shared/lib/router/router";
 type Props = {
   src: string | Url;
   alt: string;
-  isPriority?: boolean
+  isPriority?: boolean;
 };
 
-const Picture = ({ src, alt, isPriority }: Props) => {
+export default function Picture({ src, alt, isPriority }: Props) {
   return (
     <CldImage
       priority={isPriority}
@@ -20,6 +20,4 @@ const Picture = ({ src, alt, isPriority }: Props) => {
       className="object-cover"
     />
   );
-};
-
-export default Picture;
+}

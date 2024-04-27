@@ -2,7 +2,7 @@ type Props = {
   label?: string;
   detail?: string | number;
 };
-const Detail = ({ label, detail }: Props) => {
+export default function Detail({ label, detail }: Props) {
   return (
     <div className="details flex">
       <div className="label flex">
@@ -16,6 +16,4 @@ const Detail = ({ label, detail }: Props) => {
       </span>
     </div>
   );
-};
-
-export default Detail;
+}

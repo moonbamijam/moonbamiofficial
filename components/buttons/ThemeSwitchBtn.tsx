@@ -10,7 +10,7 @@ type Props = {
   icon?: ReactNode;
 };
 
-const ThemeSwitchBtn = () => {
+export default function ThemeSwitchBtn() {
   const [mounted, setMounted] = useState(false);
   const { setTheme, resolvedTheme } = useTheme();
 
@@ -31,7 +31,7 @@ const ThemeSwitchBtn = () => {
   } else if (resolvedTheme === "light") {
     return <Button onClick={() => setTheme("dark")} icon={<FiMoon />} />;
   }
-};
+}
 
 const Button = ({ onClick, icon }: Props) => {
   return (
@@ -44,5 +44,3 @@ const Button = ({ onClick, icon }: Props) => {
     </button>
   );
 };
-
-export default ThemeSwitchBtn;

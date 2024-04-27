@@ -9,7 +9,7 @@ type Props = {
   icon?: ReactNode;
 };
 
-const Anchor = ({ href, target, text, icon }: Props) => {
+export default function Anchor({ href, target, text, icon }: Props) {
   return (
     <Link
       href={href}
@@ -20,6 +20,4 @@ const Anchor = ({ href, target, text, icon }: Props) => {
       {text}
     </Link>
   );
-};
-
-export default Anchor;
+}

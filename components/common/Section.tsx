@@ -8,7 +8,7 @@ type Props = {
   contentClassName?: string;
 };
 
-const Section = (props: Props) => {
+export default function Section(props: Props) {
   return (
     <section
       id={props.id}
@@ -22,6 +22,4 @@ const Section = (props: Props) => {
       </div>
     </section>
   );
-};
-
-export default Section;
+}

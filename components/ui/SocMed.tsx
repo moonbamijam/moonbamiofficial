@@ -9,7 +9,7 @@ type Props = {
   text?: string;
 };
 
-const SocMed = ({ href, ariaLabel, icon, text }: Props) => {
+export default function SocMed({ href, ariaLabel, icon, text }: Props) {
   return (
     <Link
       href={href}
@@ -20,6 +20,4 @@ const SocMed = ({ href, ariaLabel, icon, text }: Props) => {
       <p>{text}</p>
     </Link>
   );
-};
-
-export default SocMed;
+}
