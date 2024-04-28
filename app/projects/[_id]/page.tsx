@@ -25,6 +25,7 @@ export const generateMetadata = async ({
 
 const ProjectPageById = async ({ params }: { params: { _id: string } }) => {
   const { projects } = await useFetch(`/api/projects/${params._id}`);
+
   return (
     <>
       <Section id={"project-page-by-id"}>
@@ -40,7 +41,7 @@ const ProjectPageById = async ({ params }: { params: { _id: string } }) => {
           </div>
           <div className="links w-full sm:w-min flex xl:flex-col justify-between gap-x-8 gap-y-4 pb-[30px]">
             <GitHubBtn href={projects.github} />
-            {projects.website ? <WebsiteBtn href={projects.website} /> : <></>}
+            {projects.website && <WebsiteBtn href={projects.website} />}
             <BackBtn href={"/projects"} />
           </div>
         </div>
