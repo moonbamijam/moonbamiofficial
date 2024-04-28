@@ -21,14 +21,14 @@ export default async function ProjectsPage() {
     <>
       <div className="container relative">
         <BackToTop id={"#project"} />
-        <Section id={"project"} contentClassName={"gap-[150px]"}>
+        <Section id={"project"} contentStyles={"gap-[150px]"}>
           <Title
             name={"projects"}
             desc={
               "These are the projects I made all throughout my coding career. I am happy to present it to you."
             }
           />
-          <Grid>
+          <Grid gridStyles="lg:grid-cols-2 premium:grid-cols-3 gap-[50px]">
             {projects ? (
               projects.map((project: ProjectType) => (
                 <ProjectCard
