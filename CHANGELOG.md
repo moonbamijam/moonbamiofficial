@@ -1,5 +1,27 @@
 # What's New
 
+# [2.3.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.2.0...v2.3.0) (2024-04-28)
+
+
+### Bug Fixes
+
+* favicon.ico 500 (Internal Server Error) ([cb1f29e](https://github.com/MoonbamiOfficial/dev-portfolio/commit/cb1f29ec1136cc07f7ffbc85de50a92c746e7a88))
+
+
+### Features
+
+* add dynamic styling to grid common component ([1760c04](https://github.com/MoonbamiOfficial/dev-portfolio/commit/1760c040d284cb8882a54811859f2e8084a0c4a1))
+* add dynamic tech stacks rendering ([37445dc](https://github.com/MoonbamiOfficial/dev-portfolio/commit/37445dc7e4063ba55ec5ad7705d5f7d91ee3980b))
+
+
+### Performance Improvements
+
+* import splitted components to about page ([5911b2d](https://github.com/MoonbamiOfficial/dev-portfolio/commit/5911b2d95bd9553165a52e72247006e38910d33f))
+* render a function that returns a content in about section ([d9c9f2d](https://github.com/MoonbamiOfficial/dev-portfolio/commit/d9c9f2d9c97e6b19860a93e5776c8689be154a60))
+* split about and topic section to its own component ([a6245fc](https://github.com/MoonbamiOfficial/dev-portfolio/commit/a6245fc8ded03cc11de1ff78445a0d27b0f02ed1))
+* split fetching projects to its own component ([dd64c77](https://github.com/MoonbamiOfficial/dev-portfolio/commit/dd64c778c163882c208c3722873040f15df9bb60))
+* split static contact section ([c5e78a3](https://github.com/MoonbamiOfficial/dev-portfolio/commit/c5e78a34faf0573a4183e278b42434405cda9182))
+
 # [2.2.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.1.0...v2.2.0) (2024-03-24)
 
 
