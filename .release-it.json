@@ -5,8 +5,9 @@
   },
   "github": {
     "release": true,
-    "releaseName": "v${version}",
-    "tokenRef": "DEV_PORTFOLIO_TOKEN"
+    "web": true,
+    "autoGenerate": true, 
+    "releaseName": "v${version}"
   },
   "npm": {
     "publish": false
