@@ -1,7 +1,7 @@
-import Detail from "@components/about/Detail";
+import Detail from "@components/ui/Detail";
 import { AboutType } from "@shared-types/about";
 
-export default function About({
+export default function AboutUi({
   displayName,
   desc,
   fullName,
