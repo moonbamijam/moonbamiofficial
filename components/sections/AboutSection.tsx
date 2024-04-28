@@ -9,6 +9,26 @@ import { AboutType } from "@shared-types/about";
 export default async function AboutSection() {
   const { abouts } = await useFetch("/api/abouts");
 
+  const renderAbout = () => {
+    if (abouts) {
+      return abouts.map((about: AboutType) => (
+        <AboutUi
+          key={about._id}
+          displayName={about.displayName}
+          desc={about.desc}
+          fullName={about.fullName}
+          nickname={about.nickname}
+          age={about.age}
+          birthday={about.birthday}
+          sex={about.sex}
+          nationality={about.nationality}
+          status={about.status}
+          languages={about.languages}
+        />
+      ));
+    } else return <LoadingSpinner />;
+  };
+
   return (
     <Section id={"about"} contentStyles={"gap-[100px]"}>
       <Title
@@ -20,25 +40,7 @@ export default async function AboutSection() {
           <Picture src={"me_x4brue"} alt={"Jam Moonbami"} isPriority={true} />
         </div>
         <div className="about-me flex flex-col gap-[30px] ">
-          {abouts ? (
-            abouts.map((about: AboutType) => (
-              <AboutUi
-                key={about._id}
-                displayName={about.displayName}
-                desc={about.desc}
-                fullName={about.fullName}
-                nickname={about.nickname}
-                age={about.age}
-                birthday={about.birthday}
-                sex={about.sex}
-                nationality={about.nationality}
-                status={about.status}
-                languages={about.languages}
-              />
-            ))
-          ) : (
-            <LoadingSpinner />
-          )}
+          {renderAbout()}
         </div>
       </div>
     </Section>
