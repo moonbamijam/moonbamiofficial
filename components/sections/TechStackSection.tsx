@@ -4,7 +4,7 @@ import Section from "@components/common/Section";
 import Title from "@components/texts/Title";
 import StackIcon from "@components/ui/StackIcon";
 
-export default async function TechStacks() {
+export default async function TechStackSection() {
   const { techstacks } = await useFetch("/api/techstacks");
 
   const alphabeticalOrderedTechStacks = techstacks.sort((a: any, b: any) => {
@@ -27,7 +27,7 @@ export default async function TechStacks() {
   };
 
   return (
-    <Section id={"techstack"} contentClassName={"gap-[100px]"}>
+    <Section id={"techstack"} contentStyles={"gap-[100px]"}>
       <Title
         name={"tech stacks"}
         desc={
