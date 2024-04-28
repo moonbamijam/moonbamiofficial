@@ -1,24 +1,30 @@
 import { ReactNode } from "react";
 
 type Props = {
+  children: React.ReactNode;
   id: string;
   image?: React.ReactNode;
-  children: React.ReactNode;
-  sectionClassName?: string;
-  contentClassName?: string;
+  sectionStyles?: string;
+  contentStyles?: string;
 };
 
-export default function Section(props: Props) {
+export default function Section({
+  children,
+  id,
+  image,
+  sectionStyles,
+  contentStyles,
+}: Props) {
   return (
     <section
-      id={props.id}
-      className={`container w-full relative py-[100px] ${props.sectionClassName}`}
+      id={id}
+      className={`container w-full relative py-[100px] ${sectionStyles}`}
     >
-      {props.image}
+      {image}
       <div
-        className={`content relative flex flex-col items-center px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] ${props.contentClassName}`}
+        className={`content relative flex flex-col items-center px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] ${contentStyles}`}
       >
-        {props.children}
+        {children}
       </div>
     </section>
   );
