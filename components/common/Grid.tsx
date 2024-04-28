@@ -1,7 +1,8 @@
-export default function Grid({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="grid lg:grid-cols-2 premium:grid-cols-3 gap-[50px]">
-      {children}
-    </div>
-  );
+type Props = {
+  children: React.ReactNode;
+  gridStyles?: string;
+};
+
+export default function Grid({ children, gridStyles }: Props) {
+  return <div className={`grid ${gridStyles}`}>{children}</div>;
 }
