@@ -1,20 +1,9 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import { FaCaretDown } from "react-icons/fa6";
+import useScrollForMore from "@hooks/useScrollForMore";
 
 export default function ScrollForMore() {
-  const [scrollSign, setScrollSign] = useState("opacity-100");
+  const { scrollSign } = useScrollForMore();
 
-  const handleScrollSign = () => {
-    if (window.scrollY < 500) return setScrollSign("opacity-100");
-    else if (window.scrollY > 500) return setScrollSign("opacity-0");
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScrollSign);
-    return () => window.removeEventListener("scroll", handleScrollSign);
-  }, []);
   return (
     <div
       id="scroll-sign"
