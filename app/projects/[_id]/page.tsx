@@ -30,7 +30,7 @@ const ProjectPageById = async ({ params }: { params: { _id: string } }) => {
     <>
       <Section id={"project-page-by-id"}>
         <div className="relative w-full xl:w-[1000px] h-[200px] sm:h-[250px] md:h-[300px] lg:h-[400px] xl:h-[500px] mb-8 rounded-lg">
-          <Picture src={projects.src} alt={`${projects.alt}`} />
+          <Picture src={projects.src} alt={`${projects.alt}`} className="rounded-xl" />
         </div>
         <div className="w-full flex flex-col xl:flex-row justify-evenly items-center">
           <div className="mb-8">

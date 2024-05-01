@@ -15,7 +15,7 @@ export default function ProjectCard({
   github,
 }: ProjectType) {
   return (
-    <div className="relative w-[400px] rounded-xl flex flex-col cursor-pointer overflow-hidden active:translate-y-2 hover:shadow-gray-500 hover:shadow-lg hover:-translate-y-2 [&>a>div>img]:hover:rounded-none">
+    <div className="relative w-[400px] rounded-xl flex flex-col bg-white dark:bg-transparent backdrop:blur active:translate-y-2 hover:shadow-gray-500 hover:shadow-lg hover:-translate-y-2 [&>a>div>img]:hover:rounded-none cursor-pointer overflow-hidden">
       <Link aria-label={ariaLabel} href={href}>
         <div className="relative w-full h-[200px] ">
           <Picture src={src} alt={`${alt}`} />
