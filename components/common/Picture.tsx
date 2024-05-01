@@ -7,9 +7,10 @@ type Props = {
   src: string | Url;
   alt: string;
   isPriority?: boolean;
+  className?: string;
 };
 
-export default function Picture({ src, alt, isPriority }: Props) {
+export default function Picture({ src, alt, isPriority, className }: Props) {
   return (
     <CldImage
       priority={isPriority}
@@ -17,7 +18,7 @@ export default function Picture({ src, alt, isPriority }: Props) {
       fill
       sizes="(min-width: 475px) 100vw, (min-width: 768px) 1080px, (min-width: 1024px) 1920px"
       alt={`${alt}`}
-      className="object-cover"
+      className={`object-cover ${className}`}
     />
   );
 }
