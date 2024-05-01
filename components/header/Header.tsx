@@ -1,9 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
 import { FaBars } from "react-icons/fa";
 import { FaBarsStaggered } from "react-icons/fa6";
-import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import tsukiwaLogoLight from "@assets/tsukiwa-logo.png";
@@ -12,6 +10,7 @@ import ThemeSwitchBtn from "@components/buttons/ThemeSwitchBtn";
 import Dropdown from "../ui/Dropdown";
 import Anchor from "./Anchor";
 import Version from "@components/ui/Version";
+import useHeader from "@hooks/useHeader";
 
 const NavLinks = [
   { id: 1, name: "moonbami", path: "/" },
@@ -22,33 +21,8 @@ const NavLinks = [
 ];
 
 export default function Header() {
-  const pathName = usePathname();
-  const isLinkActive = (path: any) => path === pathName;
-
-  const [isMenuActive, setIsMenuActive] = useState(false);
-  const [scrollHeaderBg, setScrollHeaderBg] = useState("");
-
-  const handleScrollHeaderBg = () => {
-    if (window.scrollY < 15) return setScrollHeaderBg("");
-    else if (window.scrollY > 15)
-      return setScrollHeaderBg("scrolled-header-bg");
-  };
-
-  const toggleMenu = () => setIsMenuActive(!isMenuActive);
-
-  const dropdown = useRef<HTMLButtonElement | null>(null);
-
-  useEffect(() => {
-    const handleDropdowns = ({ target }: Event) => {
-      if (!dropdown.current?.contains(target as Node)) setIsMenuActive(false);
-    };
-    document.addEventListener("mousedown", handleDropdowns);
-    document.addEventListener("scroll", handleScrollHeaderBg);
-    return () => {
-      document.removeEventListener("mousedown", handleDropdowns);
-      document.removeEventListener("scroll", handleScrollHeaderBg);
-    };
-  }, []);
+  const { isLinkActive, isMenuActive, scrollHeaderBg, toggleMenu, dropdown } =
+    useHeader();
 
   return (
     <>
