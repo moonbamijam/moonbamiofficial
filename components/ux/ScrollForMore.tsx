@@ -1,5 +1,5 @@
-import { FaCaretDown } from "react-icons/fa6";
 import useScrollForMore from "@hooks/useScrollForMore";
+import { FaCaretDown } from "react-icons/fa6";
 
 export default function ScrollForMore() {
   const { scrollSign } = useScrollForMore();
