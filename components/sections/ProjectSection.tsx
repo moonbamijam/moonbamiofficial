@@ -25,7 +25,7 @@ export default async function ProjectSection() {
           github={project.github}
         />
       ));
-    } else return <LoadingSpinner />;
+    } else return <LoadingSpinner size="100px" textSize="6xl" />;
   };
 
   return (

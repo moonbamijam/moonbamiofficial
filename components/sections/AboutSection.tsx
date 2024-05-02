@@ -26,7 +26,7 @@ export default async function AboutSection() {
           languages={about.languages}
         />
       ));
-    } else return <LoadingSpinner />;
+    } else return <LoadingSpinner size="100px" textSize="6xl" />;
   };
 
   return (
