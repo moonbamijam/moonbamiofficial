@@ -10,9 +10,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#020202",
-        secondary: "#2D3436",
-        highlight: "#007acc",
+        primary: "rgb(var(--primary) / <alpha-value>)",
+        "primary-dark": "rgb(var(--primary-dark) / <alpha-value>)",
+        "primary-light": "rgb(var(--primary-light) / <alpha-value>)",
+        background: "rgb(var(--background) / <alpha-value>)",
+        "dark-background": "#121212",
+        surface: "rgb(var(--surface) / <alpha-value>)",
+        "dark-surface": "#1F1F1F",
+        error: "rgb(var(--error) / <alpha-value>)",
+        "on-primary": "rgb(var(--on-primary) / <alpha-value>)",
+        "on-primary-dark": "rgb(var(--on-primary-dark) / <alpha-value>)",
+        "on-secondary": "rgb(var(--on-secondary) / <alpha-value>)",
+        "on-background": "rgb(var(--on--background) / <alpha-value>)",
+        "on-surface": "rgb(var(--on-surface) / <alpha-value>)",
+        "on-error": "rgb(var(--on-error) / <alpha-value>)",
       },
       container: {
         center: true,

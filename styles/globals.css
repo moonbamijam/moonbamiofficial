@@ -2,22 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --primary: 0 122 204;
+    --primary-dark: 6 90 170;
+    --primary-light: 0 159 245;
+    --background: 250 250 250;
+    --surface: 253 252 250;
+    --error: 234 60 83;
+    --on-primary: 255 255 255;
+    --on-primary-dark: 255 255 255;
+    --on-secondary: 0 0 0;
+    --on-background: 0 0 0;
+    --on-surface: 0 0 0;
+    --on-error: 255 255 255;
+  }
+  /* @media (prefers-color-scheme: dark) {
+    :root {
+      --primary: 0 122 204;
+      --primary-dark: 6 90 170;
+      --primary-light: 0 173 255;
+      --background: 18 18 18;
+      --surface: 253 252 250;
+      --error: 234 60 83;
+      --on-primary: 255 255 255;
+      --on-primary-dark: 255 255 255;
+      --on-secondary: 255 255 255;
+      --on-background: 255 255 255;
+      --on-surface: 255 255 255;
+      --on-error: 255 255 255;
+    }
+  } */
+}
+
 *,
 ::before,
 ::after {
-  @apply box-border p-0 m-0 text-black dark:text-white transition-all duration-100;
-}
-html {
-  @apply min-h-full relative;
+  @apply box-border p-0 m-0 transition-all duration-100;
 }
 body {
-  @apply w-full h-full bg-no-repeat bg-cover dark:bg-gradient-to-br from-primary to-secondary;
+  @apply bg-no-repeat bg-cover text-on-background ;
 }
 
 /* UTILITY CLASSES */
-.highlight {
-  @apply text-highlight;
-}
 .text-format {
   @apply px-2;
 }
@@ -28,13 +55,19 @@ body {
   @apply px-2 line-clamp-2;
 }
 .active {
-  @apply bg-highlight text-white;
+  @apply bg-primary dark:bg-primary-light text-on-primary;
 }
 .button-format {
   @apply text-center w-[150px] h-[50px] py-[15px] rounded-lg;
 }
+.show {
+  @apply opacity-100 visible;
+}
+.hide {
+  @apply opacity-0 invisible;
+}
 
 /* HEADER */
 .scrolled-header-bg {
-  @apply bg-white/30 dark:bg-black/30 shadow-sm shadow-gray-300 dark:shadow-transparent;
+  @apply bg-surface dark:bg-dark-surface shadow-md dark:shadow-transparent;
 }
