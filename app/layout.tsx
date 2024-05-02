@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import Header from "@components/header/Header";
 import ThemesProvider from "@providers/themesProvider";
+import SmallGridLines from "@components/bg/SmallGridLines";
 import "@styles/globals.css";
 
 const inter = Noto_Sans({
@@ -51,6 +52,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className}`}>
         <ThemesProvider>
+          <SmallGridLines />
           <Header />
           <main>
             {children}
