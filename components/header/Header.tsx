@@ -27,12 +27,9 @@ export default function Header() {
   return (
     <>
       <div
-        className={`${scrollHeaderBg} w-full h-[60px] z-[1000] fixed top-0`}
+        className={`w-full h-[60px] z-[1000] fixed top-0 backdrop-blur-sm ${scrollHeaderBg}`}
       ></div>
-      <header
-        ref={dropdown}
-        className="container h-[60px] w-full z-[1000] fixed top-0 left-[50%] translate-x-[-50%] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] flex justify-between items-center"
-      >
+      <header className="container h-[60px] w-full z-[1000] fixed top-0 left-[50%] translate-x-[-50%] px-[30px] md:px-[50px] xl:px-[100px] 2xl:px-[200px] flex justify-between items-center">
         <Link href="/" id="brand" className="flex items-center gap-4">
           <div aria-label="tsukiwa-logo" className="rounded-full p-1 w-[40px] ">
             <Image
@@ -63,10 +60,11 @@ export default function Header() {
         </Link>
         <nav className="flex items-center gap-2">
           <button
+            ref={dropdown}
             aria-label="menu"
             onClick={toggleMenu}
             id="menu"
-            className={`w-[40px] h-[40px] flex justify-center items-center text-xl rounded-full hover:shadow-md hover:shadow-gray-500 dark:hover:bg-highlight ${
+            className={`w-[40px] h-[40px] flex justify-center items-center text-xl rounded-full hover:shadow-md hover:shadow-gray-500 hover:bg-white dark:hover:bg-highlight transform active:scale-75 ${
               isMenuActive &&
               "bg-white dark:bg-highlight shadow-md shadow-gray-500"
             }`}
