@@ -5,7 +5,7 @@
 *,
 ::before,
 ::after {
-  @apply box-border p-0 m-0 text-black dark:text-white transition-all;
+  @apply box-border p-0 m-0 text-black dark:text-white transition-all duration-100;
 }
 html {
   @apply min-h-full relative;
@@ -36,5 +36,5 @@ body {
 
 /* HEADER */
 .scrolled-header-bg {
-  @apply bg-white dark:bg-primary shadow shadow-gray-300 dark:shadow-transparent;
+  @apply bg-white/30 dark:bg-black/30 shadow-sm shadow-gray-300 dark:shadow-transparent;
 }
