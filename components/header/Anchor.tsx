@@ -15,7 +15,7 @@ export default function Anchor({ href, ariaLabel, name, className }: Props) {
     <Link
       href={href}
       aria-label={ariaLabel}
-      className={`${className} text-left px-12 md:px-14 xl:px-16 py-2 hover:bg-highlight hover:text-white rounded-lg capitalize`}
+      className={`${className} text-left px-12 md:px-14 xl:px-16 py-2 hover:bg-primary dark:hover:bg-primary-light hover:text-on-primary rounded-lg capitalize`}
     >
       {name}
     </Link>
