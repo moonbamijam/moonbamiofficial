@@ -11,7 +11,7 @@ export default function NotFound() {
             Go back to
             <Link
               href="/"
-              className="text-highlight capitalize hover:underline inline"
+              className="text-primary capitalize hover:underline inline"
             >
               home
             </Link>
