@@ -19,11 +19,9 @@ export default function StackIcon({
   className,
 }: Props) {
   return (
-    <Link
-      href={href}
+    <button
       aria-label={ariaLabel}
-      target="_blank"
-      className="relative flex items-center justify-center p-4 rounded-2xl hover:shadow-gray-500 hover:shadow-lg hover:-translate-y-2 dark:hover:bg-highlight"
+      className="relative flex items-center justify-center p-4 rounded-2xl hover:bg-surface dark:hover:bg-dm-surface-light hover:shadow-primary-dark hover:shadow-lg hover:-translate-y-2 active:translate-y-1 active:shadow-none dark:active:bg-transparent"
     >
       <div
         className={`w-[40px] h-[40px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] ${className} absolute `}
@@ -35,6 +33,6 @@ export default function StackIcon({
         height={70}
         className="relative w-[50px] md:w-[60px] lg:w-[70px]"
       />
-    </Link>
+    </button>
   );
 }
