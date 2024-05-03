@@ -13,7 +13,7 @@ export default async function TopicSection() {
       return topics.map((topic: TopicType) => (
         <Topic key={topic._id} title={topic.title} desc={topic.desc} />
       ));
-    } else return <LoadingSpinner size="100px" textSize="6xl" />;
+    } else return <LoadingSpinner size="100px" fontSize="64px" />;
   };
 
   return (
