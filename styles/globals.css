@@ -40,11 +40,8 @@
 ::after {
   @apply box-border p-0 m-0 transition-all duration-100;
 }
-body {
-  @apply bg-no-repeat bg-cover text-on-background ;
-}
 
-/* UTILITY CLASSES */
+/* UTILITIES */
 .text-format {
   @apply px-2;
 }
@@ -66,8 +63,6 @@ body {
 .hide {
   @apply opacity-0 invisible;
 }
-
-/* HEADER */
 .scrolled-header-bg {
-  @apply bg-surface dark:bg-dark-surface shadow-md dark:shadow-transparent;
+  @apply bg-surface dark:bg-dm-surface-dark shadow-md dark:shadow-transparent;
 }
