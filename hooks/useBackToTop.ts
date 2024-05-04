@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 export default function useBackToTop() {
-  const [backToTop, setBackToTop] = useState("opacity-0 invisible");
+  const [backToTop, setBackToTop] = useState("hide");
 
   const handleScrollIntoView = (scrollInto: string) => {
     const profileSection = document.querySelector(scrollInto);
@@ -12,8 +12,8 @@ export default function useBackToTop() {
 
   useEffect(() => {
     const handleBackToTop = () => {
-      if (window.scrollY > 500) return setBackToTop("opacity-100 visible");
-      else if (window.scrollY < 15) return setBackToTop("opacity-0 invisible");
+      if (window.scrollY > 500) return setBackToTop("show");
+      else if (window.scrollY < 15) return setBackToTop("hide");
     };
     window.addEventListener("scroll", handleBackToTop);
     return () => window.removeEventListener("scroll", handleBackToTop);
