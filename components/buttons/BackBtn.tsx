@@ -1,19 +1,19 @@
-import { Url } from "next/dist/shared/lib/router/router";
+import Button from "@components/ui/Button";
 import { FaBackwardStep } from "react-icons/fa6";
-import Link from "next/link";
 
-type Props = {
-  href: Url;
-  extraClass?: string;
-};
-
-export default function BackBtn({ href, extraClass }: Props) {
+export default function BackBtn({ href }: { href: string }) {
   return (
-    <Link
+    <Button
+      buttonType="link"
+      id="back-button"
       href={href}
-      className={`${extraClass} opacity-70 hover:opacity-100 flex justify-center items-center gap-1 text-black [&>svg>path]:text-black dark:text-white dark:[&>svg>path]:text-white hover:text-white [&>svg>path]:hover:text-white button-format border-2 border-neutral-500 hover:bg-highlight hover:border-highlight capitalize`}
-    >
-      <FaBackwardStep /> back
-    </Link>
+      ariaLabel="back"
+      icon={<FaBackwardStep />}
+      text="back"
+      customStyles="bg-surface border-primary text-on-background [&>svg>path]:text-on-surface"
+      hoverStyles="hover:bg-primary hover:text-on-primary [&>svg>path]:hover:text-on-primary"
+      darkModeStyles="dark:bg-transparent dark:text-white [&>svg>path]:dark:text-white"
+      mixedStyles="dark:hover:bg-primary"
+    />
   );
 }

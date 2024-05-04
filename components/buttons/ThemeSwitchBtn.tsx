@@ -3,7 +3,6 @@
 import { MouseEventHandler, ReactNode, useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { FiSun, FiMoon } from "react-icons/fi";
-import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import LoadingSpinner from "@components/ux/LoadingSpinner";
 
 type Props = {
@@ -18,7 +17,7 @@ export default function ThemeSwitchBtn() {
   useEffect(() => setMounted(true), []);
 
   if (!mounted)
-    return <LoadingSpinner size="40px" textSizes="text-xl xl:text-2xl" />;
+    return <LoadingSpinner size="40px" fontSizes="text-xl xl:text-2xl" />;
 
   if (resolvedTheme === "dark") {
     return <Button onClick={() => setTheme("light")} icon={<FiSun />} />;
@@ -32,7 +31,7 @@ const Button = ({ onClick, icon }: Props) => {
     <button
       aria-label="theme-switch"
       onClick={onClick}
-      className="rounded-full w-[40px] h-[40px] flex items-center justify-center text-xl hover:shadow-md hover:shadow-gray-500 hover:bg-white dark:hover:bg-highlight hover:rotate-45 transform active:scale-75"
+      className="rounded-full w-[40px] h-[40px] flex items-center justify-center text-xl hover:bg-primary dark:hover:bg-primary-light [&>svg>path]:hover:text-on-primary [&>svg>circle]:hover:text-on-primary [&>svg>line]:hover:text-on-primary hover:rotate-45 transform active:scale-75"
     >
       {icon}
     </button>

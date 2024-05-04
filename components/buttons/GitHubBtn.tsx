@@ -1,21 +1,19 @@
-import Link from "next/link";
+import Button from "@components/ui/Button";
 import { FaGithub } from "react-icons/fa6";
 
-type Props = {
-  href: string;
-  extraClass?: string;
-};
-
-export default function GitHubBtn({ href, extraClass }: Props) {
+export default function GitHubBtn({ href }: { href: string }) {
   return (
-    <Link
+    <Button
+      buttonType="link"
+      id="github-button"
       href={href}
-      aria-label="GitHub"
       target="_blank"
-      className={`${extraClass} [&>svg>path]:text-black dark:[&>svg>path]:text-white hover:text-white [&>svg>path]:hover:text-white button-format border-2 border-primary dark:border-highlight dark:hover:border-[#2dba4e] hover:border-[#2dba4e] hover:bg-[#2dba4e] dark:hover:bg-[#2dba4e] gap-1 flex justify-center items-center capitalize`}
-    >
-      <FaGithub />
-      GitHub
-    </Link>
+      ariaLabel="GitHub"
+      icon={<FaGithub />}
+      text="GitHub"
+      customStyles="border-primary [&>svg>path]:text-black"
+      hoverStyles="hover:bg-color-github hover:border-color-github hover:text-on-primary [&>svg>path]:hover:text-on-primary"
+      darkModeStyles="[&>svg>path]:dark:text-white"
+    />
   );
 }
