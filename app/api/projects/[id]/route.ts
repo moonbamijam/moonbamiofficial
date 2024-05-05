@@ -12,6 +12,7 @@ export async function PUT(request: Request, { params }: Params) {
     desc: desc,
     website: website,
     github: github,
+    endpoint: endpoint,
   } = await request.json();
   await connectMongoDB();
   await Project.findByIdAndUpdate(id, {
@@ -21,8 +22,9 @@ export async function PUT(request: Request, { params }: Params) {
     desc,
     website,
     github,
+    endpoint,
   });
-  return NextResponse.json({ message: "Project me updated" }, { status: 200 });
+  return NextResponse.json({ message: "Project updated" }, { status: 200 });
 }
 
 export async function GET(request: Request, { params }: Params) {
