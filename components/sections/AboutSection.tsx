@@ -1,6 +1,6 @@
 import Picture from "@components/common/Picture";
 import Section from "@components/common/Section";
-import Title from "@components/texts/Title";
+import Heading from "@components/ui/Heading";
 import AboutUi from "@components/ui/AboutUi";
 import LoadingSpinner from "@components/ux/LoadingSpinner";
 import { useFetch } from "@hooks/useFetch";
@@ -31,7 +31,7 @@ export default async function AboutSection() {
 
   return (
     <Section id={"about"} contentStyles={"gap-[100px]"}>
-      <Title
+      <Heading
         name={"about me"}
         desc={"Let's dive deeper of who am I behind the social media."}
       />

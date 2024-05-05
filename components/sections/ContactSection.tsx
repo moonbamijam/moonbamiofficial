@@ -3,13 +3,13 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import Section from "@components/common/Section";
-import Title from "@components/texts/Title";
+import Heading from "@components/ui/Heading";
 import SocMed from "@components/ui/SocMed";
 
 export default function ContactSection() {
   return (
     <Section id={"contact"} contentStyles={"gap-[30px]"}>
-      <Title
+      <Heading
         name={"Contact Me"}
         desc={
           "If you have any concerns, questions or if you just want to be friends with me. Please, contact me to any of these that you prefer."

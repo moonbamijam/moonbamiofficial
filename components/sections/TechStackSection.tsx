@@ -1,7 +1,7 @@
 import { useFetch } from "@hooks/useFetch";
 import { TechStackType } from "@shared-types/techstack";
 import Section from "@components/common/Section";
-import Title from "@components/texts/Title";
+import Heading from "@components/ui/Heading";
 import StackIcon from "@components/ui/StackIcon";
 
 export default async function TechStackSection() {
@@ -28,7 +28,7 @@ export default async function TechStackSection() {
 
   return (
     <Section id={"techstack"} contentStyles={"gap-[100px]"}>
-      <Title
+      <Heading
         name={"tech stacks"}
         desc={
           "All of my current technology stack that I really enjoy using. Looking forward to learn more."
