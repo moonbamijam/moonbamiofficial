@@ -11,6 +11,7 @@ import Dropdown from "../ui/Dropdown";
 import Anchor from "./Anchor";
 import Version from "@components/ui/Version";
 import useHeader from "@hooks/useHeader";
+import Button from "@components/ui/Button";
 
 const NavLinks = [
   { id: 1, name: "moonbami", path: "/" },
@@ -63,17 +64,21 @@ export default function Header() {
           </h1>
         </Link>
         <nav className="flex items-center gap-2">
-          <button
-            ref={dropdown}
-            aria-label="menu"
-            onClick={toggleMenu}
+          <Button
+            buttonType="button"
             id="menu"
-            className={`w-[40px] h-[40px] flex justify-center items-center text-xl rounded-full hover:bg-primary dark:hover:bg-primary-light [&>svg>path]:hover:text-on-primary transform active:scale-75 ${
+            refName={dropdown}
+            onClick={toggleMenu}
+            icon={isMenuActive ? <FaBarsStaggered /> : <FaBars />}
+            ariaLabel="menu"
+            customStyles="w-[40px] h-[40px] flex justify-center items-center text-xl rounded-full "
+            hoverStyles="hover:bg-primary [&>svg>path]:hover:text-on-primary"
+            activeStyles="active:scale-75 "
+            conditionalStyles={`${
               isMenuActive &&
               "bg-primary dark:bg-primary-light [&>svg>path]:text-on-primary"
             }`}
           >
-            {isMenuActive ? <FaBarsStaggered /> : <FaBars />}
             {isMenuActive && (
               <Dropdown>
                 {NavLinks.map((link) => (
@@ -91,7 +96,7 @@ export default function Header() {
                 </div>
               </Dropdown>
             )}
-          </button>
+          </Button>
           <ThemeSwitchBtn />
         </nav>
       </header>
