@@ -18,9 +18,8 @@ export default function BackToTop({ id }: Props) {
       onClick={() => handleScrollIntoView(`${id}`)}
       icon={<BiSolidUpArrow />}
       ariaLabel="back-to-top"
-      customStyles="fixed right-8 sm:right-12 sm:bottom-12 bottom-6 lg:right-24 lg:bottom-16 w-[50px] h-[50px] text-2xl md:text-3xl z-[100] flex justify-center items-center rounded-full bg-primary [&>svg>path]:text-on-primary animate-bounce"
+      customStyles="fixed right-8 sm:right-12 sm:bottom-12 bottom-6 lg:right-24 lg:bottom-16 w-[50px] h-[50px] text-2xl md:text-3xl z-[100] flex justify-center items-center rounded-full bg-primary [&>svg>path]:text-on-primary shadow-md animate-bounce"
       activeStyles="active:scale-75"
-      darkModeStyles="dark:bg-primary-light "
       conditionalStyles={`${backToTop}`}
     />
   );
