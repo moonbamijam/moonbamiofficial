@@ -1,6 +1,6 @@
 import Grid from "@components/common/Grid";
 import Section from "@components/common/Section";
-import Title from "@components/texts/Title";
+import Heading from "@components/ui/Heading";
 import ProjectCard from "@components/ui/ProjectCard";
 import LoadingSpinner from "@components/ux/LoadingSpinner";
 import { useFetch } from "@hooks/useFetch";
@@ -14,8 +14,7 @@ export default async function ProjectSection() {
       return projects.map((project: ProjectType) => (
         <ProjectCard
           key={project._id}
-          _id={project._id}
-          href={`projects/${encodeURIComponent(project._id)}`}
+          href={`/projects/${project._id}`}
           ariaLabel={project.title}
           src={project.src}
           alt={project.alt}
@@ -30,7 +29,7 @@ export default async function ProjectSection() {
 
   return (
     <Section id={"project"} contentStyles={"gap-[150px]"}>
-      <Title
+      <Heading
         name={"projects"}
         desc={
           "These are the projects I made all throughout my coding career. I am happy to present it to you."
