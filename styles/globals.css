@@ -40,6 +40,12 @@
 ::after {
   @apply box-border p-0 m-0 transition-all duration-100;
 }
+html {
+  @apply scroll-smooth;
+}
+body {
+  @apply text-on-background dark:text-white;
+}
 
 /* UTILITIES */
 .text-format {
