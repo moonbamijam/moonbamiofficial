@@ -1,13 +1,12 @@
-import { Url } from "next/dist/shared/lib/router/router";
-
 export type ProjectType = {
-  _id: string;
-  href: Url;
+  _id?: string;
+  href: string;
   ariaLabel: string;
-  src: Url;
+  src: string;
   alt?: string;
   title: string;
   desc: string;
-  website: Url;
-  github: Url;
+  website: string;
+  github: string;
+  endpoint?: string
 };
