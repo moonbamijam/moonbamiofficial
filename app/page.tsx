@@ -1,13 +1,14 @@
+import ContactBtn from "@components/buttons/ContactBtn";
+import GitHubBtn from "@components/buttons/GitHubBtn";
 import Picture from "@components/common/Picture";
-import LoadingSpinner from "@components/ux/LoadingSpinner";
 
 const HomePage = async () => {
   return (
     <>
       <div className="container relative">
         <section id="home" className="h-screen">
-          <div className="w-full h-full relative px-[5vw] flex flex-col lg:flex-row justify-center xl:justify-evenly items-center gap-y-[50px]">
-            <div className="description flex flex-col items-center lg:items-start gap-4">
+          <div className="w-full h-full relative px-[5vw] flex flex-col lg:flex-row justify-center xl:justify-evenly items-center gap-y-12">
+            <div className="flex flex-col items-center lg:items-start gap-6">
               <h1 className="text-center lg:max-w-[600px] 2xl:max-w-none lg:text-left text-5xl md:text-7xl lg:text-8xl px-1 font-bold tracking-tight">
                 I am{" "}
                 <strong className="text-primary dark:text-primary-light">
@@ -25,6 +26,10 @@ const HomePage = async () => {
                 </strong>
                 on a daily basis.
               </p>
+              <div className="flex gap-6">
+                <ContactBtn href="/about/#contact" />
+                <GitHubBtn href="https://github.com/MoonbamiOfficial" />
+              </div>
             </div>
             <div className="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] flex justify-center items-center transform [&>img]:hover:scale-125 aspect-square rounded-xl shadow-md hover:shadow-primary-dark overflow-hidden">
               <Picture
