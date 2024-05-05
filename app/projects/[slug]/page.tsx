@@ -6,16 +6,18 @@ import GitHubBtn from "@components/buttons/GitHubBtn";
 import VisitBtn from "@components/buttons/VisitBtn";
 import BackBtn from "@components/buttons/BackBtn";
 import Picture from "@components/common/Picture";
+import Title from "@components/ui/Title";
+import Description from "@components/ui/Description";
 
 const Footer = dynamic(() => import("@components/footer/Footer"));
 
-type Props = { params: { _id: string } };
+type Props = { params: { slug: string } };
 
 export const generateMetadata = async ({
   params,
 }: Props): Promise<Metadata> => {
   const project = await new Promise(async (resolve) => {
-    const { projects } = await useFetch(`/api/projects/${params._id}`);
+    const { projects } = await useFetch(`/api/projects/${params.slug}`);
     resolve(`${projects.title}`);
   });
   return {
@@ -23,8 +25,12 @@ export const generateMetadata = async ({
   };
 };
 
-const ProjectPageById = async ({ params }: { params: { _id: string } }) => {
-  const { projects } = await useFetch(`/api/projects/${params._id}`);
+export default async function ProjectPageById({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  const { projects } = await useFetch(`/api/projects/${params.slug}`);
 
   return (
     <>
@@ -36,12 +42,13 @@ const ProjectPageById = async ({ params }: { params: { _id: string } }) => {
             className="rounded-xl"
           />
         </div>
-        <div className="w-full flex flex-col xl:flex-row justify-evenly items-center">
-          <div className="mb-8">
-            <div className="font-bold text-5xl mb-2">{projects.title}</div>
-            <div className="w-[400px] lg:w-[500px] premium:w-[600px]">
-              {projects.desc}
-            </div>
+        <div className="w-[1000px] flex flex-col xl:flex-row justify-evenly items-center">
+          <div className="max-w-[600px] mb-8">
+            <Title text={projects.title} customStyles="text-5xl mb-2" />
+            <Description
+              paragraph={projects.desc}
+              customStyles="min-w-[400px] lg:w-[500px] premium:w-[600px]"
+            />
           </div>
           <div className="links w-full sm:w-min flex xl:flex-col justify-between gap-x-8 gap-y-4 pb-[30px]">
             <GitHubBtn href={projects.github} />
@@ -53,6 +60,4 @@ const ProjectPageById = async ({ params }: { params: { _id: string } }) => {
       <Footer />
     </>
   );
-};
-
-export default ProjectPageById;
+}
