@@ -44,7 +44,7 @@ export default function Navigate() {
             text={link.name}
             className={
               isLinkActive(link.path)
-                ? "bg-primary-light dark:bg-primary px-2"
+                ? "bg-primary-light dark:bg-primary px-2 hover:translate-x-0"
                 : ""
             }
           />
