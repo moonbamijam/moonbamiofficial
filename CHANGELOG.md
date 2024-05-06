@@ -1,5 +1,58 @@
 # What's New
 
+# [2.4.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.3.0...v2.4.0) (2024-05-06)
+
+
+### Bug Fixes
+
+* adjust argument value to topic section component ([74f519f](https://github.com/MoonbamiOfficial/dev-portfolio/commit/74f519f6644a929e2c6362f5172862169760a6a0))
+* adjust argument values to project section component ([8dc04de](https://github.com/MoonbamiOfficial/dev-portfolio/commit/8dc04de7dd03884c4b89127507f2fd391b985aff))
+* argument values to loading ui ([96788d8](https://github.com/MoonbamiOfficial/dev-portfolio/commit/96788d8838377d383090078ff73438665951cf87))
+
+
+### Features
+
+* add button ui component for custom buttons ([cebc8f8](https://github.com/MoonbamiOfficial/dev-portfolio/commit/cebc8f890096395b8bd2182df4d1a6765503256e))
+* add button ui component to header ([4dd1f81](https://github.com/MoonbamiOfficial/dev-portfolio/commit/4dd1f8136c081b866f1cd0e5154cbee47e22fc3a))
+* add conditional text to github btn component ([6535ce0](https://github.com/MoonbamiOfficial/dev-portfolio/commit/6535ce07b7c3af79d28e0baa749bc4fcd062724e))
+* add cta buttons to landing page ([233a647](https://github.com/MoonbamiOfficial/dev-portfolio/commit/233a647c3a8413c63b10faa16857af2307553538))
+* add dynamic className props to picture common component ([f01ac60](https://github.com/MoonbamiOfficial/dev-portfolio/commit/f01ac600a9fcd0a2c4261eb541ba7d9bbf4c8fa6))
+* add glass effect to header ([a1b4e7c](https://github.com/MoonbamiOfficial/dev-portfolio/commit/a1b4e7c525400a0bc83d9c3e51c358bb3200b2c3))
+* add hover state to img in about page ([4585584](https://github.com/MoonbamiOfficial/dev-portfolio/commit/4585584baabf8b4548875b794a8e0eafb855a831))
+* add new bg ([c130241](https://github.com/MoonbamiOfficial/dev-portfolio/commit/c13024186a50b49b1383a292a60ff063e0182b5d))
+* add new bg components ([7d9a51a](https://github.com/MoonbamiOfficial/dev-portfolio/commit/7d9a51ae597e6c7b30e0f78b60734ae47486f40f))
+* add new color variables ([31655dd](https://github.com/MoonbamiOfficial/dev-portfolio/commit/31655dd67afb2a0f7366a18dbe9eb59a714125c7))
+* add new property to api projects route ([4dbeb79](https://github.com/MoonbamiOfficial/dev-portfolio/commit/4dbeb790cb9dbb29e1e393b65fe2454a59e11802))
+* add new styles to author in ui component ([7db6b2f](https://github.com/MoonbamiOfficial/dev-portfolio/commit/7db6b2f929737d94756168b97e1a70fa8c18dbfa))
+* add new styles to html and body tags ([cb92432](https://github.com/MoonbamiOfficial/dev-portfolio/commit/cb9243236c2980cde9c2fdf043c4db7df5e54d0f))
+* add new ui component ([82419de](https://github.com/MoonbamiOfficial/dev-portfolio/commit/82419de8e2b872a195bfac11b23fb5f2cf7dd24a))
+* add new ui component in replace to Title ([61b2091](https://github.com/MoonbamiOfficial/dev-portfolio/commit/61b2091c49bfe2ef153d50d7046ff96cc37df468))
+* add new ui to footer ([#12](https://github.com/MoonbamiOfficial/dev-portfolio/issues/12)) ([cc6ec5d](https://github.com/MoonbamiOfficial/dev-portfolio/commit/cc6ec5d7b0d0ebc7a1aa3532470ae6339be14313))
+* add responsive px to section common component ([3090dd8](https://github.com/MoonbamiOfficial/dev-portfolio/commit/3090dd834a1e7af9516b7ae2347ac36e32b05c82))
+* add skeleton image to landing page ([38ffd50](https://github.com/MoonbamiOfficial/dev-portfolio/commit/38ffd5040d00c9d6d7f130d519ad76d3a72d19e1))
+* add transition duration and opaque bg in globals.css ([7d61ab2](https://github.com/MoonbamiOfficial/dev-portfolio/commit/7d61ab26cffb2312b4cf2df594ae3f63bfd10884))
+* add whitespacing and line break regex to topics ([e426e5a](https://github.com/MoonbamiOfficial/dev-portfolio/commit/e426e5a933d3c8163543415c52d8cde8b490333f))
+* change text color to not found ui ([3ac6ac2](https://github.com/MoonbamiOfficial/dev-portfolio/commit/3ac6ac2aa8dee8a9b358ffee2108269758c62ddb))
+* disable transisition on theme change ([9417d23](https://github.com/MoonbamiOfficial/dev-portfolio/commit/9417d2306ec9f59130ed17e39374d42036b88849))
+* new color styling to loading spiner ux component ([0f3ac2b](https://github.com/MoonbamiOfficial/dev-portfolio/commit/0f3ac2b74d494286059a06bca1fed2601d9330f3))
+* new styles to project card component ([d0b4e77](https://github.com/MoonbamiOfficial/dev-portfolio/commit/d0b4e77b555a3670a0ed8c4e3e9f7702a77415a8))
+* new styling to button components ([d729281](https://github.com/MoonbamiOfficial/dev-portfolio/commit/d7292813ebfcadb374a96ab6b4c746d8f68fe113))
+* new styling to dropdown ui component ([c17e1f7](https://github.com/MoonbamiOfficial/dev-portfolio/commit/c17e1f71a64747ac1396793b651a943b032816e4))
+* new styling to header ([c6bdb49](https://github.com/MoonbamiOfficial/dev-portfolio/commit/c6bdb49f385b19a8cdfe0fd5be883f7d089fb143))
+* new styling to loading spinner ux component ([7d7bda2](https://github.com/MoonbamiOfficial/dev-portfolio/commit/7d7bda297a6b9aa22af16e0c763610cc38983b7f))
+* new styling to project card ui component ([5425ae7](https://github.com/MoonbamiOfficial/dev-portfolio/commit/5425ae7918796ca21c0add63841d11e505eab21a))
+* new styling to stack icon ui component ([634b6ff](https://github.com/MoonbamiOfficial/dev-portfolio/commit/634b6ffbba09186d822bd5b2a8f590382d388ed0))
+* new ui to landing page ([e312b66](https://github.com/MoonbamiOfficial/dev-portfolio/commit/e312b66a34c400f36cf8379e1963c18ab8ddd9c0))
+* remove translate on hover in active link in footer ([377e44b](https://github.com/MoonbamiOfficial/dev-portfolio/commit/377e44b19d6cdf92248abfc2e5e68012febbf6a1))
+
+
+### Performance Improvements
+
+* add loading ui to projects page ([fd66e4d](https://github.com/MoonbamiOfficial/dev-portfolio/commit/fd66e4d5527ea5ba1d510b0f7ca9dcec874733b3))
+* add new custom hook to header ([a4c5e08](https://github.com/MoonbamiOfficial/dev-portfolio/commit/a4c5e081260c0cb111e9c91fb05ab7e3a6bae2b8))
+* create custom hook for btn and ux component ([e2e505b](https://github.com/MoonbamiOfficial/dev-portfolio/commit/e2e505b2c17f05cbd8189d15049446c40a94331b))
+* use utility classes to state in useBackToTop custom hook ([9eb65a7](https://github.com/MoonbamiOfficial/dev-portfolio/commit/9eb65a76e3c50cb44f5d3ff3f80246ba407b9c76))
+
 # [2.3.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.2.0...v2.3.0) (2024-04-28)
 
 
