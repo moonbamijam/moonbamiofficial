@@ -12,6 +12,7 @@ const config: Config = {
     colors: {
       black: colors.black,
       white: colors.white,
+      gray: colors.gray,
       transparent: colors.transparent,
       primary: "rgb(var(--primary) / <alpha-value>)",
       "primary-dark": "rgb(var(--primary-dark) / <alpha-value>)",
