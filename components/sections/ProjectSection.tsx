@@ -4,7 +4,7 @@ import Heading from "@components/ui/Heading";
 import ProjectCard from "@components/ui/ProjectCard";
 import LoadingSpinner from "@components/ux/LoadingSpinner";
 import { useFetch } from "@hooks/useFetch";
-import { ProjectType } from "@shared-types/project";
+import { ProjectType } from "@lib/types";
 
 export default async function ProjectSection() {
   const { projects } = await useFetch("/api/projects");
