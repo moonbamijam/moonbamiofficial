@@ -14,7 +14,7 @@ import useHeader from "@hooks/useHeader";
 import Button from "@components/ui/Button";
 
 const NavLinks = [
-  { id: 1, name: "moonbami", path: "/" },
+  { id: 1, name: "home", path: "/" },
   { id: 2, name: "about", path: "/about" },
   { id: 3, name: "projects", path: "/projects" },
   { id: 4, name: "timeline", path: "/timeline" },
