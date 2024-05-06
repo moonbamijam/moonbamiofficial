@@ -1,6 +1,6 @@
+import LandingImage from "@components/LandingImage";
 import ContactBtn from "@components/buttons/ContactBtn";
 import GitHubBtn from "@components/buttons/GitHubBtn";
-import Picture from "@components/common/Picture";
 
 const HomePage = async () => {
   return (
@@ -31,13 +31,7 @@ const HomePage = async () => {
                 <GitHubBtn href="https://github.com/MoonbamiOfficial" />
               </div>
             </div>
-            <div className="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] flex justify-center items-center transform [&>img]:hover:scale-125 aspect-square rounded-xl shadow-md hover:shadow-primary-dark overflow-hidden">
-              <Picture
-                src={"moonbami-raw_cbd4px"}
-                alt={"Jam Moonbami"}
-                isPriority={true}
-              />
-            </div>
+            <LandingImage />
           </div>
         </section>
       </div>
