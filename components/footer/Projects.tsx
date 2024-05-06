@@ -1,5 +1,5 @@
 import { useFetch } from "@hooks/useFetch";
-import { ProjectType } from "@shared-types/project";
+import { ProjectType } from "@lib/types";
 import Link from "next/link";
 
 export default async function Projects() {

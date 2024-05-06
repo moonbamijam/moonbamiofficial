@@ -4,7 +4,7 @@ import Heading from "@components/ui/Heading";
 import AboutUi from "@components/ui/AboutUi";
 import LoadingSpinner from "@components/ux/LoadingSpinner";
 import { useFetch } from "@hooks/useFetch";
-import { AboutType } from "@shared-types/about";
+import { AboutType } from "@lib/types";
 
 export default async function AboutSection() {
   const { abouts } = await useFetch("/api/abouts");

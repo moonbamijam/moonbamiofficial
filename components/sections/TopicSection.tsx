@@ -1,5 +1,5 @@
 import { useFetch } from "@hooks/useFetch";
-import { TopicType } from "@shared-types/topic";
+import { TopicType } from "@lib/types";
 import Section from "@components/common/Section";
 import LoadingSpinner from "@components/ux/LoadingSpinner";
 import Topic from "@components/ui/Topic";

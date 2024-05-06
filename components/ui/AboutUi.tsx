@@ -1,5 +1,5 @@
 import Detail from "@components/ui/Detail";
-import { AboutType } from "@shared-types/about";
+import { AboutType } from "@lib/types";
 
 export default function AboutUi({
   displayName,

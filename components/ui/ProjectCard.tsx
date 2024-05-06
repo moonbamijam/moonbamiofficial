@@ -1,4 +1,4 @@
-import { ProjectType } from "@shared-types/project";
+import { ProjectType } from "@lib/types";
 import Link from "next/link";
 import GitHubBtn from "@components/buttons/GitHubBtn";
 import VisitBtn from "@components/buttons/VisitBtn";

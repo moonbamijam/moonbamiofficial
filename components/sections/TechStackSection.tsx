@@ -1,5 +1,5 @@
 import { useFetch } from "@hooks/useFetch";
-import { TechStackType } from "@shared-types/techstack";
+import { TechStackType } from "@lib/types";
 import Section from "@components/common/Section";
 import Heading from "@components/ui/Heading";
 import StackIcon from "@components/ui/StackIcon";
