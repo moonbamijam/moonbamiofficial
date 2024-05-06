@@ -12,7 +12,7 @@ export async function PUT(request: Request, { params }: Params) {
     desc: desc,
     website: website,
     github: github,
-    endpoint: endpoint,
+    slug: slug,
   } = await request.json();
   await connectMongoDB();
   await Project.findByIdAndUpdate(id, {
@@ -22,7 +22,7 @@ export async function PUT(request: Request, { params }: Params) {
     desc,
     website,
     github,
-    endpoint,
+    slug,
   });
   return NextResponse.json({ message: "Project updated" }, { status: 200 });
 }
@@ -30,6 +30,6 @@ export async function PUT(request: Request, { params }: Params) {
 export async function GET(request: Request, { params }: Params) {
   const { id } = params;
   await connectMongoDB();
-  const projects = await Project.findOne({ _id: id });
+  const projects = await Project.findOne({ slug: id });
   return NextResponse.json({ projects }, { status: 200 });
 }

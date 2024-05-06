@@ -8,7 +8,7 @@ const projectSchema = new Schema(
     desc: String,
     website: String,
     github: String,
-    endpoint: String,
+    slug: String,
   },
   {
     timestamps: true,
