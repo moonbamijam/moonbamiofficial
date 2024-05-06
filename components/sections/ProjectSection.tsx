@@ -14,7 +14,7 @@ export default async function ProjectSection() {
       return projects.map((project: ProjectType) => (
         <ProjectCard
           key={project._id}
-          href={`/projects/${project._id}`}
+          href={`/projects/${project.slug}`}
           ariaLabel={project.title}
           src={project.src}
           alt={project.alt}
