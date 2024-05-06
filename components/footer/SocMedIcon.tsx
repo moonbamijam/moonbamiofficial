@@ -14,7 +14,7 @@ export default function SocMedIcon({ href, ariaLabel, icon }: Props) {
       href={href}
       aria-label={ariaLabel}
       target="_blank"
-      className="p-2 border-2 border-black dark:border-white rounded-full hover:border-highlight hover:bg-highlight dark:hover-border-highlight dark:hover:border-highlight [&>svg>path]:hover:text-white cursor-pointer "
+      className="p-2 border-2 border-on-background rounded-full hover:-translate-y-2 cursor-pointer"
     >
       {icon}
     </Link>

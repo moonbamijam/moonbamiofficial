@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wave-opacity {
+  @apply w-full overflow-hidden leading-[0] transform rotate-180 z-[-1];
+}
+
+.wave-opacity svg {
+  @apply relative block w-[calc(100%_+_1.3px)] h-[100px];
+}
+
+.wave-opacity .shape-fill {
+  @apply fill-primary dark:fill-primary-dark;
+}
