@@ -1,11 +1,5 @@
-import LoadingSpinner from "@components/ux/LoadingSpinner";
+import ProjectSkeleton from "@components/skeletons/ProjectSkeleton";
 
-const Loading = () => {
-  return (
-    <div className="text-5xl lg:text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  rounded-full w-max p-5">
-      <LoadingSpinner size="100px" fontSize="64px" />
-    </div>
-  );
-};
-
-export default Loading;
+export default function Loading() {
+  return <ProjectSkeleton />;
+}

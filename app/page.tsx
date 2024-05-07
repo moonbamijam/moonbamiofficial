@@ -1,10 +1,12 @@
-import LandingImage from "@components/LandingImage";
+import { Suspense } from "react";
 import ContactBtn from "@components/buttons/ContactBtn";
 import GitHubBtn from "@components/buttons/GitHubBtn";
+import Picture from "@components/common/Picture";
+import LandingSkeleton from "@components/skeletons/LandingSkeleton";
 
 const HomePage = async () => {
   return (
-    <>
+    <Suspense fallback={<LandingSkeleton />}>
       <div className="container relative">
         <section id="home" className="h-screen">
           <div className="w-full h-full relative px-[5vw] flex flex-col lg:flex-row justify-center xl:justify-evenly items-center gap-y-12">
@@ -31,11 +33,17 @@ const HomePage = async () => {
                 <GitHubBtn href="https://github.com/MoonbamiOfficial" />
               </div>
             </div>
-            <LandingImage />
+            <div className="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] flex justify-center items-center aspect-square rounded-xl shadow-md hover:shadow-primary-dark overflow-hidden">
+              <Picture
+                src={"moonbami-raw_cbd4px"}
+                alt={"Jam Moonbami"}
+                isPriority={true}
+              />
+            </div>
           </div>
         </section>
       </div>
-    </>
+    </Suspense>
   );
 };
 
