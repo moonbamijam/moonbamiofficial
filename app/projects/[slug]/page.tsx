@@ -35,22 +35,18 @@ export default async function ProjectPageById({
   return (
     <>
       <Section id={"project-page-by-id"}>
-        <div className="relative w-full xl:w-[1000px] h-[200px] sm:h-[250px] md:h-[300px] lg:h-[400px] xl:h-[500px] mb-8 rounded-lg">
+        <div className="relative w-full xl:w-[1000px] h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] shadow-md hover:shadow-primary-dark mb-8 rounded-xl overflow-hidden">
           <Picture
             src={projects.src}
             alt={`${projects.alt}`}
-            className="rounded-xl"
           />
         </div>
-        <div className="w-[1000px] flex flex-col xl:flex-row justify-evenly items-center">
-          <div className="max-w-[600px] mb-8">
+        <div className="max-w-[1000px] flex flex-col items-center md:w-full md:flex-row justify-evenly  ">
+          <div className="w-[400px] max-w-[600px] lg:w-[500px] xl:w-full mb-8">
             <Title text={projects.title} customStyles="text-5xl mb-2" />
-            <Description
-              paragraph={projects.desc}
-              customStyles="min-w-[400px] lg:w-[500px] premium:w-[600px]"
-            />
+            <Description paragraph={projects.desc} />
           </div>
-          <div className="links w-full sm:w-min flex xl:flex-col justify-between gap-x-8 gap-y-4 pb-[30px]">
+          <div className="flex md:flex-col gap-x-8 gap-y-4 ">
             <GitHubBtn href={projects.github} />
             {projects.website && <VisitBtn href={projects.website} />}
             <BackBtn href={"/projects"} />
