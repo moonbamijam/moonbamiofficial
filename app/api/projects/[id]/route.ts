@@ -30,6 +30,6 @@ export async function PUT(request: Request, { params }: Params) {
 export async function GET(request: Request, { params }: Params) {
   const { id } = params;
   await connectMongoDB();
-  const projects = await Project.findOne({ slug: id });
+  const projects = await Project.findOne({ title: id });
   return NextResponse.json({ projects }, { status: 200 });
 }
