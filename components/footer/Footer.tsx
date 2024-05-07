@@ -25,7 +25,7 @@ export default function Footer() {
     <>
       <section id="footer" className="container relative bottom-0">
         <WaveOpacity />
-        <div className="py-[64px] px-[10vw] text-on-primary bg-primary dark:bg-primary-dark">
+        <div className="py-[64px] px-[8vw] text-on-primary bg-primary dark:bg-primary-dark">
           <div className="flex flex-col lg:flex-row items-center mb-8">
             <h1 className="text-3xl lg:text-4xl font-bold text-center tracking-tight mb-8">
               Let&apos;s build from here!
