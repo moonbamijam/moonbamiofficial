@@ -32,26 +32,39 @@ export default async function ProjectPageById({
 }) {
   const { projects } = await useFetch(`/api/projects/${params.slug}`);
 
+  const renderProjectButtons = () => {
+    if (projects.website)
+      return (
+        <div className="flex md:flex-col gap-x-8 gap-y-4">
+          <div className="space-y-4">
+            <VisitBtn href={projects.website} />
+            <GitHubBtn href={projects.github} />
+          </div>
+          <BackBtn href={"/projects"} />
+        </div>
+      );
+    else
+      return (
+        <div className="flex md:flex-col gap-x-8 gap-y-4">
+          <GitHubBtn href={projects.github} />
+          <BackBtn href={"/projects"} />
+        </div>
+      );
+  };
+
   return (
     <>
       <Section id={"project-page-by-id"}>
         <div>
           <div className="relative w-full xl:w-[1000px] h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] shadow-md hover:shadow-primary-dark mb-8 rounded-xl overflow-hidden">
-            <Picture
-              src={projects.src}
-              alt={`${projects.alt}`}
-            />
+            <Picture src={projects.src} alt={`${projects.alt}`} />
           </div>
           <div className="max-w-[1000px] flex flex-col items-center md:w-full md:flex-row justify-evenly  ">
             <div className="w-[400px] max-w-[600px] lg:w-[500px] xl:w-full mb-8">
               <Title text={projects.title} customStyles="text-5xl mb-2" />
               <Description paragraph={projects.desc} />
             </div>
-            <div className="flex md:flex-col gap-x-8 gap-y-4 ">
-              <GitHubBtn href={projects.github} />
-              {projects.website && <VisitBtn href={projects.website} />}
-              <BackBtn href={"/projects"} />
-            </div>
+            {renderProjectButtons()}
           </div>
         </div>
       </Section>
