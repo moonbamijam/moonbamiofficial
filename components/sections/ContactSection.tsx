@@ -8,7 +8,7 @@ import SocMed from "@components/ui/SocMed";
 
 export default function ContactSection() {
   return (
-    <Section id={"contact"} contentStyles={"gap-[30px]"}>
+    <Section id={"contact"}>
       <Heading
         name={"Contact Me"}
         desc={

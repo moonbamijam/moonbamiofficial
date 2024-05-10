@@ -27,7 +27,7 @@ export default async function TechStackSection() {
   };
 
   return (
-    <Section id={"techstack"} contentStyles={"gap-[100px]"}>
+    <Section id={"techstack"}>
       <Heading
         name={"tech stacks"}
         desc={

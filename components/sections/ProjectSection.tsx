@@ -2,7 +2,7 @@ import Grid from "@components/common/Grid";
 import Section from "@components/common/Section";
 import Heading from "@components/ui/Heading";
 import ProjectCard from "@components/ui/ProjectCard";
-import LoadingSpinner from "@components/ux/LoadingSpinner";
+import LoadingSpinner from "@components/ui/LoadingSpinner";
 import { useFetch } from "@hooks/useFetch";
 import { ProjectType } from "@lib/types";
 
@@ -28,7 +28,7 @@ export default async function ProjectSection() {
   };
 
   return (
-    <Section id={"project"} contentStyles={"gap-[150px]"}>
+    <Section id={"project"}>
       <Heading
         name={"projects"}
         desc={

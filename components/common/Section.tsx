@@ -22,7 +22,7 @@ export default function Section({
     >
       {image}
       <div
-        className={`content relative flex flex-col items-center px-[2vw] ${contentStyles}`}
+        className={`content relative flex flex-col items-center gap-[64px] px-[2vw] ${contentStyles}`}
       >
         {children}
       </div>
