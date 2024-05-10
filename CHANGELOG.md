@@ -1,5 +1,12 @@
 # What's New
 
+## [2.5.1](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.5.0...v2.5.1) (2024-05-10)
+
+
+### Bug Fixes
+
+* unresponsive dynamic project segment if it has website url ([3891ccf](https://github.com/MoonbamiOfficial/dev-portfolio/commit/3891ccf9cb03eeabc17baa579e86b5efb4705f7c))
+
 # [2.5.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.4.0...v2.5.0) (2024-05-10)
 
 
