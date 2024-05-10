@@ -1,5 +1,12 @@
 # What's New
 
+## [2.5.2](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.5.1...v2.5.2) (2024-05-10)
+
+
+### Bug Fixes
+
+* about and project page are still async without any await calls ([814181c](https://github.com/MoonbamiOfficial/dev-portfolio/commit/814181cdfe62926545c654b53ea385f1aef6ecc7))
+
 ## [2.5.1](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.5.0...v2.5.1) (2024-05-10)
 
 
