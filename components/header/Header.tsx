@@ -1,5 +1,6 @@
 "use client";
 
+import { NavLinks } from "@lib/navLinks";
 import { FaBars } from "react-icons/fa";
 import { FaBarsStaggered } from "react-icons/fa6";
 import Image from "next/image";
@@ -12,14 +13,6 @@ import Anchor from "./Anchor";
 import Version from "@components/ui/Version";
 import useHeader from "@hooks/useHeader";
 import Button from "@components/ui/Button";
-
-const NavLinks = [
-  { id: 1, name: "home", path: "/" },
-  { id: 2, name: "about", path: "/about" },
-  { id: 3, name: "projects", path: "/projects" },
-  { id: 4, name: "timeline", path: "/timeline" },
-  { id: 5, name: "more", path: "/more" },
-];
 
 export default function Header() {
   const { isLinkActive, isMenuActive, scrollHeaderBg, toggleMenu, dropdown } =
