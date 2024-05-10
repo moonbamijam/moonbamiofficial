@@ -8,7 +8,7 @@ export default function AboutSkeleton() {
         <SkeletonScreen
           id="heading"
           width="w-[250px]"
-          height="h-[48px]"
+          height="h-[60px]"
           customStyles="rounded-lg"
         />
         <SkeletonScreen
