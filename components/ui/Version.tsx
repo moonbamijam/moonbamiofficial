@@ -1,10 +1,14 @@
 import Package from "@package.json";
 import { IoIosGitBranch } from "react-icons/io";
 
-export default function Version() {
+type VersionProps = {
+  customStyles?: string;
+};
+
+export default function Version({ customStyles }: VersionProps) {
   return (
-    <div className="text-sm flex items-center gap-1">
+    <span className={`text-sm flex items-center gap-1 ${customStyles}`}>
       <IoIosGitBranch />v{Package.version}
-    </div>
+    </span>
   );
 }
