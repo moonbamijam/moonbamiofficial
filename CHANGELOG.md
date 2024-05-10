@@ -1,5 +1,33 @@
 # What's New
 
+# [2.5.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.4.0...v2.5.0) (2024-05-10)
+
+
+### Features
+
+* add custom styling to version ui component ([aef28b0](https://github.com/MoonbamiOfficial/dev-portfolio/commit/aef28b044f64b1b0ef6641ab150d4e98291d524d))
+* add default gaps to sections & style imports ([28cf025](https://github.com/MoonbamiOfficial/dev-portfolio/commit/28cf0253fe933fde5647debc5acc8740fe5cb909))
+* add image credits to image in about page ([679a5fd](https://github.com/MoonbamiOfficial/dev-portfolio/commit/679a5fdcef2b61129cec2e8870aa3f59a8a4cc81))
+* add nav links lib to header ([4ef2e47](https://github.com/MoonbamiOfficial/dev-portfolio/commit/4ef2e473755942ae5aec62666921df9669d59579))
+* add new components to landing page ([b7948b0](https://github.com/MoonbamiOfficial/dev-portfolio/commit/b7948b0b2e01fef3fd6e3024b00cdcfadba2f175))
+* add new footer component for footer links ([0085fb6](https://github.com/MoonbamiOfficial/dev-portfolio/commit/0085fb691827e9adf675a6fba76cecc5b1b83442))
+* add new project specific array of objects to lib ([321f0e3](https://github.com/MoonbamiOfficial/dev-portfolio/commit/321f0e33d277e68cb5d0f187d0d3313c7e97ece7))
+* add new ui component for image credits ([0dc8cc0](https://github.com/MoonbamiOfficial/dev-portfolio/commit/0dc8cc0b198ae66b51d96d1ada3093b8a41325c7))
+* add parent div to bypass the flex gap in content ([50b584c](https://github.com/MoonbamiOfficial/dev-portfolio/commit/50b584cfa8d3f95fd53c609b27564a19c1fa26c0))
+* add responsiveness to mobile device in projects page ([a021a37](https://github.com/MoonbamiOfficial/dev-portfolio/commit/a021a373f08dd5dce1fc6f8e10f3d991945e73bd))
+* add skeleton for dynamic project segment ([68695a9](https://github.com/MoonbamiOfficial/dev-portfolio/commit/68695a9180600adb21d93bc052b6c6b909d9432a))
+* add skeleton screen to pages ([4322eb3](https://github.com/MoonbamiOfficial/dev-portfolio/commit/4322eb342ea5464bf93852fa85c15e3c460846fa))
+* adjust dynamic padding ([23c08f0](https://github.com/MoonbamiOfficial/dev-portfolio/commit/23c08f0dcd46ae1d343acdb2420535ac0a9f349e))
+* increase the height of the heading in about skeleton ([bbdf8c6](https://github.com/MoonbamiOfficial/dev-portfolio/commit/bbdf8c625c8a117d2c2e6a20dd36f3dcb3023d56))
+* minimal ui improvement to footer ([407d578](https://github.com/MoonbamiOfficial/dev-portfolio/commit/407d578fe6e82602bccb218ec52254c726e447bd))
+* new font weight to quote author ([394e447](https://github.com/MoonbamiOfficial/dev-portfolio/commit/394e447ffdf7e23ce43a2eacb1fc46f72e8b57f5))
+
+
+### Performance Improvements
+
+* add loading state for dropdown in header when not yet mounted ([b5ba35a](https://github.com/MoonbamiOfficial/dev-portfolio/commit/b5ba35aab1a9dbc73506d73137b1062ade7c4311))
+* remove unnecesarry for loop in project skeleton ([144014d](https://github.com/MoonbamiOfficial/dev-portfolio/commit/144014d5beb86e1204548c616a042564ce020e0b))
+
 # [2.4.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.3.0...v2.4.0) (2024-05-06)
 
 
