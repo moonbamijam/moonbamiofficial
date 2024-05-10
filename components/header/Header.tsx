@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { NavLinks } from "@lib/navLinks";
 import { FaBars } from "react-icons/fa";
 import { FaBarsStaggered } from "react-icons/fa6";
@@ -13,10 +14,15 @@ import Anchor from "./Anchor";
 import Version from "@components/ui/Version";
 import useHeader from "@hooks/useHeader";
 import Button from "@components/ui/Button";
+import LoadingSpinner from "@components/ui/LoadingSpinner";
 
 export default function Header() {
   const { isLinkActive, isMenuActive, scrollHeaderBg, toggleMenu, dropdown } =
     useHeader();
+
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
 
   return (
     <>
@@ -57,39 +63,43 @@ export default function Header() {
           </h1>
         </Link>
         <nav className="flex items-center gap-2">
-          <Button
-            buttonType="button"
-            id="menu"
-            refName={dropdown}
-            onClick={toggleMenu}
-            icon={isMenuActive ? <FaBarsStaggered /> : <FaBars />}
-            ariaLabel="menu"
-            customStyles="w-[40px] h-[40px] flex justify-center items-center text-xl rounded-full "
-            hoverStyles="hover:bg-primary [&>svg>path]:hover:text-on-primary"
-            activeStyles="active:scale-75 "
-            conditionalStyles={`${
-              isMenuActive &&
-              "bg-primary dark:bg-primary-light [&>svg>path]:text-on-primary"
-            }`}
-          >
-            {isMenuActive && (
-              <Dropdown>
-                {NavLinks.map((link) => (
-                  <Anchor
-                    href={link.path}
-                    ariaLabel={link.name}
-                    key={link.id}
-                    className={isLinkActive(link.path) ? "active" : ""}
-                    name={link.name}
-                  />
-                ))}
-                <div className="flex flex-col gap-4 items-center px-4 mt-4">
-                  <hr className="w-full" />
-                  <Version />
-                </div>
-              </Dropdown>
-            )}
-          </Button>
+          {mounted ? (
+            <Button
+              buttonType="button"
+              id="menu"
+              refName={dropdown}
+              onClick={toggleMenu}
+              icon={isMenuActive ? <FaBarsStaggered /> : <FaBars />}
+              ariaLabel="menu"
+              customStyles="w-[40px] h-[40px] flex justify-center items-center text-xl rounded-full "
+              hoverStyles="hover:bg-primary [&>svg>path]:hover:text-on-primary"
+              activeStyles="active:scale-75 "
+              conditionalStyles={`${
+                isMenuActive &&
+                "bg-primary dark:bg-primary-light [&>svg>path]:text-on-primary"
+              }`}
+            >
+              {isMenuActive && (
+                <Dropdown>
+                  {NavLinks.map((link) => (
+                    <Anchor
+                      href={link.path}
+                      ariaLabel={link.name}
+                      key={link.id}
+                      className={isLinkActive(link.path) ? "active" : ""}
+                      name={link.name}
+                    />
+                  ))}
+                  <div className="flex flex-col gap-4 items-center px-4 mt-4">
+                    <hr className="w-full" />
+                    <Version />
+                  </div>
+                </Dropdown>
+              )}
+            </Button>
+          ) : (
+            <LoadingSpinner size="40px" fontSizes="text-xl xl:text-2xl" />
+          )}
           <ThemeSwitchBtn />
         </nav>
       </header>
