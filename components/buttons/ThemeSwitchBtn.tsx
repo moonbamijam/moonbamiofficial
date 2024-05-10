@@ -3,7 +3,7 @@
 import { MouseEventHandler, ReactNode, useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { FiSun, FiMoon } from "react-icons/fi";
-import LoadingSpinner from "@components/ux/LoadingSpinner";
+import LoadingSpinner from "@components/ui/LoadingSpinner";
 
 type Props = {
   onClick?: MouseEventHandler;
