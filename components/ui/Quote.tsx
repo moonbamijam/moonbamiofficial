@@ -8,7 +8,7 @@ export default function Quote({ quote, author, customStyles }: QuoteProps) {
   return (
     <p className={`min-w-[400px] text-center ${customStyles}`}>
       <span className="italic">“{quote}”</span> &#8212;{" "}
-      <span className="font-semibold">{author}</span>
+      <span className="font-bold">{author}</span>
     </p>
   );
 }
