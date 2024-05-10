@@ -1,7 +1,7 @@
 import Section from "@components/common/Section";
 import SkeletonScreen from "@components/ui/SkeletonScreen";
 
-export default async function DynamicProjectSkeleton() {
+export default async function DynamicProjectSegmentSkeleton() {
   return (
     <Section id={"project-page-by-id-skelton"}>
       <div>
