@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "About",
 };
 
-export default async function About() {
+export default function About() {
   return (
     <>
       <div className="container relative">

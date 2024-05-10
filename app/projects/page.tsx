@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Projects",
 };
 
-export default async function ProjectsPage() {
+export default function ProjectsPage() {
   return (
     <>
       <div className="container relative">
