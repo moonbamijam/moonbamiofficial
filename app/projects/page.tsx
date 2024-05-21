@@ -1,9 +1,8 @@
 import { Metadata } from "next";
-import dynamic from "next/dynamic";
 import ProjectSection from "@components/sections/ProjectSection";
 import BackToTop from "@components/buttons/BackToTop";
+import Footer from "@components/footer/Footer";
 
-const Footer = dynamic(() => import("@components/footer/Footer"));
 
 export const metadata: Metadata = {
   title: "Projects",

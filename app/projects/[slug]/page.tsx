@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { useFetch } from "@hooks/useFetch";
-import dynamic from "next/dynamic";
 import Section from "@components/common/Section";
 import GitHubBtn from "@components/buttons/GitHubBtn";
 import VisitBtn from "@components/buttons/VisitBtn";
@@ -8,8 +7,8 @@ import BackBtn from "@components/buttons/BackBtn";
 import Picture from "@components/common/Picture";
 import Title from "@components/ui/Title";
 import Description from "@components/ui/Description";
+import Footer from "@components/footer/Footer";
 
-const Footer = dynamic(() => import("@components/footer/Footer"));
 
 type Props = { params: { slug: string } };
 

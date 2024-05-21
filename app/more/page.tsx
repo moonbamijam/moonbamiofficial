@@ -1,8 +1,7 @@
 import { Metadata } from "next";
-import dynamic from "next/dynamic";
 import StayTuned from "@components/ui/StayTuned";
+import Footer from "@components/footer/Footer";
 
-const Footer = dynamic(() => import("@components/footer/Footer"));
 
 export const metadata: Metadata = {
   title: "More",
