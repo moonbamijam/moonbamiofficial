@@ -1,5 +1,18 @@
 # What's New
 
+## [2.5.3](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.5.2...v2.5.3) (2024-05-21)
+
+
+### Bug Fixes
+
+* footer background ui ([#17](https://github.com/MoonbamiOfficial/dev-portfolio/issues/17)) ([3708139](https://github.com/MoonbamiOfficial/dev-portfolio/commit/370813931ad8fecc66566901befc4cff45caa363))
+
+
+### Performance Improvements
+
+* eager load footer to all pages ([31a228d](https://github.com/MoonbamiOfficial/dev-portfolio/commit/31a228dbbc4656ca024e403bb2b4f2d1f934c0b9))
+* make tech stack section more noticeable ([#13](https://github.com/MoonbamiOfficial/dev-portfolio/issues/13)) ([210022e](https://github.com/MoonbamiOfficial/dev-portfolio/commit/210022e440541c61cc3e3ec662695ac284d7a060))
+
 ## [2.5.2](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.5.1...v2.5.2) (2024-05-10)
 
 
