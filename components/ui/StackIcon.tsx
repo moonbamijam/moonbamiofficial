@@ -21,7 +21,7 @@ export default function StackIcon({
   return (
     <button
       aria-label={ariaLabel}
-      className="relative flex items-center justify-center p-4 rounded-2xl hover:bg-surface dark:hover:bg-dm-surface-light hover:shadow-primary-dark hover:shadow-lg hover:-translate-y-2 active:translate-y-1 active:shadow-none dark:active:bg-transparent"
+      className="relative flex items-center justify-center p-4 rounded-2xl hover:bg-surface dark:hover:bg-primary hover:shadow-primary-dark hover:shadow-lg hover:-translate-y-2 active:translate-y-1 active:shadow-none dark:active:bg-primary-dark"
     >
       <div
         className={`w-[40px] h-[40px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] ${className} absolute `}
