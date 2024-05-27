@@ -1,4 +1,4 @@
-![MasterHead](https://github.com/MoonbamiOfficial/dev-portfolio/assets/141120384/39353f22-3c10-4f29-952f-fafaa3a9d76f)
+![MasterHead](https://github.com/MoonbamiOfficial/dev-portfolio/assets/141120384/058639c3-20cc-4030-99d5-f64d90f37526)
 # Hi 👋, I am Moonbami.
 Pursuing a career for being a developer. Still a novice, but making progress on a daily basis.
 
