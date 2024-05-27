@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import ContactBtn from "@components/buttons/ContactBtn";
+import EmailBtn from "@components/buttons/EmailBtn";
 import GitHubBtn from "@components/buttons/GitHubBtn";
 import Picture from "@components/common/Picture";
 import LandingSkeleton from "@components/skeletons/LandingSkeleton";
@@ -31,7 +31,7 @@ const HomePage = async () => {
                 on a daily basis.
               </p>
               <div className="flex gap-6">
-                <ContactBtn href="/about/#contact" />
+                <EmailBtn href="mailto:Jam Moonbami <moonbamijamofficial15@gmail.com>" />
                 <GitHubBtn href="https://github.com/MoonbamiOfficial" />
               </div>
               <Quote
