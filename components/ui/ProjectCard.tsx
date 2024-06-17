@@ -1,5 +1,5 @@
-import { ProjectType } from "@lib/types";
 import Link from "next/link";
+import { ProjectType } from "@lib/types";
 import GitHubBtn from "@components/buttons/GitHubBtn";
 import VisitBtn from "@components/buttons/VisitBtn";
 import Picture from "@components/common/Picture";
@@ -15,7 +15,7 @@ export default function ProjectCard({
   github,
 }: ProjectType) {
   return (
-    <div className="relative w-[400px] rounded-xl flex flex-col bg-surface dark:bg-dm-surface shadow hover:shadow-primary-dark hover:shadow-lg hover:-translate-y-2 active:translate-y-1 active:shadow-none cursor-pointer overflow-hidden">
+    <div className="relative max-w-[400px] rounded-xl flex flex-col bg-surface dark:bg-dm-surface shadow hover:shadow-primary-dark hover:shadow-lg hover:-translate-y-2 active:translate-y-1 active:shadow-none cursor-pointer overflow-hidden">
       <Link aria-label={ariaLabel} href={href}>
         <div className="relative w-full h-[200px] ">
           <Picture src={src} alt={`${alt}`} />
