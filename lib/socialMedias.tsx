@@ -15,7 +15,7 @@ export const socialMedias = [
     icon: <SiAnilist />,
   },
   {
-    href: "https://www.facebook.com/moonbamijam",
+    href: "https://www.facebook.com/moonbamidesu",
     text: "Facebook",
     icon: <FaFacebook />,
   },
