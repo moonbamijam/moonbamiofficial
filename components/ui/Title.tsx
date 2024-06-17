@@ -1,8 +1,8 @@
 type TitleProps = {
   text: string;
-  customStyles?: string;
+  className?: string;
 };
 
-export default function Title({ text, customStyles }: TitleProps) {
-  return <h1 className={`font-bold tracking-tight ${customStyles}`}>{text}</h1>;
+export default function Title({ text, className }: TitleProps) {
+  return <h1 className={`font-bold tracking-tight ${className}`}>{text}</h1>;
 }
