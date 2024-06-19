@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import Header from "@components/header/Header";
 import ThemesProvider from "@providers/themesProvider";
 import SmallGridLines from "@components/bg/SmallGridLines";
+import NavMenuBtn from "@components/buttons/NavMenuBtn";
 import "@styles/globals.css";
 
 const inter = Noto_Sans({
@@ -59,6 +60,7 @@ export default function RootLayout({
             <Analytics />
             <SpeedInsights />
           </main>
+          <NavMenuBtn />
         </ThemesProvider>
       </body>
     </html>
