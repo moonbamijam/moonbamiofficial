@@ -9,12 +9,7 @@ type ButtonProps = {
   href?: string;
   target?: string;
   ariaLabel?: string;
-  customStyles?: string;
-  hoverStyles?: string;
-  activeStyles?: string;
-  darkModeStyles?: string;
-  mixedStyles?: string;
-  conditionalStyles?: string;
+  className?: string;
   refName?: React.LegacyRef<any>;
   onClick?: React.MouseEventHandler<any>;
   children?: React.ReactNode;
@@ -28,12 +23,7 @@ export default function Button({
   href,
   target,
   ariaLabel,
-  customStyles,
-  hoverStyles,
-  activeStyles,
-  darkModeStyles,
-  mixedStyles,
-  conditionalStyles,
+  className,
   refName,
   onClick,
   children,
@@ -45,7 +35,7 @@ export default function Button({
         ref={refName}
         aria-label={ariaLabel}
         onClick={onClick}
-        className={`transform ${customStyles} ${hoverStyles} ${activeStyles} ${darkModeStyles} ${mixedStyles} ${conditionalStyles}`}
+        className={`transform ${className}`}
       >
         {icon}
         <p>{text}</p>
@@ -61,7 +51,7 @@ export default function Button({
             href={href}
             aria-label={ariaLabel}
             target={target}
-            className={`w-[150px] h-[50px] rounded-lg border-2 gap-1 flex justify-center items-center capitalize transform ${customStyles} ${hoverStyles} ${activeStyles} ${darkModeStyles} ${mixedStyles} ${conditionalStyles}`}
+            className={`w-[150px] h-[50px] rounded-lg border-2 gap-1 flex justify-center items-center capitalize transform ${className}`}
           >
             {icon}
             {text}
