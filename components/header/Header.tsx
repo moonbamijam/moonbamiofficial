@@ -71,16 +71,13 @@ export default function Header() {
               onClick={toggleMenu}
               icon={isMenuActive ? <FaBarsStaggered /> : <FaBars />}
               ariaLabel="menu"
-              customStyles="w-[40px] h-[40px] flex justify-center items-center text-xl rounded-full "
-              hoverStyles="hover:bg-primary [&>svg>path]:hover:text-on-primary"
-              activeStyles="active:scale-75 "
-              conditionalStyles={`${
+              className={`hidden w-[40px] h-[40px] lg:flex justify-center items-center text-xl rounded-full hover:bg-primary [&>svg>path]:hover:text-on-primary ${
                 isMenuActive &&
                 "bg-primary dark:bg-primary-light [&>svg>path]:text-on-primary"
-              }`}
+              } active:scale-75`}
             >
               {isMenuActive && (
-                <Dropdown>
+                <Dropdown position="top-[60px]">
                   {NavLinks.map((link) => (
                     <Anchor
                       href={link.path}
@@ -103,9 +100,11 @@ export default function Header() {
           <ThemeSwitchBtn />
         </nav>
       </header>
-      {isMenuActive && (
-        <div className="screen-dim w-full h-full fixed z-[90] bg-black opacity-80 dark:opacity-70"></div>
-      )}
+      <div
+        className={`screen-dimmer ${
+          isMenuActive ? "bg-black/80 dark:bg-black/70" : "invisible"
+        } hidden lg:block w-full h-full fixed top-0 z-[90]`}
+      ></div>
     </>
   );
 }
