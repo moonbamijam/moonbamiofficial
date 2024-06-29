@@ -49,7 +49,7 @@ export default function NavMenuBtn() {
           )}
         </Button>
       ) : (
-        <div className="fixed left-8 bottom-8 sm:left-12 sm:bottom-12 lg:left-24 lg:bottom-16 w-[50px] h-[50px] text-xl z-[100] flex justify-center items-center rounded-full">
+        <div className="fixed lg:hidden left-8 bottom-8 sm:left-12 sm:bottom-12 lg:left-24 lg:bottom-16 w-[50px] h-[50px] text-xl z-[100] flex justify-center items-center rounded-full">
           <LoadingSpinner size="40px" fontSizes="text-xl xl:text-2xl" />
         </div>
       )}

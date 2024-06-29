@@ -95,7 +95,7 @@ export default function Header() {
               )}
             </Button>
           ) : (
-            <LoadingSpinner size="40px" fontSizes="text-xl xl:text-2xl" />
+            <LoadingSpinner size="40px" fontSizes="text-xl xl:text-2xl" className="hidden lg:flex" />
           )}
           <ThemeSwitchBtn />
         </nav>

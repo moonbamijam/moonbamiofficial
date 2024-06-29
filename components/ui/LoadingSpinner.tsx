@@ -4,16 +4,18 @@ type LoadingSpinnerProps = {
   size?: string;
   fontSize?: string;
   fontSizes?: string;
+  className?: string;
 };
 
 export default function LoadingSpinner({
   size,
   fontSize,
   fontSizes,
+  className,
 }: LoadingSpinnerProps) {
   return (
     <div
-      className={`relative w-[${size}] h-[${size}] flex items-center justify-center rounded-full [&>svg>path]:text-[${fontSize}] ${fontSizes}`}
+      className={`relative w-[${size}] h-[${size}] flex items-center justify-center rounded-full [&>svg>path]:text-[${fontSize}] ${fontSizes} ${className}`}
     >
       <div className="absolute opacity-30">
         <AiOutlineLoading3Quarters className="[&>path]:text-surface" />
