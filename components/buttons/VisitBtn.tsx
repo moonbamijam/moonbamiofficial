@@ -11,8 +11,7 @@ export default function VisitBtn({ href }: { href: string }) {
       ariaLabel="Website"
       icon={<FiExternalLink />}
       text="visit"
-      customStyles="bg-primary border-primary text-on-primary [&>svg>path]:text-on-primary [&>svg>polyline]:text-on-primary [&>svg>line]:text-on-primary"
-      hoverStyles="hover:bg-primary-dark hover:border-primary-dark"
+      className="bg-primary border-primary text-on-primary [&>svg>path]:text-on-primary [&>svg>polyline]:text-on-primary [&>svg>line]:text-on-primary hover:bg-primary-dark hover:border-primary-dark"
     />
   );
 }

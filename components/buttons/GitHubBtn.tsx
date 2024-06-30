@@ -16,9 +16,7 @@ export default function GitHubBtn({ href, text }: GitHubBtnProps) {
       ariaLabel="GitHub"
       icon={<FaGithub />}
       text={text ? text : "GitHub"}
-      customStyles="border-primary [&>svg>path]:text-black"
-      hoverStyles="hover:bg-color-github hover:border-color-github hover:text-on-primary [&>svg>path]:hover:text-on-primary"
-      darkModeStyles="[&>svg>path]:dark:text-white"
+      className="border-primary [&>svg>path]:text-black hover:bg-color-github hover:border-color-github hover:text-on-primary [&>svg>path]:hover:text-on-primary [&>svg>path]:dark:text-white"
     />
   );
 }

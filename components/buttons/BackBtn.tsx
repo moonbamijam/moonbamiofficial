@@ -10,10 +10,7 @@ export default function BackBtn({ href }: { href: string }) {
       ariaLabel="back"
       icon={<FaBackwardStep />}
       text="back"
-      customStyles="bg-surface border-primary text-on-background [&>svg>path]:text-on-surface"
-      hoverStyles="hover:bg-primary hover:text-on-primary [&>svg>path]:hover:text-on-primary"
-      darkModeStyles="dark:bg-transparent dark:text-white [&>svg>path]:dark:text-white"
-      mixedStyles="dark:hover:bg-primary"
+      className="bg-surface border-primary text-on-background [&>svg>path]:text-on-surface hover:bg-primary hover:text-on-primary [&>svg>path]:hover:text-on-primary dark:bg-transparent dark:text-white [&>svg>path]:dark:text-white dark:hover:bg-primary"
     />
   );
 }

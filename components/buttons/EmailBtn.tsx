@@ -14,9 +14,7 @@ export default function EmailBtn({ href }: EmailBtnProps) {
       id="email-btn"
       text="email"
       icon={<SiGmail />}
-      customStyles="border-primary bg-primary text-on-primary"
-      hoverStyles="hover:bg-primary-dark hover:border-primary-dark"
-      mixedStyles="dark:hover:border-primary-dark dark:hover:bg-primary-dark"
+      className="border-primary bg-primary text-on-primary hover:bg-primary-dark hover:border-primary-dark dark:hover:border-primary-dark dark:hover:bg-primary-dark"
     />
   );
 }
