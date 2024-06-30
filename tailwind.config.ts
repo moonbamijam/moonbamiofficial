@@ -17,6 +17,8 @@ const config: Config = {
       primary: "#007ACC",
       "primary-dark": "#065AAA",
       "primary-light": "#009FF5",
+      secondary: "#CC5200",
+      "secondary-light": "#DD7804",
       background: "#FAFAFA",
       "dark-background": "#121212",
       surface: "#FDFCFA",
