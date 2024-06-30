@@ -38,3 +38,11 @@ export type TopicType = {
   title: string;
   desc: string;
 };
+
+export type EventType = {
+  _id?: string;
+  date: string;
+  type: string;
+  note: string;
+  message: string;
+};
