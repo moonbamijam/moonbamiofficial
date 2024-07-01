@@ -5,11 +5,13 @@ import { FaChurch } from "react-icons/fa6";
 import { FaGift } from "react-icons/fa6";
 import { FaGamepad } from "react-icons/fa6";
 import { FaCode } from "react-icons/fa6";
+import { FaMoon } from "react-icons/fa6";
 import { EventType } from "@lib/types";
 import { useFetch } from "@hooks/useFetch";
 import { sortDateByDescendingOrder } from "@utils/sortDate";
 import Section from "@components/common/Section";
 import Heading from "@components/ui/Heading";
+import Event from "@components/ui/Event";
 
 export default async function TimelineSection() {
   const { timelines } = await useFetch("/api/timelines");
@@ -18,28 +20,100 @@ export default async function TimelineSection() {
     if (timelines) {
       return timelines
         .sort(sortDateByDescendingOrder)
-        .map((event: EventType) => (
-          <div key={event._id} className="relative flex items-start py-8">
-            <button className="relative text-4xl bg-white dark:bg-gray-700 hover:bg-primary dark:hover:bg-primary border-2 border-primary dark:border-gray-700 dark:hover:border-primary p-4 rounded-lg shadow-md transform hover:scale-[1.15] active:scale-100 [&>svg>path]:hover:text-white cursor-pointer">
-              {event.type == "present" && <FaGift />}
-              {event.type == "born" && <FaBaby />}
-              {event.type == "birthday" && <FaCakeCandles />}
-              {event.type == "game" && <FaGamepad />}
-              {event.type == "programming" && <FaCode />}
-              {event.type == "school" && <IoSchool />}
-              {event.type == "religion" && <FaChurch />}
-            </button>
-            <div className="px-4">
-              <h1 className="text-secondary dark:text-secondary-light text-4xl font-black capitalize">
-                {event.date}
-              </h1>
-              <h3 className="text-primary dark:text-primary-light text-2xl font-bold">
-                {event.note}
-              </h3>
-              <p className="max-w-[300px] mt-2">{event.message}</p>
-            </div>
-          </div>
-        ));
+        .map((event: EventType) => {
+          switch (event.type) {
+            case "present":
+              return (
+                <Event
+                  _id={event._id}
+                  typeIcon={<FaGift />}
+                  date={event.date}
+                  note={event.note}
+                  message={event.message}
+                />
+              );
+            case "gift":
+              return (
+                <Event
+                  _id={event._id}
+                  typeIcon={<FaGift />}
+                  date={event.date}
+                  note={event.note}
+                  message={event.message}
+                />
+              );
+            case "born":
+              return (
+                <Event
+                  _id={event._id}
+                  typeIcon={<FaBaby />}
+                  date={event.date}
+                  note={event.note}
+                  message={event.message}
+                />
+              );
+            case "birthday":
+              return (
+                <Event
+                  _id={event._id}
+                  typeIcon={<FaCakeCandles />}
+                  date={event.date}
+                  note={event.note}
+                  message={event.message}
+                />
+              );
+            case "game":
+              return (
+                <Event
+                  _id={event._id}
+                  typeIcon={<FaGamepad />}
+                  date={event.date}
+                  note={event.note}
+                  message={event.message}
+                />
+              );
+            case "programming":
+              return (
+                <Event
+                  _id={event._id}
+                  typeIcon={<FaCode />}
+                  date={event.date}
+                  note={event.note}
+                  message={event.message}
+                />
+              );
+            case "school":
+              return (
+                <Event
+                  _id={event._id}
+                  typeIcon={<IoSchool />}
+                  date={event.date}
+                  note={event.note}
+                  message={event.message}
+                />
+              );
+            case "religion":
+              return (
+                <Event
+                  _id={event._id}
+                  typeIcon={<FaChurch />}
+                  date={event.date}
+                  note={event.note}
+                  message={event.message}
+                />
+              );
+            default:
+              return (
+                <Event
+                  _id={event._id}
+                  typeIcon={<FaMoon />}
+                  date={event.date}
+                  note={event.note}
+                  message={event.message}
+                />
+              );
+          }
+        });
     }
   };
 
