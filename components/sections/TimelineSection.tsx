@@ -54,6 +54,7 @@ export default async function TimelineSection() {
           }
           return (
             <Event
+              key={event._id}
               _id={event._id}
               typeIcon={typeIcon}
               date={event.date}
