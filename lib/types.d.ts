@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export type AboutType = {
   _id?: string;
   displayName: string;
@@ -42,7 +44,8 @@ export type TopicType = {
 export type EventType = {
   _id?: string;
   date: string;
-  type: string;
+  type?: string;
+  typeIcon?: ReactNode;
   note: string;
   message: string;
 };
