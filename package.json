@@ -1,7 +1,7 @@
 {
   "name": "dev-portfolio",
   "author": "Jam Moonbami moonbamijamofficial15@gmai.com",
-  "version": "2.5.3",
+  "version": "2.6.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

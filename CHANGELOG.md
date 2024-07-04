@@ -1,5 +1,37 @@
 # What's New
 
+# [2.6.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.5.3...v2.6.0) (2024-07-04)
+
+
+### Bug Fixes
+
+* different border color for socmed icons in footer ([79e55bb](https://github.com/MoonbamiOfficial/dev-portfolio/commit/79e55bb812b1f9335bfe3d1158f5689bf2f6a3f2))
+* spacing to homepage content ([286b95c](https://github.com/MoonbamiOfficial/dev-portfolio/commit/286b95c16136a1663296604dcc8533948a71a0e6))
+* unresponsive project banner ([df793aa](https://github.com/MoonbamiOfficial/dev-portfolio/commit/df793aa836a4545d978b42a6b0c21d31a373511c))
+
+
+### Features
+
+* add fixed menu button for small screen ([#27](https://github.com/MoonbamiOfficial/dev-portfolio/issues/27)) ([315ad46](https://github.com/MoonbamiOfficial/dev-portfolio/commit/315ad4637b204763d108c7b53ea540b817ede79a))
+* add fixed menu button to root layout ([#27](https://github.com/MoonbamiOfficial/dev-portfolio/issues/27)) ([dd8852a](https://github.com/MoonbamiOfficial/dev-portfolio/commit/dd8852ac509357dc2f794fe468fb8712ad980161))
+* add secondary color with variant ([1ffa5aa](https://github.com/MoonbamiOfficial/dev-portfolio/commit/1ffa5aa0940f769efe4952ad3aa90f5e12ae8d76))
+* add temporary static data to timeline page ([#15](https://github.com/MoonbamiOfficial/dev-portfolio/issues/15)) ([b111517](https://github.com/MoonbamiOfficial/dev-portfolio/commit/b11151771779b6c9d750e146a3aa8624bc51b761))
+* add timeline api [#30](https://github.com/MoonbamiOfficial/dev-portfolio/issues/30) ([241315d](https://github.com/MoonbamiOfficial/dev-portfolio/commit/241315d7eb1a7c1dfd25e3964cb60267d50e47e4))
+* add ui to timeline page ([#15](https://github.com/MoonbamiOfficial/dev-portfolio/issues/15)) ([8ebd80a](https://github.com/MoonbamiOfficial/dev-portfolio/commit/8ebd80a041e5c904b136bc543549059a062bc72e))
+* add utility function to sort date ([1067339](https://github.com/MoonbamiOfficial/dev-portfolio/commit/1067339e901d601040c58ff5db0c4d4fea65b665))
+* adjust the display of loading ui to menu buttons ([182f54a](https://github.com/MoonbamiOfficial/dev-portfolio/commit/182f54a6e31a5cf909720f0063c3c2ee71ac351b))
+* new icon to email btn in landing page ([b33e354](https://github.com/MoonbamiOfficial/dev-portfolio/commit/b33e35457aba016579ad10b30ee33590b6051169))
+* render dynamic timeline data [#30](https://github.com/MoonbamiOfficial/dev-portfolio/issues/30) ([5c18c17](https://github.com/MoonbamiOfficial/dev-portfolio/commit/5c18c17f73a67d60d1cdaa761cf5fa6ede60cae2))
+* responsive width for project card ui component ([fce9329](https://github.com/MoonbamiOfficial/dev-portfolio/commit/fce9329c526ecb418e1dbdfc23f21171e03bd8f6))
+* update contact btn to email btn in landing page ([e5ee4aa](https://github.com/MoonbamiOfficial/dev-portfolio/commit/e5ee4aa3c7018fba8f5c0fc74b92e102b660c335))
+* use switch to handle fallback in event type ([#30](https://github.com/MoonbamiOfficial/dev-portfolio/issues/30)) ([7db151e](https://github.com/MoonbamiOfficial/dev-portfolio/commit/7db151ed567b262cb4e7c9c369eccd7dbaa473fb))
+
+
+### Performance Improvements
+
+* add key args for rendering events in timeline page ([93e95b7](https://github.com/MoonbamiOfficial/dev-portfolio/commit/93e95b7c5146bc14fad4ed51a0614042a923e53d))
+* enhance rendering of event type icon component ([#30](https://github.com/MoonbamiOfficial/dev-portfolio/issues/30)) ([c905eed](https://github.com/MoonbamiOfficial/dev-portfolio/commit/c905eededf192f85c05e82f7f59ecb5a847440e6))
+
 ## [2.5.3](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.5.2...v2.5.3) (2024-05-21)
 
 
