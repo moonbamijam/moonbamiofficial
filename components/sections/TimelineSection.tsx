@@ -17,102 +17,50 @@ export default async function TimelineSection() {
   const { timelines } = await useFetch("/api/timelines");
 
   const renderTimeline = () => {
+    let typeIcon;
+
     if (timelines) {
       return timelines
         .sort(sortDateByDescendingOrder)
         .map((event: EventType) => {
           switch (event.type) {
             case "present":
-              return (
-                <Event
-                  _id={event._id}
-                  typeIcon={<FaGift />}
-                  date={event.date}
-                  note={event.note}
-                  message={event.message}
-                />
-              );
+              typeIcon = <FaGift />;
+              break;
             case "gift":
-              return (
-                <Event
-                  _id={event._id}
-                  typeIcon={<FaGift />}
-                  date={event.date}
-                  note={event.note}
-                  message={event.message}
-                />
-              );
+              typeIcon = <FaGift />;
+              break;
             case "born":
-              return (
-                <Event
-                  _id={event._id}
-                  typeIcon={<FaBaby />}
-                  date={event.date}
-                  note={event.note}
-                  message={event.message}
-                />
-              );
+              typeIcon = <FaBaby />;
+              break;
             case "birthday":
-              return (
-                <Event
-                  _id={event._id}
-                  typeIcon={<FaCakeCandles />}
-                  date={event.date}
-                  note={event.note}
-                  message={event.message}
-                />
-              );
+              typeIcon = <FaCakeCandles />;
+              break;
             case "game":
-              return (
-                <Event
-                  _id={event._id}
-                  typeIcon={<FaGamepad />}
-                  date={event.date}
-                  note={event.note}
-                  message={event.message}
-                />
-              );
+              typeIcon = <FaGamepad />;
+              break;
             case "programming":
-              return (
-                <Event
-                  _id={event._id}
-                  typeIcon={<FaCode />}
-                  date={event.date}
-                  note={event.note}
-                  message={event.message}
-                />
-              );
+              typeIcon = <FaCode />;
+              break;
             case "school":
-              return (
-                <Event
-                  _id={event._id}
-                  typeIcon={<IoSchool />}
-                  date={event.date}
-                  note={event.note}
-                  message={event.message}
-                />
-              );
+              typeIcon = <IoSchool />;
+              break;
             case "religion":
-              return (
-                <Event
-                  _id={event._id}
-                  typeIcon={<FaChurch />}
-                  date={event.date}
-                  note={event.note}
-                  message={event.message}
-                />
-              );
+              typeIcon = <FaChurch />;
+              break;
             default:
-              return (
-                <Event
-                  _id={event._id}
-                  typeIcon={<FaMoon />}
-                  date={event.date}
-                  note={event.note}
-                  message={event.message}
-                />
-              );
+              typeIcon = <FaMoon />;
+              break;
           }
+          return (
+            <Event
+              _id={event._id}
+              typeIcon={typeIcon}
+              date={event.date}
+              note={event.note}
+              message={event.message}
+            />
+          );
         });
     }
   };
@@ -124,11 +72,11 @@ export default async function TimelineSection() {
           name="Timeline"
           desc="A simple timeline of events that I want to share with you, everyone."
         />
-        <main className="relative">
+        <div className="relative">
           {TimelineTip("present")}
           {renderTimeline()}
           {TimelineTip("past")}
-        </main>
+        </div>
       </Section>
     </>
   );
