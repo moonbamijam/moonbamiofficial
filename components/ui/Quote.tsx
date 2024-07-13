@@ -6,9 +6,9 @@ type QuoteProps = {
 
 export default function Quote({ quote, author, className }: QuoteProps) {
   return (
-    <p className={`min-w-[400px] text-center ${className}`}>
-      <span className="italic">“{quote}”</span> &#8212;{" "}
-      <span className="font-bold">{author}</span>
+    <p className={`min-w-[350px] max-w-[600px] min-h-[22px] ${className}`}>
+      <em>“{quote}”</em>
+      <strong> &#8212; {author}</strong>
     </p>
   );
 }
