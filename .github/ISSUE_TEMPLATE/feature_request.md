@@ -12,8 +12,8 @@ assignees: MoonbamiOfficial
 > [!NOTE]
 > (Put a short description of the feature here. Remove this note block if you don't have a description to put)
 
-## Add the following:
+## Do the following:
 - [ ] List here all of the things that this feature requires
 
 ## Reason(s) for adding:
-- [ ] List here all of the reason why I should add this
+* List here all of the reason why I should add this
