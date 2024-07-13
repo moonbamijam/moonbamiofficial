@@ -3,9 +3,8 @@ import EmailBtn from "@components/buttons/EmailBtn";
 import GitHubBtn from "@components/buttons/GitHubBtn";
 import Picture from "@components/common/Picture";
 import LandingSkeleton from "@components/skeletons/LandingSkeleton";
-import Quote from "@components/ui/Quote";
 import ImageCredits from "@components/ui/ImageCredits";
-import RandomizeQuote from "@components/ui/RandomizeQuote";
+import RandomizeQuote from "@components/RandomizeQuote";
 
 const HomePage = async () => {
   return (
