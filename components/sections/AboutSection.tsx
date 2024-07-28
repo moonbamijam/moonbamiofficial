@@ -45,7 +45,7 @@ export default async function AboutSection() {
           />
           <ImageCredits
             creditsTo="Maki"
-            creditLink="https://www.instagram.com/prettyboimaks/"
+            creditLink="https://www.instagram.com/lakezeus_/"
           />
         </div>
         <div className="about-me flex flex-col gap-[30px] ">
