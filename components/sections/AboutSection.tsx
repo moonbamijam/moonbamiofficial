@@ -44,7 +44,7 @@ export default async function AboutSection() {
             isPriority={true}
           />
           <ImageCredits
-            creditsTo="Maki"
+            creditsTo="Chris"
             creditLink="https://www.instagram.com/lakezeus_/"
           />
         </div>
