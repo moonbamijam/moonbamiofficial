@@ -44,8 +44,8 @@ export default async function AboutSection() {
             isPriority={true}
           />
           <ImageCredits
-            creditsTo="Maki"
-            creditLink="https://www.instagram.com/prettyboimaks/"
+            creditsTo="Chris"
+            creditLink="https://www.instagram.com/lakezeus_/"
           />
         </div>
         <div className="about-me flex flex-col gap-[30px] ">
