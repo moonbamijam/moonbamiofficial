@@ -1,0 +1,46 @@
+feature:
+- head-branch: feature
+
+fix:
+- head-branch: fix
+
+release: 
+- head-branch: release
+
+chore:
+- head-branch: chore
+
+ui/ux:
+- changed-files:
+  - any-glob-to-any-file:
+    - app/**
+    - components/**
+    - styles/**
+    - assets/**
+    - public/**
+    - static/**
+    - providers/**
+
+server: 
+- changed-files:
+  - any-glob-to-any-file: 
+    - models/**
+    - utils/mongodb.ts
+
+devops:
+- head-branch: release
+- changed-files:
+  - any-glob-to-any-file:
+    - .github/**
+    - .husky/**
+    - .release-it.json
+
+documentation:
+- head-branch: docs
+- changed-files:
+  - any-glob-to-any-file: '**/*.md'
+
+packages:
+- head-branch: deps
+- changed-files:
+  - any-glob-to-any-file: 'pnpm-lock.yaml'
