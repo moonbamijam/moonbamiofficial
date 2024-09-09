@@ -39,3 +39,6 @@ next-env.d.ts
 # next-pwa
 public/*.js
 public/*.js.map
+
+# turborepo
+.turbo
