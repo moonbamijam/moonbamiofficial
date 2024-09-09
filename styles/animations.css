@@ -1,0 +1,25 @@
+@keyframes moonbami {
+  0% {
+    background-color: #4cae4c;
+  }
+
+  20% {
+    background-color: #409eb5;
+  }
+
+  40% {
+    background-color: #8134f4;
+  }
+
+  60% {
+    background-color: #f10e19;
+  }
+
+  80% {
+    background-color: #ffc505;
+  }
+
+  100% {
+    background-color: #4cae4c;
+  }
+}

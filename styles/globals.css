@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("./animations.css");
+
+@layer base {
+  :root {
+    --color-primary: #007acc;
+  }
+}
+
 *,
 ::before,
 ::after {
