@@ -1,25 +1,37 @@
 @keyframes moonbami {
   0% {
     background-color: #4cae4c;
+    background-clip: text;
+    color: transparent;
   }
 
   20% {
     background-color: #409eb5;
+    background-clip: text;
+    color: transparent;
   }
 
   40% {
     background-color: #8134f4;
+    background-clip: text;
+    color: transparent;
   }
 
   60% {
     background-color: #f10e19;
+    background-clip: text;
+    color: transparent;
   }
 
   80% {
     background-color: #ffc505;
+    background-clip: text;
+    color: transparent;
   }
 
   100% {
     background-color: #4cae4c;
+    background-clip: text;
+    color: transparent;
   }
 }
