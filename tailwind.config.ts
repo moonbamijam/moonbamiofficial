@@ -43,7 +43,7 @@ const config: Config = {
         premium: "1920px",
       },
       animation: {
-        rgb: "moonbami 8s ease-in-out infinite",
+        rgb: "moonbami 15s linear infinite",
       },
       boxShadow: {
         gradient: "0px 0px 100px 100px rgba(3, 0, 28, 0.3)",
