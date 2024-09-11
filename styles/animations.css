@@ -1,36 +1,48 @@
 @keyframes moonbami {
   0% {
-    background-color: #4cae4c;
+    background-color: #007acc;
     background-clip: text;
     color: transparent;
   }
 
-  20% {
-    background-color: #409eb5;
+  14% {
+    background-color: #ff2e97;
     background-clip: text;
     color: transparent;
   }
 
-  40% {
-    background-color: #8134f4;
+  28% {
+    background-color: #ed6f15;
     background-clip: text;
     color: transparent;
   }
 
-  60% {
-    background-color: #f10e19;
+  42% {
+    background-color: #ffca1b;
     background-clip: text;
     color: transparent;
   }
 
-  80% {
-    background-color: #ffc505;
+  56% {
+    background-color: #c60000;
+    background-clip: text;
+    color: transparent;
+  }
+
+  70% {
+    background-color: #32ff9d;
+    background-clip: text;
+    color: transparent;
+  }
+
+  84% {
+    background-color: #4b129c;
     background-clip: text;
     color: transparent;
   }
 
   100% {
-    background-color: #4cae4c;
+    background-color: #007acc;
     background-clip: text;
     color: transparent;
   }

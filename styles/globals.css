@@ -1,8 +1,8 @@
+@import url("./animations.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("./animations.css");
 
 @layer base {
   :root {
