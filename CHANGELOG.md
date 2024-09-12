@@ -1,5 +1,21 @@
 # What's New
 
+# [2.7.0](https://github.com/moonbamijam/moonbamiofficial/compare/v2.6.0...v2.7.0) (2024-09-12)
+
+
+### Bug Fixes
+
+* hidden words in landing page ([#47](https://github.com/moonbamijam/moonbamiofficial/issues/47)) ([1c3b5d5](https://github.com/moonbamijam/moonbamiofficial/commit/1c3b5d5ae106567de58f8b141754d4f23857e14e)), closes [#44](https://github.com/moonbamijam/moonbamiofficial/issues/44) [#44](https://github.com/moonbamijam/moonbamiofficial/issues/44)
+* no credentials in vercel tag deployment ([#48](https://github.com/moonbamijam/moonbamiofficial/issues/48)) ([e8482ae](https://github.com/moonbamijam/moonbamiofficial/commit/e8482aebb73d9715059ec38aa3fbd355774bacb1))
+
+
+### Features
+
+* add new about me image to about page ([#40](https://github.com/moonbamijam/moonbamiofficial/issues/40)) ([294a456](https://github.com/moonbamijam/moonbamiofficial/commit/294a4568eb3dc2d1e6508e209a35387309f6e0a7))
+* add refreshing quotes ([#36](https://github.com/moonbamijam/moonbamiofficial/issues/36)) ([1bcca5d](https://github.com/moonbamijam/moonbamiofficial/commit/1bcca5d68f502f654c57bf5aae060ba66d6fc0e0)), closes [#35](https://github.com/moonbamijam/moonbamiofficial/issues/35) [#35](https://github.com/moonbamijam/moonbamiofficial/issues/35)
+* new color animation ([#51](https://github.com/moonbamijam/moonbamiofficial/issues/51)) ([1609861](https://github.com/moonbamijam/moonbamiofficial/commit/16098616d62ba46ced049a167959ec773db632f6))
+* new landing page ui ([#43](https://github.com/moonbamijam/moonbamiofficial/issues/43)) ([6b0eda7](https://github.com/moonbamijam/moonbamiofficial/commit/6b0eda72a73b932e693bfef8133716f7cfbc28f9))
+
 # [2.6.0](https://github.com/MoonbamiOfficial/dev-portfolio/compare/v2.5.3...v2.6.0) (2024-07-04)
 
 
