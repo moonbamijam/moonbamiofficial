@@ -1,6 +1,6 @@
 {
   "git": {
-    "commitMessage": "chore: v${version}",
+    "commitMessage": "chore: release v${version}",
     "requireBranch": ["main", "chore/release"]
   },
   "github": {
