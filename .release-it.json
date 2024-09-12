@@ -1,18 +1,13 @@
 {
   "git": {
-    "commitMessage": "chore(build): v${version}",
-    "requireBranch": "chore/release"
+    "commitMessage": "chore: v${version}",
+    "requireBranch": ["main", "chore/release"]
   },
   "github": {
     "release": true,
     "web": true,
     "autoGenerate": true,
-    "releaseName": "v${version}",
-    "comments": {
-      "submit": true,
-      "issue": ":rocket: _This issue has been resolved in v${version}. See [${releaseName}](${releaseUrl}) for full details._",
-      "pr": ":rocket: _This pull request is included in v${version}. See [${releaseName}](${releaseUrl}) for full details._"
-    }
+    "releaseName": "v${version}"
   },
   "npm": {
     "publish": false
