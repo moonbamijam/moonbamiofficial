@@ -1,5 +1,13 @@
 # What's New
 
+## [2.7.1](https://github.com/moonbamijam/moonbamiofficial/compare/v2.7.0...v2.7.1) (2024-09-14)
+
+
+### Features
+
+* add dynamic landing image ([3d20419](https://github.com/moonbamijam/moonbamiofficial/commit/3d2041908ca3b7afc33edba648413a3b8cad7a38))
+* add route to landing image ([4e92ee4](https://github.com/moonbamijam/moonbamiofficial/commit/4e92ee44cf8e198ebdedb1855a575fbfff0e89a1))
+
 # [2.7.0](https://github.com/moonbamijam/moonbamiofficial/compare/v2.6.0...v2.7.0) (2024-09-12)
 
 
