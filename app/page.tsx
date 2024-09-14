@@ -4,8 +4,11 @@ import GitHubBtn from "@components/buttons/GitHubBtn";
 import Picture from "@components/common/Picture";
 import LandingSkeleton from "@components/skeletons/LandingSkeleton";
 import RandomizeQuote from "@components/RandomizeQuote";
+import { useFetch } from "@hooks/useFetch";
 
 const HomePage = async () => {
+  const { landingImage } = await useFetch("/api/landing-image");
+
   return (
     <Suspense fallback={<LandingSkeleton />}>
       <div className="container relative">
@@ -35,11 +38,14 @@ const HomePage = async () => {
             </div>
             <div className="relative flex flex-col items-center gap-4">
               <div className="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] aspect-square rounded-xl shadow-md hover:shadow-primary-dark [&>span]:hover:opacity-70 overflow-hidden">
-                <Picture
-                  src={"Suichan_yecqyb"}
-                  alt={"Hoshimachi Suisei"}
-                  isPriority={true}
-                />
+                {landingImage?.map((image: any, id: number) => (
+                  <Picture
+                    key={id}
+                    src={image.image}
+                    alt={image.alt}
+                    isPriority={true}
+                  />
+                ))}
               </div>
             </div>
           </div>
