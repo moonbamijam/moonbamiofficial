@@ -32,7 +32,7 @@ const HomePage = async () => {
               </p>
               <div className="flex gap-6">
                 <EmailBtn href="mailto:Jam Moonbami <moonbamijamofficial15@gmail.com>" />
-                <GitHubBtn href="https://github.com/MoonbamiOfficial" />
+                <GitHubBtn href="https://github.com/moonbamijam" />
               </div>
               <RandomizeQuote />
             </div>
