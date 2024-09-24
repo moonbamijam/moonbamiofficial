@@ -12,8 +12,8 @@ export default function ImageCredits({
   creditLink,
 }: ImageCreditsProps) {
   return (
-    <span className="absolute bottom-0 text-white text-sm opacity-0 p-2">
-      {creditingPhrase ? creditingPhrase : "Image by"}{" "}
+    <span className="absolute top-0 text-white text-sm opacity-0 p-2">
+      {creditingPhrase ? creditingPhrase : "Photo taken by"}{" "}
       <Link
         href={creditLink}
         target="_blank"
