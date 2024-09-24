@@ -1,5 +1,17 @@
 # What's New
 
+## [2.7.2](https://github.com/moonbamijam/moonbamiofficial/compare/v2.7.1...v2.7.2) (2024-09-24)
+
+
+### Bug Fixes
+
+* outdated github button to homepage ([0c2e395](https://github.com/moonbamijam/moonbamiofficial/commit/0c2e395f8a725306d3720f59c46fdf73baeeca69))
+
+
+### Performance Improvements
+
+* enhancement to landing page ([#52](https://github.com/moonbamijam/moonbamiofficial/issues/52)) ([4cd3be2](https://github.com/moonbamijam/moonbamiofficial/commit/4cd3be22078e24a855548d7524aaea83753ebd5e))
+
 ## [2.7.1](https://github.com/moonbamijam/moonbamiofficial/compare/v2.7.0...v2.7.1) (2024-09-14)
 
 
