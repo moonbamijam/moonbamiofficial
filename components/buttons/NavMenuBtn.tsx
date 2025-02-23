@@ -5,11 +5,11 @@ import { FaBars } from "react-icons/fa";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { NavLinks } from "@lib/navLinks";
 import Anchor from "@components/header/Anchor";
-import Button from "@components/ui/Button";
-import Dropdown from "@components/ui/Dropdown";
-import Version from "@components/ui/Version";
+import Dropdown from "@components/Dropdown";
+import Version from "@components/Version";
 import useHeader from "@hooks/useHeader";
-import LoadingSpinner from "@components/ui/LoadingSpinner";
+import LoadingSpinner from "@components/LoadingSpinner";
+import { Button } from "@components/ui/Button";
 
 export default function NavMenuBtn() {
   const { isLinkActive, isMenuActive, toggleMenu, dropdown } = useHeader();
@@ -22,14 +22,13 @@ export default function NavMenuBtn() {
     <>
       {mounted ? (
         <Button
-          buttonType="button"
           id="nav-menu-btn"
-          refName={dropdown}
+          ref={dropdown}
           onClick={toggleMenu}
-          ariaLabel="nav-menu-btn"
-          icon={isMenuActive ? <FaBarsStaggered /> : <FaBars />}
+          aria-label="nav-menu-btn"
           className={`lg:hidden fixed left-8 bottom-8 sm:left-12 sm:bottom-12 lg:left-24 lg:bottom-16 w-[50px] h-[50px] text-xl z-[100] flex justify-center items-center rounded-full bg-primary [&>svg>path]:text-on-primary shadow-md active:scale-75`}
         >
+          {isMenuActive ? <FaBarsStaggered /> : <FaBars />}
           {isMenuActive && (
             <Dropdown position="bottom-[80px] left-[4px]">
               {NavLinks.map((link) => (
@@ -57,8 +56,7 @@ export default function NavMenuBtn() {
         className={`screen-dimmer ${
           isMenuActive ? "bg-black/80 dark:bg-black/70" : "invisible"
         } lg:hidden w-full h-full fixed top-0 z-[90]`}
-      >
-      </div>
+      ></div>
     </>
   );
 }
