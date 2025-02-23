@@ -1,7 +1,6 @@
 import { Metadata } from "next";
-import StayTuned from "@components/ui/StayTuned";
+import StayTuned from "@components/StayTuned";
 import Footer from "@components/footer/Footer";
-
 
 export const metadata: Metadata = {
   title: "More",
