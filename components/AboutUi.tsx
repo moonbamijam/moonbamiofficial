@@ -1,4 +1,4 @@
-import Detail from "@components/ui/Detail";
+import Detail from "@components/Detail";
 import { AboutType } from "@lib/types";
 
 export default function AboutUi({

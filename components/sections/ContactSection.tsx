@@ -3,8 +3,8 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import Section from "@components/common/Section";
-import Heading from "@components/ui/Heading";
-import SocMed from "@components/ui/SocMed";
+import Heading from "@components/Heading";
+import SocMed from "@components/SocMed";
 
 export default function ContactSection() {
   return (

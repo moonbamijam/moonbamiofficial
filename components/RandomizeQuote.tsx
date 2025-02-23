@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Quotes } from "@lib/quotes";
-import Quote from "./ui/Quote";
+import Quote from "./Quote";
 
 export default function RandomizeQuote() {
   const [newQuote, setNewQuote] = useState({

@@ -1,6 +1,7 @@
 import { Url } from "next/dist/shared/lib/router/router";
 import { ReactNode } from "react";
 import Link from "next/link";
+import { buttonVariants } from "@components/ui/Button";
 
 type Props = {
   href: Url;
@@ -8,13 +9,13 @@ type Props = {
   icon: ReactNode;
 };
 
-export default function SocMedIcon({ href, ariaLabel, icon }: Props) {
+export default function SocMedIconBtn({ href, ariaLabel, icon }: Props) {
   return (
     <Link
       href={href}
       aria-label={ariaLabel}
       target="_blank"
-      className="p-2 border-2 border-on-primary rounded-full hover:-translate-y-2 cursor-pointer"
+      className={`${buttonVariants({ variant: "icon", size: "icon" })} !border-white hover:-translate-y-2`}
     >
       {icon}
     </Link>

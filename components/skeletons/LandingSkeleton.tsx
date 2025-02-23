@@ -1,4 +1,4 @@
-import SkeletonScreen from "@components/ui/SkeletonScreen";
+import SkeletonScreen from "@components/SkeletonScreen";
 
 export default function LandingSkeleton() {
   return (
@@ -6,11 +6,7 @@ export default function LandingSkeleton() {
       <section id="home" className="h-screen">
         <div className="w-full h-full relative px-[5vw] flex flex-col lg:flex-row justify-center xl:justify-evenly items-center gap-y-12">
           <div className="flex flex-col items-center lg:items-start gap-6">
-            <SkeletonScreen
-              id="heading"
-              width="w-[500px] "
-              height="h-[96px]"
-            />
+            <SkeletonScreen id="heading" width="w-[500px] " height="h-[96px]" />
             <SkeletonScreen
               id="description"
               width="w-[400px] lg:w-[500px]"

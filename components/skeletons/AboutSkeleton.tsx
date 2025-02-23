@@ -1,5 +1,5 @@
 import Section from "@components/common/Section";
-import SkeletonScreen from "@components/ui/SkeletonScreen";
+import SkeletonScreen from "@components/SkeletonScreen";
 
 export default function AboutSkeleton() {
   return (

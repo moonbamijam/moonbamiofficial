@@ -1,8 +1,8 @@
 import { useFetch } from "@hooks/useFetch";
 import { TechStackType } from "@lib/types";
 import Section from "@components/common/Section";
-import Heading from "@components/ui/Heading";
-import StackIcon from "@components/ui/StackIcon";
+import Heading from "@components/Heading";
+import StackIcon from "@components/StackIcon";
 
 export default async function TechStackSection() {
   const { techstacks } = await useFetch("/api/techstacks");

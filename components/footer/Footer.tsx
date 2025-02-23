@@ -1,7 +1,7 @@
 import { socialMedias } from "@lib/socialMedias";
 import WaveOpacity from "@components/curves/WaveOpacity";
-import Version from "@components/ui/Version";
-import SocMedIcon from "./SocMedIcon";
+import Version from "@components/Version";
+import SocMedIconBtn from "./SocMedIconBtn";
 import Projects from "./Projects";
 import Navigate from "./Navigate";
 import Connect from "./Connect";
@@ -29,7 +29,7 @@ export default function Footer() {
               <Version customStyles="min-w-[300px] justify-center" />
               <div className="min-w-[300px] hidden xl:flex justify-evenly gap-2">
                 {socialMedias.map((socialMedia, id) => (
-                  <SocMedIcon
+                  <SocMedIconBtn
                     key={id}
                     href={socialMedia.href}
                     ariaLabel={socialMedia.text}

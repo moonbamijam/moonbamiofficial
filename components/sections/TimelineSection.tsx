@@ -10,8 +10,8 @@ import { EventType } from "@lib/types";
 import { useFetch } from "@hooks/useFetch";
 import { sortDateByDescendingOrder } from "@utils/sortDate";
 import Section from "@components/common/Section";
-import Heading from "@components/ui/Heading";
-import Event from "@components/ui/Event";
+import Heading from "@components/Heading";
+import EventBtn from "@components/EventBtn";
 
 export default async function TimelineSection() {
   const { timelines } = await useFetch("/api/timelines");
@@ -53,7 +53,7 @@ export default async function TimelineSection() {
               break;
           }
           return (
-            <Event
+            <EventBtn
               key={event._id}
               _id={event._id}
               typeIcon={typeIcon}

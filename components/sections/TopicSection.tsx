@@ -1,8 +1,8 @@
 import { useFetch } from "@hooks/useFetch";
 import { TopicType } from "@lib/types";
 import Section from "@components/common/Section";
-import LoadingSpinner from "@components/ui/LoadingSpinner";
-import Topic from "@components/ui/Topic";
+import LoadingSpinner from "@components/LoadingSpinner";
+import Topic from "@components/Topic";
 import Grid from "@components/common/Grid";
 
 export default async function TopicSection() {

@@ -9,12 +9,12 @@ import Link from "next/link";
 import tsukiwaLogoLight from "@assets/tsukiwa-logo.png";
 import tsukiwaLogoDark from "@assets/tsukiwa-logo-dark.png";
 import ThemeSwitchBtn from "@components/buttons/ThemeSwitchBtn";
-import Dropdown from "../ui/Dropdown";
+import Dropdown from "../Dropdown";
 import Anchor from "./Anchor";
-import Version from "@components/ui/Version";
+import Version from "@components/Version";
 import useHeader from "@hooks/useHeader";
-import Button from "@components/ui/Button";
-import LoadingSpinner from "@components/ui/LoadingSpinner";
+import LoadingSpinner from "@components/LoadingSpinner";
+import { Button } from "@components/ui/Button";
 
 export default function Header() {
   const { isLinkActive, isMenuActive, scrollHeaderBg, toggleMenu, dropdown } =
@@ -65,17 +65,18 @@ export default function Header() {
         <nav className="flex items-center gap-2">
           {mounted ? (
             <Button
-              buttonType="button"
               id="menu"
-              refName={dropdown}
+              ref={dropdown}
               onClick={toggleMenu}
-              icon={isMenuActive ? <FaBarsStaggered /> : <FaBars />}
-              ariaLabel="menu"
-              className={`hidden w-[40px] h-[40px] lg:flex justify-center items-center text-xl rounded-full hover:bg-primary [&>svg>path]:hover:text-on-primary ${
+              aria-label="menu"
+              variant="toggle"
+              size="icon"
+              className={`hidden lg:flex [&>svg>path]:hover:text-on-primary ${
                 isMenuActive &&
                 "bg-primary dark:bg-primary-light [&>svg>path]:text-on-primary"
-              } active:scale-75`}
+              }`}
             >
+              {isMenuActive ? <FaBarsStaggered /> : <FaBars />}
               {isMenuActive && (
                 <Dropdown position="top-[60px]">
                   {NavLinks.map((link) => (
@@ -95,7 +96,11 @@ export default function Header() {
               )}
             </Button>
           ) : (
-            <LoadingSpinner size="40px" fontSizes="text-xl xl:text-2xl" className="hidden lg:flex" />
+            <LoadingSpinner
+              size="40px"
+              fontSizes="text-xl xl:text-2xl"
+              className="hidden lg:flex"
+            />
           )}
           <ThemeSwitchBtn />
         </nav>

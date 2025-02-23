@@ -1,7 +1,7 @@
 import { useFetch } from "@hooks/useFetch";
 import Grid from "@components/common/Grid";
 import Section from "@components/common/Section";
-import SkeletonScreen from "@components/ui/SkeletonScreen";
+import SkeletonScreen from "@components/SkeletonScreen";
 
 export default async function ProjectSkeleton() {
   const { projects } = await useFetch("/api/projects");

@@ -1,8 +1,8 @@
 import Grid from "@components/common/Grid";
 import Section from "@components/common/Section";
-import Heading from "@components/ui/Heading";
-import ProjectCard from "@components/ui/ProjectCard";
-import LoadingSpinner from "@components/ui/LoadingSpinner";
+import Heading from "@components/Heading";
+import ProjectCard from "@components/ProjectCard";
+import LoadingSpinner from "@components/LoadingSpinner";
 import { useFetch } from "@hooks/useFetch";
 import { ProjectType } from "@lib/types";
 
