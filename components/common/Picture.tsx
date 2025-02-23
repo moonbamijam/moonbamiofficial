@@ -1,10 +1,9 @@
 "use client";
 
-import { CldImage } from "next-cloudinary";
-import { Url } from "next/dist/shared/lib/router/router";
+import Image from "@node_modules/next/image";
 
 type Props = {
-  src: string | Url;
+  src: string;
   alt: string;
   isPriority?: boolean;
   className?: string;
@@ -12,9 +11,9 @@ type Props = {
 
 export default function Picture({ src, alt, isPriority, className }: Props) {
   return (
-    <CldImage
+    <Image
       priority={isPriority}
-      src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/v1710343815/portfolio/${src}`}
+      src={src}
       fill
       sizes="(min-width: 475px) 100vw, (min-width: 768px) 1080px, (min-width: 1024px) 1920px"
       alt={`${alt}`}

@@ -1,10 +1,8 @@
 import { Suspense } from "react";
-import EmailBtn from "@components/buttons/EmailBtn";
-import GitHubBtn from "@components/buttons/GitHubBtn";
+import EmailBtn from "@layouts/EmailBtn";
+import GitHubBtn from "@layouts/GitHubBtn";
 import Picture from "@components/common/Picture";
 import LandingSkeleton from "@components/skeletons/LandingSkeleton";
-import RandomizeQuote from "@components/RandomizeQuote";
-import ImageCredits from "@components/ui/ImageCredits";
 
 const HomePage = async () => {
   return (
@@ -35,13 +33,9 @@ const HomePage = async () => {
             <div className="relative flex flex-col items-center gap-4">
               <div className="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] aspect-square rounded-xl shadow-md hover:shadow-primary-dark [&>span]:hover:opacity-70 overflow-hidden">
                 <Picture
-                  src={"mnbm_saktxa"}
-                  alt={"Jam Moonbami"}
+                  src="https://avatars.githubusercontent.com/u/141120384?v=4"
+                  alt="Jam Moonbami"
                   isPriority={true}
-                />
-                <ImageCredits
-                  creditsTo="Maki"
-                  creditLink="https://www.instagram.com/prettyboimaks/"
                 />
               </div>
             </div>
