@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 import { useFetch } from "@hooks/useFetch";
 import Section from "@components/common/Section";
-import GitHubBtn from "@components/buttons/GitHubBtn";
+import GitHubBtn from "@layouts/GitHubBtn";
 import VisitBtn from "@components/buttons/VisitBtn";
-import BackBtn from "@components/buttons/BackBtn";
-import Picture from "@components/common/Picture";
-import Title from "@components/ui/Title";
-import Description from "@components/ui/Description";
+import BackBtn from "@layouts/BackBtn";
+import Title from "@components/Title";
+import Description from "@components/Description";
 import Footer from "@components/footer/Footer";
+import Cldpicture from "@components/common/Cldpicture";
 
 type Props = { params: { slug: string } };
 
@@ -55,7 +55,7 @@ export default async function ProjectPageById({
       <Section id={"project-page-by-id"}>
         <div className="w-full flex flex-col items-center">
           <div className="relative w-full max-w-[1000px] h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] shadow-md hover:shadow-primary-dark mb-8 rounded-xl overflow-hidden">
-            <Picture src={projects.src} alt={`${projects.alt}`} />
+            <Cldpicture src={projects.src} alt={`${projects.alt}`} />
           </div>
           <div className="w-full max-w-[1000px] flex flex-col items-center md:flex-row md:justify-evenly">
             <div className="w-full max-w-[500px] mb-8">
