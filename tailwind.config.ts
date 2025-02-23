@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import colors, { transparent } from "tailwindcss/colors";
+import colors from "tailwindcss/colors";
 
 const config: Config = {
   darkMode: "class",
@@ -7,16 +7,16 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./layouts/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     colors: {
-      black: colors.black,
       white: colors.white,
-      gray: colors.gray,
+      black: colors.black,
       transparent: colors.transparent,
-      primary: "#007ACC",
-      "primary-dark": "#065AAA",
-      "primary-light": "#009FF5",
+      primary: "#0487E2",
+      "primary-dark": "#0074CF",
+      "primary-light": "#0793F0",
       secondary: "#CC5200",
       "secondary-light": "#DD7804",
       background: "#FAFAFA",
@@ -32,7 +32,7 @@ const config: Config = {
       "on-surface": colors.black,
       "on-error": colors.white,
       // foreign colors - colors that are not part of the project
-      "color-github": "#2dba4e",
+      github: "#2DBA4E",
     },
     extend: {
       container: {
