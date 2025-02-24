@@ -2,11 +2,11 @@ import type { Metadata, Viewport } from "next";
 import { Noto_Sans } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
-import Header from "@components/header/Header";
-import ThemesProvider from "@providers/themesProvider";
-import SmallGridLines from "@components/bg/SmallGridLines";
-import NavMenuBtn from "@components/buttons/NavMenuBtn";
-import "@styles/globals.css";
+import Header from "@frontend/components/header/Header";
+import ThemesProvider from "@frontend/providers/themesProvider";
+import SmallGridLines from "@frontend/components/bg/SmallGridLines";
+import NavMenuBtn from "@frontend/components/buttons/NavMenuBtn";
+import "@frontend/styles/globals.css";
 
 const inter = Noto_Sans({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],

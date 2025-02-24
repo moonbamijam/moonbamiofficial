@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import Footer from "@components/footer/Footer";
-import TimelineSection from "@components/sections/TimelineSection";
-import BackToTop from "@components/buttons/BackToTop";
+import Footer from "@frontend/components/footer/Footer";
+import TimelineSection from "@frontend/components/sections/TimelineSection";
+import BackToTop from "@frontend/components/buttons/BackToTop";
 
 export const metadata: Metadata = {
   title: "Timeline",

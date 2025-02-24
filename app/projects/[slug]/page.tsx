@@ -1,13 +1,13 @@
 import { Metadata } from "next";
-import { useFetch } from "@hooks/useFetch";
-import Section from "@components/common/Section";
-import GitHubBtn from "@layouts/GitHubBtn";
-import VisitBtn from "@components/buttons/VisitBtn";
-import BackBtn from "@layouts/BackBtn";
-import Title from "@components/Title";
-import Description from "@components/Description";
-import Footer from "@components/footer/Footer";
-import Cldpicture from "@components/common/Cldpicture";
+import { useFetch } from "@backend/hooks/useFetch";
+import Section from "@frontend/components/common/Section";
+import GitHubBtn from "@frontend/layouts/GitHubBtn";
+import VisitBtn from "@frontend/components/buttons/VisitBtn";
+import BackBtn from "@frontend/layouts/BackBtn";
+import Title from "@frontend/components/Title";
+import Description from "@frontend/components/Description";
+import Footer from "@frontend/components/footer/Footer";
+import Cldpicture from "@frontend/components/common/Cldpicture";
 
 type Props = { params: { slug: string } };
 

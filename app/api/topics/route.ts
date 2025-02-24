@@ -1,5 +1,5 @@
-import connectMongoDB from "@utils/mongodb";
-import Topic from "@models/topic";
+import connectMongoDB from "@backend/db/mongodb";
+import Topic from "@backend/models/topic";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request, response: Response) {

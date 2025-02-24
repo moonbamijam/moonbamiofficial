@@ -1,5 +1,5 @@
-import connectMongoDB from "@utils/mongodb";
-import TechStack from "@models/techstack";
+import connectMongoDB from "@backend/db/mongodb";
+import TechStack from "@backend/models/techstack";
 import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 import { NextResponse } from "next/server";
 

@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
-import connectMongoDB from "@utils/mongodb";
-import Timeline from "@models/timeline";
+import connectMongoDB from "@backend/db/mongodb";
+import Timeline from "@backend/models/timeline";
 
 export async function PUT(request: Request, { params }: Params) {
   const { id } = params;

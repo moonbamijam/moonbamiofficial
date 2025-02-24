@@ -1,5 +1,5 @@
-import connectMongoDB from "@utils/mongodb";
-import Project from "@models/project";
+import connectMongoDB from "@backend/db/mongodb";
+import Project from "@backend/models/project";
 import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 import { NextResponse } from "next/server";
 
