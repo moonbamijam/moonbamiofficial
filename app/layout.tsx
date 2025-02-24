@@ -2,10 +2,10 @@ import type { Metadata, Viewport } from "next";
 import { Noto_Sans } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
-import Header from "@frontend/components/header/Header";
+import Header from "@frontend/layouts/header/Header";
 import ThemesProvider from "@frontend/providers/themesProvider";
 import SmallGridLines from "@frontend/components/bg/SmallGridLines";
-import NavMenuBtn from "@frontend/components/buttons/NavMenuBtn";
+import NavMenuBtn from "@frontend/layouts/buttons/NavMenuBtn";
 import "@frontend/styles/globals.css";
 
 const inter = Noto_Sans({

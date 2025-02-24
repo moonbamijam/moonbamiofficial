@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ProjectType } from "@backend/ts/shared-types/types";
-import GitHubBtn from "@frontend/layouts/GitHubBtn";
-import VisitBtn from "@frontend/components/buttons/VisitBtn";
+import GitHubBtn from "@frontend/layouts/buttons/GitHubBtn";
+import VisitBtn from "@frontend/layouts/buttons/VisitBtn";
 import Cldpicture from "./common/Cldpicture";
 
 export default function ProjectCard({

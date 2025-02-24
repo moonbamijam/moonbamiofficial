@@ -1,4 +1,4 @@
-import SkeletonScreen from "@frontend/components/SkeletonScreen";
+import SkeletonScreen from "@frontend/components/ui/SkeletonScreen";
 
 export default function LandingSkeleton() {
   return (

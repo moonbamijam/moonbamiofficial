@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { NavLinks } from "@frontend/ts/constants/navLinks";
-import Anchor from "@frontend/components/header/Anchor";
+import Anchor from "@frontend/layouts/header/Anchor";
 import Dropdown from "@frontend/components/Dropdown";
 import Version from "@frontend/components/Version";
 import useHeader from "@frontend/hooks/useHeader";

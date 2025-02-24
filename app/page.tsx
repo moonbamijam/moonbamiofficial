@@ -1,8 +1,8 @@
 import { Suspense } from "react";
-import EmailBtn from "@frontend/layouts/EmailBtn";
-import GitHubBtn from "@frontend/layouts/GitHubBtn";
+import EmailBtn from "@frontend/layouts/buttons/EmailBtn";
+import GitHubBtn from "@frontend/layouts/buttons/GitHubBtn";
 import Picture from "@frontend/components/common/Picture";
-import LandingSkeleton from "@frontend/components/skeletons/LandingSkeleton";
+import LandingSkeleton from "@frontend/layouts/skeletons/LandingSkeleton";
 
 const HomePage = async () => {
   return (

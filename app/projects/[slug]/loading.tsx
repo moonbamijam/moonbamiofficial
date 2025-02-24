@@ -1,4 +1,4 @@
-import DynamicProjectSegmentSkeleton from "@frontend/components/skeletons/DynamicProjectSegmentSkeleton";
+import DynamicProjectSegmentSkeleton from "@frontend/layouts/skeletons/DynamicProjectSegmentSkeleton";
 
 export default function Loading() {
   return <DynamicProjectSegmentSkeleton />;

@@ -11,7 +11,7 @@ import { useFetch } from "@backend/hooks/useFetch";
 import { sortDateByDescendingOrder } from "@frontend/ts/utils/sortDate";
 import Section from "@frontend/components/common/Section";
 import Heading from "@frontend/components/Heading";
-import EventBtn from "@frontend/components/EventBtn";
+import EventBtn from "@frontend/layouts/buttons/EventBtn";
 
 export default async function TimelineSection() {
   const { timelines } = await useFetch("/api/timelines");

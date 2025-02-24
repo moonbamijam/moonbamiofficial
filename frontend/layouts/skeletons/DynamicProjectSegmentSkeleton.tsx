@@ -1,5 +1,5 @@
 import Section from "@frontend/components/common/Section";
-import SkeletonScreen from "@frontend/components/SkeletonScreen";
+import SkeletonScreen from "@frontend/components/ui/SkeletonScreen";
 
 export default async function DynamicProjectSegmentSkeleton() {
   return (
