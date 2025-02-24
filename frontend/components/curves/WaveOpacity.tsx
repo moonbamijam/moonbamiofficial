@@ -1,4 +1,4 @@
-import "@styles/wave-opacity.css";
+import "@frontend/styles/wave-opacity.css";
 
 export default function WaveOpacity() {
   return (
