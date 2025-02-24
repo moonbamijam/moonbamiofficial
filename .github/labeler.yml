@@ -40,7 +40,7 @@ documentation:
 - changed-files:
   - any-glob-to-any-file: '**/*.md'
 
-packages:
+dependencies:
 - head-branch: deps
 - changed-files:
   - any-glob-to-any-file: 'pnpm-lock.yaml'
