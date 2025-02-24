@@ -8,24 +8,22 @@ release:
 - head-branch: release
 
 chore:
-- head-branch: chore
+- head-branch: 
+    - chore
+    - refactor
 
 ui/ux:
 - changed-files:
   - any-glob-to-any-file:
     - app/**
-    - components/**
-    - styles/**
+    - frontend/**
     - assets/**
     - public/**
-    - static/**
-    - providers/**
 
 server: 
 - changed-files:
   - any-glob-to-any-file: 
-    - models/**
-    - utils/mongodb.ts
+    - backend/**
 
 devops:
 - head-branch: release
