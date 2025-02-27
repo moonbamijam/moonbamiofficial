@@ -6,26 +6,28 @@ import LoadingSpinner from "@frontend/components/LoadingSpinner";
 import { useFetch } from "@backend/hooks/useFetch";
 import { ProjectType } from "@backend/ts/shared-types/types";
 
+interface ProjectProps extends ProjectType {}
+
+const renderProjects = (projects: ProjectProps[]) => {
+  if (projects) {
+    return projects.map((project: ProjectType) => (
+      <ProjectCard
+        key={project._id}
+        href={`/projects/${project.slug}`}
+        ariaLabel={project.title}
+        src={project.src}
+        alt={project.alt}
+        title={project.title}
+        desc={project.desc}
+        website={project.website}
+        github={project.github}
+      />
+    ));
+  } else return <LoadingSpinner size="100px" fontSize="64px" />;
+};
+
 export default async function ProjectSection() {
   const { projects } = await useFetch("/api/projects");
-
-  const renderProjects = () => {
-    if (projects) {
-      return projects.map((project: ProjectType) => (
-        <ProjectCard
-          key={project._id}
-          href={`/projects/${project.slug}`}
-          ariaLabel={project.title}
-          src={project.src}
-          alt={project.alt}
-          title={project.title}
-          desc={project.desc}
-          website={project.website}
-          github={project.github}
-        />
-      ));
-    } else return <LoadingSpinner size="100px" fontSize="64px" />;
-  };
 
   return (
     <Section id={"project"}>
@@ -36,7 +38,7 @@ export default async function ProjectSection() {
         }
       />
       <Grid gridStyles="lg:grid-cols-2 premium:grid-cols-3 gap-[50px]">
-        {renderProjects()}
+        {renderProjects(projects)}
       </Grid>
     </Section>
   );

@@ -4,27 +4,30 @@ import Section from "@frontend/components/common/Section";
 import Heading from "@frontend/components/Heading";
 import StackIcon from "@frontend/components/StackIcon";
 
+interface TechStackProps extends TechStackType {}
+
+const renderTechStacks = (techstacks: TechStackProps[]) => {
+  if (techstacks) {
+    const sortedTechStack = techstacks.sort((a: any, b: any) => {
+      if (a.ariaLabel.toLowerCase() < b.ariaLabel.toLowerCase()) return -1;
+      else if (a.ariaLabel.toLowerCase() > b.ariaLabel.toLowerCase()) return 1;
+      return 0;
+    });
+
+    return sortedTechStack.map((techstack: TechStackType) => (
+      <StackIcon
+        key={techstack._id}
+        ariaLabel={techstack.ariaLabel}
+        href={techstack.href}
+        src={techstack.src}
+        alt={techstack.alt}
+      />
+    ));
+  }
+};
+
 export default async function TechStackSection() {
   const { techstacks } = await useFetch("/api/techstacks");
-
-  const alphabeticalOrderedTechStacks = techstacks.sort((a: any, b: any) => {
-    if (a.ariaLabel.toLowerCase() < b.ariaLabel.toLowerCase()) return -1;
-    else if (a.ariaLabel.toLowerCase() > b.ariaLabel.toLowerCase()) return 1;
-    return 0;
-  });
-
-  const renderTechStacks = () => {
-    if (techstacks)
-      return alphabeticalOrderedTechStacks.map((techstack: TechStackType) => (
-        <StackIcon
-          key={techstack._id}
-          ariaLabel={techstack.ariaLabel}
-          href={techstack.href}
-          src={techstack.src}
-          alt={techstack.alt}
-        />
-      ));
-  };
 
   return (
     <Section id={"techstack"}>
@@ -35,7 +38,7 @@ export default async function TechStackSection() {
         }
       />
       <div className="stacks inline-grid grid-cols-5 sm:grid-cols-6 lg:grid-cols-7">
-        {renderTechStacks()}
+        {renderTechStacks(techstacks)}
       </div>
     </Section>
   );

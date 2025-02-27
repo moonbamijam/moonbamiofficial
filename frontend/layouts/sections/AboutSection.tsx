@@ -7,28 +7,30 @@ import AboutUi from "@frontend/components/AboutUi";
 import LoadingSpinner from "@frontend/components/LoadingSpinner";
 import ImageCredits from "@frontend/components/ImageCredits";
 
+interface AboutProps extends AboutType {}
+
+const renderAbout = (abouts: AboutProps[]) => {
+  if (abouts) {
+    return abouts.map((about: AboutType) => (
+      <AboutUi
+        key={about._id}
+        displayName={about.displayName}
+        desc={about.desc}
+        fullName={about.fullName}
+        nickname={about.nickname}
+        age={about.age}
+        birthday={about.birthday}
+        sex={about.sex}
+        nationality={about.nationality}
+        status={about.status}
+        languages={about.languages}
+      />
+    ));
+  } else return <LoadingSpinner size="100px" fontSize="64px" />;
+};
+
 export default async function AboutSection() {
   const { abouts } = await useFetch("/api/abouts");
-
-  const renderAbout = () => {
-    if (abouts) {
-      return abouts.map((about: AboutType) => (
-        <AboutUi
-          key={about._id}
-          displayName={about.displayName}
-          desc={about.desc}
-          fullName={about.fullName}
-          nickname={about.nickname}
-          age={about.age}
-          birthday={about.birthday}
-          sex={about.sex}
-          nationality={about.nationality}
-          status={about.status}
-          languages={about.languages}
-        />
-      ));
-    } else return <LoadingSpinner size="100px" fontSize="64px" />;
-  };
 
   return (
     <Section id={"about"}>
@@ -49,7 +51,7 @@ export default async function AboutSection() {
           />
         </div>
         <div className="about-me flex flex-col gap-[30px] ">
-          {renderAbout()}
+          {renderAbout(abouts)}
         </div>
       </div>
     </Section>
