@@ -49,3 +49,12 @@ export type EventType = {
   note: string;
   message: string;
 };
+
+export type TimelineType = {
+  _id: string | undefined;
+  date: string;
+  type: string | undefined;
+  typeIcon: ReactNode;
+  note: string;
+  message: string;
+};
