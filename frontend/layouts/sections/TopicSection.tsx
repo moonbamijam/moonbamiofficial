@@ -1,13 +1,11 @@
 import { useFetch } from "@backend/hooks/useFetch";
-import { TopicType } from "@backend/ts/shared-types/types";
+import { TopicType } from "@shared/types";
 import Section from "@frontend/components/common/Section";
 import LoadingSpinner from "@frontend/components/LoadingSpinner";
 import Topic from "@frontend/components/Topic";
 import Grid from "@frontend/components/common/Grid";
 
-interface TopicsProps extends TopicType {}
-
-const renderTopics = (topics: TopicsProps[]) => {
+const renderTopics = (topics: TopicType[]) => {
   if (topics) {
     return topics.map((topic: TopicType) => (
       <Topic

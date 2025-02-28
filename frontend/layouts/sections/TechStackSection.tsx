@@ -1,12 +1,10 @@
 import { useFetch } from "@backend/hooks/useFetch";
-import { TechStackType } from "@backend/ts/shared-types/types";
+import { TechStackType } from "@shared/types";
 import Section from "@frontend/components/common/Section";
 import Heading from "@frontend/components/Heading";
 import StackIcon from "@frontend/components/StackIcon";
 
-interface TechStackProps extends TechStackType {}
-
-const renderTechStacks = (techstacks: TechStackProps[]) => {
+const renderTechStacks = (techstacks: TechStackType[]) => {
   if (techstacks) {
     const sortedTechStack = techstacks.sort((a: any, b: any) => {
       if (a.ariaLabel.toLowerCase() < b.ariaLabel.toLowerCase()) return -1;

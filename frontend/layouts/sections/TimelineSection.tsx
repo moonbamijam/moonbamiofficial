@@ -6,24 +6,14 @@ import { FaGift } from "react-icons/fa6";
 import { FaGamepad } from "react-icons/fa6";
 import { FaCode } from "react-icons/fa6";
 import { FaMoon } from "react-icons/fa6";
-import { EventType } from "@backend/ts/shared-types/types";
+import { EventType, TimelineType } from "@shared/types";
 import { useFetch } from "@backend/hooks/useFetch";
 import { sortDateByDescendingOrder } from "@frontend/ts/utils/sortDate";
 import Section from "@frontend/components/common/Section";
 import Heading from "@frontend/components/Heading";
 import EventBtn from "@frontend/layouts/buttons/EventBtn";
-import { ReactNode } from "@node_modules/@types/react";
 
-type TimelineProps = {
-  _id: string | undefined;
-  date: string;
-  type: string | undefined;
-  typeIcon: ReactNode;
-  note: string;
-  message: string;
-};
-
-const renderTimeline = (timelines: TimelineProps[]) => {
+const renderTimeline = (timelines: TimelineType[]) => {
   let typeIcon;
 
   if (timelines) {

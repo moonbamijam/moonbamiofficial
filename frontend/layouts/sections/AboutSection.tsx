@@ -1,5 +1,5 @@
 import { useFetch } from "@backend/hooks/useFetch";
-import { AboutType } from "@backend/ts/shared-types/types";
+import { AboutType } from "@shared/types";
 import Picture from "@frontend/components/common/Picture";
 import Section from "@frontend/components/common/Section";
 import Heading from "@frontend/components/Heading";
@@ -7,9 +7,7 @@ import AboutUi from "@frontend/components/AboutUi";
 import LoadingSpinner from "@frontend/components/LoadingSpinner";
 import ImageCredits from "@frontend/components/ImageCredits";
 
-interface AboutProps extends AboutType {}
-
-const renderAbout = (abouts: AboutProps[]) => {
+const renderAbout = (abouts: AboutType[]) => {
   if (abouts) {
     return abouts.map((about: AboutType) => (
       <AboutUi

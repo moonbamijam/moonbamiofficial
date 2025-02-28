@@ -4,11 +4,9 @@ import Heading from "@frontend/components/Heading";
 import ProjectCard from "@frontend/components/ProjectCard";
 import LoadingSpinner from "@frontend/components/LoadingSpinner";
 import { useFetch } from "@backend/hooks/useFetch";
-import { ProjectType } from "@backend/ts/shared-types/types";
+import { ProjectType } from "@shared/types";
 
-interface ProjectProps extends ProjectType {}
-
-const renderProjects = (projects: ProjectProps[]) => {
+const renderProjects = (projects: ProjectType[]) => {
   if (projects) {
     return projects.map((project: ProjectType) => (
       <ProjectCard
