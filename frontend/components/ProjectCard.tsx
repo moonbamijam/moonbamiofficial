@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ProjectType } from "@backend/ts/shared-types/types";
+import { ProjectType } from "@shared/types";
 import GitHubBtn from "@frontend/layouts/buttons/GitHubBtn";
 import VisitBtn from "@frontend/layouts/buttons/VisitBtn";
 import Cldpicture from "./common/Cldpicture";

@@ -1,4 +1,4 @@
-import { EventType } from "@backend/ts/shared-types/types";
+import { EventType } from "@shared/types";
 
 export const sortDateByAscendingOrder = (a: EventType, b: EventType) => {
   return Date.parse(a.date) - Date.parse(b.date);

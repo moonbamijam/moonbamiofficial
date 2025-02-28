@@ -1,5 +1,5 @@
 import Detail from "@frontend/components/Detail";
-import { AboutType } from "@backend/ts/shared-types/types";
+import { AboutType } from "@shared/types";
 
 export default function AboutUi({
   displayName,

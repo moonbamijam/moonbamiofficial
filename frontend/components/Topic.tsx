@@ -1,4 +1,4 @@
-import { TopicType } from "@backend/ts/shared-types/types";
+import { TopicType } from "@shared/types";
 
 export default function Topic({ title, desc }: TopicType) {
   return (

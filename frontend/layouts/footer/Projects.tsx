@@ -1,5 +1,5 @@
 import { useFetch } from "@backend/hooks/useFetch";
-import { ProjectType } from "@backend/ts/shared-types/types";
+import { ProjectType } from "@shared/types";
 import Anchor from "./Anchor";
 
 type ProjectsProps = {

@@ -1,4 +1,4 @@
-import { EventType } from "@backend/ts/shared-types/types";
+import { EventType } from "@shared/types";
 import { Button } from "../../components/ui/Button";
 
 export default function EventBtn({
