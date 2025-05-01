@@ -11,12 +11,15 @@ const config: Config = {
     colors: {
       white: colors.white,
       black: colors.black,
+      slate: colors.slate,
+      gray: colors.gray,
       transparent: colors.transparent,
-      primary: "#0487E2",
-      "primary-dark": "#0074CF",
-      "primary-light": "#0793F0",
-      secondary: "#CC5200",
-      "secondary-light": "#DD7804",
+      primary: "#007ACC",
+      "primary-dark": "#065aaa",
+      "primary-light": "#009ff5",
+      secondary: "#d66901",
+      "secondary-dark": "#cc5200",
+      "secondary-light": "#e28707",
       background: "#FAFAFA",
       "dark-background": "#121212",
       surface: "#FDFCFA",
@@ -29,8 +32,8 @@ const config: Config = {
       "on-background": colors.black,
       "on-surface": colors.black,
       "on-error": colors.white,
-      // foreign colors - colors that are not part of the project
-      github: "#2DBA4E",
+      github: "#2dba4e",
+      "github-variant": "#23ab44",
     },
     extend: {
       container: {
@@ -42,6 +45,7 @@ const config: Config = {
       },
       animation: {
         rgb: "moonbami 15s linear infinite",
+        blob: "reshapeblob 8s ease-in-out infinite, rotateblob 5s ease-in-out infinite, moveblob 180s linear infinite",
       },
       boxShadow: {
         gradient: "0px 0px 100px 100px rgba(3, 0, 28, 0.3)",
