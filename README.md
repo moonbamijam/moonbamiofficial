@@ -1,6 +1,3 @@
-![MasterHead](https://github.com/MoonbamiOfficial/dev-portfolio/assets/141120384/058639c3-20cc-4030-99d5-f64d90f37526)
-# Hi 👋, I am Moonbami.
-Pursuing a career for being a developer. Still a novice, but making progress on a daily basis.
-
-## About
-This is my own website that showcases my current skills and journey as I dive into this vast world of programming.
+<h2>Hi there<img src="https://media.tenor.com/SNL9_xhZl9oAAAAi/waving-hand-joypixels.gif" width="50" height="50" /></h2>
+<p>I am Jam Moonbami, pursuing a career of being a Software Engineer that specializes full-stack web and game development. I have plenty experience in front-end area by building web apps with JavaScript and TypeScript. Currently, I am learning back-end area in a gradual phase to broaden my knowledge in web development using Node and Python. As for game development, I am casually learning GDScript with Godot and also Python with Ren'Py for Visual Novels.</p>
+<div align="center">
