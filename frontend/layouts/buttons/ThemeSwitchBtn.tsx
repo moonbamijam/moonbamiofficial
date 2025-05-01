@@ -9,9 +9,14 @@ import { Button } from "@frontend/components/ui/Button";
 type Props = {
   onClick?: MouseEventHandler;
   icon?: ReactNode;
+  isMenuActive?: boolean;
 };
 
-export default function ThemeSwitchBtn() {
+export default function ThemeSwitchBtn({
+  isMenuActive,
+}: {
+  isMenuActive: boolean;
+}) {
   const [mounted, setMounted] = useState(false);
   const { setTheme, resolvedTheme } = useTheme();
 
@@ -21,20 +26,32 @@ export default function ThemeSwitchBtn() {
     return <LoadingSpinner size="40px" fontSizes="text-xl xl:text-2xl" />;
 
   if (resolvedTheme === "dark") {
-    return <Btn onClick={() => setTheme("light")} icon={<FiSun />} />;
+    return (
+      <Btn
+        onClick={() => setTheme("light")}
+        icon={<FiSun />}
+        isMenuActive={isMenuActive}
+      />
+    );
   } else if (resolvedTheme === "light") {
-    return <Btn onClick={() => setTheme("dark")} icon={<FiMoon />} />;
+    return (
+      <Btn
+        onClick={() => setTheme("dark")}
+        icon={<FiMoon />}
+        isMenuActive={isMenuActive}
+      />
+    );
   }
 }
 
-const Btn = ({ onClick, icon }: Props) => {
+const Btn = ({ onClick, icon, isMenuActive }: Props) => {
   return (
     <Button
       aria-label="theme-switch"
       onClick={onClick}
       variant="toggle"
       size="icon"
-      className="[&>svg>path]:hover:text-on-primary [&>svg>circle]:hover:text-on-primary [&>svg>line]:hover:text-on-primary "
+      className={`${isMenuActive ? "[&>svg>path]:text-white [&>svg>circle]:text-white [&>svg>line]:text-white [&>svg>path]:lg:text-black [&>svg>circle]:lg:text-black [&>svg>line]:lg:text-black [&>svg>path]:hover:text-white [&>svg>circle]:hover:text-white [&>svg>line]:hover:text-white" : "[&>svg>path]:hover:text-white [&>svg>circle]:hover:text-white [&>svg>line]:hover:text-white"}`}
     >
       {icon}
     </Button>
