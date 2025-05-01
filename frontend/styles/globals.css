@@ -23,6 +23,10 @@ body {
 }
 
 /* UTILITIES */
+.container {
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
 .text-format {
   @apply px-2;
 }
@@ -33,7 +37,7 @@ body {
   @apply px-2 line-clamp-2;
 }
 .active {
-  @apply bg-primary dark:bg-primary-light text-on-primary;
+  @apply bg-primary hover:bg-primary-dark text-on-primary;
 }
 .button-format {
   @apply text-center w-[150px] h-[50px] py-[15px] rounded-lg;
@@ -43,7 +47,4 @@ body {
 }
 .hide {
   @apply opacity-0 invisible;
-}
-.scrolled-header-bg {
-  @apply bg-surface dark:bg-dm-surface-dark shadow-md dark:shadow-transparent;
 }
