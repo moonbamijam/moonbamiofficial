@@ -9,15 +9,22 @@ type Props = AnchorHTMLAttributes<HTMLAnchorElement> & {
   href: Url;
   ariaLabel: string;
   name: string;
-  active: string;
+  isLinkActive: (path: string | undefined) => boolean;
+  path?: string;
 };
 
-export default function Anchor({ href, ariaLabel, name, active }: Props) {
+export default function Anchor({
+  href,
+  ariaLabel,
+  name,
+  isLinkActive,
+  path,
+}: Props) {
   return (
     <Link
       href={href}
       aria-label={ariaLabel}
-      className={`${buttonVariants({ variant: "nav", size: "auto" })} ${active}`}
+      className={`${buttonVariants({ variant: "nav", size: "auto" })} ${isLinkActive(path) ? "active" : "hover:text-primary dark:hover:text-secondary"}`}
     >
       {name}
     </Link>
