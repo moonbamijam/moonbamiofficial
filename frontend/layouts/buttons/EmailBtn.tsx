@@ -7,7 +7,7 @@ export default function EmailBtn({ href }: { href: string }) {
     <Link
       href={href}
       target="_blank"
-      className={`${buttonVariants({ variant: "ghost" })} [&>svg>path]:hover:text-white hover:text-white`}
+      className={`${buttonVariants({ variant: "ghost" })} [&>svg>path]:hover:text-white hover:text-white [&>svg>path]:dark:hover:text-black`}
     >
       <SiGmail />
       email
