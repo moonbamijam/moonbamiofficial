@@ -8,7 +8,13 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 
-export const socialMedias = [
+export interface socialMediaProps {
+  href: string;
+  text: string;
+  icon: JSX.Element;
+}
+
+export const socialMedias: socialMediaProps[] = [
   {
     href: "https://anilist.co/user/Moonbami/",
     text: "AniList",
@@ -25,12 +31,12 @@ export const socialMedias = [
     icon: <FaInstagram />,
   },
   {
-    href: "https://github.com/MoonbamiOfficial",
+    href: "https://github.com/moonbamijam",
     text: "GitHub",
     icon: <FaGithub />,
   },
   {
-    href: "https://twitter.com/MoonbamiOffcl",
+    href: "https://twitter.com/moonbamijam",
     text: "Twitter X",
     icon: <FaXTwitter />,
   },
