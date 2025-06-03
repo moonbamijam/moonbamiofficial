@@ -12,7 +12,7 @@ const buttonVariants = cva("flex justify-center items-center transform", {
       ghost:
         "gap-2 rounded-lg bg-[#EBEBEB] dark:bg-dm-surface-light hover:bg-primary dark:hover:bg-primary dark:hover:bg-secondary dark:hover:text-black capitalize font-semibold",
       toggle:
-        "rounded-full border-transparent hover:border-primary hover:bg-primary text-xl",
+        "rounded-full border-transparent hover:bg-primary dark:hover:bg-secondary text-xl",
       icon: "rounded-full text-xl",
       nav: "capitalize rounded-lg font-semibold px-4 xl:px-6 py-2",
     },
