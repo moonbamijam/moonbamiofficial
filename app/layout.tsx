@@ -4,8 +4,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import Header from "@frontend/layouts/header/Header";
 import ThemesProvider from "@frontend/providers/themesProvider";
-import "@frontend/styles/globals.css";
 import Blob from "@frontend/components/bg/Blob";
+import "@frontend/styles/globals.css";
 
 const inter = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "Moonbami | %s",
   },
   description:
-    "Pursuing a career for being a developer. Still a novice, but making progress on a daily basis.",
+    "Building things with love. I am Moonbami, pursuing a career of being a software engineer.",
   manifest: "/manifest.json",
   keywords: [
     "moonbami",
