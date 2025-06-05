@@ -17,8 +17,8 @@ export default function Footer() {
         ))}
       </div>
       <p className="text-center md:text-left">
-        Copyright &#169;{year.getFullYear().toString()} Moonbami. All rights
-        reserved.
+        Copyright <span className="text-xs align-text-top">&#169; </span>{" "}
+        {year.getFullYear().toString()} Moonbami. All rights reserved.
       </p>
     </section>
   );
