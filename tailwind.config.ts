@@ -46,7 +46,10 @@ const config: Config = {
         premium: "1920px",
       },
       animation: {
-        rgb: "moonbami 15s linear infinite",
+        "rgb-text": "rgb-text 10s ease infinite",
+        "rgb-text-dark": "rgb-text-dark 10s ease infinite",
+        "rgb-bg": "rgb-bg 8s ease infinite",
+        "rgb-bg-dark": "rgb-bg-dark 8s ease infinite",
         blob: "reshapeblob 8s ease-in-out infinite, rotateblob 5s ease-in-out infinite, moveblob 180s linear infinite",
       },
       boxShadow: {

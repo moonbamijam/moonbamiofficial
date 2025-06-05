@@ -1,50 +1,128 @@
-@keyframes moonbami {
+@keyframes rgb-text {
   0% {
+    background-position: 0% 50%;
     background-color: #007acc;
     background-clip: text;
     color: transparent;
   }
 
-  14% {
-    background-color: #ff2e97;
+  25% {
+    background-position: 50% 50%;
+    background-color: #ff0000;
     background-clip: text;
     color: transparent;
   }
 
-  28% {
-    background-color: #ed6f15;
+  50% {
+    background-position: 100% 50%;
+    background-color: #4caf50;
     background-clip: text;
     color: transparent;
   }
 
-  42% {
-    background-color: #ffca1b;
-    background-clip: text;
-    color: transparent;
-  }
-
-  56% {
-    background-color: #c60000;
-    background-clip: text;
-    color: transparent;
-  }
-
-  70% {
-    background-color: #32ff9d;
-    background-clip: text;
-    color: transparent;
-  }
-
-  84% {
-    background-color: #4b129c;
+  75% {
+    background-position: 50% 0%;
+    background-color: #ffd700;
     background-clip: text;
     color: transparent;
   }
 
   100% {
+    background-position: 0% 50%;
     background-color: #007acc;
     background-clip: text;
     color: transparent;
+  }
+}
+
+@keyframes rgb-text-dark {
+  0% {
+    background-position: 0% 50%;
+    background-color: #55defe;
+    background-clip: text;
+    color: transparent;
+  }
+
+  25% {
+    background-position: 50% 50%;
+    background-color: #ff0000;
+    background-clip: text;
+    color: transparent;
+  }
+
+  50% {
+    background-position: 100% 50%;
+    background-color: #4caf50;
+    background-clip: text;
+    color: transparent;
+  }
+
+  75% {
+    background-position: 50% 0%;
+    background-color: #ffd700;
+    background-clip: text;
+    color: transparent;
+  }
+
+  100% {
+    background-position: 0% 50%;
+    background-color: #55defe;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+@keyframes rgb-bg {
+  0% {
+    background-position: 0% 50%;
+    background-color: #007acc;
+  }
+
+  25% {
+    background-position: 50% 50%;
+    background-color: #ff0000;
+  }
+
+  50% {
+    background-position: 100% 50%;
+    background-color: #4caf50;
+  }
+
+  75% {
+    background-position: 50% 0%;
+    background-color: #ffd700;
+  }
+
+  100% {
+    background-position: 0% 50%;
+    background-color: #007acc;
+  }
+}
+
+@keyframes rgb-bg-dark {
+  0% {
+    background-position: 0% 50%;
+    background-color: #55defe;
+  }
+
+  25% {
+    background-position: 50% 50%;
+    background-color: #ff0000;
+  }
+
+  50% {
+    background-position: 100% 50%;
+    background-color: #4caf50;
+  }
+
+  75% {
+    background-position: 50% 0%;
+    background-color: #ffd700;
+  }
+
+  100% {
+    background-position: 0% 50%;
+    background-color: #55defe;
   }
 }
 
