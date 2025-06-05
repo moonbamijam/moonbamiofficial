@@ -51,7 +51,7 @@ const Btn = ({ onClick, icon, isMenuActive }: Props) => {
       onClick={onClick}
       variant="toggle"
       size="icon"
-      className={`${isMenuActive ? "[&>svg>path]:text-white [&>svg>circle]:text-white [&>svg>line]:text-white [&>svg>path]:lg:text-black [&>svg>circle]:lg:text-black [&>svg>line]:lg:text-black [&>svg>path]:hover:text-white [&>svg>circle]:hover:text-white [&>svg>line]:hover:text-white" : "[&>svg>path]:hover:text-white [&>svg>circle]:hover:text-white [&>svg>line]:hover:text-white"}`}
+      className={`${isMenuActive ? "[&>svg>path]:text-white [&>svg>circle]:text-white [&>svg>line]:text-white [&>svg>path]:lg:text-black [&>svg>circle]:lg:text-black [&>svg>line]:lg:text-black [&>svg>path]:hover:text-white [&>svg>circle]:hover:text-white [&>svg>line]:hover:text-white [&>svg>path]:dark:hover:text-black [&>svg>circle]:dark:hover:text-black [&>svg>line]:dark:hover:text-black" : "[&>svg>path]:hover:text-white [&>svg>circle]:hover:text-white [&>svg>line]:hover:text-white [&>svg>path]:dark:hover:text-black [&>svg>circle]:dark:hover:text-black [&>svg>line]:dark:hover:text-black"}`}
     >
       {icon}
     </Button>
