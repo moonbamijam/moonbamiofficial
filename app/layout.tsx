@@ -1,15 +1,14 @@
 import type { Metadata, Viewport } from "next";
-import { Noto_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import Header from "@frontend/layouts/header/Header";
 import ThemesProvider from "@frontend/providers/themesProvider";
-import SmallGridLines from "@frontend/components/bg/SmallGridLines";
-import NavMenuBtn from "@frontend/layouts/buttons/NavMenuBtn";
+import Blob from "@frontend/components/bg/Blob";
 import "@frontend/styles/globals.css";
 
-const inter = Noto_Sans({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+const inter = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   subsets: ["latin"],
 });
 
@@ -26,7 +25,7 @@ export const metadata: Metadata = {
     template: "Moonbami | %s",
   },
   description:
-    "Pursuing a career for being a developer. Still a novice, but making progress on a daily basis.",
+    "Building things with love. I am Moonbami, pursuing a career of being a software engineer.",
   manifest: "/manifest.json",
   keywords: [
     "moonbami",
@@ -39,7 +38,7 @@ export const metadata: Metadata = {
     { name: "Jam Moonbami" },
     {
       name: "Jam Moonbami",
-      url: "https://github.com/MoonbamiOfficial",
+      url: "https://github.com/moonbamijam",
     },
   ],
 };
@@ -53,14 +52,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className}`}>
         <ThemesProvider>
-          <SmallGridLines />
           <Header />
           <main>
             {children}
             <Analytics />
             <SpeedInsights />
+            <Blob />
           </main>
-          <NavMenuBtn />
         </ThemesProvider>
       </body>
     </html>

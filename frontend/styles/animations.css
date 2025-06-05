@@ -1,49 +1,220 @@
-@keyframes moonbami {
+@keyframes rgb-text {
   0% {
+    background-position: 0% 50%;
     background-color: #007acc;
     background-clip: text;
     color: transparent;
   }
 
-  14% {
-    background-color: #ff2e97;
+  25% {
+    background-position: 50% 50%;
+    background-color: #ff0000;
     background-clip: text;
     color: transparent;
   }
 
-  28% {
-    background-color: #ed6f15;
+  50% {
+    background-position: 100% 50%;
+    background-color: #4caf50;
     background-clip: text;
     color: transparent;
   }
 
-  42% {
-    background-color: #ffca1b;
-    background-clip: text;
-    color: transparent;
-  }
-
-  56% {
-    background-color: #c60000;
-    background-clip: text;
-    color: transparent;
-  }
-
-  70% {
-    background-color: #32ff9d;
-    background-clip: text;
-    color: transparent;
-  }
-
-  84% {
-    background-color: #4b129c;
+  75% {
+    background-position: 50% 0%;
+    background-color: #ffd700;
     background-clip: text;
     color: transparent;
   }
 
   100% {
+    background-position: 0% 50%;
     background-color: #007acc;
     background-clip: text;
     color: transparent;
+  }
+}
+
+@keyframes rgb-text-dark {
+  0% {
+    background-position: 0% 50%;
+    background-color: #55defe;
+    background-clip: text;
+    color: transparent;
+  }
+
+  25% {
+    background-position: 50% 50%;
+    background-color: #ff0000;
+    background-clip: text;
+    color: transparent;
+  }
+
+  50% {
+    background-position: 100% 50%;
+    background-color: #4caf50;
+    background-clip: text;
+    color: transparent;
+  }
+
+  75% {
+    background-position: 50% 0%;
+    background-color: #ffd700;
+    background-clip: text;
+    color: transparent;
+  }
+
+  100% {
+    background-position: 0% 50%;
+    background-color: #55defe;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+@keyframes rgb-bg {
+  0% {
+    background-position: 0% 50%;
+    background-color: #007acc;
+  }
+
+  25% {
+    background-position: 50% 50%;
+    background-color: #ff0000;
+  }
+
+  50% {
+    background-position: 100% 50%;
+    background-color: #4caf50;
+  }
+
+  75% {
+    background-position: 50% 0%;
+    background-color: #ffd700;
+  }
+
+  100% {
+    background-position: 0% 50%;
+    background-color: #007acc;
+  }
+}
+
+@keyframes rgb-bg-dark {
+  0% {
+    background-position: 0% 50%;
+    background-color: #55defe;
+  }
+
+  25% {
+    background-position: 50% 50%;
+    background-color: #ff0000;
+  }
+
+  50% {
+    background-position: 100% 50%;
+    background-color: #4caf50;
+  }
+
+  75% {
+    background-position: 50% 0%;
+    background-color: #ffd700;
+  }
+
+  100% {
+    background-position: 0% 50%;
+    background-color: #55defe;
+  }
+}
+
+.blob {
+  border-radius: 30% 50% 20% 40%;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, 0);
+}
+
+@keyframes reshapeblob {
+  0%,
+  100% {
+    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
+  }
+
+  20% {
+    border-radius: 37% 63% 51% 49% / 37% 65% 35% 53%;
+  }
+
+  40% {
+    border-radius: 36% 64% 68% 33% / 64% 46% 52% 36%;
+  }
+
+  60% {
+    border-radius: 38% 68% 56% 49% / 30% 30% 73% 70%;
+  }
+
+  80% {
+    border-radius: 40% 60% 45% 58% / 47% 55% 52% 58%;
+  }
+}
+
+@keyframes rotateblob {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  15% {
+    transform: rotate(72deg) scale(1.05);
+  }
+
+  33% {
+    transform: rotate(-30deg) scale(1.15);
+  }
+
+  58% {
+    transform: rotate(197deg) scale(0.95);
+  }
+
+  79% {
+    transform: rotate(-115deg) scale(1.2);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+    /* Return to a similar state, but not exactly */
+  }
+}
+
+@keyframes moveblob {
+  0% {
+    transform: translate(calc(50vw - 350px), calc(50vh - 350px));
+    /* Start center */
+  }
+
+  11% {
+    transform: translate(calc(15vw + 350px), calc(25vh + 350px));
+  }
+
+  27% {
+    transform: translate(calc(80vw - 350px), calc(60vh - 350px));
+  }
+
+  41% {
+    transform: translate(calc(30vw + 350px), calc(10vh + 350px));
+  }
+
+  59% {
+    transform: translate(calc(70vw - 350px), calc(85vh - 350px));
+  }
+
+  73% {
+    transform: translate(calc(5vw + 350px), calc(40vh - 350px));
+  }
+
+  88% {
+    transform: translate(calc(90vw - 350px), calc(20vh + 350px));
+  }
+
+  100% {
+    transform: translate(calc(50vw - 350px), calc(50vh - 350px));
+    /* End center */
   }
 }

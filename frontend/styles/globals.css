@@ -15,35 +15,49 @@
 ::after {
   @apply box-border p-0 m-0 transition-all duration-100;
 }
+
 html {
   @apply scroll-smooth;
 }
+
 body {
   @apply text-on-background dark:text-white;
 }
 
+::selection {
+  @apply bg-primary dark:bg-secondary text-white dark:text-black;
+}
+
 /* UTILITIES */
+.container {
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
 .text-format {
   @apply px-2;
 }
+
 .paragraph-format {
   @apply px-2 w-full lg:w-[500px];
 }
+
 .desc-format {
   @apply px-2 line-clamp-2;
 }
+
 .active {
-  @apply bg-primary dark:bg-primary-light text-on-primary;
+  @apply bg-primary dark:bg-secondary hover:bg-primary-dark dark:hover:bg-secondary-variant text-white dark:text-black;
 }
+
 .button-format {
   @apply text-center w-[150px] h-[50px] py-[15px] rounded-lg;
 }
+
 .show {
   @apply opacity-100 visible;
 }
+
 .hide {
   @apply opacity-0 invisible;
-}
-.scrolled-header-bg {
-  @apply bg-surface dark:bg-dm-surface-dark shadow-md dark:shadow-transparent;
 }

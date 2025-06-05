@@ -18,7 +18,7 @@ export default function BackToTop({ id }: Props) {
       aria-label="back-to-top"
       variant="icon"
       size="max"
-      className={`fixed right-8 bottom-8 sm:right-12 sm:bottom-12 lg:right-24 lg:bottom-16 p-3 text-2xl md:text-3xl z-[100] [&>svg>path]:text-on-primary bg-primary hover:bg-primary-dark hover:border-primary-dark shadow-md animate-bounce active:scale-75 ${backToTop}`}
+      className={`fixed right-8 bottom-8 sm:right-12 sm:bottom-12 lg:right-24 lg:bottom-16 p-3 text-2xl md:text-3xl z-[100] [&>svg>path]:text-on-primary bg-primary hover:bg-primary-dark dark:bg-secondary dark:hover:bg-secondary-variant shadow animate-bounce ${backToTop}`}
     >
       <BiSolidUpArrow />
     </Button>

@@ -11,12 +11,17 @@ const config: Config = {
     colors: {
       white: colors.white,
       black: colors.black,
+      slate: colors.slate,
+      gray: colors.gray,
       transparent: colors.transparent,
-      primary: "#0487E2",
-      "primary-dark": "#0074CF",
-      "primary-light": "#0793F0",
-      secondary: "#CC5200",
-      "secondary-light": "#DD7804",
+      primary: "#007ACC",
+      "primary-variant": "#065aaa",
+      "primary-dark": "#065aaa",
+      "primary-light": "#009ff5",
+      secondary: "#55defe",
+      "secondary-variant": "#19bfe2",
+      "secondary-dark": "#cc5200",
+      "secondary-light": "#e28707",
       background: "#FAFAFA",
       "dark-background": "#121212",
       surface: "#FDFCFA",
@@ -29,8 +34,8 @@ const config: Config = {
       "on-background": colors.black,
       "on-surface": colors.black,
       "on-error": colors.white,
-      // foreign colors - colors that are not part of the project
-      github: "#2DBA4E",
+      github: "#2dba4e",
+      "github-variant": "#23ab44",
     },
     extend: {
       container: {
@@ -41,7 +46,11 @@ const config: Config = {
         premium: "1920px",
       },
       animation: {
-        rgb: "moonbami 15s linear infinite",
+        "rgb-text": "rgb-text 10s ease infinite",
+        "rgb-text-dark": "rgb-text-dark 10s ease infinite",
+        "rgb-bg": "rgb-bg 8s ease infinite",
+        "rgb-bg-dark": "rgb-bg-dark 8s ease infinite",
+        blob: "reshapeblob 8s ease-in-out infinite, rotateblob 5s ease-in-out infinite, moveblob 180s linear infinite",
       },
       boxShadow: {
         gradient: "0px 0px 100px 100px rgba(3, 0, 28, 0.3)",
