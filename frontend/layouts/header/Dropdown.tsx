@@ -1,13 +1,13 @@
 type Props = {
   children?: React.ReactNode;
-  position?: string;
+  className?: string;
 };
 
-export default function Dropdown({ children, position }: Props) {
+export default function Dropdown({ children, className }: Props) {
   return (
     <nav
       id="main"
-      className={`absolute ${position} text-base flex flex-col gap-2 mt-2 mr-2 px-4 py-8 rounded-lg bg-surface dark:bg-dm-surface shadow z-[2000]`}
+      className={`absolute ${className} text-base flex flex-col gap-2 px-6 py-8 rounded bg-surface dark:bg-dm-surface shadow z-[2000]`}
     >
       {children}
     </nav>

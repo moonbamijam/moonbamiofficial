@@ -46,30 +46,26 @@ export default function Header() {
               aria-label="menu"
               variant="toggle"
               size="icon"
-              className={`flex lg:hidden justify-center items-center [&>svg>path]:hover:text-on-primary ${
+              className={`lg:hidden [&>svg>path]:hover:text-on-primary ${
                 isMenuActive
                   ? "bg-primary dark:bg-primary-light [&>svg>path]:text-on-primary"
                   : ""
               }`}
             >
               {isMenuActive ? <FaBarsStaggered /> : <FaBars />}
-              {isMenuActive && (
-                <Dropdown position="top-[60px]">
-                  {NavLinks.map(({ id, name, path }) => (
-                    <Anchor
-                      href={path}
-                      ariaLabel={name}
-                      key={id}
-                      isLinkActive={() => isLinkActive(path)}
-                      name={name}
-                    />
-                  ))}
-                  <div className="flex flex-col gap-4 items-center px-4">
-                    <hr className="w-full rounded-full" />
-                    <Version />
-                  </div>
-                </Dropdown>
-              )}
+              <Dropdown
+                className={`top-[80px] ${isMenuActive ? "opacity-100 visible translate-y-2" : "opacity-0 invisible -translate-y-2"}`}
+              >
+                {NavLinks.map(({ id, name, path }) => (
+                  <Anchor
+                    href={path}
+                    ariaLabel={name}
+                    key={id}
+                    isLinkActive={() => isLinkActive(path)}
+                    name={name}
+                  />
+                ))}
+              </Dropdown>
             </Button>
           ) : (
             <LoadingSpinner
