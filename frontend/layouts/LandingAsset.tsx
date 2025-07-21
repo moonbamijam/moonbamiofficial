@@ -3,7 +3,9 @@
 import Picture from "@frontend/components/common/Picture";
 import Spotify from "@frontend/components/Spotify";
 import { spotifyEmbeds } from "@frontend/ts/constants/spotify-embeds";
+import { spotifyNowPlayingType } from "@frontend/ts/types";
 import { useState } from "react";
+import NowPlaying from "./spotify/NowPlaying";
 
 function handleEmbedChange(
   setCurrentEmbed: React.Dispatch<
@@ -23,6 +25,15 @@ export default function LandingAsset() {
     handleEmbedChange(setCurrentEmbed);
   }
 
+  const [spotifyNowPlaying, setSpotifyNowPlaying] =
+    useState<spotifyNowPlayingType>({
+      albumImageUrl: "",
+      artist: "",
+      isPlaying: false,
+      songUrl: "",
+      title: "",
+    });
+
   return (
     <div
       onMouseEnter={() => setIsSpotifyOpen(true)}
@@ -40,12 +51,13 @@ export default function LandingAsset() {
       <div
         className={`absolute w-full h-full ${isSpotifyOpen && "backdrop-blur"}`}
       ></div>
-      <Spotify
+      {/* <NowPlaying /> */}
+      {/* <Spotify
         src={currentEmbed.src}
         title={currentEmbed.title}
         width="80%"
-        className={`${isSpotifyOpen ? " opacity-1" : " opacity-0"} absolute`}
-      />
+        className={`${isSpotifyOpen ? " opacity-1" : " opacity-1"} absolute`}
+      /> */}
     </div>
   );
 }

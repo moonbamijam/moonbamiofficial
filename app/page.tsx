@@ -3,6 +3,7 @@ import EmailBtn from "@frontend/layouts/buttons/EmailBtn";
 import GitHubBtn from "@frontend/layouts/buttons/GitHubBtn";
 import LandingSkeleton from "@frontend/layouts/skeletons/LandingSkeleton";
 import LandingAsset from "@frontend/layouts/LandingAsset";
+import NowPlaying from "@frontend/layouts/spotify/NowPlaying";
 
 const HomePage = async () => {
   return (
@@ -29,6 +30,7 @@ const HomePage = async () => {
               <GitHubBtn href="https://github.com/moonbamijam" />
               <EmailBtn href="mailto:Jam Moonbami <moonbamijamofficial15@gmail.com>" />
             </div>
+            <NowPlaying />
           </div>
           <LandingAsset />
         </div>
