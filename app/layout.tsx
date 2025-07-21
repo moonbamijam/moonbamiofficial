@@ -51,6 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className}`}>
+        {/* <SpotifyProvider> */}
         <ThemesProvider>
           <Header />
           <main>
@@ -60,6 +61,7 @@ export default function RootLayout({
             <Blob />
           </main>
         </ThemesProvider>
+        {/* </SpotifyProvider> */}
       </body>
     </html>
   );

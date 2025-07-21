@@ -1,28 +1,51 @@
 "use client";
 
-import SpotifyPlaylist from "@frontend/components/Spotify";
-import { spotifyEmbeds } from "@frontend/ts/constants/spotify-embeds";
-import { useState } from "react";
+import { SpotifyContext } from "@frontend/contexts/SpotifyContext";
+// import getNowPlayingItem from "@frontend/lib/spotify/get-now-playing";
+import {
+  CLIENT_ID,
+  CLIENT_SECRET,
+  REFRESH_TOKEN,
+} from "@frontend/ts/constants/spotify";
+import { spotifyNowPlayingType } from "@frontend/ts/types";
+import { useEffect, useMemo, useState } from "react";
 
-function handleTrackChange(
-  setCurrentEmbed: React.Dispatch<
-    React.SetStateAction<{ src: string; title: string }>
-  >,
-) {
-  const randomIndex = Math.floor(Math.random() * spotifyEmbeds.length);
-  setCurrentEmbed(spotifyEmbeds[randomIndex]);
-}
-export default function spotifyProvider({
+export default function SpotifyProvider({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const [currentEmbed, setCurrentEmbed] = useState({ src: "", title: "" });
+  const [spotifyNowPlaying, setSpotifyNowPlaying] =
+    useState<spotifyNowPlayingType>({
+      albumImageUrl: "",
+      artist: "",
+      isPlaying: false,
+      songUrl: "",
+      title: "",
+    });
 
-  if (currentEmbed.src === "") {
-    console.log(currentEmbed.title);
-    handleTrackChange(setCurrentEmbed);
-  }
+  // useEffect(() => {
+  //   Promise.all([
+  //     getNowPlayingItem({
+  //       CLIENT_ID,
+  //       CLIENT_SECRET,
+  //       REFRESH_TOKEN,
+  //     }),
+  //   ]).then((results) => {
+  //     setSpotifyNowPlaying((spotifyNowPlaying) => ({
+  //       ...spotifyNowPlaying,
+  //       ...results[0],
+  //     }));
+  //   });
+  // });
 
-  return { currentEmbed, setCurrentEmbed, children, SpotifyPlaylist };
+  const value = useMemo(() => {
+    return {
+      spotify: { spotifyNowPlaying, setSpotifyNowPlaying },
+    };
+  }, [spotifyNowPlaying]);
+
+  return (
+    <SpotifyContext.Provider value={value}>{children}</SpotifyContext.Provider>
+  );
 }
