@@ -9,9 +9,9 @@ export default function Footer() {
   return (
     <section
       id="footer"
-      className="container p-16 my-8 gap-8 flex flex-col items-center"
+      className="container px-16 pb-16 pt-24 my-8 gap-8 flex flex-col items-center"
     >
-      <div className="max-w-[500px] hidden xl:flex justify-evenly gap-2">
+      <div className="max-w-[500px] flex justify-evenly gap-2">
         {socialMedias.map(({ href, icon, text }: socialMediaProps, id) => (
           <SocMedIconBtn key={id} href={href} ariaLabel={text} icon={icon} />
         ))}

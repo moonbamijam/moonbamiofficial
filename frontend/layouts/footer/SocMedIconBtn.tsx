@@ -14,7 +14,7 @@ export default function SocMedIconBtn({ href, ariaLabel, icon }: Props) {
       href={href}
       aria-label={ariaLabel}
       target="_blank"
-      className={`${buttonVariants({ variant: "icon", size: "icon" })} hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-black hover:-translate-y-2`}
+      className={`${buttonVariants({ variant: "icon", size: "icon" })} hover:bg-primary hover:text-white dark:hover:text-black hover:-translate-y-2`}
     >
       {icon}
     </Link>
