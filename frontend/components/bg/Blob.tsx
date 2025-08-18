@@ -1,5 +1,5 @@
 export default function Blob() {
   return (
-    <div className="blob animate-blob blur-3xl bg-secondary opacity-15 dark:opacity-10 dark:bg-primary-variant w-[300px] lg:w-[700px] aspect-square fixed -z-10"></div>
+    <div className="blob animate-blob blur-3xl bg-primary opacity-15 dark:opacity-10 w-[300px] lg:w-[700px] aspect-square fixed -z-[1000]"></div>
   );
 }
