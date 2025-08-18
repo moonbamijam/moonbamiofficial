@@ -8,21 +8,15 @@ const HomePage = async () => {
   return (
     <Suspense fallback={<LandingSkeleton />}>
       <section id="home" className="container h-screen pt-28">
-        <div className="w-full h-full relative flex flex-col justify-center items-center xl:flex-row xl:justify-around 2xl:justify-between gap-12">
+        <div className="w-full h-full relative flex flex-col justify-center items-center xl:flex-row xl:justify-around gap-12">
           <div className="relative w-full flex flex-col items-center xl:items-start gap-5 max-w-[600px]">
             <div className="flex flex-col items-center xl:items-start gap-5">
               <h1 className="text-center xl:text-left text-6xl px-1 font-bold tracking-tight">
-                I am{" "}
-                <span className="text-primary dark:text-secondary">
-                  Moonbami
-                </span>
+                I am <span className="text-primary">Moonbami</span>
               </h1>
-              <p className="text-center xl:text-left text-xl xl:text-2xl px-2 text-[#888888] font-medium">
+              <p className="text-center xl:text-left text-xl xl:text-2xl px-2 text-slate-400 font-medium">
                 Pursuing a career of being a{" "}
-                <strong className="text-primary dark:text-secondary">
-                  software engineer
-                </strong>
-                .
+                <strong className="text-primary">software engineer</strong>.
               </p>
             </div>
             <div className="flex gap-6">
