@@ -24,7 +24,7 @@ export default function Anchor({
     <Link
       href={href}
       aria-label={ariaLabel}
-      className={`${buttonVariants({ variant: "nav", size: "auto" })} ${isLinkActive(path) ? "active" : "hover:text-primary dark:hover:text-secondary"}`}
+      className={`${buttonVariants({ variant: "nav", size: "auto" })} ${isLinkActive(path) ? "active" : "hover:text-primary"}`}
     >
       {name}
     </Link>

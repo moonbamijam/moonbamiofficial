@@ -9,7 +9,6 @@ import { socials } from "@frontend/ts/constants/socials";
 import ThemeSwitchBtn from "@frontend/layouts/buttons/ThemeSwitchBtn";
 import Dropdown from "./Dropdown";
 import Anchor from "./Anchor";
-import Version from "@frontend/components/Version";
 import useHeader from "@frontend/hooks/useHeader";
 import LoadingSpinner from "@frontend/components/LoadingSpinner";
 import RotatingBrand from "./RotatingBrand";
@@ -23,7 +22,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="w-full h-[70px] z-[1000] fixed top-0 bg-surface dark:bg-dm-surface-dark shadow dark:shadow-transparent "></div>
+      <div className="w-full h-[70px] z-[1000] fixed top-0 bg-surface/80 dark:bg-dm-surface-dark/90 backdrop-blur shadow"></div>
       <header className="container h-[70px] w-full z-[2000] fixed top-0 left-[50%] translate-x-[-50%] flex justify-between items-center gap-5">
         <RotatingBrand texts={socials} />
         <nav className="w-full flex justify-between lg:justify-end items-center gap-2 ml-auto">
@@ -46,10 +45,8 @@ export default function Header() {
               aria-label="menu"
               variant="toggle"
               size="icon"
-              className={`lg:hidden [&>svg>path]:hover:text-on-primary ${
-                isMenuActive
-                  ? "bg-primary dark:bg-primary-light [&>svg>path]:text-on-primary"
-                  : ""
+              className={`lg:hidden [&>svg>path]:hover:text-white ${
+                isMenuActive ? "bg-primary [&>svg>path]:text-white" : ""
               }`}
             >
               {isMenuActive ? <FaBarsStaggered /> : <FaBars />}
