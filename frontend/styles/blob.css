@@ -1,0 +1,29 @@
+.blob {
+  position: fixed;
+  z-index: -1000;
+}
+
+.blob-1 {
+  bottom: -5%;
+  right: 0%;
+}
+
+.blob-2 {
+  top: 0;
+  right: 40%;
+}
+
+.blob-3 {
+  bottom: -20%;
+  right: 40%;
+}
+
+.blob-4 {
+  bottom: -5%;
+  right: 0;
+}
+
+.blob-5 {
+  top: -10%;
+  left: -5%;
+}
