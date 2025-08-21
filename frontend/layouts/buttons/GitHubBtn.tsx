@@ -7,7 +7,7 @@ export default function GitHubBtn({ href }: { href: string }) {
     <Link
       href={href}
       target="_blank"
-      className={`${buttonVariants()} !bg-github !border-github hover:!bg-github-variant hover:!border-github-variant [&>svg>path]:text-white dark:[&>svg>path]:text-white shadow-lg shadow-slate-400 dark:shadow-slate-700`}
+      className={`${buttonVariants()} !bg-github !border-github hover:!bg-github-variant hover:!border-github-variant [&>svg>path]:text-white dark:[&>svg>path]:text-white dark:text-white shadow-lg shadow-slate-400 dark:shadow-slate-700`}
     >
       <FaGithub />
       GitHub
