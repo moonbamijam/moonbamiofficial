@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { NavLinks } from "@frontend/ts/constants/navLinks";
+import { NavLinks } from "@frontend/shared/navLinks";
 import { FaBars } from "react-icons/fa";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { Button } from "@frontend/components/ui/Button";
-import { socials } from "@frontend/ts/constants/socials";
+import { headerWordList } from "@frontend/shared/header-word-list";
 import ThemeSwitchBtn from "@frontend/layouts/buttons/ThemeSwitchBtn";
 import Dropdown from "./Dropdown";
 import Anchor from "./Anchor";
@@ -24,7 +24,7 @@ export default function Header() {
     <>
       <div className="w-full h-[70px] z-[1000] fixed top-0 bg-surface/80 dark:bg-dm-surface-dark/90 backdrop-blur shadow"></div>
       <header className="container h-[70px] w-full z-[2000] fixed top-0 left-[50%] translate-x-[-50%] flex justify-between items-center gap-5">
-        <RotatingBrand texts={socials} />
+        <RotatingBrand texts={headerWordList} />
         <nav className="w-full flex justify-between lg:justify-end items-center gap-2 ml-auto">
           <ul role="nav-links-wrapper" className="hidden lg:flex font-semibold">
             {NavLinks.map(({ id, name, path }) => (

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Image } from "@frontend/components/ui/Image";
-import { gameGifList } from "@frontend/shared/game-gif-list";
+import { gameGifList } from "@frontend/ts/constants/game-gif-list";
 
 export default function RotatingGameGif({
   interval = 5000,

@@ -1,7 +1,7 @@
 "use client";
 
 import { Image } from "@frontend/components/ui/Image";
-import { animeGifList } from "@frontend/shared/anime-gif-list";
+import { animeGifList } from "@frontend/ts/constants/anime-gif-list";
 import { useEffect, useState } from "react";
 
 export default function RotatingAnimeGif({

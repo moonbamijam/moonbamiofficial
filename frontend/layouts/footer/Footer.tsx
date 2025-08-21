@@ -1,7 +1,4 @@
-import {
-  socialMediaProps,
-  socialMedias,
-} from "@frontend/ts/constants/socialMedias";
+import { socialMediaProps, socialMedias } from "@frontend/shared/socialMedias";
 import SocMedIconBtn from "./SocMedIconBtn";
 
 export default function Footer() {
