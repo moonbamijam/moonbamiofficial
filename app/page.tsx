@@ -2,8 +2,8 @@ import { Suspense } from "react";
 import EmailBtn from "@frontend/layouts/buttons/EmailBtn";
 import GitHubBtn from "@frontend/layouts/buttons/GitHubBtn";
 import LandingSkeleton from "@frontend/layouts/skeletons/LandingSkeleton";
-import LandingAsset from "@frontend/layouts/LandingAsset";
 import TechStackSlider from "@frontend/layouts/TechStackSlider";
+import { Image } from "@frontend/components/ui/Image";
 
 const HomePage = async () => {
   return (
@@ -28,7 +28,12 @@ const HomePage = async () => {
                 <EmailBtn href="mailto:Jam Moonbami <moonbamijamofficial15@gmail.com>" />
               </div>
             </div>
-            <LandingAsset />
+            <div className="relative w-full max-w-[400px] lg:max-w-[450px] xl:max-w-[550px] aspect-square flex items-center justify-center rounded-lg overflow-hidden">
+              <Image
+                src="https://avatars.githubusercontent.com/u/141120384?v=4"
+                alt="Jam Moonbami"
+              />
+            </div>
           </div>
           <TechStackSlider />
         </div>
