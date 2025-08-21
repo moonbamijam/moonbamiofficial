@@ -1,30 +1,34 @@
-import Image from "next/image";
 import Link from "next/link";
+import Section from "@frontend/layouts/common/Section";
+import { buttonVariants } from "@frontend/components/ui/Button";
+import { Image } from "@frontend/components/ui/Image";
 
 export default function NotFound() {
   return (
-    <div className="container relative">
-      <section className="content pb-[300px] pt-[200px] lg:pt-[250px] flex flex-col gap-10 items-center justify-center">
-        <h1 className="switch-text-color font-bold text-lg md:text-xl lg:text-3xl xl:text-7xl text-center">
-          Page not found!
-          <h2 className="switch-text-color font-normal text-lg">
-            Go back to
-            <Link
-              href="/"
-              className="text-primary capitalize hover:underline inline"
-            >
-              home
-            </Link>
-          </h2>
+    <Section className="container h-screen flex flex-col lg:flex-row items-center justify-center gap-8 py-[100px]">
+      <Image
+        src="https://i.pinimg.com/originals/9d/26/92/9d2692b51ebf08955da879128c57ab69.gif"
+        alt="Menhera chan"
+        shape="square"
+        object="cover"
+        className="max-w-[400px] h-max shadow-none"
+      />
+      <div className="space-y-2 xl:space-y-5">
+        <h1 className="font-bold text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+          Nothing Here!
         </h1>
-        <Image
-          src={`${process.env.API_NOT_FOUND}`}
-          alt=""
-          width={"3000"}
-          height={"3000"}
-          className="w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] object-cover rounded-full"
-        />
-      </section>
-    </div>
+        <div className="space-y-10">
+          <p className="text-xl lg:text-2xl xl:text-3xl">
+            The page you're looking for seems to be missing.
+          </p>
+          <Link
+            href="/"
+            className={`${buttonVariants({ variant: "default" })} ml-auto`}
+          >
+            Return to base
+          </Link>
+        </div>
+      </div>
+    </Section>
   );
 }
