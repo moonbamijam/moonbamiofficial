@@ -46,7 +46,12 @@ const config: Config = {
         "rgb-text-dark": "rgb-text-dark 10s ease infinite",
         "rgb-bg": "rgb-bg 8s ease infinite",
         "rgb-bg-dark": "rgb-bg-dark 8s ease infinite",
-        blob: "reshapeblob 8s ease-in-out infinite, rotateblob 5s ease-in-out infinite, moveblob 180s linear infinite",
+        "blob-one": "moveBlob1 50s alternate infinite ease-in-out",
+        "blob-two": "moveBlob2 50s alternate infinite ease-in-out",
+        "blob-three": "moveBlob3 50s alternate infinite ease-in-out",
+        "blob-four": "moveBlob4 50s alternate infinite ease-in-out",
+        "blob-five": "moveBlob5 50s alternate infinite ease-in-out",
+        slideTectStack: "slideTectStack 30s linear infinite",
       },
       boxShadow: {
         gradient: "0px 0px 100px 100px rgba(3, 0, 28, 0.3)",
