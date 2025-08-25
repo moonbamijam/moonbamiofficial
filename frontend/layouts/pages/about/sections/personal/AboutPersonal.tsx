@@ -1,6 +1,6 @@
 import Section from "@frontend/layouts/common/Section";
 import ImageCredits from "@frontend/components/ImageCredits";
-import { ageCalc } from "@utils/age-calc";
+import { ageCalc } from "@frontend/ts/utils/age-calc";
 import { Paragraph } from "@frontend/components/ui/Paragraph";
 import SectionHeading from "@frontend/components/SectionHeading";
 import { Image } from "@frontend/components/ui/Image";
