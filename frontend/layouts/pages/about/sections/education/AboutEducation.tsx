@@ -13,7 +13,7 @@ export default function AboutEducation() {
       <div className="flex flex-col gap-x-4 lg:gap-x-6">
         <div className="w-full flex flex-col items-end">
           <Image
-            src="https://scontent.fmnl35-1.fna.fbcdn.net/v/t39.30808-6/462163489_8454828931221669_6312911848019373551_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=GpEY1TATGXoQ7kNvwHPfDHC&_nc_oc=AdnWT7bpMdEl_Kl17TY-Zc_HJ3lQUKfQ5H1DhXrCb_aUNfc8pgbBD4WimBdetSNVGeo&_nc_zt=23&_nc_ht=scontent.fmnl35-1.fna&_nc_gid=lM6twmEzwMpAg-2MGKl9JA&oh=00_AfXkL-tFzgifbdfnHSaKlC9MwZ3UNf8hndfvcZduYERqlA&oe=68A913EE"
+            src="https://scontent.fmnl35-1.fna.fbcdn.net/v/t39.30808-6/461123340_8358639527507277_1290298887471653559_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGOabnnGeUsu0Qu6ovfRO1qAiOIGGFxH_wCI4gYYXEf_G8tg_QBdCVtk23UMMgkzCpblQzxfjZoPKE853UDRo5K&_nc_ohc=cXAm6uQ8CMgQ7kNvwH_V-NF&_nc_oc=Adn60b9vosCe8rbm7Imoi0GJylio0MdDWoTlsLdNlUhNxg1fGd6kqjNOM5XPtnB7_Ng&_nc_zt=23&_nc_ht=scontent.fmnl35-1.fna&_nc_gid=MUEkWYPuF7HyC98i2Zn0ng&oh=00_AfVOgK6iOebxahOJ8uTWofUIjxtObcHdEwb3VlxpCZNRcw&oe=68B20404"
             alt="Morrisonridge Academy"
             shape="tv"
           />
@@ -122,7 +122,7 @@ export default function AboutEducation() {
       <div className="flex flex-col gap-x-4 lg:gap-x-6">
         <div className="w-full flex flex-col items-end">
           <Image
-            src="https://cvsu.edu.ph/wp-content/uploads/2020/10/Bacoor.jpg"
+            src="https://cvsu.edu.ph/wp-content/uploads/2022/08/Bacoor-Campus-scaled.jpg"
             alt="Cavite State University - Bacoor Campus"
             shape="tv"
           />
