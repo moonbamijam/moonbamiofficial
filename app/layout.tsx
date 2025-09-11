@@ -57,8 +57,8 @@ export default function RootLayout({
             {children}
             <Analytics />
             <SpeedInsights />
-            <Blob />
           </main>
+          <Blob />
         </ThemesProvider>
       </body>
     </html>
