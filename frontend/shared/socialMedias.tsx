@@ -21,12 +21,12 @@ export const socialMedias: socialMediaProps[] = [
     icon: <SiAnilist />,
   },
   {
-    href: "https://www.facebook.com/moonbamidesu",
+    href: "https://www.facebook.com/moonbamijam",
     text: "Facebook",
     icon: <FaFacebook />,
   },
   {
-    href: "https://www.instagram.com/moonbamidesu/",
+    href: "https://www.instagram.com/moonbamijam/",
     text: "Instagram",
     icon: <FaInstagram />,
   },
