@@ -5,8 +5,8 @@ import "@frontend/styles/tech-stack-slider.css";
 export default function TechStackSlider() {
   return (
     <div className="slider w-full h-max text-slate-400 dark:text-slate-500 overflow-hidden">
-      <p className="text-center  mb-2">Skill Arsenal</p>
-      <div className="items relative w-full flex h-[5vw] items-center gap-8">
+      <p className="text-center mb-2">Skill Arsenal</p>
+      <div className="items relative w-full flex h-[8vw] lg:h-[5vw] items-center gap-8">
         {techStackList.map((techStack, id) => (
           <div
             key={id}
