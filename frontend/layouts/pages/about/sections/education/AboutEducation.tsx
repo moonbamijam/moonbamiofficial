@@ -13,7 +13,7 @@ export default function AboutEducation() {
       <div className="flex flex-col gap-x-4 lg:gap-x-6">
         <div className="w-full flex flex-col items-end">
           <Image
-            src="https://scontent.fmnl35-1.fna.fbcdn.net/v/t39.30808-6/461123340_8358639527507277_1290298887471653559_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGOabnnGeUsu0Qu6ovfRO1qAiOIGGFxH_wCI4gYYXEf_G8tg_QBdCVtk23UMMgkzCpblQzxfjZoPKE853UDRo5K&_nc_ohc=cXAm6uQ8CMgQ7kNvwH_V-NF&_nc_oc=Adn60b9vosCe8rbm7Imoi0GJylio0MdDWoTlsLdNlUhNxg1fGd6kqjNOM5XPtnB7_Ng&_nc_zt=23&_nc_ht=scontent.fmnl35-1.fna&_nc_gid=MUEkWYPuF7HyC98i2Zn0ng&oh=00_AfVOgK6iOebxahOJ8uTWofUIjxtObcHdEwb3VlxpCZNRcw&oe=68B20404"
+            src="https://scontent.fmnl35-1.fna.fbcdn.net/v/t39.30808-6/464427780_8579299988774562_9025406764959811706_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeEi8IVRA2xUFGr_yxure4uD19XEyovTz7vX1cTKi9PPu0BM5wmKBt2SPopIW-fMuV6_2ofr5rMR1d5AOXuLl1Ja&_nc_ohc=sKv84bJ3JkAQ7kNvwEnAnq-&_nc_oc=AdlBVN57T2czLSAHUww25Mtr126ZC1VQVN-Zl41HVMaSiwDs_-mkGxteHVWPx6xBtlY&_nc_zt=23&_nc_ht=scontent.fmnl35-1.fna&_nc_gid=ywPNhaK_u-khyhOrlqeCXA&oh=00_AfZEr7eVKUlXzGLGQ2W8aL6sTzNnzsjxPuE4Rork10DhCg&oe=68C8D2C6"
             alt="Morrisonridge Academy"
             shape="tv"
           />
@@ -141,15 +141,17 @@ export default function AboutEducation() {
       </div>
 
       {/* CTA */}
-      <div className="w-full h-full flex flex-col justify-center my-auto">
-        <SectionHeading name="Seeking My Next Opportunity!" />
-        <Paragraph>
-          My formal education has prepared me with the tools to tackle new
-          challenges, and now I'm ready to learn in a professional environment.
-          I am actively looking for my next project or team to join. If you have
-          an exciting opportunity or just want to discuss a project, I would
-          love to hear from you.
-        </Paragraph>
+      <div className="w-full h-full flex flex-col justify-evenly my-auto">
+        <div>
+          <SectionHeading name="Seeking My Next Opportunity!" />
+          <Paragraph>
+            My formal education has prepared me with the tools to tackle new
+            challenges, and now I'm ready to learn in a professional
+            environment. I am actively looking for my next project or team to
+            join. If you have an exciting opportunity or just want to discuss a
+            project, I would love to hear from you.
+          </Paragraph>
+        </div>
         <Link
           href="/contact"
           className={`${buttonVariants({ variant: "default" })} ml-auto`}

@@ -35,7 +35,7 @@ export default function AboutPersonal() {
           <span className="text-primary font-semibold">The Philippines</span>.
           The word Moonbami consists of two of my most favorite things in my
           life. Moon represents how I love{" "}
-          <span className="text-primary font-semibold">space</span> bami
+          <span className="text-primary font-semibold">space</span>, while bami
           represents my first favorite female anime character{" "}
           <span className="text-primary font-semibold">Jabami Yumeko</span>.
           However, you can just call me Jam, Moonbami or whichever you prefer.{" "}
