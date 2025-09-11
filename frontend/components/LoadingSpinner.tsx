@@ -23,7 +23,7 @@ export default function LoadingSpinner({
       <div className="absolute opacity-30 rotate-90">
         <AiOutlineLoading3Quarters className="[&>path]:text-surface" />
       </div>
-      <AiOutlineLoading3Quarters className="animate-spin duration-500 [&>path]:text-primary [&>path]:dark:text-primary-light" />
+      <AiOutlineLoading3Quarters className="animate-spin duration-500 [&>path]:text-primary" />
     </div>
   );
 }
