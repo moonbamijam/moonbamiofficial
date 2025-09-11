@@ -1,7 +1,6 @@
-import Grid from "@frontend/components/common/Grid";
-import Section from "@frontend/components/common/Section";
-import Heading from "@frontend/components/Heading";
-import ProjectCard from "@frontend/components/ProjectCard";
+import Grid from "@frontend/layouts/common/Grid";
+import Section from "@frontend/layouts/common/Section";
+import ProjectCard from "@frontend/layouts/pages/project/ProjectCard";
 import LoadingSpinner from "@frontend/components/LoadingSpinner";
 import { useFetch } from "@backend/hooks/useFetch";
 import { ProjectType } from "@shared/types";
@@ -19,23 +18,19 @@ const renderProjects = (projects: ProjectType[]) => {
         desc={project.desc}
         website={project.website}
         github={project.github}
+        tag={project.tag}
+        tech={project.tech}
       />
     ));
   } else return <LoadingSpinner size="100px" fontSize="64px" />;
 };
 
-export default async function ProjectSection() {
+export default async function Projects() {
   const { projects } = await useFetch("/api/projects");
 
   return (
-    <Section id={"project"}>
-      <Heading
-        name={"projects"}
-        desc={
-          "These are the projects I made all throughout my coding career. I am happy to present it to you."
-        }
-      />
-      <Grid gridStyles="lg:grid-cols-2 premium:grid-cols-3 gap-[50px]">
+    <Section>
+      <Grid className="lg:grid-cols-2 premium:grid-cols-3 gap-[50px]">
         {renderProjects(projects)}
       </Grid>
     </Section>

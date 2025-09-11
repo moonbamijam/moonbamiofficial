@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import ProjectSection from "@frontend/layouts/sections/ProjectSection";
+import Projects from "@frontend/layouts/pages/project/Projects";
 import BackToTop from "@frontend/layouts/buttons/BackToTop";
 import Footer from "@frontend/layouts/footer/Footer";
 
@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <>
-      <div className="container relative">
-        <BackToTop id={"#project"} />
-        <ProjectSection />
+      <BackToTop id={"#projects"} />
+      <div id="projects" className="container pt-[100px] lg:pt-[50px]">
+        <Projects />
       </div>
       <Footer />
     </>
