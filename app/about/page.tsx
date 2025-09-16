@@ -7,6 +7,7 @@ import AboutProgramming from "@frontend/layouts/pages/about/sections/hobbies/Abo
 import AboutSpace from "@frontend/layouts/pages/about/sections/space/AboutSpace";
 import AboutEducation from "@frontend/layouts/pages/about/sections/education/AboutEducation";
 import AboutGame from "@frontend/layouts/pages/about/sections/game/AboutGame";
+import PageWrapper from "@frontend/layouts/common/PageWrapper";
 
 export const metadata: Metadata = {
   title: "About",
@@ -16,14 +17,14 @@ export default function About() {
   return (
     <>
       <BackToTop id={"#about"} />
-      <div id="about" className="container pt-[100px] lg:pt-[50px]">
+      <PageWrapper id="about">
         <AboutPersonal />
         <AboutAnime />
         <AboutProgramming />
         <AboutSpace />
         <AboutEducation />
         <AboutGame />
-      </div>
+      </PageWrapper>
       <Footer />
     </>
   );
