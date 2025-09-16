@@ -14,7 +14,9 @@ export default function ImageCredits({
   className,
 }: ImageCreditsProps) {
   return (
-    <span className={`text-sm text-slate-400 dark:text-slate-500 ${className}`}>
+    <span
+      className={`text-sm text-slate-400 dark:text-slate-500 mt-2 ${className}`}
+    >
       {phrase}{" "}
       <Link
         href={href}

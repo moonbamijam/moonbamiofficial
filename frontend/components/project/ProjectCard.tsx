@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { ProjectType } from "@shared/types";
-import GitHubBtn from "@frontend/layouts/buttons/GitHubBtn";
-import VisitBtn from "@frontend/layouts/buttons/VisitBtn";
+import GitHubBtn from "@frontend/components/buttons/GitHubBtn";
+import VisitBtn from "@frontend/components/buttons/VisitBtn";
 import { Image } from "@frontend/components/ui/Image";
 import { Paragraph } from "@frontend/components/ui/Paragraph";
-import ProjectTag from "@frontend/layouts/pages/project/ProjectTag";
+import ProjectTag from "@frontend/components/project/ProjectTag";
 import ProjectStack from "./ProjectStack";
 
 export default function ProjectCard({

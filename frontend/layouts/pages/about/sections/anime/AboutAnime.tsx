@@ -2,7 +2,7 @@ import SectionHeading from "@frontend/components/SectionHeading";
 import { Paragraph } from "@frontend/components/ui/Paragraph";
 import Section from "@frontend/layouts/common/Section";
 import Link from "@node_modules/next/link";
-import RotatingAnimeGif from "./RotatingAnimeGif";
+import RotatingAnimeGif from "../../../../../components/about/RotatingAnimeGif";
 
 export default function AboutAnime() {
   return (

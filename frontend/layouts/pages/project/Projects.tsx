@@ -1,6 +1,6 @@
 import Grid from "@frontend/layouts/common/Grid";
 import Section from "@frontend/layouts/common/Section";
-import ProjectCard from "@frontend/layouts/pages/project/ProjectCard";
+import ProjectCard from "@frontend/components/project/ProjectCard";
 import LoadingSpinner from "@frontend/components/LoadingSpinner";
 import { useFetch } from "@backend/hooks/useFetch";
 import { ProjectType } from "@shared/types";

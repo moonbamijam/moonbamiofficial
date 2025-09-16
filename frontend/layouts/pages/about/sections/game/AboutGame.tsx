@@ -1,7 +1,7 @@
 import SectionHeading from "@frontend/components/SectionHeading";
 import { Paragraph } from "@frontend/components/ui/Paragraph";
 import Section from "@frontend/layouts/common/Section";
-import RotatingGameGif from "./RotatingGameGif";
+import RotatingGameGif from "../../../../../components/about/RotatingGameGif";
 import Link from "@node_modules/next/link";
 
 export default function AboutGame() {

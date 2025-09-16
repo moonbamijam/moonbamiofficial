@@ -1,16 +1,16 @@
 import { Metadata } from "next";
 import { useFetch } from "@backend/hooks/useFetch";
 import Section from "@frontend/layouts/common/Section";
-import GitHubBtn from "@frontend/layouts/buttons/GitHubBtn";
-import VisitBtn from "@frontend/layouts/buttons/VisitBtn";
-import BackBtn from "@frontend/layouts/buttons/BackBtn";
+import GitHubBtn from "@frontend/components/buttons/GitHubBtn";
+import VisitBtn from "@frontend/components/buttons/VisitBtn";
+import BackBtn from "@frontend/components/buttons/BackBtn";
 import Title from "@frontend/components/Title";
 import Description from "@frontend/components/Description";
 import Footer from "@frontend/layouts/footer/Footer";
 import { Image } from "@frontend/components/ui/Image";
 import { Paragraph } from "@frontend/components/ui/Paragraph";
-import ProjectTag from "@frontend/layouts/pages/project/ProjectTag";
-import ProjectStack from "@frontend/layouts/pages/project/ProjectStack";
+import ProjectTag from "@frontend/components/project/ProjectTag";
+import ProjectStack from "@frontend/components/project/ProjectStack";
 
 type metaDataProps = { params: { slug: string } };
 
@@ -33,10 +33,10 @@ export default async function ProjectPageById({
 }) {
   const { projects } = await useFetch(`/api/projects/${params.slug}`);
 
-  const sortedTags: string[] = projects.tag?.sort((a: string, b: string) =>
+  const sortedTags: string[] = projects?.tag.sort((a: string, b: string) =>
     a.localeCompare(b),
   );
-  const sortedTechs: string[] = projects.tech?.sort((a: string, b: string) =>
+  const sortedTechs: string[] = projects?.tech.sort((a: string, b: string) =>
     a.localeCompare(b),
   );
 

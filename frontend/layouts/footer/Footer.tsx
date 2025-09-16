@@ -1,5 +1,5 @@
 import { socialMediaProps, socialMedias } from "@frontend/shared/socialMedias";
-import SocMedIconBtn from "./SocMedIconBtn";
+import SocMedIconBtn from "../../components/buttons/SocMedIconBtn";
 
 export default function Footer() {
   const year = new Date();

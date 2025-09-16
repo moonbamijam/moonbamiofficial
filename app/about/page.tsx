@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import BackToTop from "@frontend/layouts/buttons/BackToTop";
+import BackToTop from "@frontend/components/buttons/BackToTop";
 import AboutPersonal from "@frontend/layouts/pages/about/sections/personal/AboutPersonal";
 import Footer from "@frontend/layouts/footer/Footer";
 import AboutAnime from "@frontend/layouts/pages/about/sections/anime/AboutAnime";

@@ -1,7 +1,7 @@
 import { Suspense } from "react";
-import EmailBtn from "@frontend/layouts/buttons/EmailBtn";
-import GitHubBtn from "@frontend/layouts/buttons/GitHubBtn";
-import LandingSkeleton from "@frontend/layouts/skeletons/LandingSkeleton";
+import EmailBtn from "@frontend/components/buttons/EmailBtn";
+import GitHubBtn from "@frontend/components/buttons/GitHubBtn";
+import LandingSkeleton from "@frontend/layouts/skeleton-screens/LandingSkeleton";
 import TechStackSlider from "@frontend/layouts/TechStackSlider";
 import { Image } from "@frontend/components/ui/Image";
 
