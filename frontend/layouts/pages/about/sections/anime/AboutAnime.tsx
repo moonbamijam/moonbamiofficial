@@ -17,9 +17,13 @@ export default function AboutAnime() {
           But what I really love the most are the{" "}
           <span className="font-semibold text-primary">waifus</span> of an
           anime. These girls are the reason why I made{" "}
-          <span className="font-semibold text-primary">tsukiwa</span>. I usually
-          watch through Crunchyroll but I sometimes set sail to the seas when
-          geo-restrictions occur. You can check out my{" "}
+          <span className="font-semibold text-primary">tsukiwa</span>.
+          <br />
+          <br />I usually watch through Crunchyroll and I sometimes use VPN
+          whenever the show I want isn't available to my country. If the show
+          isn't really available to crunchyroll for some reason, I don't
+          hesitate to set sail to the seas when geo-restrictions occur. You can
+          check out my{" "}
           <Link
             href="https://anilist.co/user/Moonbami/"
             className="font-semibold text-primary hover:underline"

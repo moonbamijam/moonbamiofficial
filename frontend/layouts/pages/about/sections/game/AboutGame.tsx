@@ -2,6 +2,7 @@ import SectionHeading from "@frontend/components/SectionHeading";
 import { Paragraph } from "@frontend/components/ui/Paragraph";
 import Section from "@frontend/layouts/common/Section";
 import RotatingGameGif from "./RotatingGameGif";
+import Link from "@node_modules/next/link";
 
 export default function AboutGame() {
   return (
@@ -19,9 +20,16 @@ export default function AboutGame() {
           my life. I also love playing{" "}
           <span className="text-primary font-semibold">Gacha Games</span>, I
           just love collecting different type of characters. Some of them had
-          special place in my heart. I mostly play on{" "}
-          <span className="text-primary font-semibold">Steam</span> and spend
-          most of my time in{" "}
+          special place in my heart.
+          <br />
+          <br />I mostly play on{" "}
+          <Link
+            href="https://steamcommunity.com/id/moonbamiofficial/"
+            className="text-primary font-semibold hover:underline"
+          >
+            Steam
+          </Link>{" "}
+          and spend most of my time in{" "}
           <span className="text-primary font-semibold">
             Umamusume: Pretty Derby
           </span>{" "}
