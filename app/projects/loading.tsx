@@ -1,5 +1,10 @@
-import ProjectSkeleton from "@frontend/layouts/skeletons/ProjectSkeleton";
+import PageWrapper from "@frontend/layouts/common/PageWrapper";
+import SkeletonScreenProject from "@frontend/layouts/skeleton-screens/SkeletonScreenProject";
 
 export default function Loading() {
-  return <ProjectSkeleton />;
+  return (
+    <PageWrapper>
+      <SkeletonScreenProject />
+    </PageWrapper>
+  );
 }
