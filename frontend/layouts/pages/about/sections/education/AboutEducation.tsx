@@ -13,13 +13,13 @@ export default function AboutEducation() {
       <div className="flex flex-col gap-4 lg:gap-6">
         <div className="w-full flex flex-col items-end">
           <Image
-            src="https://scontent.fmnl35-1.fna.fbcdn.net/v/t39.30808-6/464427780_8579299988774562_9025406764959811706_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeEi8IVRA2xUFGr_yxure4uD19XEyovTz7vX1cTKi9PPu0BM5wmKBt2SPopIW-fMuV6_2ofr5rMR1d5AOXuLl1Ja&_nc_ohc=sKv84bJ3JkAQ7kNvwEnAnq-&_nc_oc=AdlBVN57T2czLSAHUww25Mtr126ZC1VQVN-Zl41HVMaSiwDs_-mkGxteHVWPx6xBtlY&_nc_zt=23&_nc_ht=scontent.fmnl35-1.fna&_nc_gid=ywPNhaK_u-khyhOrlqeCXA&oh=00_AfZEr7eVKUlXzGLGQ2W8aL6sTzNnzsjxPuE4Rork10DhCg&oe=68C8D2C6"
+            src="https://i.ibb.co/5gRhtncY/old.jpg"
             alt="Morrisonridge Academy"
             shape="tv"
           />
           <ImageCredits
-            name="Morrisonridge Academy"
-            href="https://www.facebook.com/profile.php?id=100063804887904"
+            name="Lorrane Dasalla @ Morrisonridge Academy"
+            href="https://www.facebook.com/share/p/1BZVoNW1aj/"
           />
         </div>
         <div className="gradeschool">
