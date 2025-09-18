@@ -4,13 +4,14 @@ import GitHubBtn from "@frontend/components/buttons/GitHubBtn";
 import LandingSkeleton from "@frontend/layouts/skeleton-screens/LandingSkeleton";
 import TechStackSlider from "@frontend/layouts/TechStackSlider";
 import { Image } from "@frontend/components/ui/Image";
+import ImageCredits from "@frontend/components/ImageCredits";
 
 const HomePage = async () => {
   return (
     <Suspense fallback={<LandingSkeleton />}>
-      <section id="home" className="container pt-28">
+      <section id="home" className="container pt-32">
         {/* wraps the introduction and the tech stacks */}
-        <div className="w-full h-full relative flex flex-col justify-around lg:justify-between items-center gap-20">
+        <div className="w-full h-full relative flex flex-col justify-around lg:justify-between items-center gap-24">
           {/* wraps the intro */}
           <div className="w-full flex flex-col justify-evenly items-center xl:flex-row gap-5">
             <div className="relative w-full flex flex-col items-center xl:items-start gap-5 max-w-[600px]">
@@ -28,10 +29,15 @@ const HomePage = async () => {
                 <EmailBtn href="mailto:Jam Moonbami <moonbamijamofficial15@gmail.com>" />
               </div>
             </div>
-            <div className="relative w-full max-w-[400px] lg:max-w-[450px] xl:max-w-[550px] aspect-square flex items-center justify-center rounded-lg overflow-hidden">
+            <div className="relative w-full max-w-[400px] lg:max-w-[450px] xl:max-w-[550px] aspect-square flex flex-col items-end rounded-lg overflow-hidden">
               <Image
                 src="https://avatars.githubusercontent.com/u/141120384?v=4"
                 alt="Jam Moonbami"
+              />
+              <ImageCredits
+                phrase="Image source in"
+                href="https://github.com/moonbamijam/moonbamijam"
+                name="GitHub README"
               />
             </div>
           </div>
