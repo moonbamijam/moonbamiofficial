@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Footer from "@frontend/layouts/footer/Footer";
-import TimelineSection from "@frontend/layouts/sections/TimelineSection";
+import Timeline from "@frontend/layouts/pages/timeline/Timeline";
 import BackToTop from "@frontend/components/buttons/BackToTop";
 import PageWrapper from "@frontend/layouts/common/PageWrapper";
 
@@ -13,7 +13,7 @@ export default function TimelinePage() {
     <>
       <BackToTop id="#timeline" />
       <PageWrapper id="timeline">
-        <TimelineSection />
+        <Timeline />
       </PageWrapper>
       <Footer />
     </>

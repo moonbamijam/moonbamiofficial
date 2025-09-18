@@ -62,7 +62,7 @@ const renderTimeline = (timelines: TimelineType[]) => {
   }
 };
 
-export default async function TimelineSection() {
+export default async function Timeline() {
   const { timelines } = await useFetch("/api/timelines");
 
   return (
