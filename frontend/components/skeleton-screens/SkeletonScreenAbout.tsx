@@ -1,5 +1,5 @@
 import Section from "@frontend/layouts/common/Section";
-import SkeletonScreen from "@frontend/components/SkeletonScreen";
+import SkeletonScreen from "@frontend/components/skeleton-screens/SkeletonScreen";
 import { Image } from "@frontend/components/ui/Image";
 
 export default function SkeletonScreenAbout() {

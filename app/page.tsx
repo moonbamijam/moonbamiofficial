@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import EmailBtn from "@frontend/components/buttons/EmailBtn";
 import GitHubBtn from "@frontend/components/buttons/GitHubBtn";
-import SkeletonScreenHome from "@frontend/layouts/skeleton-screens/SkeletonScreenHome";
+import SkeletonScreenHome from "@frontend/components/skeleton-screens/SkeletonScreenHome";
 import TechStackSlider from "@frontend/layouts/TechStackSlider";
 import { Image } from "@frontend/components/ui/Image";
 import ImageCredits from "@frontend/components/ImageCredits";

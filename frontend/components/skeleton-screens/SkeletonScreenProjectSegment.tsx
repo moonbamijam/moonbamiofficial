@@ -1,6 +1,6 @@
 import { Image } from "@frontend/components/ui/Image";
-import Section from "../common/Section";
-import SkeletonScreen from "@frontend/components/SkeletonScreen";
+import Section from "../../layouts/common/Section";
+import SkeletonScreen from "@frontend/components/skeleton-screens/SkeletonScreen";
 
 export default function SkeletonScreenProjectSegment() {
   return (
