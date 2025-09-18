@@ -4,6 +4,8 @@ import Section from "@frontend/layouts/common/Section";
 import GitHubBtn from "@frontend/components/buttons/GitHubBtn";
 import VisitBtn from "@frontend/components/buttons/VisitBtn";
 import BackBtn from "@frontend/components/buttons/BackBtn";
+import Title from "@frontend/components/Title";
+import Description from "@frontend/components/Description";
 import Footer from "@frontend/layouts/footer/Footer";
 import { Image } from "@frontend/components/ui/Image";
 import { Paragraph } from "@frontend/components/ui/Paragraph";
@@ -62,12 +64,12 @@ export default async function ProjectPageById({
                 </ProjectTag>
               ))}
             </div>
-            <div className="w-full flex flex-col lg:flex-row lg:justify-between gap-x-8 xl:gap-x-12">
+            <div className="w-full flex flex-col lg:flex-row lg:justify-between">
               <div className="mb-6">
                 <h1 className="font-bold text-3xl lg:text-4xl mb-1">
                   {projects.title}
                 </h1>
-                <Paragraph variant="wide">{projects.desc}</Paragraph>
+                <Paragraph>{projects.desc}</Paragraph>
               </div>
               <div className="w-full flex lg:hidden items-center gap-1 mb-16">
                 <h3 className="capitalize mr-2 text-slate-400 dark:text-slate-500">
