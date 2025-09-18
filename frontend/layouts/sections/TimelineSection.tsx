@@ -9,90 +9,65 @@ import { FaMoon } from "react-icons/fa6";
 import { EventType, TimelineType } from "@shared/types";
 import { useFetch } from "@backend/hooks/useFetch";
 import { sortDateByDescendingOrder } from "@frontend/ts/utils/sortDate";
-import Section from "@frontend/components/common/Section";
-import Heading from "@frontend/components/Heading";
-import EventBtn from "@frontend/layouts/buttons/EventBtn";
+import Section from "@frontend/layouts/common/Section";
+import EventWrapper from "@frontend/components/EventWrapper";
 
 const renderTimeline = (timelines: TimelineType[]) => {
   let typeIcon;
 
   if (timelines) {
-    return timelines.sort(sortDateByDescendingOrder).map((event: EventType) => {
-      switch (event.type) {
-        case "present":
-          typeIcon = <FaGift />;
-          break;
-        case "gift":
-          typeIcon = <FaGift />;
-          break;
-        case "born":
-          typeIcon = <FaBaby />;
-          break;
-        case "birthday":
-          typeIcon = <FaCakeCandles />;
-          break;
-        case "game":
-          typeIcon = <FaGamepad />;
-          break;
-        case "programming":
-          typeIcon = <FaCode />;
-          break;
-        case "school":
-          typeIcon = <IoSchool />;
-          break;
-        case "religion":
-          typeIcon = <FaChurch />;
-          break;
-        default:
-          typeIcon = <FaMoon />;
-          break;
-      }
-      return (
-        <EventBtn
-          key={event._id}
-          _id={event._id}
-          typeIcon={typeIcon}
-          date={event.date}
-          note={event.note}
-          message={event.message}
-        />
-      );
-    });
+    return timelines
+      .sort(sortDateByDescendingOrder)
+      .map(({ date, message, note, _id, type, typeIcon }: EventType) => {
+        switch (type) {
+          case "present":
+            typeIcon = <FaGift />;
+            break;
+          case "gift":
+            typeIcon = <FaGift />;
+            break;
+          case "born":
+            typeIcon = <FaBaby />;
+            break;
+          case "birthday":
+            typeIcon = <FaCakeCandles />;
+            break;
+          case "game":
+            typeIcon = <FaGamepad />;
+            break;
+          case "programming":
+            typeIcon = <FaCode />;
+            break;
+          case "school":
+            typeIcon = <IoSchool />;
+            break;
+          case "religion":
+            typeIcon = <FaChurch />;
+            break;
+          default:
+            typeIcon = <FaMoon />;
+            break;
+        }
+        return (
+          <EventWrapper
+            key={_id}
+            _id={_id}
+            typeIcon={typeIcon}
+            date={date}
+            note={note}
+            message={message}
+          />
+        );
+      });
   }
-};
-
-const TimelineTip = (time: string) => {
-  return (
-    <div
-      className={`absolute ${
-        time == "present" ? "top-0" : "bottom-0"
-      }  h-full w-[4px] bg-primary dark:bg-gray-800 ml-[36px] -z-10 flex justify-center`}
-    >
-      <div
-        className={`absolute ${
-          time == "present" ? "top-0" : "bottom-0"
-        } w-4 h-4 rounded-full bg-primary dark:bg-gray-800`}
-      ></div>
-    </div>
-  );
 };
 
 export default async function TimelineSection() {
   const { timelines } = await useFetch("/api/timelines");
 
   return (
-    <>
-      <Section id="timeline">
-        <Heading
-          name="Timeline"
-          desc="A simple timeline of events that I want to share with you, everyone."
-        />
-        <div className="relative">
-          {TimelineTip("present")}
-          {renderTimeline(timelines)}
-          {TimelineTip("past")}
-        </div>
-      </Section>
-    </>
+    <Section>
+      <div className="w-max mx-auto relative">{renderTimeline(timelines)}</div>
+    </Section>
   );
 }

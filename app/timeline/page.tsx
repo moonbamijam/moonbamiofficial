@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Footer from "@frontend/layouts/footer/Footer";
 import TimelineSection from "@frontend/layouts/sections/TimelineSection";
 import BackToTop from "@frontend/components/buttons/BackToTop";
+import PageWrapper from "@frontend/layouts/common/PageWrapper";
 
 export const metadata: Metadata = {
   title: "Timeline",
@@ -10,10 +11,10 @@ export const metadata: Metadata = {
 export default function TimelinePage() {
   return (
     <>
-      <div className="container relative">
-        <BackToTop id="#timeline" />
+      <BackToTop id="#timeline" />
+      <PageWrapper id="timeline">
         <TimelineSection />
-      </div>
+      </PageWrapper>
       <Footer />
     </>
   );
