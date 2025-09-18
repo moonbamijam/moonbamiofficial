@@ -1,14 +1,14 @@
 import { Suspense } from "react";
 import EmailBtn from "@frontend/components/buttons/EmailBtn";
 import GitHubBtn from "@frontend/components/buttons/GitHubBtn";
-import LandingSkeleton from "@frontend/layouts/skeleton-screens/LandingSkeleton";
+import SkeletonScreenHome from "@frontend/layouts/skeleton-screens/SkeletonScreenHome";
 import TechStackSlider from "@frontend/layouts/TechStackSlider";
 import { Image } from "@frontend/components/ui/Image";
 import ImageCredits from "@frontend/components/ImageCredits";
 
 const HomePage = async () => {
   return (
-    <Suspense fallback={<LandingSkeleton />}>
+    <Suspense fallback={<SkeletonScreenHome />}>
       <section id="home" className="container pt-32">
         {/* wraps the introduction and the tech stacks */}
         <div className="w-full h-full relative flex flex-col justify-around lg:justify-between items-center gap-24">
