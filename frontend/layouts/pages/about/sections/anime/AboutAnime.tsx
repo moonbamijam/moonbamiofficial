@@ -2,14 +2,15 @@ import SectionHeading from "@frontend/components/SectionHeading";
 import { Paragraph } from "@frontend/components/ui/Paragraph";
 import Section from "@frontend/layouts/common/Section";
 import Link from "@node_modules/next/link";
-import RotatingAnimeGif from "../../../../../components/about/RotatingAnimeGif";
+import LoopingImage from "@frontend/components/LoopingImage";
+import { animeGifList } from "@frontend/ts/constants/anime-gif-list";
 
 export default function AboutAnime() {
   return (
     <Section className="flex flex-col lg:flex-row justify-center items-center lg:text-slate-300">
-      <RotatingAnimeGif />
+      <LoopingImage imageList={animeGifList} />
       <div className="anime">
-        <SectionHeading name="I love Anime!" />
+        <SectionHeading name="Anime だいすき！" />
         <Paragraph className="lg:text-slate-400" variant="wide">
           Anime is a significant part of my life, and it has influenced my
           creativity and mindset. I love watching different genres of anime from

@@ -1,13 +1,14 @@
 import SectionHeading from "@frontend/components/SectionHeading";
 import { Paragraph } from "@frontend/components/ui/Paragraph";
 import Section from "@frontend/layouts/common/Section";
-import RotatingGameGif from "../../../../../components/about/RotatingGameGif";
 import Link from "@node_modules/next/link";
+import LoopingImage from "@frontend/components/LoopingImage";
+import { gameGifList } from "@frontend/ts/constants/game-gif-list";
 
 export default function AboutGame() {
   return (
     <Section className="flex flex-col lg:flex-row justify-center items-center lg:text-slate-300">
-      <RotatingGameGif />
+      <LoopingImage imageList={gameGifList} />
       <div className="game">
         <SectionHeading name="No Game, No Life!" />
         <Paragraph className="lg:text-slate-400" variant="wide">
