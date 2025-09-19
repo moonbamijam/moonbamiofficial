@@ -9,11 +9,11 @@ export const animeGifList: animeGif[] = [
     title: "Jujutsu Kaisen",
   },
   {
-    url: "https://media1.tenor.com/m/lsPL3K-FPMwAAAAC/dandadan-op-dandadan-ken-takakura.gif",
+    url: "https://64.media.tumblr.com/022c946c3ed266185a88393578cccd52/54b5459bd5157a70-56/s540x810/172fa55f56e96b9e80c1b8e4136b7d25ddc95f2a.gif",
     title: "Dandadan",
   },
   {
-    url: "https://i.pinimg.com/originals/38/95/c1/3895c1062a3a619ab03818bf769e3ccb.gif",
+    url: "https://giffiles.alphacoders.com/221/221800.gif",
     title: "Sou Sou no Frieren",
   },
   {
