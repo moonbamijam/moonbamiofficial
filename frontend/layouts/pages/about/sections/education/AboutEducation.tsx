@@ -40,13 +40,13 @@ export default function AboutEducation() {
       <div className="flex flex-col gap-4 lg:gap-6">
         <div className="w-full flex flex-col items-end">
           <Image
-            src="https://scontent.fmnl35-1.fna.fbcdn.net/v/t1.6435-9/99408492_108819167510149_7874161614763589632_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=c_K7qX-mIisQ7kNvwEBdss_&_nc_oc=AdlXbW2Bp8fMqmDWaUhE2AOdYK07WIYtpIUbrpKVDzdSFjeyjf9SoF7K0kH2DVIikNA&_nc_zt=23&_nc_ht=scontent.fmnl35-1.fna&_nc_gid=h2u99VdOFvCp2nsWzNbbBQ&oh=00_AfUrwW2qktk2M-65wuLFzYgMdcgCfU73UCXDniF4SjPvjA&oe=68CAA588"
+            src="https://educateandexplore.weebly.com/uploads/8/0/8/4/80848288/4016616_orig.jpg"
             alt="Pitogo High School"
             shape="tv"
           />
           <ImageCredits
-            name="Pitogo High School Official"
-            href="https://www.facebook.com/photo.php?fbid=108819164176816&id=108476324211100&set=a.108819197510146"
+            name="Erin Travel Blog"
+            href="https://educateandexplore.weebly.com/blog/category/manila"
           />
         </div>
         <div className="highschool">
@@ -66,13 +66,13 @@ export default function AboutEducation() {
       <div className="flex flex-col gap-4 lg:gap-6">
         <div className="w-full flex flex-col items-end">
           <Image
-            src="https://scontent.fmnl35-1.fna.fbcdn.net/v/t1.6435-9/41671976_10155496640856831_4862644161578270720_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=GylEKTEvIYUQ7kNvwEUPRhw&_nc_oc=Adl0dYrfiwZbiub1M2gqKve6f3z2vPIGzR-nX97h8Kz5ZQdB24JYuC22GqaiHkkAzoQ&_nc_zt=23&_nc_ht=scontent.fmnl35-1.fna&_nc_gid=Z8YNrvtuMZ0urRqHrYLjYw&oh=00_AfU-t769Lw02kbivSUkKgcqXca6G6ttrcDg4E_YFcj4zxQ&oe=68CAA29E"
+            src="https://lh3.googleusercontent.com/proxy/uMz5qSkpp35v_0EhQ3DAJAw4E4vAtLuZlaQJdzc_WGll6QIbUVFMyaqm73--6WVnUwhf00D7oyUNRQZdaIXTTpQ6Ujb9v4YFF-4QO-DxER8taY2UPRY1wijKopwhyayAywxLB4Qm5MVvzDR_aovH95jMsfN9TssFAiJe8J3QpucE=w1080-k-no"
             alt="General Emilio Aguinal Natioinal High School"
             shape="tv"
           />
           <ImageCredits
-            name="GEANHS"
-            href="https://www.facebook.com/people/GEANHSGen-Emilio-Aguinaldo-National-High-School-Main/100064529958278/"
+            name="World Orgs"
+            href="https://pilipinas.worldorgs.com/Katalogo/imus/kindergarten/general-emilio-aguinaldo-national-high-school"
           />
         </div>
         <div className="highschool">
