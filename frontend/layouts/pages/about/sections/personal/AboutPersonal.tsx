@@ -4,6 +4,7 @@ import { ageCalc } from "@frontend/ts/utils/age-calc";
 import { Paragraph } from "@frontend/components/ui/Paragraph";
 import SectionHeading from "@frontend/components/SectionHeading";
 import { Image } from "@frontend/components/ui/Image";
+import Link from "@node_modules/next/link";
 
 const age = ageCalc("2002-08-15");
 
@@ -30,15 +31,34 @@ export default function AboutPersonal() {
           </span>
           , a passionate{" "}
           <span className="text-primary font-semibold">{age} years old</span>{" "}
-          full-stack web/game developer with a frontend specialty born in the
-          country of{" "}
-          <span className="text-primary font-semibold">The Philippines</span>.
-          The word Moonbami consists of two of my most favorite things in my
-          life. Moon represents how I love{" "}
-          <span className="text-primary font-semibold">space</span>, while bami
-          represents my first favorite female anime character{" "}
+          full-stack{" "}
+          <span className="text-primary font-semibold">web/game developer</span>{" "}
+          with a frontend specialty born in the country of{" "}
+          <span className="text-primary font-semibold">The Philippines</span>. I
+          like doing things on my own but I love whenever I get to do things
+          with other people. I am always open to new{" "}
+          <span className="text-primary font-semibold">
+            opportunities and collaborations
+          </span>
+          , so feel free to reach out to me anytime. Let's create something that
+          makes people love!
+          <br />
+          <br />
+          The word <span className="text-primary font-semibold">
+            Moonbami
+          </span>{" "}
+          consists of two of my most favorite things in my life. Moon represents
+          how I love <span className="text-primary font-semibold">space</span>{" "}
+          in which I'll talk about{" "}
+          <Link
+            href="#space"
+            className="text-primary font-semibold hover:underline"
+          >
+            here
+          </Link>
+          , while bami represents my first favorite female anime character{" "}
           <span className="text-primary font-semibold">Jabami Yumeko</span>.
-          However, you can just call me Jam, Moonbami or whichever you prefer.{" "}
+          However, you can just call me Jam, Moonbami or whichever you prefer.
         </Paragraph>
       </div>
     </Section>

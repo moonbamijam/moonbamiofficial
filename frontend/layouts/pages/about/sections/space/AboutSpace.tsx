@@ -6,7 +6,10 @@ import Section from "@frontend/layouts/common/Section";
 
 export default function AboutSpace() {
   return (
-    <Section className="flex flex-col lg:flex-row justify-center items-center lg:text-slate-300">
+    <Section
+      id="space"
+      className="flex flex-col lg:flex-row justify-center items-center lg:text-slate-300"
+    >
       <div className="lg:absolute lg:-z-10 lg:w-full lg:h-full flex flex-col items-end">
         <Image
           src="https://sarahjmwalker.wordpress.com/wp-content/uploads/2014/12/interstellar-2014-poster-wallpaper.jpg"
@@ -36,10 +39,18 @@ export default function AboutSpace() {
           technology, humanoids and a lot more! Witnessing our own Milky Way
           Galaxy up close is definitely a{" "}
           <span className="text-primary font-semibold">once-in-a-lifetime</span>{" "}
-          so, it is visible to us here on Earth. Light pollution makes it
-          impossible for humans to see. Therefore I want to be able to see the
-          stars and our galaxy with greater clarity at least once in my
-          lifetime.
+          experience but light pollution makes it hard for us humans to see it.
+          I that someday, I'll be able to see the stars and our galaxy with
+          greater clarity at least once in my life.
+          <br />
+          <br />
+          It really is unbelievable to know that we humans are just a tiny dust
+          across the universe, how insignificant we are and our existence.{" "}
+          <span className="text-primary font-semibold">
+            Living is a great coincidence
+          </span>{" "}
+          since imagine that we have trillions of galaxies and star systems but
+          what are the odds that one of them can contain living beings.
         </Paragraph>
       </div>
     </Section>

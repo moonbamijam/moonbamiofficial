@@ -14,8 +14,8 @@ export default function AboutAnime() {
         <Paragraph className="lg:text-slate-400" variant="wide">
           Anime is a significant part of my life, and it has influenced my
           creativity and mindset. I love watching different genres of anime from
-          fantasy, harems, action, romcoms, isekai, slice of life to even ecchi.
-          But what I really love the most are the{" "}
+          drama, action, romcom, slice of life, fantasy and more. But what I
+          really love the most are the{" "}
           <span className="font-semibold text-primary">waifus</span> of an
           anime. These girls are the reason why I made{" "}
           <span className="font-semibold text-primary">tsukiwa</span>.
@@ -32,7 +32,7 @@ export default function AboutAnime() {
           >
             AniList
           </Link>{" "}
-          account if you want to see more of my detailed anime tracking.
+          profile if you want to see more of my detailed anime tracking.
         </Paragraph>
       </div>
     </Section>
