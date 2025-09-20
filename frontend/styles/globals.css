@@ -53,3 +53,16 @@ body {
 .hide {
   @apply opacity-0 invisible;
 }
+
+/* customs */
+.bg-instagram-gradient {
+  background: radial-gradient(
+      circle farthest-corner at 34% 100%,
+      #fcdf8f -5%,
+      #fbd377 5%,
+      #fa8e37 15%,
+      #f73344 30%,
+      transparent 65%
+    ),
+    linear-gradient(145deg, #3051f1 35%, #c92bb7 70%);
+}
