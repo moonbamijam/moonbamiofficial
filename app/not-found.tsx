@@ -23,9 +23,9 @@ export default function NotFound() {
           </p>
           <Link
             href="/"
-            className={`${buttonVariants({ variant: "default" })} ml-auto`}
+            className={`${buttonVariants({ variant: "default", size: "max" })} ml-auto`}
           >
-            Return to base
+            Return to homepage
           </Link>
         </div>
       </div>
