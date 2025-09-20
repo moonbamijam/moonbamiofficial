@@ -12,7 +12,7 @@ export default function EventWrapper({
   return (
     <div
       key={_id}
-      className="w-max flex items-center py-8 opacity-80 dark:opacity-70 hover:opacity-100 hover:py-16 group duration-500"
+      className="w-max flex items-center py-8 opacity-80 dark:opacity-70 hover:opacity-100 group duration-500"
     >
       <div className="w-max h-full flex flex-col items-center">
         <Button
