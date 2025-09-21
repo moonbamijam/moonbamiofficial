@@ -10,7 +10,7 @@ const age = ageCalc("2002-08-15");
 
 export default function AboutPersonal() {
   return (
-    <Section className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 premium:grid-cols-5">
+    <Section className="grid grid-cols-1 xl:grid-cols-4 premium:grid-cols-5">
       <div className="w-full xl:col-span-2 premium:col-span-3 flex flex-col items-end">
         <Image
           src="https://i.ibb.co/5X2CC6xq/about.jpg"
@@ -24,7 +24,7 @@ export default function AboutPersonal() {
       </div>
       <div className="xl:col-span-2 personal">
         <SectionHeading name="This is me" />
-        <Paragraph>
+        <Paragraph variant="wide">
           I am Jam Moonbami or{" "}
           <span className="text-primary font-semibold">
             Jamiraquai Mikhail Alvarez

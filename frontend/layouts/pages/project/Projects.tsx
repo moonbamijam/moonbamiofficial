@@ -30,7 +30,7 @@ export default async function Projects() {
 
   return (
     <Section>
-      <Grid className="lg:grid-cols-2 premium:grid-cols-3 gap-[50px]">
+      <Grid className="xl:grid-cols-2 premium:grid-cols-3 gap-[50px]">
         {renderProjects(projects)}
       </Grid>
     </Section>

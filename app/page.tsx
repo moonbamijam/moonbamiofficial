@@ -11,9 +11,9 @@ const HomePage = async () => {
     <Suspense fallback={<SkeletonScreenHome />}>
       <section id="home" className="container pt-32 pb-10">
         {/* wraps the introduction and the tech stacks */}
-        <div className="w-full h-full relative flex flex-col justify-around lg:justify-between items-center gap-24">
+        <div className="w-full h-full relative flex flex-col justify-around lg:justify-between items-center gap-20">
           {/* wraps the intro */}
-          <div className="w-full flex flex-col justify-evenly items-center xl:flex-row gap-5">
+          <div className="w-full flex flex-col justify-evenly items-center xl:flex-row gap-5 gap-y-16">
             <div className="relative w-full flex flex-col items-center xl:items-start gap-5 max-w-[600px]">
               <div className="flex flex-col items-center xl:items-start gap-5">
                 <h1 className="text-center xl:text-left text-6xl px-1 font-bold tracking-tight">

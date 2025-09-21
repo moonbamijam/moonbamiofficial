@@ -4,7 +4,7 @@ import SkeletonScreen from "@frontend/components/skeleton-screens/SkeletonScreen
 
 export default function SkeletonScreenProjectSegment() {
   return (
-    <div className="container pt-[100px] lg:pt-[50px]">
+    <div className="pt-[100px] lg:pt-[50px]">
       <Section>
         <div className="w-full max-w-[1000px] mx-auto space-y-4">
           <SkeletonScreen>

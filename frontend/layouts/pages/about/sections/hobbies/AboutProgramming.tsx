@@ -6,7 +6,7 @@ import Section from "@frontend/layouts/common/Section";
 
 export default function AboutProgramming() {
   return (
-    <Section className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 premium:grid-cols-5">
+    <Section className="grid grid-cols-1 xl:grid-cols-4 premium:grid-cols-5">
       <div className="w-full xl:order-last xl:col-span-2 premium:col-span-3 flex flex-col items-end">
         <Image
           src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D"
@@ -17,7 +17,7 @@ export default function AboutProgramming() {
       </div>
       <div className="xl:order-first xl:col-span-2 programming">
         <SectionHeading name="Programming" />
-        <Paragraph>
+        <Paragraph variant="wide">
           I'd never had any interest in programming back then, I don't even
           think myself doing it as a hobby. I remember there was activity at my
           campus where you have to generate and utilize basic HTML. On that day,

@@ -28,13 +28,13 @@ export default function ProjectCard({
         <Image
           src={src}
           alt={alt}
-          className="max-h-[300px] mb-4 "
+          className="max-h-[400px] mb-4"
           variant="thumbnail"
           size="thumbnail"
           shape="tv"
         />
         <h1 className="truncate text-3xl font-bold">{title}</h1>
-        <Paragraph variant="brief" className="mb-6">
+        <Paragraph variant="wide" className="mb-6 line-clamp-2">
           {desc}
         </Paragraph>
         <div className="w-full min-h-10 lg:min-h-20 flex flex-wrap gap-1 mb-4">

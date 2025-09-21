@@ -8,7 +8,7 @@ const skeletonProjects = 6;
 export default function SkeletonScreenProject() {
   return (
     <Section>
-      <Grid className="lg:grid-cols-2 premium:grid-cols-3 gap-[50px]">
+      <Grid className="xl:grid-cols-2 premium:grid-cols-3 gap-[50px]">
         {Array.from({ length: skeletonProjects }).map((_, index) => (
           <div
             key={index}
@@ -16,7 +16,7 @@ export default function SkeletonScreenProject() {
           >
             <SkeletonScreen className="mb-4">
               <Image
-                className="max-h-[300px] opacity-0 invisible"
+                className="max-h-[400px] opacity-0 invisible"
                 variant="thumbnail"
                 size="thumbnail"
                 shape="tv"

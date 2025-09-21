@@ -5,7 +5,7 @@ import { Image } from "@frontend/components/ui/Image";
 export default function SkeletonScreenAbout() {
   return (
     <>
-      <Section className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 premium:grid-cols-5 z-10">
+      <Section className="grid grid-cols-1 xl:grid-cols-4 premium:grid-cols-5 z-10">
         <SkeletonScreen className="w-full xl:col-span-2 premium:col-span-3 flex flex-col items-end">
           <Image className="opacity-0 invisible" shape="tv" />
         </SkeletonScreen>
@@ -19,7 +19,7 @@ export default function SkeletonScreenAbout() {
           <Image className="opacity-0 invisible max-h-[600px]" shape="tv" />
         </SkeletonScreen>
       </Section>
-      <Section className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 premium:grid-cols-5 z-10">
+      <Section className="grid grid-cols-1 xl:grid-cols-4 premium:grid-cols-5 z-10">
         <SkeletonScreen className="w-full xl:col-span-2 premium:col-span-3 order-2 flex flex-col items-end">
           <Image className="opacity-0 invisible" shape="tv" />
         </SkeletonScreen>
