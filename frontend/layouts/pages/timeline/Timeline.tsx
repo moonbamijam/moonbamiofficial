@@ -66,8 +66,6 @@ export default async function Timeline() {
   const { timelines } = await useFetch("/api/timelines");
 
   return (
-    <Section>
-      <div className="w-max mx-auto relative">{renderTimeline(timelines)}</div>
-    </Section>
+    <Section className="lg:w-max mx-auto">{renderTimeline(timelines)}</Section>
   );
 }
