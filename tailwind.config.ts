@@ -46,6 +46,8 @@ const config: Config = {
         "blob-three": "moveBlob3 50s alternate infinite ease-in-out",
         "blob-four": "moveBlob4 50s alternate infinite ease-in-out",
         "blob-five": "moveBlob5 50s alternate infinite ease-in-out",
+        "dark-background-gradient":
+          "darkBackgroundGradient 25s infinite ease-in-out",
         slideTectStack: "slideTectStack 30s linear infinite",
       },
       boxShadow: {

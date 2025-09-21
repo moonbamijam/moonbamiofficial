@@ -6,6 +6,7 @@ import Header from "@frontend/layouts/header/Header";
 import ThemesProvider from "@frontend/providers/themesProvider";
 import Blob from "@frontend/components/bg/Blob";
 import "@frontend/styles/globals.css";
+import DarkGradient from "@frontend/components/bg/DarkGradient";
 
 const inter = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -59,6 +60,7 @@ export default function RootLayout({
             <SpeedInsights />
           </main>
           <Blob />
+          <DarkGradient />
         </ThemesProvider>
       </body>
     </html>
