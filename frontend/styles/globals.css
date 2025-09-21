@@ -4,12 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --color-primary: #007acc;
-  }
-}
-
 *,
 ::before,
 ::after {
@@ -21,17 +15,15 @@ html {
 }
 
 body {
-  @apply text-on-background dark:text-white;
+  @apply text-slate-800 dark:text-slate-300;
 }
 
 ::selection {
-  @apply bg-primary dark:bg-secondary text-white dark:text-black;
+  @apply bg-primary text-white dark:text-black;
 }
 
-/* UTILITIES */
 .container {
-  padding-left: 15vw;
-  padding-right: 15vw;
+  @apply pl-[8vw] pr-[8vw] mx-auto;
 }
 
 .text-format {
@@ -39,7 +31,7 @@ body {
 }
 
 .paragraph-format {
-  @apply px-2 w-full lg:w-[500px];
+  @apply px-2 w-full min-w-[400px] max-w-[600px] dark:text-slate-400;
 }
 
 .desc-format {
@@ -47,7 +39,7 @@ body {
 }
 
 .active {
-  @apply bg-primary dark:bg-secondary hover:bg-primary-dark dark:hover:bg-secondary-variant text-white dark:text-black;
+  @apply bg-primary hover:bg-primaryvariant text-white dark:text-black;
 }
 
 .button-format {
@@ -60,4 +52,17 @@ body {
 
 .hide {
   @apply opacity-0 invisible;
+}
+
+/* customs */
+.bg-instagram-gradient {
+  background: radial-gradient(
+      circle farthest-corner at 34% 100%,
+      #fcdf8f -5%,
+      #fbd377 5%,
+      #fa8e37 15%,
+      #f73344 30%,
+      transparent 65%
+    ),
+    linear-gradient(145deg, #3051f1 35%, #c92bb7 70%);
 }

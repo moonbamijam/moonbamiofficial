@@ -1,0 +1,17 @@
+export const tagList = [
+  { tag: "Featured", color: "bg-amber-400" },
+  { tag: "Open Source", color: "bg-green-500" },
+  { tag: "Maintaining", color: "bg-emerald-500" },
+  { tag: "In Progress", color: "bg-orange-500" },
+  { tag: "Completed", color: "bg-cyan-500" },
+  { tag: "Archived", color: "bg-slate-400" },
+  { tag: "School", color: "bg-indigo-500" },
+  { tag: "Personal", color: "bg-violet-500" },
+  { tag: "Work", color: "bg-sky-500" },
+  { tag: "Collaboration", color: "bg-teal-500" },
+  { tag: "Commission", color: "bg-yellow-500" },
+  { tag: "For sale", color: "bg-teal-500" },
+  { tag: "Web", color: "bg-blue-400" },
+  { tag: "Game", color: "bg-pink-500" },
+  { tag: "Application", color: "bg-fuchsia-500" },
+];

@@ -1,7 +1,8 @@
 import { Metadata } from "next";
-import ProjectSection from "@frontend/layouts/sections/ProjectSection";
-import BackToTop from "@frontend/layouts/buttons/BackToTop";
+import Projects from "@frontend/layouts/pages/project/Projects";
+import BackToTop from "@frontend/components/buttons/BackToTop";
 import Footer from "@frontend/layouts/footer/Footer";
+import PageWrapper from "@frontend/layouts/common/PageWrapper";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -10,10 +11,10 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <>
-      <div className="container relative">
-        <BackToTop id={"#project"} />
-        <ProjectSection />
-      </div>
+      <BackToTop id={"#projects"} />
+      <PageWrapper id="projects">
+        <Projects />
+      </PageWrapper>
       <Footer />
     </>
   );

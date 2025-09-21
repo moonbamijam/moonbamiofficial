@@ -9,6 +9,8 @@ const projectSchema = new Schema(
     website: String,
     github: String,
     slug: String,
+    tag: Array,
+    tech: Array,
   },
   {
     timestamps: true,

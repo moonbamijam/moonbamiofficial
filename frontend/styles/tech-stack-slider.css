@@ -1,0 +1,14 @@
+.slider {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000000 10% 90%,
+    transparent
+  );
+}
+
+.item {
+  animation-delay: calc(
+    30s / var(--items) * (var(--items) - var(--position)) * -1
+  );
+}

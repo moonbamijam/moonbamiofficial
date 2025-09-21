@@ -1,5 +1,10 @@
-import DynamicProjectSegmentSkeleton from "@frontend/layouts/skeletons/DynamicProjectSegmentSkeleton";
+import PageWrapper from "@frontend/layouts/common/PageWrapper";
+import SkeletonScreenProjectSegment from "@frontend/components/skeleton-screens/SkeletonScreenProjectSegment";
 
 export default function Loading() {
-  return <DynamicProjectSegmentSkeleton />;
+  return (
+    <PageWrapper>
+      <SkeletonScreenProjectSegment />
+    </PageWrapper>
+  );
 }

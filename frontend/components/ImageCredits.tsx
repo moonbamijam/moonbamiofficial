@@ -1,25 +1,29 @@
 import Link from "next/link";
 
 type ImageCreditsProps = {
-  creditingPhrase?: string;
-  creditsTo: string;
-  creditLink: string;
+  phrase?: string;
+  name: string;
+  href: string;
+  className?: string;
 };
 
 export default function ImageCredits({
-  creditingPhrase,
-  creditsTo,
-  creditLink,
+  phrase = "Photo by",
+  name,
+  href,
+  className,
 }: ImageCreditsProps) {
   return (
-    <span className="absolute top-0 text-white text-sm opacity-0 p-2">
-      {creditingPhrase ? creditingPhrase : "Photo taken by"}{" "}
+    <span
+      className={`text-sm text-slate-400 dark:text-slate-500 mt-2 ${className}`}
+    >
+      {phrase}{" "}
       <Link
-        href={creditLink}
+        href={href}
         target="_blank"
-        className="font-semibold hover:text-primary-light hover:underline"
+        className="font-semibold hover:text-primary hover:underline capitalize"
       >
-        {creditsTo}
+        {name}
       </Link>
     </span>
   );

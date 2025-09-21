@@ -25,6 +25,8 @@ export type ProjectType = {
   website: string;
   github: string;
   slug?: string;
+  tag?: string[];
+  tech?: string[];
 };
 
 export type TechStackType = {
