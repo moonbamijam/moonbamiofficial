@@ -1,5 +1,19 @@
 # What's New
 
+# [3.0.0](https://github.com/moonbamijam/moonbamiofficial/compare/v2.7.2...v3.0.0) (2025-09-21)
+
+
+### Features
+
+* new color theme ([#65](https://github.com/moonbamijam/moonbamiofficial/issues/65)) ([44218b2](https://github.com/moonbamijam/moonbamiofficial/commit/44218b28cc2007aff80cc29ac3785630fb5a534d))
+* new overall ui ([#67](https://github.com/moonbamijam/moonbamiofficial/issues/67)) ([227ea96](https://github.com/moonbamijam/moonbamiofficial/commit/227ea96117ce85e47d584ae71b65b4cce919e88b)), closes [#11](https://github.com/moonbamijam/moonbamiofficial/issues/11) [#14](https://github.com/moonbamijam/moonbamiofficial/issues/14) [#37](https://github.com/moonbamijam/moonbamiofficial/issues/37) [#69](https://github.com/moonbamijam/moonbamiofficial/issues/69)
+* simplify ui ([#62](https://github.com/moonbamijam/moonbamiofficial/issues/62)) ([4b608e1](https://github.com/moonbamijam/moonbamiofficial/commit/4b608e1d4c077e1db97f6719c5af7af3a95f5bcd)), closes [#60](https://github.com/moonbamijam/moonbamiofficial/issues/60)
+
+
+### Performance Improvements
+
+* improvements to page section performance ([#61](https://github.com/moonbamijam/moonbamiofficial/issues/61)) ([357d5b1](https://github.com/moonbamijam/moonbamiofficial/commit/357d5b113c088721b4a277bc04f38ba35c0b7c89))
+
 ## [2.7.2](https://github.com/moonbamijam/moonbamiofficial/compare/v2.7.1...v2.7.2) (2024-09-24)
 
 
