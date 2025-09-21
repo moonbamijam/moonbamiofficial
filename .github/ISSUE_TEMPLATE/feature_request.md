@@ -1,16 +1,14 @@
 ---
 name: Feature request
 about: Add or request a feature
-title: "[FEATURE] Feature name"
+title: "Feature name"
 labels: "feature"
 assignees: "moonbamijam"
 ---
 
-# Feature name
+# Description
 
-> [!NOTE]
->
-> <!-- Please provide at least short description of the feature here -->
+<!-- Please provide at least short description of the feature here -->
 
 ## Reason(s) for adding:
 
