@@ -49,7 +49,7 @@ export default function AboutPersonal() {
           </span>{" "}
           consists of two of my most favorite things in my life. Moon represents
           how I love <span className="text-primary font-semibold">space</span>{" "}
-          in which I talk about{" "}
+          in which I talked about{" "}
           <Link
             href="#space"
             className="text-primary font-semibold hover:underline"
