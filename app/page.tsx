@@ -9,7 +9,7 @@ import ImageCredits from "@frontend/components/ImageCredits";
 const HomePage = async () => {
   return (
     <Suspense fallback={<SkeletonScreenHome />}>
-      <section id="home" className="container pt-32">
+      <section id="home" className="container pt-32 pb-10">
         {/* wraps the introduction and the tech stacks */}
         <div className="w-full h-full relative flex flex-col justify-around lg:justify-between items-center gap-24">
           {/* wraps the intro */}
