@@ -1,16 +1,14 @@
 ---
 name: Bug report
-about: Report a bug to help me improve!
-title: "[BUG] Bug name"
+about: Report a bug to help me and my website improve!
+title: "Bug name"
 labels: "bug"
 assignees: ""
 ---
 
-# Bug name
+# Description
 
-> [!WARNING]
->
-> <!-- Please provide a detailed information of the bug here, -->
+<!-- Please provide a detailed information of the bug here, -->
 
 ## Screenshots:
 
