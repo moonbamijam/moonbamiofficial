@@ -15,7 +15,7 @@ export default function AboutEducation() {
         <div className="flex flex-col gap-4">
           <div className="w-full flex flex-col items-end">
             <Image
-              src="https://i.ibb.co/5gRhtncY/old.jpg"
+              src="https://i.ibb.co/fGqDdPpt/old.webp"
               alt="Morrisonridge Academy"
               shape="tv"
             />
