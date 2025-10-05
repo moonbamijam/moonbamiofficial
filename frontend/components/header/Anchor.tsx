@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { Url } from "next/dist/shared/lib/router/router";
-import { buttonVariants } from "@frontend/components/ui/Button";
 import { AnchorHTMLAttributes } from "@node_modules/@types/react";
 
 type Props = AnchorHTMLAttributes<HTMLAnchorElement> & {
@@ -24,7 +23,7 @@ export default function Anchor({
     <Link
       href={href}
       aria-label={ariaLabel}
-      className={`${buttonVariants({ variant: "nav", size: "auto" })} ${isLinkActive(path) ? "active" : "hover:text-primary"}`}
+      className={`capitalize rounded-lg font-semibold px-4 xl:px-6 py-3 text-left md:text-center ${isLinkActive(path) ? "active" : "hover:text-primary"}`}
     >
       {name}
     </Link>
