@@ -21,7 +21,7 @@ export default function ProjectTag({
 
   return (
     <span
-      className={`rounded-full ${tagResult ? tagResult.color : "bg-slate-300 dark:bg-slate-500"} w-max h-max px-4 py-2 font-semibold dark:text-slate-800 text-sm capitalize ${className}`}
+      className={`rounded-full ${tagResult ? tagResult.bgColor : "bg-slate-300 dark:bg-slate-500"} ${tagResult?.textColor} w-max h-max px-4 py-2 font-semibold text-sm capitalize ${className}`}
     >
       {children}
     </span>
