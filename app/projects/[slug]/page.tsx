@@ -82,7 +82,9 @@ export default async function ProjectPageById({
                 ))}
               </div>
               <div className="flex lg:flex-col gap-4">
-                <GitHubBtn href={projects.github} />
+                {projects?.github && (
+                  <GitHubBtn href={projects.github.toString()} />
+                )}
                 {projects?.website && <VisitBtn href={projects.website} />}
                 <BackBtn href={"/projects"} />
               </div>

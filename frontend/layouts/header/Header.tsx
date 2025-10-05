@@ -23,9 +23,9 @@ export default function Header() {
   return (
     <>
       <div className="w-full h-[70px] z-[1000] fixed top-0 bg-surface/80 dark:bg-dm-surface-dark/90 backdrop-blur shadow"></div>
-      <header className="container h-[70px] w-full z-[2000] fixed top-0 left-[50%] translate-x-[-50%] flex justify-between items-center gap-5">
+      <header className="container h-[70px] w-full z-[2000] fixed top-0 left-[50%] translate-x-[-50%] flex justify-between items-center lg:gap-5">
         <RotatingBrand texts={headerWordList} />
-        <nav className="w-full flex justify-between lg:justify-end items-center gap-2 ml-auto">
+        <nav className="w-full flex justify-between lg:justify-end items-center gap-2">
           <ul role="nav-links-wrapper" className="hidden lg:flex font-semibold">
             {NavLinks.map(({ id, name, path }) => (
               <Anchor
@@ -51,7 +51,7 @@ export default function Header() {
             >
               {isMenuActive ? <FaBarsStaggered /> : <FaBars />}
               <Dropdown
-                className={`top-[80px] ${isMenuActive ? "opacity-100 visible translate-y-2" : "opacity-0 invisible -translate-y-2"}`}
+                className={`top-[80px] translate-x-6 md:translate-x-0 ${isMenuActive ? "opacity-100 visible translate-y-2" : "opacity-0 invisible -translate-y-2"}`}
               >
                 {NavLinks.map(({ id, name, path }) => (
                   <Anchor
