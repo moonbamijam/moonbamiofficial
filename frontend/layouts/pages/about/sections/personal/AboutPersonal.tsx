@@ -13,7 +13,7 @@ export default function AboutPersonal() {
     <Section className="grid grid-cols-1 xl:grid-cols-4 premium:grid-cols-5">
       <div className="w-full xl:col-span-2 premium:col-span-3 flex flex-col items-end">
         <Image
-          src="https://i.ibb.co/5X2CC6xq/about.jpg"
+          src="https://i.ibb.co/gbVhF9gf/about.webp"
           alt="Jam Moonbami"
           shape="tv"
         />
