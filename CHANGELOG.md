@@ -1,5 +1,30 @@
 # What's New
 
+# [3.2.0](https://github.com/moonbamijam/moonbamiofficial/compare/v2.7.2...v3.2.0) (2025-11-26)
+
+
+### Bug Fixes
+
+* footer and header responsive styling to small screens ([#77](https://github.com/moonbamijam/moonbamiofficial/issues/77)) ([f3f8266](https://github.com/moonbamijam/moonbamiofficial/commit/f3f826639e5d32ad09091687e59aca7fd6db4da3))
+* github button still shows if no github link provided in projects ([#76](https://github.com/moonbamijam/moonbamiofficial/issues/76)) ([286b3ce](https://github.com/moonbamijam/moonbamiofficial/commit/286b3cea3df9783ed46cf3d74c4263f5aef35fb0))
+* image takes too much time too load in about page [#73](https://github.com/moonbamijam/moonbamiofficial/issues/73) ([#78](https://github.com/moonbamijam/moonbamiofficial/issues/78)) ([99e7830](https://github.com/moonbamijam/moonbamiofficial/commit/99e7830064a8f4b27c8f7a0298ce66cbdc79df6e))
+* update href and contents to personal and education section ([#82](https://github.com/moonbamijam/moonbamiofficial/issues/82)) ([ec43200](https://github.com/moonbamijam/moonbamiofficial/commit/ec432008e0a95fcc92fc66cfe5d92d34ffc96920)), closes [#73](https://github.com/moonbamijam/moonbamiofficial/issues/73)
+
+
+### Features
+
+* add about page images to public dir ([#81](https://github.com/moonbamijam/moonbamiofficial/issues/81)) ([426186e](https://github.com/moonbamijam/moonbamiofficial/commit/426186e1cd72b0acfee20711076ce63938404319)), closes [#73](https://github.com/moonbamijam/moonbamiofficial/issues/73)
+* add new tag and improve readability to tag text colors ([#75](https://github.com/moonbamijam/moonbamiofficial/issues/75)) ([717403b](https://github.com/moonbamijam/moonbamiofficial/commit/717403bfcdb23ceede964ed45e57779e24db9bf2)), closes [#74](https://github.com/moonbamijam/moonbamiofficial/issues/74)
+* new color theme ([#65](https://github.com/moonbamijam/moonbamiofficial/issues/65)) ([44218b2](https://github.com/moonbamijam/moonbamiofficial/commit/44218b28cc2007aff80cc29ac3785630fb5a534d))
+* new overall ui ([#67](https://github.com/moonbamijam/moonbamiofficial/issues/67)) ([227ea96](https://github.com/moonbamijam/moonbamiofficial/commit/227ea96117ce85e47d584ae71b65b4cce919e88b)), closes [#11](https://github.com/moonbamijam/moonbamiofficial/issues/11) [#14](https://github.com/moonbamijam/moonbamiofficial/issues/14) [#37](https://github.com/moonbamijam/moonbamiofficial/issues/37) [#69](https://github.com/moonbamijam/moonbamiofficial/issues/69)
+* simplify ui ([#62](https://github.com/moonbamijam/moonbamiofficial/issues/62)) ([4b608e1](https://github.com/moonbamijam/moonbamiofficial/commit/4b608e1d4c077e1db97f6719c5af7af3a95f5bcd)), closes [#60](https://github.com/moonbamijam/moonbamiofficial/issues/60)
+* update contents in game section in about page ([#84](https://github.com/moonbamijam/moonbamiofficial/issues/84)) ([3188a17](https://github.com/moonbamijam/moonbamiofficial/commit/3188a1756335c2a78a6e1ebedda4505bf68a44fc))
+
+
+### Performance Improvements
+
+* improvements to page section performance ([#61](https://github.com/moonbamijam/moonbamiofficial/issues/61)) ([357d5b1](https://github.com/moonbamijam/moonbamiofficial/commit/357d5b113c088721b4a277bc04f38ba35c0b7c89))
+
 # [3.1.0](https://github.com/moonbamijam/moonbamiofficial/compare/v2.7.2...v3.1.0) (2025-10-05)
 
 
