@@ -15,7 +15,7 @@ export default function AboutEducation() {
         <div className="flex flex-col gap-4">
           <div className="w-full flex flex-col items-end">
             <Image
-              src="https://i.ibb.co/fGqDdPpt/old.webp"
+              src="/images/pages/about/elementary.webp"
               alt="Morrisonridge Academy"
               shape="tv"
             />
@@ -44,13 +44,13 @@ export default function AboutEducation() {
         <div className="flex flex-col gap-4">
           <div className="w-full flex flex-col items-end">
             <Image
-              src="https://educateandexplore.weebly.com/uploads/8/0/8/4/80848288/4016616_orig.jpg"
+              src="/images/pages/about/pitogo.jpg"
               alt="Pitogo High School"
               shape="tv"
             />
             <ImageCredits
-              name="Erin Travel Blog"
-              href="https://educateandexplore.weebly.com/blog/category/manila"
+              name="Pitogo High School"
+              href="https://pitogohighschool.com/"
             />
           </div>
           <div className="highschool">
@@ -72,13 +72,13 @@ export default function AboutEducation() {
         <div className="flex flex-col gap-4">
           <div className="w-full flex flex-col items-end">
             <Image
-              src="https://lh3.googleusercontent.com/proxy/uMz5qSkpp35v_0EhQ3DAJAw4E4vAtLuZlaQJdzc_WGll6QIbUVFMyaqm73--6WVnUwhf00D7oyUNRQZdaIXTTpQ6Ujb9v4YFF-4QO-DxER8taY2UPRY1wijKopwhyayAywxLB4Qm5MVvzDR_aovH95jMsfN9TssFAiJe8J3QpucE=w1080-k-no"
+              src="/images/pages/about/geanhs.jpg"
               alt="General Emilio Aguinal Natioinal High School"
               shape="tv"
             />
             <ImageCredits
-              name="World Orgs"
-              href="https://pilipinas.worldorgs.com/Katalogo/imus/kindergarten/general-emilio-aguinaldo-national-high-school"
+              name="GEANHS"
+              href="https://www.facebook.com/photo.php?fbid=10155496640846831&id=159346766830&set=a.10155496640916831"
             />
           </div>
           <div className="highschool">
@@ -102,7 +102,7 @@ export default function AboutEducation() {
         <div className="flex flex-col gap-4">
           <div className="w-full flex flex-col items-end">
             <Image
-              src="https://www.felta.ph/50th/wp-content/uploads/2021/06/news-unida-6.jpg"
+              src="/images/pages/about/ucc.jpg"
               alt="Unida Christian Colleges"
               shape="tv"
             />
@@ -131,7 +131,7 @@ export default function AboutEducation() {
         <div className="flex flex-col gap-4">
           <div className="w-full flex flex-col items-end">
             <Image
-              src="https://cvsu.edu.ph/wp-content/uploads/2022/08/Bacoor-Campus-scaled.jpg"
+              src="/images/pages/about/cvsu.jpg"
               alt="Cavite State University - Bacoor Campus"
               shape="tv"
             />
@@ -140,16 +140,15 @@ export default function AboutEducation() {
           <div className="college">
             <SectionHeading name="College" />
             <Paragraph variant="wide">
-              Lastly, I get a degree in Bachelor of Science in Information
+              Lastly, I finished my degree in Bachelor of Science in Information
               Technology in{" "}
               <span className="text-primary font-semibold">
                 Cavite State University - Bacoor Campus
               </span>{" "}
-              and currently finishing my degree. The last stage of education
-              that taught me the most lessons in life. The years that I have
-              spent here greatly shaped my overall mindsent and personality
-              about things around me, familiy, friends, relationship and
-              especially myself.
+              . The last stage of education that taught me the most lessons in
+              life. The years that I have spent here greatly shaped my overall
+              mindsent and personality about things around me, familiy, friends,
+              relationship and especially myself.
             </Paragraph>
           </div>
         </div>
