@@ -21,7 +21,13 @@ export default function AboutGame() {
           my life. I also love playing{" "}
           <span className="text-primary font-semibold">Gacha Games</span>, I
           just love collecting different type of characters. Some of them had
-          special place in my heart.
+          special place in my heart. I also play rhythm games especially{" "}
+          <Link
+            href="https://osu.ppy.sh/users/29025161"
+            className="text-primary font-semibold hover:underline"
+          >
+            osu!
+          </Link>
           <br />
           <br />I mostly play on{" "}
           <Link
@@ -33,6 +39,10 @@ export default function AboutGame() {
           and spend most of my time in{" "}
           <span className="text-primary font-semibold">
             Umamusume: Pretty Derby
+          </span>{" "}
+          and{" "}
+          <span className="text-primary font-semibold">
+            Miscrits: World of Creatures
           </span>{" "}
           but I also play{" "}
           <span className="text-primary font-semibold">Left 4 Dead 2</span>{" "}

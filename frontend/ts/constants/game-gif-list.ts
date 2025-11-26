@@ -44,7 +44,7 @@ export const gameGifList = [
     title: "Muse Dash",
   },
   {
-    url: "https://64.media.tumblr.com/eba3eb63082b27c42898dcb2654c3428/44f7f11f8299494e-d9/s640x960/b8f8e46b0c8e6a98525131a1709abfd55179aaa3.gifv",
-    title: "League of Legends: Wild Rift",
+    url: "https://i.ibb.co/B5Gc5pYV/osu.gif",
+    title: "osu!",
   },
 ];
