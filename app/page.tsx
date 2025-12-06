@@ -5,6 +5,7 @@ import SkeletonScreenHome from "@frontend/components/skeleton-screens/SkeletonSc
 import TechStackSlider from "@frontend/layouts/TechStackSlider";
 import { Image } from "@frontend/components/ui/Image";
 import ImageCredits from "@frontend/components/ImageCredits";
+import LifeStatus from "@frontend/components/LifeStatus";
 
 const HomePage = async () => {
   return (
@@ -15,8 +16,9 @@ const HomePage = async () => {
           {/* wraps the intro */}
           <div className="w-full flex flex-col justify-evenly items-center xl:flex-row gap-5 gap-y-16">
             <div className="relative w-full flex flex-col items-center xl:items-start gap-5 max-w-[600px]">
-              <div className="flex flex-col items-center xl:items-start gap-5">
-                <h1 className="text-center xl:text-left text-6xl px-1 font-bold tracking-tight">
+              <div className="flex flex-col items-center xl:items-start">
+                <LifeStatus status="Open to work" />
+                <h1 className="text-center xl:text-left text-6xl px-1 font-bold tracking-tight mt-2 mb-5">
                   I am <span className="text-primary">Moonbami</span>
                 </h1>
                 <p className="text-center xl:text-left text-xl xl:text-2xl px-2 text-slate-400 font-medium">
