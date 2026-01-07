@@ -1,0 +1,30 @@
+name: Feature request
+description: Add or request a feature
+title: "Feature name"
+labels: "feature"
+body:
+- type: textarea
+  id: description
+  attributes:
+    label: Description
+    description: "Please provide at least short description of the feature here"
+    render: bash
+  validations:
+    required: true
+    
+- type: textarea
+  id: reason
+  attributes:
+    label: Reasons for adding
+    description: |
+      List here all of the reason(s) why I should add this.
+      > **Note:** This is optional but appreciated if filled.
+    value: |
+      1.
+      2.
+      3.
+
+- type: markdown
+  attributes:
+    value: |
+      Thanks for taking the time to help me improve my website by adding this feature!
