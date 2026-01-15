@@ -1,16 +1,18 @@
 feature:
-- head-branch: feature
+- head-branch: 
+  - feature/*
+  - feat/*
 
 fix:
-- head-branch: fix
+- head-branch: fix/*
 
 release: 
-- head-branch: release
+- head-branch: release/*
 
 chore:
 - head-branch: 
-    - chore
-    - refactor
+    - chore/*
+    - refactor/*
 
 ui/ux:
 - changed-files:
@@ -26,7 +28,7 @@ server:
     - backend/**
 
 devops:
-- head-branch: release
+- head-branch: release/*
 - changed-files:
   - any-glob-to-any-file:
     - .github/**
@@ -34,11 +36,11 @@ devops:
     - .release-it.json
 
 documentation:
-- head-branch: docs
+- head-branch: docs/*
 - changed-files:
   - any-glob-to-any-file: '**/*.md'
 
 dependencies:
-- head-branch: deps
+- head-branch: deps/*
 - changed-files:
   - any-glob-to-any-file: 'pnpm-lock.yaml'

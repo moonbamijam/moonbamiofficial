@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a bug to help my website improve!
+title: "Bug name"
+labels: "bug"
+body: 
+- type: textarea
+  id: description
+  attributes:
+    label: Description
+    description: "Please provide a detailed information of the bug here."
+    render: bash
+  validations:
+    required: true
+    
+- type: textarea
+  id: screenshots
+  attributes:
+    label: Screenshots
+    description: |
+      You can insert any screenshots related to the bug if possible.
+      > **Note:** This is optional but appreciated if filled.
+
+- type: textarea
+  id: reproduce
+  attributes:
+    label: Reproduction steps
+    description: "How do you trigger this bug? Please walk me through it step by step so that I can reproduce."
+    value: |
+      1.
+      2.
+      3.
+      ...
+    render: bash
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: |
+      Thanks for taking the time to help me improve my website by reporting this bug!
