@@ -250,8 +250,12 @@
   }
 }
 
-@keyframes slideTectStack {
+@keyframes slideTechStack {
+  from {
+    translate: 0;
+  }
+
   to {
-    left: -500px;
+    translate: -100%;
   }
 }
