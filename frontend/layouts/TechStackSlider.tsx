@@ -15,7 +15,10 @@ export default function TechStackSlider() {
             </div>
           ))}
         </div>
-        <div className="flex h-[8vw] lg:h-[5vw] justify-center items-center gap-12 pr-12 animate-slideTechStack">
+        <div
+          aria-hidden
+          className="flex h-[8vw] lg:h-[5vw] justify-center items-center gap-12 pr-12 animate-slideTechStack"
+        >
           {techStackList.map((techStack, id) => (
             <div
               key={id}
