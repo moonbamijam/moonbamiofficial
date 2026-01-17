@@ -66,3 +66,12 @@ body {
     ),
     linear-gradient(145deg, #3051f1 35%, #c92bb7 70%);
 }
+
+.slider {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000000 30% 70%,
+    transparent
+  );
+}
