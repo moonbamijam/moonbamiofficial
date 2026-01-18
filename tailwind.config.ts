@@ -48,7 +48,7 @@ const config: Config = {
         "blob-five": "moveBlob5 50s alternate infinite ease-in-out",
         "dark-background-gradient":
           "darkBackgroundGradient 25s infinite ease-in-out",
-        slideTectStack: "slideTectStack 30s linear infinite",
+        slideTechStack: "slideTechStack 15s linear infinite",
       },
       boxShadow: {
         gradient: "0px 0px 100px 100px rgba(3, 0, 28, 0.3)",
