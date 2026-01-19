@@ -1,8 +1,8 @@
-import SectionHeading from "@frontend/components/SectionHeading";
-import { buttonVariants } from "@frontend/components/ui/Button";
-import PageWrapper from "@frontend/layouts/common/PageWrapper";
-import Section from "@frontend/layouts/common/Section";
-import Footer from "@frontend/layouts/footer/Footer";
+import SectionHeading from "@components/SectionHeading";
+import { buttonVariants } from "@components/ui/Button";
+import PageWrapper from "@layouts/common/PageWrapper";
+import Section from "@layouts/common/Section";
+import Footer from "@layouts/footer/Footer";
 import Link from "@node_modules/next/link";
 
 import { SiAnilist, SiGmail } from "react-icons/si";
@@ -16,7 +16,7 @@ import {
   FaDownload,
   FaSteam,
 } from "react-icons/fa6";
-import Grid from "@frontend/layouts/common/Grid";
+import Grid from "@layouts/common/Grid";
 
 export default function ContactsPage() {
   return (

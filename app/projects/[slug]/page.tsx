@@ -1,14 +1,14 @@
 import { Metadata } from "next";
-import { useFetch } from "@backend/hooks/useFetch";
-import Section from "@frontend/layouts/common/Section";
-import GitHubBtn from "@frontend/components/buttons/GitHubBtn";
-import VisitBtn from "@frontend/components/buttons/VisitBtn";
-import BackBtn from "@frontend/components/buttons/BackBtn";
-import Footer from "@frontend/layouts/footer/Footer";
-import { Image } from "@frontend/components/ui/Image";
-import { Paragraph } from "@frontend/components/ui/Paragraph";
-import ProjectTag from "@frontend/components/project/ProjectTag";
-import ProjectStack from "@frontend/components/project/ProjectStack";
+import { useFetch } from "@hooks/useFetch";
+import Section from "@layouts/common/Section";
+import GitHubBtn from "@components/buttons/GitHubBtn";
+import VisitBtn from "@components/buttons/VisitBtn";
+import BackBtn from "@components/buttons/BackBtn";
+import Footer from "@layouts/footer/Footer";
+import { Image } from "@components/ui/Image";
+import { Paragraph } from "@components/ui/Paragraph";
+import ProjectTag from "@components/project/ProjectTag";
+import ProjectStack from "@components/project/ProjectStack";
 
 type metaDataProps = { params: { slug: string } };
 

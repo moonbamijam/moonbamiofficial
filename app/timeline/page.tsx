@@ -1,8 +1,8 @@
 import { Metadata } from "next";
-import Footer from "@frontend/layouts/footer/Footer";
-import Timeline from "@frontend/layouts/pages/timeline/Timeline";
-import BackToTop from "@frontend/components/buttons/BackToTop";
-import PageWrapper from "@frontend/layouts/common/PageWrapper";
+import Footer from "@layouts/footer/Footer";
+import Timeline from "@layouts/pages/timeline/Timeline";
+import BackToTop from "@components/buttons/BackToTop";
+import PageWrapper from "@layouts/common/PageWrapper";
 
 export const metadata: Metadata = {
   title: "Timeline",
