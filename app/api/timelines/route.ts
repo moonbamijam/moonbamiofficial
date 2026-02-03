@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import connectMongoDB from "@db/mongodb";
-import Timeline from "@models/timeline";
+import Timeline from "@features/timeline/timeline";
 
 export async function POST(request: Request, response: Response) {
   const { date, type, note, message } = await request.json();
