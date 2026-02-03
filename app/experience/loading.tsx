@@ -1,5 +1,5 @@
 import PageWrapper from "@layouts/common/PageWrapper";
-import SkeletonScreenExp from "@components/skeleton-screens/SkeletonScreenExp";
+import SkeletonScreenExp from "@features/experience/SkeletonScreenExp";
 
 export default function Loading() {
   return (

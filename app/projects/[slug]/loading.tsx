@@ -1,5 +1,5 @@
 import PageWrapper from "@layouts/common/PageWrapper";
-import SkeletonScreenProjectSegment from "@components/skeleton-screens/SkeletonScreenProjectSegment";
+import SkeletonScreenProjectSegment from "@features/project/SkeletonScreenProjectSegment";
 
 export default function Loading() {
   return (

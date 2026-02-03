@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Projects from "@layouts/pages/project/Projects";
+import Projects from "@features/project/Projects";
 import BackToTop from "@components/buttons/BackToTop";
 import Footer from "@layouts/footer/Footer";
 import PageWrapper from "@layouts/common/PageWrapper";

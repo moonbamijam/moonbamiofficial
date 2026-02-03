@@ -3,7 +3,7 @@ import { Paragraph } from "@components/ui/Paragraph";
 import Section from "@layouts/common/Section";
 import Link from "@node_modules/next/link";
 import LoopingImage from "@components/LoopingImage";
-import { gameGifList } from "@shared/constants/game-gif-list";
+import { gameGifList } from "@features/about/game-gif-list";
 
 export default function AboutGame() {
   return (
