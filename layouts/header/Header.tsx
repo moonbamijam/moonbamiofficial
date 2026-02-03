@@ -7,11 +7,11 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import { Button } from "@components/ui/Button";
 import { headerWordList } from "@shared/constants/header-word-list";
 import ThemeSwitchBtn from "@components/buttons/ThemeSwitchBtn";
-import Dropdown from "../../components/header/Dropdown";
-import Anchor from "../../components/header/Anchor";
+import Dropdown from "./Dropdown";
+import Anchor from "./Anchor";
 import useHeader from "@hooks/useHeader";
 import LoadingSpinner from "@components/LoadingSpinner";
-import RotatingBrand from "../../components/header/RotatingBrand";
+import RotatingBrand from "./RotatingBrand";
 
 export default function Header() {
   const { isLinkActive, isMenuActive, dropdown, toggleMenu } = useHeader();
