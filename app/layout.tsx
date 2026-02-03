@@ -2,11 +2,11 @@ import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
-import Header from "@frontend/layouts/header/Header";
-import ThemesProvider from "@frontend/providers/themesProvider";
-import Blob from "@frontend/components/bg/Blob";
-import "@frontend/styles/globals.css";
-import DarkGradient from "@frontend/components/bg/DarkGradient";
+import Header from "@layouts/header/Header";
+import ThemesProvider from "@features/themes/themesProvider";
+import Blob from "@components/bg/Blob";
+import DarkGradient from "@components/bg/DarkGradient";
+import "@styles/globals.css";
 
 const inter = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],

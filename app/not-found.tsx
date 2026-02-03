@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Section from "@frontend/layouts/common/Section";
-import { buttonVariants } from "@frontend/components/ui/Button";
-import { Image } from "@frontend/components/ui/Image";
+import Section from "@layouts/common/Section";
+import { buttonVariants } from "@components/ui/Button";
+import { Image } from "@components/ui/Image";
 
 export default function NotFound() {
   return (

@@ -1,11 +1,11 @@
 import { Suspense } from "react";
-import EmailBtn from "@frontend/components/buttons/EmailBtn";
-import GitHubBtn from "@frontend/components/buttons/GitHubBtn";
-import SkeletonScreenHome from "@frontend/components/skeleton-screens/SkeletonScreenHome";
-import TechStackSlider from "@frontend/layouts/TechStackSlider";
-import { Image } from "@frontend/components/ui/Image";
-import ImageCredits from "@frontend/components/ImageCredits";
-import LifeStatus from "@frontend/components/LifeStatus";
+import EmailBtn from "@components/buttons/EmailBtn";
+import GitHubBtn from "@components/buttons/GitHubBtn";
+import SkeletonScreenHome from "@components/skeleton-screens/SkeletonScreenHome";
+import TechStackSlider from "@features/tech-stack/TechStackSlider";
+import { Image } from "@components/ui/Image";
+import ImageCredits from "@components/ImageCredits";
+import LifeStatus from "@components/LifeStatus";
 
 const HomePage = async () => {
   return (
