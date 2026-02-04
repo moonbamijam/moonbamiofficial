@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { Url } from "next/dist/shared/lib/router/router";
 import { AnchorHTMLAttributes } from "@node_modules/@types/react";
