@@ -1,5 +1,5 @@
 import connectMongoDB from "@db/mongodb";
-import Project from "@features/project/project";
+import Project from "@features/project/project.model";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request, response: Response) {
