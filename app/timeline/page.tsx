@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Footer from "@layouts/footer/Footer";
 import BackToTop from "@components/buttons/BackToTop";
 import PageWrapper from "@layouts/common/PageWrapper";
-import Timeline from "@features/timeline/timeline";
+import Timeline from "@features/timeline/Timeline";
 
 export const metadata: Metadata = {
   title: "Timeline",
