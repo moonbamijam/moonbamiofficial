@@ -1,6 +1,6 @@
 import ImageCredits from "@components/ImageCredits";
 import SectionHeading from "@components/SectionHeading";
-import { Button, buttonVariants } from "@components/ui/Button";
+import { buttonVariants } from "@components/ui/Button";
 import { Image } from "@components/ui/Image";
 import { Paragraph } from "@components/ui/Paragraph";
 import Grid from "@layouts/common/Grid";
