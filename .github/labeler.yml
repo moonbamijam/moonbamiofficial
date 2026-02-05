@@ -17,15 +17,14 @@ chore:
 ui/ux:
 - changed-files:
   - any-glob-to-any-file:
-    - app/**
-    - frontend/**
-    - assets/**
+    - src/app/**
+    - src/assets/**
     - public/**
 
 server: 
 - changed-files:
   - any-glob-to-any-file: 
-    - backend/**
+    - src/db/**
 
 devops:
 - head-branch: release/*
