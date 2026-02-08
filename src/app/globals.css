@@ -177,17 +177,15 @@
   }
 }
 
-@base {
-  body {
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
+body {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-  body {
-    @apply text-slate-700 dark:text-slate-300;
-  }
+body {
+  @apply text-slate-700 dark:text-slate-300;
 }
 
 ::selection {
