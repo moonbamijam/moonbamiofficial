@@ -1,0 +1,18 @@
+export const tagList = [
+  { tag: "Featured", bgColor: "bg-amber-400", textColor: "text-gray-900" },
+  { tag: "Open Source", bgColor: "bg-green-500", textColor: "text-white" },
+  { tag: "Maintaining", bgColor: "bg-emerald-500", textColor: "text-white" },
+  { tag: "In Progress", bgColor: "bg-orange-500", textColor: "text-white" },
+  { tag: "Closed Source", bgColor: "bg-gray-700", textColor: "text-gray-200" },
+  { tag: "Archived", bgColor: "bg-slate-400", textColor: "text-gray-900" },
+  { tag: "Completed", bgColor: "bg-cyan-500", textColor: "text-white" },
+  { tag: "School", bgColor: "bg-indigo-500", textColor: "text-white" },
+  { tag: "Personal", bgColor: "bg-violet-500", textColor: "text-white" },
+  { tag: "Work", bgColor: "bg-sky-500", textColor: "text-white" },
+  { tag: "Collaboration", bgColor: "bg-teal-500", textColor: "text-white" },
+  { tag: "Commission", bgColor: "bg-yellow-500", textColor: "text-gray-900" },
+  { tag: "For sale", bgColor: "bg-teal-500", textColor: "text-white" },
+  { tag: "Web", bgColor: "bg-blue-400", textColor: "text-gray-900" },
+  { tag: "Game", bgColor: "bg-pink-500", textColor: "text-white" },
+  { tag: "Application", bgColor: "bg-fuchsia-500", textColor: "text-white" },
+];
