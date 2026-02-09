@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority";
 
 export const buttonVariants = cva(
-  "flex justify-center items-center transform px-4 py-3 cursor-pointer",
+  "flex justify-center items-center transform px-4 py-3 cursor-pointer transition-colors",
   {
     variants: {
       variant: {
