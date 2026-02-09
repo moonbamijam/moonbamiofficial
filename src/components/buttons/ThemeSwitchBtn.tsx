@@ -14,7 +14,9 @@ export default function ThemeSwitchBtn() {
   useEffect(() => setMounted(true), []);
 
   if (!mounted)
-    return <LoadingSpinner size="40px" fontSizes="text-xl xl:text-2xl" />;
+    return (
+      <LoadingSpinner size="40px" fontSizes="px-4 py-3 text-xl xl:text-2xl" />
+    );
 
   if (resolvedTheme === "dark") {
     return (
@@ -23,8 +25,9 @@ export default function ThemeSwitchBtn() {
         onClick={() => setTheme("light")}
         variant="toggle"
         size="icon"
+        className="group"
       >
-        <FiSun />
+        <FiSun className="dark:group-hover:text-background transition-colors" />
       </Button>
     );
   } else {
