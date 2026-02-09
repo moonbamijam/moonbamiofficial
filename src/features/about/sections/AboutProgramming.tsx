@@ -12,6 +12,8 @@ export default function AboutProgramming() {
           src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D"
           alt="Programming"
           shape="tv"
+          width={1920}
+          height={1080}
         />
         <ImageCredits name="Chris Ried" href="https://unsplash.com/@cdr6934" />
       </div>

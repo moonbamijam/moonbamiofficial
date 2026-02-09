@@ -40,6 +40,8 @@ export default async function ProjectPageById({
               variant="thumbnail"
               size="thumbnail"
               shape="tv"
+              width={1920}
+              height={1080}
             />
             <div className="w-full flex flex-wrap gap-1">
               {sortedTags.map((tagItem, index) => (

@@ -36,6 +36,8 @@ export default function ProjectCard({
           variant="thumbnail"
           size="thumbnail"
           shape="tv"
+          width={720}
+          height={480}
         />
         <h1 className="truncate text-3xl font-bold">{title}</h1>
         <Paragraph variant="wide" className="mb-6 line-clamp-2">

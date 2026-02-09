@@ -16,6 +16,8 @@ export default function AboutPersonal() {
           src="/images/pages/about/about.jpg"
           alt="Jam Moonbami"
           shape="tv"
+          width={2944}
+          height={2944}
         />
         <ImageCredits
           name="Chris De Real"

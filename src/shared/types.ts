@@ -20,7 +20,7 @@ export type ProjectType = {
   href?: URL | string;
   ariaLabel?: string;
   src: string;
-  alt?: string;
+  alt: string;
   title: string;
   desc: string;
   website: string;

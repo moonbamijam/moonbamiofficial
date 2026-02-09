@@ -35,6 +35,8 @@ const HomePage = async () => {
               <Image
                 src="https://avatars.githubusercontent.com/u/141120384?v=4"
                 alt="Jam Moonbami"
+                width={460}
+                height={460}
               />
               <ImageCredits
                 phrase="Image source in"

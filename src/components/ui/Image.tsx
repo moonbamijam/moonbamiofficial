@@ -1,48 +1,17 @@
-import { forwardRef, ImgHTMLAttributes } from "react";
-import { VariantProps, cva } from "class-variance-authority";
+import { forwardRef } from "react";
+import { VariantProps } from "class-variance-authority";
 import cn from "@/shared/utils/cn";
+import { imageVariants } from "./variants";
+import NextImage, { ImageProps as NextImageProps } from "next/image";
 
-const imageVariants = cva("relative w-full h-full rounded-lg overflow-hidden", {
-  variants: {
-    variant: {
-      default: "shadow",
-      bakground: "absolute -z-10",
-      thumbnail: "rounded-xl",
-    },
-    size: {
-      default: "min-w-[300px] min-h-[300px] xl:min-h-[400px]",
-      full: "w-full h-full",
-      thumbnail: "min-h-[200px] max-h-[600px]",
-    },
-    shape: {
-      square: "aspect-square",
-      tv: "aspect-video",
-    },
-    object: {
-      cover: "object-cover",
-      contain: "object-contain",
-      fill: "object-fill",
-    },
-  },
-  defaultVariants: {
-    variant: "default",
-    size: "default",
-    object: "cover",
-  },
-});
-
-type ImageProps = ImgHTMLAttributes<HTMLImageElement> &
-  VariantProps<typeof imageVariants> & {};
+type ImageProps = NextImageProps & VariantProps<typeof imageVariants>;
 
 const Image = forwardRef<HTMLImageElement, ImageProps>(
-  ({ className, variant, size, shape, object, alt, ...props }, ref) => {
+  ({ className, variant, size, shape, ...props }, ref) => {
     return (
-      <img
+      <NextImage
         ref={ref}
-        className={cn(
-          imageVariants({ variant, size, shape, object, className }),
-        )}
-        alt={alt ?? ""}
+        className={cn(imageVariants({ variant, size, shape, className }))}
         {...props}
       />
     );

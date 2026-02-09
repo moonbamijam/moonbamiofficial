@@ -18,6 +18,8 @@ export default function AboutEducation() {
               src="/images/pages/about/elementary.webp"
               alt="Morrisonridge Academy"
               shape="tv"
+              width={1920}
+              height={1080}
             />
             <ImageCredits
               name="Lorrane Dasalla @/ Morrisonridge Academy"
@@ -47,6 +49,8 @@ export default function AboutEducation() {
               src="/images/pages/about/pitogo.jpg"
               alt="Pitogo High School"
               shape="tv"
+              width={1920}
+              height={1080}
             />
             <ImageCredits
               name="Pitogo High School"
@@ -75,6 +79,8 @@ export default function AboutEducation() {
               src="/images/pages/about/geanhs.jpg"
               alt="General Emilio Aguinal Natioinal High School"
               shape="tv"
+              width={1920}
+              height={1080}
             />
             <ImageCredits
               name="GEANHS"
@@ -105,6 +111,8 @@ export default function AboutEducation() {
               src="/images/pages/about/ucc.jpg"
               alt="Unida Christian Colleges"
               shape="tv"
+              width={1920}
+              height={1080}
             />
             <ImageCredits
               name="UCC Official"
@@ -135,6 +143,8 @@ export default function AboutEducation() {
               src="/images/pages/about/cvsu.jpg"
               alt="Cavite State University - Bacoor Campus"
               shape="tv"
+              width={1920}
+              height={1080}
             />
             <ImageCredits name="CVSU" href="http://cvsu.edu.ph/bacoor/" />
           </div>
