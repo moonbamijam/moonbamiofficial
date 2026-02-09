@@ -61,3 +61,19 @@ export const imageVariants = cva(
     },
   },
 );
+
+export const paragraphVariants = cva(
+  "w-full min-w-[300px] text-base sm:text-lg xl:text-xl text-slate-500 dark:text-slate-400",
+  {
+    variants: {
+      variant: {
+        default: "max-w-[600px]",
+        wide: "max-w-[800px]",
+        brief: "max-w-[500px] line-clamp-2",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+    },
+  },
+);
