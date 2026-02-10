@@ -4,7 +4,7 @@ import { NavLinks } from "@/shared/constants/navLinks";
 import { FaBars } from "react-icons/fa";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { Button } from "@/components/ui/Button";
-import { headerWordList } from "@/shared/constants/header-word-list";
+import { headerBrandList } from "@/shared/constants/header-brand-list";
 import ThemeSwitchBtn from "@/components/buttons/ThemeSwitchBtn";
 import Dropdown from "./Dropdown";
 import Anchor from "./Anchor";
@@ -18,7 +18,7 @@ export default function Header() {
     <>
       <div className="w-full h-20 z-1000 fixed top-0 bg-surface/80 backdrop-blur shadow"></div>
       <header className="container h-20 w-full z-2000 fixed top-0 left-[50%] translate-x-[-50%] flex justify-between items-center lg:gap-5">
-        <RotatingBrand texts={headerWordList} />
+        <RotatingBrand texts={headerBrandList} />
         <nav className="w-full flex justify-between lg:justify-end items-center gap-2">
           <ul role="nav-links-wrapper" className="hidden lg:flex font-semibold">
             {NavLinks.map(({ name, path }, id: number) => (
