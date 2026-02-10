@@ -1,8 +1,8 @@
+import { Button } from "@/components/ui/Button";
+import { Paragraph } from "@/components/ui/Paragraph";
 import { EventType } from "@/shared/types";
-import { Button } from "./ui/Button";
-import { Paragraph } from "./ui/Paragraph";
 
-export default function EventWrapper({
+export default function TimelineEventWrapper({
   _id,
   typeIcon,
   date,
