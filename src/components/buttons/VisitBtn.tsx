@@ -15,9 +15,9 @@ export default function VisitBtn({
       href={href}
       target="_blank"
       aria-label="Website"
-      className={`${buttonVariants()} [&>svg>path]:text-white [&>svg>polyline]:text-white [&>svg>line]:text-white  dark:[&>svg>path]:text-black dark:[&>svg>polyline]:text-black dark:[&>svg>line]:text-black hover:bg-primaryvariant hover:border-primaryvariant shadow-lg ${className}`}
+      className={`${buttonVariants()} hover:bg-primary-variant hover:border-primary-variant shadow-lg ${className}`}
     >
-      <FiExternalLink />
+      <FiExternalLink className="text-white dark:text-black transition-colors" />
       visit
     </Link>
   );
