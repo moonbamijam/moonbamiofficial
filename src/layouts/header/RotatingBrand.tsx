@@ -37,7 +37,7 @@ export default function RotatingBrand({
   return (
     <Link
       href="/"
-      className="w-full max-w-max flex items-center gap-4 [&>h1]:hover:text-primary"
+      className="w-full max-w-max flex items-center gap-4 [&>h1]:hover:text-primary transition-colors"
     >
       <h1
         className={`hidden lg:block font-black text-xl xl:text-2xl ${isVisible ? "opacity-100" : "opacity-0"}`}

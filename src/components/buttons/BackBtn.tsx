@@ -6,9 +6,9 @@ export default function BackBtn({ href }: { href: string }) {
   return (
     <Link
       href={href}
-      className={`${buttonVariants({ variant: "ghost" })} [&>svg>path]:text-black [&>svg>path]:dark:text-white  [&>svg>path]:hover:text-white [&>svg>path]:dark:hover:text-black text-black hover:text-white dark:hover:text-black`}
+      className={`${buttonVariants({ variant: "ghost" })} text-black hover:text-white dark:hover:text-black group`}
     >
-      <FaBackwardStep />
+      <FaBackwardStep className="group-hover-text-white dark:group-hover:text-black transition-colors " />
       back
     </Link>
   );

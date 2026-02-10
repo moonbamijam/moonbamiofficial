@@ -1,6 +1,6 @@
-import { Image } from "@/components/ui/Image";
 import Section from "../../layouts/common/Section";
 import SkeletonScreen from "@/components/skeleton-screens/SkeletonScreen";
+import SkeletonImage from "@/components/skeleton-screens/SkeletonImage";
 
 export default function SkeletonScreenProjectSegment() {
   return (
@@ -8,13 +8,7 @@ export default function SkeletonScreenProjectSegment() {
       <Section>
         <div className="w-full max-w-250 mx-auto space-y-4">
           <SkeletonScreen>
-            <Image
-              alt=""
-              className="shadow rounded-xl opacity-0 invisible"
-              variant="thumbnail"
-              size="thumbnail"
-              shape="tv"
-            />
+            <SkeletonImage className="rounded-xl" />
           </SkeletonScreen>
           {/* tag */}
           <div className="flex gap-1">

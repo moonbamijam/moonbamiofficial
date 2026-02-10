@@ -1,4 +1,4 @@
-export const tagList = [
+export const projectTags = [
   { tag: "Featured", bgColor: "bg-amber-400", textColor: "text-gray-900" },
   { tag: "Open Source", bgColor: "bg-green-500", textColor: "text-white" },
   { tag: "Maintaining", bgColor: "bg-emerald-500", textColor: "text-white" },

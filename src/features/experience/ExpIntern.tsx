@@ -12,6 +12,8 @@ export default function ExpIntern() {
           src="/images/pages/experience/oc.jpg"
           alt="olivarez college parañaque stage"
           shape="tv"
+          width={1920}
+          height={1080}
         />
         <ImageCredits
           name="Olivarez College"

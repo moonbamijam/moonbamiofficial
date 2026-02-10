@@ -16,6 +16,8 @@ export default function AboutSpace() {
           alt="Interstellar"
           className="lg:brightness-30"
           shape="tv"
+          width={1920}
+          height={1080}
         />
         <ImageCredits
           name=" Interstellar "

@@ -32,14 +32,14 @@ export default function ContactsPage() {
               <Link
                 href="https://github.com/moonbamijam"
                 target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-github text-white  hover:scale-110`}
+                className={`${buttonVariants({ variant: "icon" })} bg-github text-white hover:scale-110 transition-transform`}
               >
                 <FaGithub />
               </Link>
               <Link
                 href="mailto:Jam Moonbami <moonbamijamofficial15@/gmail.com>"
                 target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-primary text-white  hover:scale-110`}
+                className={`${buttonVariants({ variant: "icon" })} bg-primary text-white hover:scale-110 transition-transform`}
               >
                 <SiGmail />
               </Link>
@@ -57,7 +57,7 @@ export default function ContactsPage() {
                 href="https://drive.google.com/file/d/1CZlNfJm_M-_OGxNFEteoEfe-g-Q19FoJ/view"
                 download
                 target="_blank"
-                className={`${buttonVariants({ variant: "ghost" })} hover:scale-110`}
+                className={`${buttonVariants({ variant: "ghost" })} hover:scale-110 transition-transform `}
               >
                 <FaDownload /> Resumé
               </Link>
@@ -74,21 +74,21 @@ export default function ContactsPage() {
               <Link
                 href="https://www.facebook.com/moonbamijam"
                 target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-[#1877F2] text-white  hover:scale-110`}
+                className={`${buttonVariants({ variant: "icon" })} bg-[#1877F2] text-white hover:scale-110 transition-transform`}
               >
                 <FaFacebook />
               </Link>
               <Link
                 href="https://www.instagram.com/moonbamijam/"
                 target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-instagram-gradient text-white  hover:scale-110`}
+                className={`${buttonVariants({ variant: "icon" })} bg-instagram-gradient text-white hover:scale-110 transition-transform`}
               >
                 <FaInstagram />
               </Link>
               <Link
                 href="https://twitter.com/moonbamijam"
                 target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-black text-white  hover:scale-110`}
+                className={`${buttonVariants({ variant: "icon" })} bg-black text-white hover:scale-110 transition-transform`}
               >
                 <FaXTwitter />
               </Link>
@@ -96,7 +96,7 @@ export default function ContactsPage() {
               <Link
                 href="https://steamcommunity.com/id/moonbamiofficial/"
                 target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-[#2a475e] text-white  hover:scale-110`}
+                className={`${buttonVariants({ variant: "icon" })} bg-[#2a475e] text-white hover:scale-110 transition-transform`}
               >
                 <FaSteam />
               </Link>
@@ -113,21 +113,21 @@ export default function ContactsPage() {
               <Link
                 href="https://anilist.co/user/Moonbami/"
                 target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-[#00abff] text-white  hover:scale-110`}
+                className={`${buttonVariants({ variant: "icon" })} bg-[#00abff] text-white hover:scale-110 transition-transform`}
               >
                 <SiAnilist />
               </Link>
               <Link
                 href="https://www.youtube.com/@/Moonbami/"
                 target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-[#FF0000] text-white  hover:scale-110`}
+                className={`${buttonVariants({ variant: "icon" })} bg-[#FF0000] text-white hover:scale-110 transition-transform`}
               >
                 <FaYoutube />
               </Link>
               <Link
                 href="https://www.reddit.com/user/MoonbamiOfficial/"
                 target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-[#FF4500] text-white  hover:scale-110`}
+                className={`${buttonVariants({ variant: "icon" })} bg-[#FF4500] text-white hover:scale-110 transition-transform`}
               >
                 <FaRedditAlien />
               </Link>

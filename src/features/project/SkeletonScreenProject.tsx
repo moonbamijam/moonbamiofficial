@@ -1,7 +1,7 @@
 import Grid from "@/layouts/common/Grid";
 import Section from "@/layouts/common/Section";
 import SkeletonScreen from "@/components/skeleton-screens/SkeletonScreen";
-import { Image } from "@/components/ui/Image";
+import SkeletonImage from "@/components/skeleton-screens/SkeletonImage";
 
 const skeletonProjects = 6;
 
@@ -15,13 +15,7 @@ export default function SkeletonScreenProject() {
             className="w-full h-max rounded-lg flex flex-col justify-between bg-surface dark:bg-dm-surface p-8 shadow"
           >
             <SkeletonScreen className="mb-4">
-              <Image
-                alt=""
-                className="max-h-100 opacity-0 invisible"
-                variant="thumbnail"
-                size="thumbnail"
-                shape="tv"
-              />
+              <SkeletonImage className="max-h-100" />
             </SkeletonScreen>
             <SkeletonScreen className="min-h-8 mb-2" />
             <SkeletonScreen className="min-h-20 mb-6" />

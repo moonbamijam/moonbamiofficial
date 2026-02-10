@@ -1,22 +1,7 @@
 import { forwardRef, HTMLAttributes } from "react";
-import { VariantProps, cva } from "class-variance-authority";
+import { VariantProps } from "class-variance-authority";
 import cn from "@/shared/utils/cn";
-
-const paragraphVariants = cva(
-  "w-full min-w-[300px] text-base sm:text-lg xl:text-xl text-slate-500 dark:text-slate-400",
-  {
-    variants: {
-      variant: {
-        default: "max-w-[600px]",
-        wide: "max-w-[800px]",
-        brief: "max-w-[500px] line-clamp-2",
-      },
-    },
-    defaultVariants: {
-      variant: "default",
-    },
-  },
-);
+import { paragraphVariants } from "./variants";
 
 type ParagraphProps = HTMLAttributes<HTMLParagraphElement> &
   VariantProps<typeof paragraphVariants> & {};

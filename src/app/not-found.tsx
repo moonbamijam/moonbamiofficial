@@ -12,6 +12,8 @@ export default function NotFound() {
         shape="square"
         object="cover"
         className="max-w-100 h-max shadow-none"
+        width={370}
+        height={300}
       />
       <div className="space-y-2 xl:space-y-5">
         <h1 className="font-bold text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">

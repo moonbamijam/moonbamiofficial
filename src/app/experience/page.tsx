@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import PageWrapper from "@/layouts/common/PageWrapper";
 import Footer from "@/layouts/footer/Footer";
 import BackToTop from "@/components/buttons/BackToTop";
-import ExpIntern from "@/features/experience/sections/ExpIntern";
+import ExpIntern from "@/features/experience/ExpIntern";
 
 export const metadata: Metadata = {
   title: "Experience",

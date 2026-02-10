@@ -21,7 +21,7 @@ export default function Anchor({
     <Link
       href={href}
       aria-label={ariaLabel}
-      className={`capitalize rounded-lg font-semibold px-4 xl:px-6 py-3 text-left md:text-center ${isLinkActive(path) ? "active" : "hover:text-primary"}`}
+      className={`capitalize rounded-lg font-semibold px-4 xl:px-6 py-3 text-left md:text-center ${isLinkActive(path) ? "active" : "hover:text-primary"} transition-colors`}
     >
       {name}
     </Link>

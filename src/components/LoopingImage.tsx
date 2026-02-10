@@ -46,6 +46,9 @@ export default function LoopingImage({
       className="lg:brightness-20 lg:dark:brightness-15 lg:absolute lg:-z-10 lg:w-full lg:h-full"
       style={{ transition: transitionStyle }}
       shape="tv"
+      width={1920}
+      height={1080}
+      unoptimized
     />
   );
 }
