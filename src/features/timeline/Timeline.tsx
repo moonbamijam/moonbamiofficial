@@ -13,8 +13,6 @@ import EventWrapper from "@/components/EventWrapper";
 import { timelines } from "@/shared/constants/timeline.db";
 
 const renderTimeline = (timelines: TimelineType[]) => {
-  let typeIcon;
-
   if (timelines) {
     return timelines
       .sort(sortDateByDescendingOrder)
