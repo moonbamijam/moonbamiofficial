@@ -23,7 +23,7 @@ export default function ProjectCard({
   const sortedTechs = tech?.sort((a, b) => a.localeCompare(b));
 
   return (
-    <div className="w-full h-max rounded-lg flex flex-col justify-between backdrop:blur bg-surface/80 dark:bg-dm-surface/70 hover:bg-surface dark:hover:bg-dm-surface opacity-80 hover:opacity-100 shadow hover:shadow-lg p-8 overflow-hidden transition-[background-color_opacity_shadow] duration-300 group/periphs">
+    <div className="w-full h-max rounded-lg flex flex-col justify-between backdrop:blur bg-surface/80 hover:bg-surface opacity-80 hover:opacity-100 shadow hover:shadow-lg p-8 overflow-hidden transition-[background-color_opacity_shadow] group/periphs">
       <Link
         aria-label={ariaLabel}
         href={href ? href : ""}
