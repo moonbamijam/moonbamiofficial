@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { Button } from "@/components/ui/Button";
 import { headerBrandList } from "@/shared/constants/header-brand-list";
-import ThemeSwitchBtn from "@/components/buttons/ThemeSwitchBtn";
+import ThemeSwitchBtn from "@/features/themes/ThemeSwitchBtn";
 import Dropdown from "./Dropdown";
 import Anchor from "./Anchor";
 import useHeader from "@/hooks/useHeader";
