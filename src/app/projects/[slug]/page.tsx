@@ -5,8 +5,8 @@ import BackBtn from "@/components/buttons/BackBtn";
 import Footer from "@/layouts/footer/Footer";
 import { Image } from "@/components/ui/Image";
 import { Paragraph } from "@/components/ui/Paragraph";
-import ProjectTag from "@/components/project/ProjectTag";
-import ProjectStack from "@/components/project/ProjectStack";
+import ProjectTag from "@/features/project/ProjectTag";
+import ProjectStack from "@/features/project/ProjectStack";
 import { projects } from "@/shared/constants/projects.db";
 
 export default async function ProjectPageById({
@@ -45,11 +45,7 @@ export default async function ProjectPageById({
             />
             <div className="w-full flex flex-wrap gap-1">
               {sortedTags.map((tagItem, index) => (
-                <ProjectTag
-                  key={index}
-                  tag={tagItem}
-                  className="opacity-90 dark:opacity-80 hover:opacity-100 dark:hover:opacity-100"
-                >
+                <ProjectTag key={index} tag={tagItem}>
                   {tagItem}
                 </ProjectTag>
               ))}
@@ -66,11 +62,7 @@ export default async function ProjectPageById({
                   powered by
                 </h3>
                 {sortedTechs.map((techItem, index) => (
-                  <ProjectStack
-                    key={index}
-                    tech={techItem}
-                    className="hover:text-primary"
-                  />
+                  <ProjectStack key={index} tech={techItem} />
                 ))}
               </div>
               <div className="flex lg:flex-col gap-4">
@@ -86,11 +78,7 @@ export default async function ProjectPageById({
                 powered by
               </h3>
               {sortedTechs?.map((techItem, index) => (
-                <ProjectStack
-                  key={index}
-                  tech={techItem}
-                  className="hover:text-primary"
-                />
+                <ProjectStack key={index} tech={techItem} />
               ))}
             </div>
           </div>

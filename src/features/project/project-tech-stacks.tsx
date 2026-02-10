@@ -20,7 +20,7 @@ import { FaHtml5 } from "react-icons/fa6";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { PiFileCSharp } from "react-icons/pi";
 
-export const techStackList = [
+export const projectTechStack = [
   { tech: "React", icon: <SiReact /> },
   { tech: "Nextjs", icon: <RiNextjsFill /> },
   { tech: "TypeScript", icon: <SiTypescript /> },
@@ -42,27 +42,3 @@ export const techStackList = [
   { tech: "Django", icon: <SiDjango /> },
   { tech: "PHP", icon: <SiPhp /> },
 ];
-
-const techStackDetect = (tech: string) => {
-  return techStackList.find((t) => {
-    return tech.toLowerCase().trim() === t.tech.toLowerCase().trim();
-  });
-};
-
-export default function ProjectStack({
-  tech,
-  className,
-}: {
-  tech: string;
-  className?: string;
-}) {
-  const techResult = techStackDetect(tech);
-
-  return (
-    <span
-      className={`w-10 h-fullaspect-square font-semibold text-slate-500 text-3xl flex items-center gap-2 ${className}`}
-    >
-      {techResult ? techResult.icon : <></>}
-    </span>
-  );
-}
