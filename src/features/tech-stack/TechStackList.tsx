@@ -19,71 +19,71 @@ import { BiLogoVisualStudio } from "react-icons/bi";
 
 export const techStackList = [
   {
+    id: 1,
     icon: <SiTypescript />,
-    position: 1,
   },
   {
+    id: 2,
     icon: <SiJavascript />,
-    position: 2,
   },
   {
+    id: 3,
     icon: <SiTailwindcss />,
-    position: 3,
   },
   {
+    id: 4,
     icon: <SiExpress />,
-    position: 4,
   },
   {
+    id: 5,
     icon: <FaCss3Alt />,
-    position: 5,
   },
   {
+    id: 6,
     icon: <FaHtml5 />,
-    position: 6,
   },
   {
+    id: 7,
     icon: <SiMongodb />,
-    position: 7,
   },
   {
+    id: 8,
     icon: <SiPnpm />,
-    position: 8,
   },
+  // {
+  //   id: 9,
+  //   icon: <SiPython />,
+  // },
   {
-    icon: <SiPython />,
-    position: 9,
-  },
-  {
+    id: 10,
     icon: <SiReact />,
-    position: 10,
   },
   {
+    id: 11,
     icon: <SiSass />,
-    position: 11,
   },
   {
+    id: 12,
     icon: <SiVite />,
-    position: 12,
   },
   {
+    id: 13,
     icon: <RiNextjsFill />,
-    position: 13,
   },
   {
+    id: 14,
     icon: <FaNodeJs />,
-    position: 14,
   },
   {
+    id: 15,
     icon: <BiLogoVisualStudio />,
-    position: 15,
   },
   {
+    id: 16,
     icon: <SiAdobephotoshop />,
-    position: 16,
   },
-  {
-    icon: <SiKrita />,
-    position: 17,
-  },
+  // {
+  //   id: 17,
+  //   icon: <SiKrita />,
+  // },
 ];

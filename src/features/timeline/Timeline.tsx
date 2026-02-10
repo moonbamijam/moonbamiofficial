@@ -9,12 +9,10 @@ import { FaMoon } from "react-icons/fa6";
 import { EventType, TimelineType } from "@/shared/types";
 import { sortDateByDescendingOrder } from "@/shared/utils/sortDate";
 import Section from "@/layouts/common/Section";
-import EventWrapper from "@/components/EventWrapper";
 import { timelines } from "@/shared/constants/timeline.db";
+import TimelineEventWrapper from "./TimelineEventWrapper";
 
 const renderTimeline = (timelines: TimelineType[]) => {
-  let typeIcon;
-
   if (timelines) {
     return timelines
       .sort(sortDateByDescendingOrder)
@@ -49,7 +47,7 @@ const renderTimeline = (timelines: TimelineType[]) => {
             break;
         }
         return (
-          <EventWrapper
+          <TimelineEventWrapper
             key={_id}
             _id={_id}
             typeIcon={typeIcon}
