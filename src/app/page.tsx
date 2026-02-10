@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import EmailBtn from "@/components/buttons/EmailBtn";
 import GitHubBtn from "@/components/buttons/GitHubBtn";
 import SkeletonScreenHome from "@/components/skeleton-screens/SkeletonScreenHome";
-import TechStackSlider from "@/features/tech-stack/TechStackSlider";
+import TechStackCarousel from "@/features/tech-stack/TechStackCarousel";
 import { Image } from "@/components/ui/Image";
 import ImageCredits from "@/components/ImageCredits";
 import LifeStatus from "@/components/LifeStatus";
@@ -45,7 +45,7 @@ const HomePage = async () => {
               />
             </div>
           </div>
-          <TechStackSlider />
+          <TechStackCarousel />
         </div>
       </section>
     </Suspense>
