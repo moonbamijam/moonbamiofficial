@@ -11,8 +11,13 @@ import { HeaderMenuBtn } from "./HeaderMenuBtn";
 import HeaderSideBarAnchor from "./HeaderSideBarAnchor";
 
 export default function Header() {
-  const { isLinkActive, isDashboardActive, HeaderRef, toggleMenu } =
-    useHeader();
+  const {
+    isLinkActive,
+    isDashboardActive,
+    setIsDashboardActive,
+    HeaderRef,
+    toggleMenu,
+  } = useHeader();
 
   return (
     <>
@@ -48,6 +53,7 @@ export default function Header() {
             isLinkActive={() => isLinkActive(path)}
             iconName={name}
             icon={icon}
+            onClick={() => setIsDashboardActive(false)}
           />
         ))}
         <span className="mt-auto">
