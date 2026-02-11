@@ -38,7 +38,7 @@ export default function ThemeSwitchBtn() {
         variant="toggle"
         size="icon"
       >
-        <FiMoon />
+        <FiMoon className="dark:group-hover:text-background transition-colors" />
       </Button>
     );
   }

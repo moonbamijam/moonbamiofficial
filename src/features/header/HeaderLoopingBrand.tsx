@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-export default function RotatingBrand({
+export default function HeaderLoopingBrand({
   texts,
   interval = 3000,
   transitionDuration = 500,
@@ -37,10 +37,10 @@ export default function RotatingBrand({
   return (
     <Link
       href="/"
-      className="w-full max-w-max flex items-center gap-4 [&>h1]:hover:text-primary transition-colors"
+      className="hidden lg:flex w-full min-w-45 items-center gap-4 group"
     >
       <h1
-        className={`hidden lg:block font-black text-xl xl:text-2xl ${isVisible ? "opacity-100" : "opacity-0"}`}
+        className={`font-black text-wrap text-xl xl:text-2xl ${isVisible ? "opacity-100" : "opacity-0"} group-hover:text-primary transition-colors`}
         style={{ transition: transitionStyle }}
       >
         {currentText}
