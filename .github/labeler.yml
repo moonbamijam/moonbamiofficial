@@ -1,13 +1,13 @@
 feature:
 - head-branch: 
-  - feature/*
-  - feat/*
+  - ^feature/*
+  - ^feat/*
 
 fix:
-- head-branch: fix/*
+- head-branch: ^fix/*
 
 release: 
-- head-branch: release/*
+- head-branch: ^release/*
 
 chore:
 - head-branch: 
@@ -27,7 +27,7 @@ server:
     - src/db/**
 
 devops:
-- head-branch: release/*
+- head-branch: ^release/*
 - changed-files:
   - any-glob-to-any-file:
     - .github/**
