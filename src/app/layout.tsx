@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
-import Header from "@/layouts/header/Header";
+import Header from "@/features/header/Header";
 import ThemesProvider from "@/features/themes/themesProvider";
 import Blob from "@/components/bg/Blob";
 import DarkGradient from "@/components/bg/DarkGradient";
