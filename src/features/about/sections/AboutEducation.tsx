@@ -180,7 +180,7 @@ export default function AboutEducation() {
           </div>
           <Link
             href="/contact"
-            className={`${buttonVariants({ variant: "default" })} ml-auto mt-10`}
+            className={`${buttonVariants({ variant: "cta" })} ml-auto mt-10`}
           >
             Get in touch
           </Link>

@@ -1,21 +1,18 @@
 import SectionHeading from "@/components/SectionHeading";
-import { buttonVariants } from "@/components/ui/Button";
 import PageWrapper from "@/layouts/common/PageWrapper";
 import Section from "@/layouts/common/Section";
 import Footer from "@/layouts/footer/Footer";
-import { SiAnilist, SiGmail } from "react-icons/si";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaXTwitter,
-  FaGithub,
-  FaYoutube,
-  FaRedditAlien,
-  FaDownload,
-  FaSteam,
-} from "react-icons/fa6";
 import Grid from "@/layouts/common/Grid";
-import Link from "next/link";
+import ResumeButton from "@/components/buttons/ResumeButton";
+import FacebookButton from "@/components/buttons/FacebookButton";
+import GitHubButton from "@/components/buttons/GitHubButton";
+import EmailButton from "@/components/buttons/EmailButton";
+import InstagramButton from "@/components/buttons/InstagramButton";
+import TwitterButton from "@/components/buttons/TwitterButton";
+import SteamButton from "@/components/buttons/SteamButton";
+import AniListButton from "@/components/buttons/AniListButton";
+import YouTubeButton from "@/components/buttons/YouTubeButton";
+import RedditButton from "@/components/buttons/RedditButton";
 
 export default function ContactsPage() {
   return (
@@ -29,20 +26,8 @@ export default function ContactsPage() {
               name="Let's build from here!"
             />
             <Grid className="w-max grid-cols-2 sm:grid-cols-3 gap-4">
-              <Link
-                href="https://github.com/moonbamijam"
-                target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-github text-white hover:scale-110 transition-transform`}
-              >
-                <FaGithub />
-              </Link>
-              <Link
-                href="mailto:Jam Moonbami <moonbamijamofficial15@/gmail.com>"
-                target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-primary text-white hover:scale-110 transition-transform`}
-              >
-                <SiGmail />
-              </Link>
+              <GitHubButton />
+              <EmailButton />
             </Grid>
           </div>
 
@@ -53,14 +38,7 @@ export default function ContactsPage() {
               name="Professional credentials"
             />
             <Grid className="w-max grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link
-                href="https://drive.google.com/file/d/1CZlNfJm_M-_OGxNFEteoEfe-g-Q19FoJ/view"
-                download
-                target="_blank"
-                className={`${buttonVariants({ variant: "ghost" })} hover:scale-110 transition-transform `}
-              >
-                <FaDownload /> Resumé
-              </Link>
+              <ResumeButton />
             </Grid>
           </div>
 
@@ -71,35 +49,10 @@ export default function ContactsPage() {
               name="Let's Connect & Play"
             />
             <Grid className="w-max grid-cols-2 sm:grid-cols-3 gap-4">
-              <Link
-                href="https://www.facebook.com/moonbamijam"
-                target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-[#1877F2] text-white hover:scale-110 transition-transform`}
-              >
-                <FaFacebook />
-              </Link>
-              <Link
-                href="https://www.instagram.com/moonbamijam/"
-                target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-instagram-gradient text-white hover:scale-110 transition-transform`}
-              >
-                <FaInstagram />
-              </Link>
-              <Link
-                href="https://twitter.com/moonbamijam"
-                target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-black text-white hover:scale-110 transition-transform`}
-              >
-                <FaXTwitter />
-              </Link>
-
-              <Link
-                href="https://steamcommunity.com/id/moonbamiofficial/"
-                target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-[#2a475e] text-white hover:scale-110 transition-transform`}
-              >
-                <FaSteam />
-              </Link>
+              <FacebookButton />
+              <InstagramButton />
+              <TwitterButton />
+              <SteamButton />
             </Grid>
           </div>
 
@@ -110,27 +63,9 @@ export default function ContactsPage() {
               name="Explore my passions"
             />
             <Grid className="w-max grid-cols-2 sm:grid-cols-3 gap-4">
-              <Link
-                href="https://anilist.co/user/Moonbami/"
-                target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-[#00abff] text-white hover:scale-110 transition-transform`}
-              >
-                <SiAnilist />
-              </Link>
-              <Link
-                href="https://www.youtube.com/@/Moonbami/"
-                target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-[#FF0000] text-white hover:scale-110 transition-transform`}
-              >
-                <FaYoutube />
-              </Link>
-              <Link
-                href="https://www.reddit.com/user/MoonbamiOfficial/"
-                target="_blank"
-                className={`${buttonVariants({ variant: "icon" })} bg-[#FF4500] text-white hover:scale-110 transition-transform`}
-              >
-                <FaRedditAlien />
-              </Link>
+              <AniListButton />
+              <YouTubeButton />
+              <RedditButton />
             </Grid>
           </div>
         </Section>

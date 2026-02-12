@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import PageWrapper from "@/layouts/common/PageWrapper";
 import Footer from "@/layouts/footer/Footer";
-import BackToTop from "@/components/buttons/BackToTop";
+import BackToTopButton from "@/components/buttons/BackToTopButton";
 import ExpIntern from "@/features/experience/ExpIntern";
 
 export const metadata: Metadata = {
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Experience() {
   return (
     <>
-      <BackToTop id="#experience" />
+      <BackToTopButton id="#experience" />
       <PageWrapper id="#experience">
         <ExpIntern />
       </PageWrapper>
