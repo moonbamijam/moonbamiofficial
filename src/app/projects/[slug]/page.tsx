@@ -1,7 +1,7 @@
 import Section from "@/layouts/common/Section";
 import GitHubBtn from "@/components/buttons/GitHubBtn";
 import VisitButton from "@/components/buttons/VisitButton";
-import BackBtn from "@/components/buttons/BackBtn";
+import BackButton from "@/components/buttons/BackButton";
 import Footer from "@/layouts/footer/Footer";
 import { Image } from "@/components/ui/Image";
 import { Paragraph } from "@/components/ui/Paragraph";
@@ -68,7 +68,7 @@ export default async function ProjectPageById({
               <div className="flex lg:flex-col gap-4">
                 {project.github && <GitHubBtn />}
                 {project.website && <VisitButton href={project.website} />}
-                <BackBtn href={"/projects"} />
+                <BackButton href={"/projects"} />
               </div>
             </div>
             <div className="w-full hidden lg:flex items-center gap-1 mt-4">
