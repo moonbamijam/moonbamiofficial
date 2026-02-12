@@ -2,7 +2,7 @@ import {
   socialMediaProps,
   socialMedias,
 } from "@/shared/constants/socialMedias";
-import SocMedIconBtn from "../../components/buttons/SocMedIconBtn";
+import SocialsIconButton from "../../components/buttons/SocialsIconButton";
 
 export default function Footer() {
   const year = new Date();
@@ -12,8 +12,13 @@ export default function Footer() {
       className="container px-16 pb-16 pt-24 my-8 gap-8 flex flex-col items-center"
     >
       <div className="max-w-125 flex justify-evenly">
-        {socialMedias.map(({ href, icon, text }: socialMediaProps, id) => (
-          <SocMedIconBtn key={id} href={href} ariaLabel={text} icon={icon} />
+        {socialMedias.map(({ href, icon, text }: socialMediaProps) => (
+          <SocialsIconButton
+            key={href}
+            href={href}
+            aria-label={text}
+            icon={icon}
+          />
         ))}
       </div>
       <p className="text-center text-sm sm:text-base">
