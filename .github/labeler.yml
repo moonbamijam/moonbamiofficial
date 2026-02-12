@@ -3,6 +3,12 @@ feature:
   - ^feature/*
   - ^feat/*
 
+enhancement:
+- head-branch:
+  - ^impr/*
+  - ^improvement/*
+  - ^perf/*
+
 fix:
 - head-branch: ^fix/*
 
@@ -25,6 +31,7 @@ server:
 - changed-files:
   - any-glob-to-any-file: 
     - src/db/**
+    - src/app/api/**
 
 devops:
 - head-branch: ^release/*
