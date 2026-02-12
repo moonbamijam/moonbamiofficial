@@ -10,7 +10,7 @@ export const buttonVariants = cva(
         outline:
           "gap-2 px-4 py-3 rounded-lg border-2 border-primary hover:bg-primary hover:text-white capitalize font-semibold",
         ghost:
-          "gap-2 px-4 py-3 rounded-lg bg-slate-300 dark:bg-slate-600 hover:bg-primary dark:text-white capitalize font-semibold",
+          "gap-2 px-4 py-3 rounded-lg bg-surface shadow hover:bg-primary dark:text-white hover:text-white dark:hover:text-black capitalize font-semibold",
         toggle: "rounded-full border-transparent hover:bg-primary text-xl p-3",
         icon: "rounded-full text-xl p-4",
         nav: "capitalize rounded-lg font-semibold px-4 xl:px-6 py-2",
@@ -63,7 +63,7 @@ export const imageVariants = cva(
 );
 
 export const paragraphVariants = cva(
-  "w-full min-w-[300px] text-base sm:text-lg xl:text-xl text-slate-500 dark:text-slate-400",
+  "w-full min-w-[300px] text-base sm:text-lg xl:text-xl text-slate-500 dark:text-slate-400 transition-colors",
   {
     variants: {
       variant: {
