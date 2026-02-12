@@ -5,7 +5,7 @@ import Footer from "@/layouts/footer/Footer";
 import Grid from "@/layouts/common/Grid";
 import ResumeBtn from "@/components/buttons/ResumeBtn";
 import FacebookButton from "@/components/buttons/FacebookButton";
-import GitHubBtn from "@/components/buttons/GitHubBtn";
+import GitHubButton from "@/components/buttons/GitHubButton";
 import EmailButton from "@/components/buttons/EmailButton";
 import InstagramButton from "@/components/buttons/InstagramButton";
 import TwitterButton from "@/components/buttons/TwitterButton";
@@ -26,7 +26,7 @@ export default function ContactsPage() {
               name="Let's build from here!"
             />
             <Grid className="w-max grid-cols-2 sm:grid-cols-3 gap-4">
-              <GitHubBtn />
+              <GitHubButton />
               <EmailButton />
             </Grid>
           </div>

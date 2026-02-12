@@ -2,7 +2,7 @@ import { buttonVariants } from "@/components/ui/Button";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa6";
 
-export default function GitHubBtn() {
+export default function GitHubButton() {
   return (
     <Link
       href="https://github.com/moonbamijam"

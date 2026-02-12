@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import GitHubBtn from "@/components/buttons/GitHubBtn";
+import GitHubButton from "@/components/buttons/GitHubButton";
 import SkeletonScreenHome from "@/components/skeleton-screens/SkeletonScreenHome";
 import TechStackCarousel from "@/features/tech-stack/TechStackCarousel";
 import { Image } from "@/components/ui/Image";
@@ -27,7 +27,7 @@ const HomePage = async () => {
                 </p>
               </div>
               <div className="flex gap-6">
-                <GitHubBtn />
+                <GitHubButton />
                 <ResumeBtn />
               </div>
             </div>
