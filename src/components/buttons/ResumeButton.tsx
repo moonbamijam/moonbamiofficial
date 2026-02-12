@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { FaDownload } from "react-icons/fa6";
 import { buttonVariants } from "../ui/variants";
-export default function ResumeBtn() {
+
+export default function ResumeButton() {
   return (
     <Link
       href="https://drive.google.com/file/d/1CZlNfJm_M-_OGxNFEteoEfe-g-Q19FoJ/view"

@@ -5,7 +5,7 @@ import TechStackCarousel from "@/features/tech-stack/TechStackCarousel";
 import { Image } from "@/components/ui/Image";
 import ImageCredits from "@/components/ImageCredits";
 import LifeStatus from "@/components/LifeStatus";
-import ResumeBtn from "@/components/buttons/ResumeBtn";
+import ResumeButton from "@/components/buttons/ResumeButton";
 
 const HomePage = async () => {
   return (
@@ -28,7 +28,7 @@ const HomePage = async () => {
               </div>
               <div className="flex gap-6">
                 <GitHubButton />
-                <ResumeBtn />
+                <ResumeButton />
               </div>
             </div>
             <div className="relative w-full max-w-100 lg:max-w-112.5 xl:max-w-137.5 aspect-square flex flex-col items-end rounded-lg overflow-hidden">

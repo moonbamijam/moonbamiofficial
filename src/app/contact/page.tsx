@@ -3,7 +3,7 @@ import PageWrapper from "@/layouts/common/PageWrapper";
 import Section from "@/layouts/common/Section";
 import Footer from "@/layouts/footer/Footer";
 import Grid from "@/layouts/common/Grid";
-import ResumeBtn from "@/components/buttons/ResumeBtn";
+import ResumeButton from "@/components/buttons/ResumeButton";
 import FacebookButton from "@/components/buttons/FacebookButton";
 import GitHubButton from "@/components/buttons/GitHubButton";
 import EmailButton from "@/components/buttons/EmailButton";
@@ -38,7 +38,7 @@ export default function ContactsPage() {
               name="Professional credentials"
             />
             <Grid className="w-max grid-cols-1 sm:grid-cols-2 gap-4">
-              <ResumeBtn />
+              <ResumeButton />
             </Grid>
           </div>
 
