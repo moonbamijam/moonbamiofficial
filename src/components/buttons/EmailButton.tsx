@@ -2,7 +2,7 @@ import Link from "next/link";
 import { buttonVariants } from "@/components/ui/Button";
 import { SiGmail } from "react-icons/si";
 
-export default function EmailBtn() {
+export default function EmailButton() {
   return (
     <Link
       href="mailto:Jam Moonbami <moonbamijamofficial15@/gmail.com>"

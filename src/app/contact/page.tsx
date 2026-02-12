@@ -6,7 +6,7 @@ import Grid from "@/layouts/common/Grid";
 import ResumeBtn from "@/components/buttons/ResumeBtn";
 import FacebookButton from "@/components/buttons/FacebookButton";
 import GitHubBtn from "@/components/buttons/GitHubBtn";
-import EmailBtn from "@/components/buttons/EmailBtn";
+import EmailButton from "@/components/buttons/EmailButton";
 import InstagramButton from "@/components/buttons/InstagramButton";
 import TwitterButton from "@/components/buttons/TwitterButton";
 import SteamButton from "@/components/buttons/SteamButton";
@@ -27,7 +27,7 @@ export default function ContactsPage() {
             />
             <Grid className="w-max grid-cols-2 sm:grid-cols-3 gap-4">
               <GitHubBtn />
-              <EmailBtn />
+              <EmailButton />
             </Grid>
           </div>
 
