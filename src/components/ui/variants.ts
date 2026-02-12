@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority";
 
 export const buttonVariants = cva(
-  "flex justify-center items-center transform cursor-pointer transition-colors",
+  "flex justify-center items-center transform cursor-pointer transition-[background-color_translate_shadow]",
   {
     variants: {
       variant: {
@@ -14,6 +14,7 @@ export const buttonVariants = cva(
         toggle: "rounded-full border-transparent hover:bg-primary text-xl p-3",
         icon: "rounded-full text-xl p-4",
         nav: "capitalize rounded-lg font-semibold px-4 xl:px-6 py-2",
+        cta: "rounded-full gap-2 px-4 py-3 bg-primary hover:bg-primary-variant capitalize font-semibold text-white hover:-translate-y-1 shadow shadow-primary-variant/50 hover:shadow-lg",
       },
       size: {
         default: "w-[150px] h-[50px]",
