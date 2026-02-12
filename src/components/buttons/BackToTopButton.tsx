@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/Button";
 import useBackToTop from "@/hooks/useBackToTop";
 import { BiSolidUpArrow } from "react-icons/bi";
 
-type Props = {
+type BackToTopButtonProps = {
   id: string;
 };
 
-export default function BackToTop({ id }: Props) {
+export default function BackToTopButton({ id }: BackToTopButtonProps) {
   const { backToTop, handleScrollIntoView } = useBackToTop();
 
   return (

@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import BackToTop from "@/components/buttons/BackToTop";
+import BackToTopButton from "@/components/buttons/BackToTopButton";
 import AboutPersonal from "@/features/about/sections/AboutPersonal";
 import Footer from "@/layouts/footer/Footer";
 import AboutAnime from "@/features/about/sections/AboutAnime";
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <>
-      <BackToTop id={"#about"} />
+      <BackToTopButton id={"#about"} />
       <PageWrapper id="about">
         <AboutPersonal />
         <AboutAnime />
