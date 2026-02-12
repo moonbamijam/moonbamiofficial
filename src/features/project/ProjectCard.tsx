@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ProjectType } from "@/shared/types";
 import GitHubBtn from "@/components/buttons/GitHubBtn";
-import VisitBtn from "@/components/buttons/VisitBtn";
+import VisitButton from "@/components/buttons/VisitButton";
 import { Image } from "@/components/ui/Image";
 import { Paragraph } from "@/components/ui/Paragraph";
 import ProjectTag from "@/features/project/ProjectTag";
@@ -58,7 +58,7 @@ export default function ProjectCard({
       </Link>
       <div className="w-full flex justify-between">
         {github && <GitHubBtn />}
-        {website && <VisitBtn href={website.toString()} />}
+        {website && <VisitButton href={website.toString()} />}
       </div>
     </div>
   );
