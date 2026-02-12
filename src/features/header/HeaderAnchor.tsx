@@ -15,7 +15,7 @@ export default function HeaderAnchor({
       href={href as Url}
       aria-label={label}
       onClick={onClick}
-      className={`capitalize rounded-lg font-semibold px-4 xl:px-6 py-3  ${isLinkActive(path) ? "active" : "hover:text-primary"} transition-colors`}
+      className={`capitalize rounded-lg font-semibold px-4 xl:px-6 py-3 text-sm xl:text-base ${isLinkActive(path) ? "active" : "hover:text-primary"} transition-colors`}
     >
       {name}
     </Link>
