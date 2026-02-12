@@ -192,32 +192,20 @@ body {
   @apply bg-primary text-white dark:text-black;
 }
 
-.container {
+@utility container {
   @apply px-[8vw] mx-auto;
 }
 
-.text-format {
-  @apply px-2;
-}
-
-.paragraph-format {
-  @apply px-2 w-full min-w-100 max-w-150 dark:text-slate-400;
-}
-
-.desc-format {
-  @apply px-2 line-clamp-2;
-}
-
-.button-format {
-  @apply text-center w-37.5 h-12.5 py-3.75 rounded-lg;
-}
-
-.show {
+@utility show {
   @apply opacity-100 visible;
 }
 
-.hide {
+@utility hide {
   @apply opacity-0 invisible;
+}
+
+@utility active {
+  @apply bg-primary hover:bg-primary-variant text-background dark:text-background;
 }
 
 @utility bg-instagram-gradient {
@@ -240,10 +228,6 @@ body {
     #000000 30% 70%,
     transparent
   );
-}
-
-@utility active {
-  @apply bg-primary hover:bg-primary-variant text-background dark:text-background;
 }
 
 @utility blob {
