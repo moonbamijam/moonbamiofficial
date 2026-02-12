@@ -9,7 +9,7 @@ export default function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <h1
-      className={`capitalize text-4xl md:text-5xl font-bold mb-3 ${className}`}
+      className={`capitalize text-4xl md:text-5xl font-bold mb-3 transition-colors ${className}`}
     >
       {name}
     </h1>

@@ -52,7 +52,7 @@ export default async function ProjectPageById({
             </div>
             <div className="w-full flex flex-col lg:flex-row lg:justify-between gap-x-8 xl:gap-x-12">
               <div className="mb-6">
-                <h1 className="font-bold text-3xl lg:text-4xl mb-1">
+                <h1 className="font-bold text-3xl lg:text-4xl mb-1 transition-colors">
                   {project.title}
                 </h1>
                 <Paragraph variant="wide">{project.desc}</Paragraph>
