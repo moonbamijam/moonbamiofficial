@@ -2,14 +2,14 @@ import Link from "next/link";
 import { buttonVariants } from "@/components/ui/Button";
 import { SiGmail } from "react-icons/si";
 
-export default function EmailBtn({ href }: { href: string }) {
+export default function EmailBtn() {
   return (
     <Link
-      href={href}
+      href="mailto:Jam Moonbami <moonbamijamofficial15@/gmail.com>"
       target="_blank"
-      className={`${buttonVariants({ variant: "ghost" })} hover:text-white dark:hover:text-black group`}
+      className={`${buttonVariants({ variant: "cta" })}`}
     >
-      <SiGmail className="group-hover:text-white dark:group-hover:text-black transition-colors" />
+      <SiGmail />
       email
     </Link>
   );

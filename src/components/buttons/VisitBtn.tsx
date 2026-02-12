@@ -15,9 +15,9 @@ export default function VisitBtn({
       href={href}
       target="_blank"
       aria-label="Website"
-      className={`${buttonVariants()} hover:bg-primary-variant hover:border-primary-variant shadow-lg ${className}`}
+      className={`${buttonVariants({ variant: "cta" })} ${className}`}
     >
-      <FiExternalLink className="text-white dark:text-black transition-colors" />
+      <FiExternalLink />
       visit
     </Link>
   );

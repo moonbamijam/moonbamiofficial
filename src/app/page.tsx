@@ -1,11 +1,11 @@
 import { Suspense } from "react";
-import EmailBtn from "@/components/buttons/EmailBtn";
 import GitHubBtn from "@/components/buttons/GitHubBtn";
 import SkeletonScreenHome from "@/components/skeleton-screens/SkeletonScreenHome";
 import TechStackCarousel from "@/features/tech-stack/TechStackCarousel";
 import { Image } from "@/components/ui/Image";
 import ImageCredits from "@/components/ImageCredits";
 import LifeStatus from "@/components/LifeStatus";
+import ResumeBtn from "@/components/buttons/ResumeBtn";
 
 const HomePage = async () => {
   return (
@@ -27,8 +27,8 @@ const HomePage = async () => {
                 </p>
               </div>
               <div className="flex gap-6">
-                <GitHubBtn href="https://github.com/moonbamijam" />
-                <EmailBtn href="mailto:Jam Moonbami <moonbamijamofficial15@/gmail.com>" />
+                <GitHubBtn />
+                <ResumeBtn />
               </div>
             </div>
             <div className="relative w-full max-w-100 lg:max-w-112.5 xl:max-w-137.5 aspect-square flex flex-col items-end rounded-lg overflow-hidden">
