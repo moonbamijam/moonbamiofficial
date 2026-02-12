@@ -57,7 +57,7 @@ export default function ProjectCard({
         </div>
       </Link>
       <div className="w-full flex justify-between">
-        {github && <GitHubBtn href={github.toString()} />}
+        {github && <GitHubBtn />}
         {website && <VisitBtn href={website.toString()} />}
       </div>
     </div>
