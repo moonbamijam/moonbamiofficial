@@ -5,6 +5,7 @@ import ThemesProvider from "@/features/themes/themesProvider";
 import Blob from "@/components/bg/Blob";
 import DarkGradient from "@/components/bg/DarkGradient";
 import "./globals.css";
+import BreakpointIndicator from "@/components/BreakpointIndicator";
 
 const inter = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -55,6 +56,7 @@ export default function RootLayout({
           <main>{children}</main>
           <Blob />
           <DarkGradient />
+          <BreakpointIndicator />
         </ThemesProvider>
       </body>
     </html>
