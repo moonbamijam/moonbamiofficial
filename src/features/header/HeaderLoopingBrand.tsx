@@ -32,19 +32,14 @@ export default function HeaderLoopingBrand({
 
   const currentText = texts[currentIndex] || texts[0];
 
-  const transitionStyle = `opacity ${transitionDuration / 1000}s ease-in-out`;
-
   return (
     <Link
       href="/"
-      className="hidden lg:flex w-full min-w-45 items-center gap-4 group"
+      className={`hidden lg:block w-max font-black text-nowrap text-xl xl:text-2xl ${isVisible ? "opacity-100" : "opacity-0"} transition-opacity ease-in-out duration-500 group`}
     >
-      <h1
-        className={`font-black text-wrap text-xl xl:text-2xl ${isVisible ? "opacity-100" : "opacity-0"} group-hover:text-primary transition-colors`}
-        style={{ transition: transitionStyle }}
-      >
+      <span className="group-hover:text-primary transition-colors">
         {currentText}
-      </h1>
+      </span>
     </Link>
   );
 }
