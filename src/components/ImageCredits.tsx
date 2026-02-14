@@ -1,30 +1,40 @@
+import { ImageCreditsProps } from "@/features/about/about.types";
+import { Url } from "next/dist/shared/lib/router/router";
 import Link from "next/link";
 
-type ImageCreditsProps = {
-  phrase?: string;
-  name: string;
-  href: string;
-  className?: string;
-};
-
 export default function ImageCredits({
-  phrase = "Photo by",
-  name,
   href,
   className,
+  phrase = "Photo by",
+  name,
+  year,
 }: ImageCreditsProps) {
   return (
-    <span
-      className={`text-sm text-slate-400 dark:text-slate-500 mt-2 ${className}`}
+    <div
+      className={`text-sm text-slate-400 dark:text-slate-500 flex items-center gap-1 mt-2 ${className}`}
     >
       {phrase}{" "}
-      <Link
-        href={href}
-        target="_blank"
-        className="font-semibold hover:text-primary hover:underline capitalize"
-      >
-        {name}
-      </Link>
-    </span>
+      {href ? (
+        <Link
+          href={href as Url}
+          target="_blank"
+          className="font-semibold hover:text-primary underline capitalize"
+        >
+          {name}
+        </Link>
+      ) : (
+        <span className="font-semibold hover:text-primary capitalize">
+          {name}
+        </span>
+      )}
+      {year && (
+        <>
+          <span className="text-lg text-slate-400 dark:text-slate-500">•</span>
+          <span className="text-sm text-slate-400 dark:text-slate-500 font-semibold">
+            {year}
+          </span>
+        </>
+      )}
+    </div>
   );
 }
