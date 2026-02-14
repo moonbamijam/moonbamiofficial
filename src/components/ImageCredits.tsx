@@ -11,7 +11,7 @@ export default function ImageCredits({
 }: ImageCreditsProps) {
   return (
     <div
-      className={`text-sm text-slate-400 dark:text-slate-500 flex items-center gap-2 mt-2 ${className}`}
+      className={`text-sm text-slate-400 dark:text-slate-500 flex items-center gap-1 mt-2 ${className}`}
     >
       {phrase}{" "}
       {href ? (
@@ -23,9 +23,9 @@ export default function ImageCredits({
           {name}
         </Link>
       ) : (
-        <div className="font-semibold hover:text-primary capitalize">
+        <span className="font-semibold hover:text-primary capitalize">
           {name}
-        </div>
+        </span>
       )}
       {year && (
         <>
