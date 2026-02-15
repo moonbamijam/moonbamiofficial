@@ -1,5 +1,22 @@
 # What's New
 
+# [4.1.0](https://github.com/moonbamijam/moonbamiofficial/compare/v2.7.2...v4.1.0) (2026-02-15)
+
+
+### Bug Fixes
+
+* header brand width ([#111](https://github.com/moonbamijam/moonbamiofficial/issues/111)) ([b06d6e3](https://github.com/moonbamijam/moonbamiofficial/commit/b06d6e398ff7343f2c1813582fa517067a975e11))
+* labeler overlapping issues ([#106](https://github.com/moonbamijam/moonbamiofficial/issues/106)) ([1229cec](https://github.com/moonbamijam/moonbamiofficial/commit/1229cecdfeff1049f67d6a413d784842a266257d))
+* styling and component issues ([#101](https://github.com/moonbamijam/moonbamiofficial/issues/101)) ([24f005a](https://github.com/moonbamijam/moonbamiofficial/commit/24f005a675eb81cfabf2023f04f666b90e7a6b84)), closes [#54](https://github.com/moonbamijam/moonbamiofficial/issues/54)
+
+
+### Features
+
+* add carousel to about page personal section ([#114](https://github.com/moonbamijam/moonbamiofficial/issues/114)) ([afe3fba](https://github.com/moonbamijam/moonbamiofficial/commit/afe3fba366ed2b0bcefb3d9aa55e8ba3cac0de05))
+* move resume locally ([#112](https://github.com/moonbamijam/moonbamiofficial/issues/112)) ([932a2b3](https://github.com/moonbamijam/moonbamiofficial/commit/932a2b3a2f09a5b95f2a746b5a4b5dfb8a46fb9b))
+* new header side bar to small screens ([#107](https://github.com/moonbamijam/moonbamiofficial/issues/107)) ([8225299](https://github.com/moonbamijam/moonbamiofficial/commit/822529986f60e3e0589861e07f2d8bc7b6322c49))
+* new styling to button components ([#110](https://github.com/moonbamijam/moonbamiofficial/issues/110)) ([e53faf2](https://github.com/moonbamijam/moonbamiofficial/commit/e53faf26ca3e669ad979ebf2cbd4eb1c5a6056d0))
+
 # [4.0.0](https://github.com/moonbamijam/moonbamiofficial/compare/v2.7.2...v4.0.0) (2026-02-10)
 
 
