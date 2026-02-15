@@ -2,6 +2,7 @@ changelog:
   exclude:
     labels:
       - skip-changelog
+      - release
     authors:
       - dependabot
   categories:
