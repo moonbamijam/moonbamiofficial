@@ -28,7 +28,7 @@ export default function AboutSpace() {
       <ImageCredits
         name=" Interstellar "
         href="https://www.imdb.com/title/tt0816692/"
-        className="hidden lg:block absolute bottom-[4%] right-[1%]"
+        className="hidden lg:flex absolute bottom-[4%] right-[1%]"
       />
       <div className="space">
         <SectionHeading name="Into the stars!" />
