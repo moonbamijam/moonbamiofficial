@@ -18,12 +18,12 @@ export default function ImageCredits({
         <Link
           href={href as Url}
           target="_blank"
-          className="font-semibold hover:text-primary underline capitalize"
+          className="font-semibold hover:text-primary underline capitalize truncate max-w-40 sm:max-w-80 md:max-w-120 xl:max-w-80"
         >
           {name}
         </Link>
       ) : (
-        <span className="font-semibold hover:text-primary capitalize">
+        <span className="font-semibold hover:text-primary capitalize truncate max-w-40 sm:max-w-80 md:max-w-120 xl:max-w-80">
           {name}
         </span>
       )}

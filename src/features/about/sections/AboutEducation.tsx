@@ -22,7 +22,7 @@ export default function AboutEducation() {
               height={1080}
             />
             <ImageCredits
-              name="Lorrane Dasalla @/ Morrisonridge Academy"
+              name="Lorrane Dasalla @ Morrisonridge Academy"
               href="https://www.facebook.com/share/p/1BZVoNW1aj/"
             />
           </div>
