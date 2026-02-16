@@ -54,7 +54,7 @@ export default function Carousel({ children }: CarouselProps) {
             <div
               key={i}
               onClick={() => setCurrentIndex(i)}
-              className={`transition-[background-color_opacity_scale] duration-500 w-6 h-3 bg-black hover:bg-primary rounded-full cursor-pointer ${currentIndex === i ? "bg-primary! opacity-100 scale-150" : "opacity-50"}`}
+              className={`transition-[background-color_opacity_scale] duration-500 w-4 h-2 xs:w-6 xs:h-3 bg-black hover:bg-primary rounded-full cursor-pointer ${currentIndex === i ? "bg-primary! opacity-100 scale-150" : "opacity-50"}`}
             ></div>
           ))}
         </div>
