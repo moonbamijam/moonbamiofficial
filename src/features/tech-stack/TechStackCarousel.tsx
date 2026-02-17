@@ -3,9 +3,8 @@ import { techStackList } from "@/features/tech-stack/TechStackList";
 export default function TechStackCarousel() {
   return (
     <div className="w-full h-max overflow-hidden">
-      <p className="text-center mb-2 text-sm sm:text-base">Tech Stack</p>
       <div className="slider flex text-slate-400 dark:text-slate-500">
-        <div className="flex h-[8vw] lg:h-[5vw] justify-center items-center gap-12 pr-12 animate-slideTechStack">
+        <div className="flex h-max justify-center items-center gap-6 pr-6 sm:gap-8 sm:pr-8 lg:gap-10 lg:pr-10 xl:gap-12 xl:pr-12 animate-slideTechStack">
           {techStackList.map((techStack) => (
             <div
               key={techStack.id}
@@ -17,7 +16,7 @@ export default function TechStackCarousel() {
         </div>
         <div
           aria-hidden
-          className="flex h-[8vw] lg:h-[5vw] justify-center items-center gap-12 pr-12 animate-slideTechStack"
+          className="flex h-max justify-center items-center gap-6 pr-6 sm:gap-8 sm:pr-8 lg:gap-10 lg:pr-10 xl:gap-12 xl:pr-12 animate-slideTechStack"
         >
           {techStackList.map((techStack) => (
             <div
