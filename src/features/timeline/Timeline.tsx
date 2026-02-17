@@ -9,8 +9,8 @@ import { FaMoon } from "react-icons/fa6";
 import { EventType, TimelineType } from "@/shared/types";
 import { sortDateByDescendingOrder } from "@/shared/utils/sortDate";
 import Section from "@/layouts/common/Section";
-import { timelines } from "@/shared/constants/timeline.db";
 import TimelineEventWrapper from "./TimelineEventWrapper";
+import { timelineDB } from "./timelinedb";
 
 const renderTimeline = (timelines: TimelineType[]) => {
   if (timelines) {
@@ -62,6 +62,6 @@ const renderTimeline = (timelines: TimelineType[]) => {
 
 export default async function Timeline() {
   return (
-    <Section className="lg:w-max mx-auto">{renderTimeline(timelines)}</Section>
+    <Section className="lg:w-max mx-auto">{renderTimeline(timelineDB)}</Section>
   );
 }

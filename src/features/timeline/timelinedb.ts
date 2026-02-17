@@ -1,6 +1,6 @@
-import { TimelineType } from "../types";
+import { TimelineType } from "@/shared/types";
 
-export const timelines: TimelineType[] = [
+export const timelineDB: TimelineType[] = [
   {
     _id: "66824e7f5b395bf8ff1f6e43",
     date: "present",
@@ -22,7 +22,7 @@ export const timelines: TimelineType[] = [
     type: "programming",
     note: "First commissioned project",
     message:
-      "This was my very first project that I started to earn money! Even though it was a rushed project, I have fun developing it alongside my partner in crime, Ecchiko.",
+      "This was my very first project that I started to earn money! Even though it was a rushed project, I have fun developing it alongside my friend.",
   },
   {
     _id: "66824fc35b395bf8ff1f6e52",
@@ -36,7 +36,7 @@ export const timelines: TimelineType[] = [
     date: "October 7, 2012",
     type: "religion",
     note: "First communion",
-    message: "This is my first time accepting the bread and wine.",
+    message: "This is my first time receiving the Eucharist.",
   },
   {
     _id: "668250715b395bf8ff1f6e58",
@@ -61,29 +61,29 @@ export const timelines: TimelineType[] = [
     message:
       "I've only enjoyed half of it since unfortunately, COVID pandemic occurs at the second year",
   },
-  {
-    _id: "6682515e5b395bf8ff1f6e60",
-    date: "March 26, 2023",
-    type: "game",
-    note: "Played Honkai: Star Rail",
-    message:
-      "Kafka was one of the reason why I played this game. Now, Firefly is the reason why I continued playing.",
-  },
-  {
-    _id: "668251a45b395bf8ff1f6e62",
-    date: "February 22, 2023",
-    type: "game",
-    note: "Played Blue Archive",
-    message:
-      "I forgot when did I really started playing Blue Archive, but I am sure my first accout was created on Aru's first banner",
-  },
-  {
-    _id: "668251f75b395bf8ff1f6e68",
-    date: "December 16, 2020",
-    type: "game",
-    note: "Played Illusion Connect",
-    message: "I miss this game.",
-  },
+  // {
+  //   _id: "6682515e5b395bf8ff1f6e60",
+  //   date: "March 26, 2023",
+  //   type: "game",
+  //   note: "Played Honkai: Star Rail",
+  //   message:
+  //     "Kafka was one of the reason why I played this game. Now, Firefly is the reason why I continued playing.",
+  // },
+  // {
+  //   _id: "668251a45b395bf8ff1f6e62",
+  //   date: "February 22, 2023",
+  //   type: "game",
+  //   note: "Played Blue Archive",
+  //   message:
+  //     "I forgot when did I really started playing Blue Archive, but I am sure my first accout was created on Aru's first banner",
+  // },
+  // {
+  //   _id: "668251f75b395bf8ff1f6e68",
+  //   date: "December 16, 2020",
+  //   type: "game",
+  //   note: "Played Illusion Connect",
+  //   message: "I miss this game.",
+  // },
   {
     _id: "668252555b395bf8ff1f6e6a",
     date: "September 13, 2021",
@@ -92,14 +92,14 @@ export const timelines: TimelineType[] = [
     message:
       "This is where I've found my interest in something I didn't expect I would",
   },
-  {
-    _id: "668252895b395bf8ff1f6e6c",
-    date: "August 30, 2021",
-    type: "game",
-    note: "Played Genshin Impact",
-    message:
-      "Started playing Genshin Impact in my main account because of Kamisato Ayaka.",
-  },
+  // {
+  //   _id: "668252895b395bf8ff1f6e6c",
+  //   date: "August 30, 2021",
+  //   type: "game",
+  //   note: "Played Genshin Impact",
+  //   message:
+  //     "Started playing Genshin Impact in my main account because of Kamisato Ayaka.",
+  // },
   {
     _id: "668252bb5b395bf8ff1f6e6e",
     date: "August 15, 2023",
@@ -146,14 +146,14 @@ export const timelines: TimelineType[] = [
     note: "My first PC!",
     message: "Received my very first pc in my entire life from my mother!",
   },
-  {
-    _id: "668fb48833bc57b47df0eb77",
-    date: "July 10, 2024",
-    type: "game",
-    note: "Played Zenless Zone Zero!",
-    message:
-      "I didn't expect myself playing this game. On this date, I've started playing Zenless Zone Zero because of Ellen Joe! I'm so happy ^^",
-  },
+  // {
+  //   _id: "668fb48833bc57b47df0eb77",
+  //   date: "July 10, 2024",
+  //   type: "game",
+  //   note: "Played Zenless Zone Zero!",
+  //   message:
+  //     "I didn't expect myself playing this game. On this date, I've started playing Zenless Zone Zero because of Ellen Joe! I'm so happy ^^",
+  // },
   {
     _id: "68e1c31bfa3a595553f9e689",
     date: "September 30, 2025",
