@@ -3,7 +3,7 @@ import Section from "@/layouts/common/Section";
 import ProjectCard from "@/features/project/ProjectCard";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import { ProjectType } from "@/shared/types";
-import { projects } from "@/shared/constants/projects.db";
+import { projects } from "./projects.db";
 
 const renderProjects = (projects: ProjectType[]) => {
   if (projects) {

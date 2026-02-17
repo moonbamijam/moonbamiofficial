@@ -7,7 +7,7 @@ import { Image } from "@/components/ui/Image";
 import { Paragraph } from "@/components/ui/Paragraph";
 import ProjectTag from "@/features/project/ProjectTag";
 import ProjectStack from "@/features/project/ProjectStack";
-import { projects } from "@/shared/constants/projects.db";
+import { projects } from "@/features/project/projects.db";
 
 export default async function ProjectPageById({
   params,
