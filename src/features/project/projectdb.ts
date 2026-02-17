@@ -1,6 +1,6 @@
 import { ProjectType } from "@/shared/types";
 
-export const projects: ProjectType[] = [
+export const projectDB: ProjectType[] = [
   // {
   //   _id: "66544413e27cea13979ac18b",
   //   src: "https://i.ibb.co/svKL0rTD/tsukiwa.webp",

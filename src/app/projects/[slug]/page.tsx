@@ -7,7 +7,7 @@ import { Image } from "@/components/ui/Image";
 import { Paragraph } from "@/components/ui/Paragraph";
 import ProjectTag from "@/features/project/ProjectTag";
 import ProjectStack from "@/features/project/ProjectStack";
-import { projects } from "@/features/project/projects.db";
+import { projectDB } from "@/features/project/projectdb";
 
 export default async function ProjectPageById({
   params,
@@ -16,7 +16,7 @@ export default async function ProjectPageById({
 }) {
   const { slug } = await params;
 
-  const project = projects.find((p) => p.slug === slug);
+  const project = projectDB.find((p) => p.slug === slug);
 
   if (!project) return <div className="">Project not found</div>;
 
