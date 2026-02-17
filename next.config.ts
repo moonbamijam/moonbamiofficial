@@ -1,6 +1,6 @@
 import { animeGifList } from "@/features/about/anime-gif-list";
 import { gameGifList } from "@/features/about/game-gif-list";
-import { projects } from "@/shared/constants/projects.db";
+import { projectDB } from "@/features/project/projectdb";
 import type { NextConfig } from "next";
 
 const allRemotePatternsURL = (src: string[] | URL[]) => {
@@ -8,7 +8,7 @@ const allRemotePatternsURL = (src: string[] | URL[]) => {
   src.map((item) => result.push(new URL(item)));
   animeGifList.map((item) => result.push(new URL(item.url)));
   gameGifList.map((item) => result.push(new URL(item.url)));
-  projects.map((item) => result.push(new URL(item.src)));
+  projectDB.map((item) => result.push(new URL(item.src)));
 
   return result;
 };
