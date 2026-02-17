@@ -1,5 +1,12 @@
 # What's New
 
+# [4.2.0](https://github.com/moonbamijam/moonbamiofficial/compare/v4.1.0...v4.2.0) (2026-02-17)
+
+
+### Features
+
+* add media queries to tech stack carousel ([#120](https://github.com/moonbamijam/moonbamiofficial/issues/120)) ([090f149](https://github.com/moonbamijam/moonbamiofficial/commit/090f149fc2e1f6fb38620758f9cd4540c914b550))
+
 # [4.1.0](https://github.com/moonbamijam/moonbamiofficial/compare/v2.7.2...v4.1.0) (2026-02-15)
 
 
