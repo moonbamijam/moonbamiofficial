@@ -1,18 +1,18 @@
-import { ProjectType } from "../types";
+import { ProjectType } from "@/shared/types";
 
-export const projects: ProjectType[] = [
-  {
-    _id: "66544413e27cea13979ac18b",
-    src: "https://i.ibb.co/svKL0rTD/tsukiwa.webp",
-    alt: "tsukiwa image",
-    title: "tsukiwa",
-    desc: "A place where your “Waifus” matter. This is a website that you can rank, rate, organize and flex your waifus all over the world. This is still currently in designing phase because of my schedule being strict to my academics and gaming. But, I swear that this will be in production once I get free time.",
-    website: "",
-    github: "https://github.com/moonbamijam/tsukiwa",
-    slug: "tsukiwa",
-    tech: ["nextjs", "typescript", "tailwind"],
-    tag: ["featured", "in progress", "personal", "web", "open source"],
-  },
+export const projectDB: ProjectType[] = [
+  // {
+  //   _id: "66544413e27cea13979ac18b",
+  //   src: "https://i.ibb.co/svKL0rTD/tsukiwa.webp",
+  //   alt: "tsukiwa image",
+  //   title: "tsukiwa",
+  //   desc: "A place where your “Waifus” matter. This is a website that you can rank, rate, organize and flex your waifus all over the world. This is still currently in designing phase because of my schedule being strict to my academics and gaming. But, I swear that this will be in production once I get free time.",
+  //   website: "",
+  //   github: "https://github.com/moonbamijam/tsukiwa",
+  //   slug: "tsukiwa",
+  //   tech: ["nextjs", "typescript", "tailwind"],
+  //   tag: ["featured", "in progress", "personal", "web", "open source"],
+  // },
   {
     _id: "6654442de27cea13979ac191",
     src: "https://i.ibb.co/CKNHBbqp/realpop.webp",

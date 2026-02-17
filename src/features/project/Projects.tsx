@@ -3,7 +3,7 @@ import Section from "@/layouts/common/Section";
 import ProjectCard from "@/features/project/ProjectCard";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import { ProjectType } from "@/shared/types";
-import { projects } from "@/shared/constants/projects.db";
+import { projectDB } from "./projectdb";
 
 const renderProjects = (projects: ProjectType[]) => {
   if (projects) {
@@ -29,7 +29,7 @@ export default function Projects() {
   return (
     <Section>
       <Grid className="xl:grid-cols-2 premium:grid-cols-3 gap-12.5">
-        {renderProjects(projects)}
+        {renderProjects(projectDB)}
       </Grid>
     </Section>
   );
