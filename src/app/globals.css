@@ -208,6 +208,10 @@ body {
   @apply bg-primary hover:bg-primary-variant text-background dark:text-background;
 }
 
+@utility scrollbar-hidden {
+  @apply [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none];
+}
+
 @utility bg-instagram-gradient {
   background:
     radial-gradient(
