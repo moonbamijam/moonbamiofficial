@@ -14,6 +14,17 @@ export const personalCarousel: carouselType[] = [
     },
   },
   {
+    src: "/images/pages/about/photoism-apes.jpg",
+    alt: "apes together strong together",
+    width: 1500,
+    height: 1500,
+    credits: {
+      href: "",
+      name: "Photoism",
+      year: 2024,
+    },
+  },
+  {
     src: "/images/pages/about/gang.jpg",
     alt: "jam moonbami and the boys",
     width: 1500,
