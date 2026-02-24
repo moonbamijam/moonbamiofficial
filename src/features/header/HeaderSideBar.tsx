@@ -7,7 +7,7 @@ export const HeaderSideBar = forwardRef<HTMLDivElement, HeaderSideBarProps>(
       <nav
         ref={ref}
         id="main"
-        className={`fixed top-0 left-0 bg-surface backdrop-blur w-full h-screen px-4 py-8 flex flex-col items-center gap-4 shadow transition-[max-width_opacity_visibility] ${className}`}
+        className={`fixed top-0 left-0 overflow-y-scroll scrollbar-hidden bg-surface backdrop-blur w-full h-screen px-4 py-8 flex flex-col items-center gap-4 shadow transition-[max-width_opacity_visibility] ${className}`}
       >
         {children}
       </nav>
