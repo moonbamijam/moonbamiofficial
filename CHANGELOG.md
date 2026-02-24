@@ -1,5 +1,17 @@
 # What's New
 
+# [4.3.0](https://github.com/moonbamijam/moonbamiofficial/compare/v4.2.0...v4.3.0) (2026-02-24)
+
+
+### Bug Fixes
+
+* unscrollable and clickable when inactive header side bar ([#125](https://github.com/moonbamijam/moonbamiofficial/issues/125)) ([38b3612](https://github.com/moonbamijam/moonbamiofficial/commit/38b3612e8849fcead389d555bf279f7ff0236a4b))
+
+
+### Features
+
+* add apes together image ([#124](https://github.com/moonbamijam/moonbamiofficial/issues/124)) ([0032607](https://github.com/moonbamijam/moonbamiofficial/commit/00326077f0833ddc89939eea1dd7010f0bb192cc))
+
 # [4.2.0](https://github.com/moonbamijam/moonbamiofficial/compare/v4.1.0...v4.2.0) (2026-02-17)
 
 
