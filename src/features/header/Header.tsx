@@ -42,7 +42,7 @@ export default function Header() {
       </header>
       <HeaderSideBar
         ref={HeaderRef}
-        className={`${isDashboardActive ? "max-w-35" : "max-w-0 opacity-0"} lg:hidden z-2000`}
+        className={`${isDashboardActive ? "max-w-35" : "max-w-0 opacity-0 invisible"} lg:hidden z-2000`}
       >
         <HeaderMenuBtn onClick={toggleMenu} className="mb-4" />
         {headerLinks.map(({ name, path, icon }) => (
