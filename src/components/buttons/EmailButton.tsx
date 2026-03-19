@@ -5,7 +5,7 @@ import { SiGmail } from "react-icons/si";
 export default function EmailButton() {
   return (
     <Link
-      href="mailto:Jam Moonbami <moonbamijamofficial15@/gmail.com>"
+      href="mailto:Jam Mikhail <mikhailjam.alvarez@gmail.com>"
       target="_blank"
       className={`${buttonVariants({ variant: "cta" })}`}
     >
