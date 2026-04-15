@@ -1,3 +1,4 @@
+import SectionHeading from "@/components/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { Paragraph } from "@/components/ui/Paragraph";
 import { EventType } from "@/shared/types";
@@ -22,13 +23,17 @@ export default function TimelineEventWrapper({
         {typeIcon}
       </Button>
       <div className="px-4">
-        <h1 className="group-hover:text-primary text-4xl font-black capitalize transition-colors">
-          {date}
-        </h1>
-        <h3 className="text-3xl font-bold text-slate-500 group-hover:text-slate-700 dark:group-hover:text-slate-400 transition-colors">
+        <SectionHeading
+          className="text-3xl! sm:text-4xl! group-hover:text-primary font-black capitalize transition-colors"
+          name={date}
+        />
+
+        <div className="text-2xl sm:text-3xl text-wrap font-bold text-slate-500 group-hover:text-slate-700 dark:group-hover:text-slate-400 transition-colors">
           {note}
-        </h3>
-        <Paragraph className="mt-1">{message}</Paragraph>
+        </div>
+        <Paragraph variant="wrap" className="mt-1">
+          {message}
+        </Paragraph>
       </div>
     </div>
   );
