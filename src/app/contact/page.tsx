@@ -13,60 +13,62 @@ import SteamButton from "@/components/buttons/SteamButton";
 import AniListButton from "@/components/buttons/AniListButton";
 import YouTubeButton from "@/components/buttons/YouTubeButton";
 import RedditButton from "@/components/buttons/RedditButton";
+import { HTMLAttributes } from "react";
+
+type HeadingProps = HTMLAttributes<HTMLHeadElement> & { title: string };
+
+const Heading = ({ title }: HeadingProps) => {
+  return (
+    <SectionHeading
+      className="text-2xl! sm:text-3xl! md:text-4xl mb-4"
+      name={title}
+    />
+  );
+};
+
+const SocmedGridItems = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <Grid className="w=max grid-cols-2 sm:grid-cols-3 gap-4">{children}</Grid>
+  );
+};
 
 export default function ContactsPage() {
   return (
     <>
       <PageWrapper id="contact">
         <Section className="w-max mx-auto space-y-12">
-          {/* collaboration */}
           <div>
-            <SectionHeading
-              className="text-3xl! sm:text-4xl!"
-              name="Let's build from here!"
-            />
-            <Grid className="w-max grid-cols-2 sm:grid-cols-3 gap-4">
+            <Heading title="Let's build from here!" />
+            <SocmedGridItems>
               <GitHubButton />
               <EmailButton />
-            </Grid>
+            </SocmedGridItems>
           </div>
 
-          {/* professional */}
           <div>
-            <SectionHeading
-              className="text-3xl! md:text-4xl!"
-              name="Professional credentials"
-            />
-            <Grid className="w-max grid-cols-1 sm:grid-cols-2 gap-4">
+            <Heading title="Professional credentials" />
+            <SocmedGridItems>
               <ResumeButton />
-            </Grid>
+            </SocmedGridItems>
           </div>
 
-          {/* socials */}
           <div>
-            <SectionHeading
-              className="text-3xl! sm:text-4xl!"
-              name="Let's Connect & Play"
-            />
-            <Grid className="w-max grid-cols-2 sm:grid-cols-3 gap-4">
+            <Heading title="Let's Connect & Play" />
+            <SocmedGridItems>
               <FacebookButton />
               <InstagramButton />
               <TwitterButton />
               <SteamButton />
-            </Grid>
+            </SocmedGridItems>
           </div>
 
-          {/* other ways to find */}
           <div>
-            <SectionHeading
-              className="text-3xl! sm:text-4xl!"
-              name="Explore my passions"
-            />
-            <Grid className="w-max grid-cols-2 sm:grid-cols-3 gap-4">
+            <Heading title="Explore my passions" />
+            <SocmedGridItems>
               <AniListButton />
               <YouTubeButton />
               <RedditButton />
-            </Grid>
+            </SocmedGridItems>
           </div>
         </Section>
       </PageWrapper>
